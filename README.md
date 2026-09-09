@@ -1,5 +1,16 @@
 # Relational Security Invariants
 
+Relational Security Invariants (RSI) is a conformance framework for failures where each local component can remain valid while the security-relevant relation between components is changed, missing, stale, or unauthorized.
+
+**Start here: `main` is the single maintained implementation.** Use the commands below. The separate initial prototype has been retired from active development and preserved in Git history; [the reconciliation record](spec/repository-reconciliation.md) explains the choice and exact verification results.
+
+```text
+local validity preserved + protected relation broken
+=> no acceptance / authority / state / policy / provenance / status promotion
+```
+
+This project does not claim to invent replay protection, identity binding, nonce uniqueness, complete mediation, trust-root continuity, or relational security reasoning. The research question is whether one implementation-facing adversarial fixture model can unify these relation failures across domains.
+
 **Private v0 implementation/review candidate. Not a frozen standard, production
 security library, completed audit, or proof of novelty.**
 

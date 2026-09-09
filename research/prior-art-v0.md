@@ -41,3 +41,31 @@ remain open here. 'Not found in one review' is not 'does not exist'.
 - Draft 2020-12 validator: https://python-jsonschema.readthedocs.io/en/stable/validate/
 
 These are implementation references, not prior-art evidence for novelty.
+
+## Source novelty classifications (preserved)
+
+Legend:
+
+- **Established** — substantial direct prior art.
+- **Adjacent** — known ideas exist, but the exact fixture/generalization is less obvious.
+- **Promising** — this research pass did not find an obvious standardized equivalent.
+- **Unverified** — requires deeper dedicated literature/patent/standards search.
+
+| Candidate | Prior art | Novelty assessment |
+|---|---|---|
+| Signer-to-subject binding | UKS/misbinding, formal authentication | Established |
+| Signed pre-key / identity continuity | X3DH, Signal safety numbers | Established |
+| Authentication-before-commit | Sesame transactional receive semantics | Established in messaging |
+| Nonce uniqueness | AEAD standards | Established |
+| Atomic ratchet consumption under concurrency | nonce rules + concurrent state management | Adjacent |
+| Replay across epochs | protocol replay / anti-rollback | Established |
+| Trust-root non-substitution | TUF continuity | Established |
+| Policy-preserving fallback | fail-safe defaults | Established principle; fixture is adjacent |
+| Context-complete authentication | AEAD AAD, transcript binding | Established |
+| Evidence-based confirmation | attestations, event correspondence, receipts | **Promising as a generic status/evidence invariant** |
+| Ingestion equivalence | complete mediation, parser/validation consistency | **Promising as an explicit cross-path fixture** |
+| Recovery completeness under declared relation | backup/restore semantics | Adjacent / promising |
+| Relation-substitution fixture family | misbinding + formal correspondence + conformance testing | **Promising synthesis** |
+| Single protected-relation taxonomy spanning crypto/auth/provenance/policy/state | many adjacent literatures | **Promising synthesis; novelty unverified** |
+
+These are the supplied research pass's assessments, not independently proven novelty results. Promising is not novel; Unverified remains an open research obligation.
