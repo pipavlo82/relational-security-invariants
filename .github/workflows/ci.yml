@@ -1,0 +1,24 @@
+name: RSI v0 conformance
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  conformance:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ['3.12', '3.13']
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -m pip install -r requirements-dev.txt
+      - run: python tools/generate_fixtures.py --check
+      - run: python tools/validate-fixtures.py
+      - run: python -m rsi.run --output artifacts/baseline.json
+      - run: python -m unittest discover -s tests -v
+      - run: python -O -m unittest discover -s tests -v
+      - run: python tools/prove_can_fail.py --output artifacts/prove-can-fail.json
