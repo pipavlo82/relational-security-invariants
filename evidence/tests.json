@@ -1,0 +1,217 @@
+{
+  "results": [
+    {
+      "id": "test_rsi.MutationTests.test_bad_baseline_vacuous",
+      "status": "PASS"
+    },
+    {
+      "id": "test_rsi.MutationTests.test_control_regression_is_not_a_kill",
+      "status": "PASS"
+    },
+    {
+      "id": "test_rsi.MutationTests.test_crash_before_decision_not_killed",
+      "status": "PASS"
+    },
+    {
+      "id": "test_rsi.MutationTests.test_identical_source_not_applied",
+      "status": "PASS"
+    },
+    {
+      "id": "test_rsi.MutationTests.test_import_failure_not_killed",
+      "status": "PASS"
+    },
+    {
+      "id": "test_rsi.MutationTests.test_kill_RSI_001",
+      "status": "PASS"
+    },
+    {
+      "id": "test_rsi.MutationTests.test_kill_RSI_003",
+      "status": "PASS"
+    },
+    {
+      "id": "test_rsi.MutationTests.test_kill_RSI_004",
+      "status": "PASS"
+    },
+    {
+      "id": "test_rsi.MutationTests.test_kill_RSI_006",
+      "status": "PASS"
+    },
+    {
+      "id": "test_rsi.MutationTests.test_kill_RSI_008",
+      "status": "PASS"
+    },
+    {
+      "id": "test_rsi.MutationTests.test_kill_RSI_009",
+      "status": "PASS"
+    },
+    {
+      "id": "test_rsi.MutationTests.test_missing_anchor_not_applied",
+      "status": "PASS"
+    },
+    {
+      "id": "test_rsi.MutationTests.test_nonexecuted_or_unmapped_failure_vacuous",
+      "status": "PASS"
+    },
+    {
+      "id": "test_rsi.MutationTests.test_semantically_unchanged_patch_survives",
+      "status": "PASS"
+    },
+    {
+      "id": "test_rsi.MutationTests.test_syntax_error_not_killed",
+      "status": "PASS"
+    },
+    {
+      "id": "test_rsi.ReportTests.test_all_result_states_serialized_independently",
+      "status": "PASS"
+    },
+    {
+      "id": "test_rsi.ReportTests.test_bad_schema_returns_structured_failure",
+      "status": "PASS"
+    },
+    {
+      "id": "test_rsi.ReportTests.test_cli_invalid_fixture_nonzero_and_json",
+      "status": "PASS"
+    },
+    {
+      "id": "test_rsi.ReportTests.test_cli_unsupported_nonzero",
+      "status": "PASS"
+    },
+    {
+      "id": "test_rsi.ReportTests.test_duplicate_fixture_ids_reject",
+      "status": "PASS"
+    },
+    {
+      "id": "test_rsi.ReportTests.test_empty_suite_fails",
+      "status": "PASS"
+    },
+    {
+      "id": "test_rsi.ReportTests.test_reports_deterministic",
+      "status": "PASS"
+    },
+    {
+      "id": "test_rsi.SchemaTests.test_duplicate_keys_and_non_json_numbers_reject",
+      "status": "PASS"
+    },
+    {
+      "id": "test_rsi.SchemaTests.test_expected_constraints_cannot_be_weakened",
+      "status": "PASS"
+    },
+    {
+      "id": "test_rsi.SchemaTests.test_fixture_RSI_001",
+      "status": "PASS"
+    },
+    {
+      "id": "test_rsi.SchemaTests.test_fixture_RSI_003",
+      "status": "PASS"
+    },
+    {
+      "id": "test_rsi.SchemaTests.test_fixture_RSI_004",
+      "status": "PASS"
+    },
+    {
+      "id": "test_rsi.SchemaTests.test_fixture_RSI_006",
+      "status": "PASS"
+    },
+    {
+      "id": "test_rsi.SchemaTests.test_fixture_RSI_008",
+      "status": "PASS"
+    },
+    {
+      "id": "test_rsi.SchemaTests.test_fixture_RSI_009",
+      "status": "PASS"
+    },
+    {
+      "id": "test_rsi.SchemaTests.test_invalid_expected_states",
+      "status": "PASS"
+    },
+    {
+      "id": "test_rsi.SchemaTests.test_malformed_schema_shapes_reject",
+      "status": "PASS"
+    },
+    {
+      "id": "test_rsi.SchemaTests.test_missing_expected_has_no_default",
+      "status": "PASS"
+    },
+    {
+      "id": "test_rsi.SchemaTests.test_missing_protected_relation",
+      "status": "PASS"
+    },
+    {
+      "id": "test_rsi.SchemaTests.test_missing_relation_expected_has_no_default",
+      "status": "PASS"
+    },
+    {
+      "id": "test_rsi.SchemaTests.test_numeric_boolean_not_coerced",
+      "status": "PASS"
+    },
+    {
+      "id": "test_rsi.SchemaTests.test_oneof_requires_exactly_one_match",
+      "status": "PASS"
+    },
+    {
+      "id": "test_rsi.SchemaTests.test_unknown_fields_at_every_structural_level",
+      "status": "PASS"
+    },
+    {
+      "id": "test_rsi.SchemaTests.test_unknown_schema_keywords_reject",
+      "status": "PASS"
+    },
+    {
+      "id": "test_rsi.SchemaTests.test_wrong_component_shape",
+      "status": "PASS"
+    },
+    {
+      "id": "test_rsi.SchemaTests.test_wrong_fixture_relation_mapping",
+      "status": "PASS"
+    },
+    {
+      "id": "test_rsi.SemanticsTests.test_atomic_both_commit_orders_checked",
+      "status": "PASS"
+    },
+    {
+      "id": "test_rsi.SemanticsTests.test_broken_local_validity_is_invalid_fixture",
+      "status": "PASS"
+    },
+    {
+      "id": "test_rsi.SemanticsTests.test_extra_relation_change_is_invalid",
+      "status": "PASS"
+    },
+    {
+      "id": "test_rsi.SemanticsTests.test_initial_state_digest_is_checked",
+      "status": "PASS"
+    },
+    {
+      "id": "test_rsi.SemanticsTests.test_signature_is_real_and_body_tampering_fails",
+      "status": "PASS"
+    },
+    {
+      "id": "test_rsi.SemanticsTests.test_status_evidence_binds_every_coordinate",
+      "status": "PASS"
+    },
+    {
+      "id": "test_rsi.SemanticsTests.test_three_levels_are_separate",
+      "status": "PASS"
+    },
+    {
+      "id": "test_rsi.SemanticsTests.test_unchanged_mutation_is_invalid_fixture",
+      "status": "PASS"
+    },
+    {
+      "id": "test_rsi.SemanticsTests.test_unknown_evaluator_is_unsupported",
+      "status": "PASS"
+    },
+    {
+      "id": "test_rsi.SemanticsTests.test_valid_mutant_relation_is_invalid_fixture",
+      "status": "PASS"
+    }
+  ],
+  "tests_run": 51,
+  "totals": {
+    "ERROR": 0,
+    "EXPECTED_FAILURE": 0,
+    "FAIL": 0,
+    "PASS": 51,
+    "SKIP": 0,
+    "UNEXPECTED_SUCCESS": 0
+  }
+}

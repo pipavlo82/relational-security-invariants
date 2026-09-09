@@ -1,0 +1,67 @@
+{
+  "schema": "relation-binding-fixture.v0",
+  "id": "RSI-006",
+  "protected_relation": "context_binding",
+  "domain": "context",
+  "control": {
+    "components": {
+      "artifact": {
+        "signer": "victim",
+        "body": {
+          "subject": "victim",
+          "context": "room-a",
+          "role": "member",
+          "payload": "hello"
+        },
+        "signature": "8db45b540c6ad6d40276093dbfe9ae4ad3e6c54a310e0558fedc6f6250798436677712683818f5dd022fa485d6013c7e10275e0e2600ba4190a69aa027113808"
+      },
+      "context": "room-a"
+    },
+    "local_validity": [
+      "structure",
+      "signature"
+    ],
+    "relation_expected": true,
+    "expected": "ACCEPT"
+  },
+  "mutation": {
+    "components": {
+      "artifact": {
+        "signer": "victim",
+        "body": {
+          "subject": "victim",
+          "context": "room-a",
+          "role": "member",
+          "payload": "hello"
+        },
+        "signature": "8db45b540c6ad6d40276093dbfe9ae4ad3e6c54a310e0558fedc6f6250798436677712683818f5dd022fa485d6013c7e10275e0e2600ba4190a69aa027113808"
+      },
+      "context": "room-b"
+    },
+    "preserve_local_validity": [
+      "structure",
+      "signature"
+    ],
+    "changed_fields": [
+      "context"
+    ],
+    "relation_expected": false
+  },
+  "expected": "REJECT",
+  "failure_if": [
+    "accept",
+    "provenance_promotion"
+  ],
+  "policy_version": "rsi-reference-policy.v0",
+  "evaluator": {
+    "name": "reference",
+    "version": "0"
+  },
+  "required_evidence": [
+    "authenticated_context"
+  ],
+  "final_state_constraints": {
+    "no_promotion": true
+  },
+  "notes": "Offline reference fixture; local validity is limited to the explicitly named checks."
+}

@@ -1,0 +1,87 @@
+{
+  "schema": "relation-binding-fixture.v0",
+  "id": "RSI-008",
+  "protected_relation": "status_evidence",
+  "domain": "evidence",
+  "control": {
+    "components": {
+      "request": {
+        "subject": "message-1",
+        "scope": "room-a",
+        "operation": "send-1"
+      },
+      "evidence": [
+        {
+          "subject": "message-1",
+          "scope": "room-a",
+          "operation": "send-1",
+          "kind": "recipient_ack",
+          "success": true
+        },
+        {
+          "subject": "message-1",
+          "scope": "room-a",
+          "operation": "send-1",
+          "kind": "durable_publication",
+          "success": true
+        }
+      ]
+    },
+    "local_validity": [
+      "request_structure",
+      "evidence_structure"
+    ],
+    "relation_expected": true,
+    "expected": "ACCEPT"
+  },
+  "mutation": {
+    "components": {
+      "request": {
+        "subject": "message-1",
+        "scope": "room-a",
+        "operation": "send-1"
+      },
+      "evidence": [
+        {
+          "subject": "message-1",
+          "scope": "room-a",
+          "operation": "send-1",
+          "kind": "recipient_ack",
+          "success": false
+        },
+        {
+          "subject": "message-1",
+          "scope": "room-a",
+          "operation": "send-1",
+          "kind": "durable_publication",
+          "success": false
+        }
+      ]
+    },
+    "preserve_local_validity": [
+      "request_structure",
+      "evidence_structure"
+    ],
+    "changed_fields": [
+      "evidence"
+    ],
+    "relation_expected": false
+  },
+  "expected": "REJECT",
+  "failure_if": [
+    "accept",
+    "status_promotion"
+  ],
+  "policy_version": "rsi-reference-policy.v0",
+  "evaluator": {
+    "name": "reference",
+    "version": "0"
+  },
+  "required_evidence": [
+    "recipient_ack_or_durable_publication_bound_to_subject_scope_operation"
+  ],
+  "final_state_constraints": {
+    "no_promotion": true
+  },
+  "notes": "Offline reference fixture; local validity is limited to the explicitly named checks."
+}

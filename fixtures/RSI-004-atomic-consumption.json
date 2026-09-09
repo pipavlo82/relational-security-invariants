@@ -1,0 +1,62 @@
+{
+  "schema": "relation-binding-fixture.v0",
+  "id": "RSI-004",
+  "protected_relation": "atomic_consumption",
+  "domain": "messaging",
+  "control": {
+    "components": {
+      "revision": 7,
+      "operations": [
+        {
+          "consumer": "worker-a",
+          "position": 7
+        }
+      ]
+    },
+    "local_validity": [
+      "operation_structure",
+      "position_structure"
+    ],
+    "relation_expected": true,
+    "expected": "ACCEPT"
+  },
+  "mutation": {
+    "components": {
+      "revision": 7,
+      "operations": [
+        {
+          "consumer": "worker-a",
+          "position": 7
+        },
+        {
+          "consumer": "worker-b",
+          "position": 7
+        }
+      ]
+    },
+    "preserve_local_validity": [
+      "operation_structure",
+      "position_structure"
+    ],
+    "changed_fields": [
+      "operations"
+    ],
+    "relation_expected": false
+  },
+  "expected": "REJECT",
+  "failure_if": [
+    "duplicate_consumption"
+  ],
+  "policy_version": "rsi-reference-policy.v0",
+  "evaluator": {
+    "name": "reference",
+    "version": "0"
+  },
+  "required_evidence": [
+    "exclusive_position_commit"
+  ],
+  "final_state_constraints": {
+    "max_successful_consumers": 1
+  },
+  "notes": "Offline reference fixture; local validity is limited to the explicitly named checks."
+}

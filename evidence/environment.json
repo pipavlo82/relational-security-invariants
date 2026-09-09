@@ -1,0 +1,9 @@
+{
+  "cryptography": "50.0.1",
+  "execution": "offline",
+  "git_HEAD": "unborn; no commit",
+  "git_branch": "codex/rsi-v0",
+  "platform": "Windows",
+  "python": "3.12.14",
+  "remote": "none"
+}

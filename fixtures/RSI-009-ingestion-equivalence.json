@@ -1,0 +1,84 @@
+{
+  "schema": "relation-binding-fixture.v0",
+  "id": "RSI-009",
+  "protected_relation": "ingestion_equivalence",
+  "domain": "ingestion",
+  "control": {
+    "components": {
+      "artifact": {
+        "signer": "victim",
+        "body": {
+          "subject": "victim",
+          "context": "room-a",
+          "role": "member",
+          "payload": "hello"
+        },
+        "signature": "8db45b540c6ad6d40276093dbfe9ae4ad3e6c54a310e0558fedc6f6250798436677712683818f5dd022fa485d6013c7e10275e0e2600ba4190a69aa027113808"
+      },
+      "paths": [
+        "live",
+        "import",
+        "snapshot",
+        "restore"
+      ]
+    },
+    "local_validity": [
+      "structure",
+      "signature"
+    ],
+    "relation_expected": true,
+    "expected": "ACCEPT"
+  },
+  "mutation": {
+    "components": {
+      "artifact": {
+        "signer": "victim",
+        "body": {
+          "subject": "victim",
+          "context": "room-a",
+          "role": "guest",
+          "payload": "hello"
+        },
+        "signature": "c69ae82f4e64beaa35b46abfaee08d16b92e31f7ec1fdae290eb2cef0251db15454d6a94258a6440cce4403843f4ce083f1ae525dd24d173e18909388a94710a"
+      },
+      "paths": [
+        "live",
+        "import",
+        "snapshot",
+        "restore"
+      ]
+    },
+    "preserve_local_validity": [
+      "structure",
+      "signature"
+    ],
+    "changed_fields": [
+      "artifact.body.role",
+      "artifact.signature"
+    ],
+    "relation_expected": false
+  },
+  "expected": "REJECT",
+  "failure_if": [
+    "accept",
+    "policy_promotion"
+  ],
+  "policy_version": "rsi-reference-policy.v0",
+  "evaluator": {
+    "name": "reference",
+    "version": "0"
+  },
+  "required_evidence": [
+    "member_role_under_same_policy"
+  ],
+  "final_state_constraints": {
+    "required_paths": [
+      "live",
+      "import",
+      "snapshot",
+      "restore"
+    ],
+    "all_reject": true
+  },
+  "notes": "Offline reference fixture; local validity is limited to the explicitly named checks."
+}

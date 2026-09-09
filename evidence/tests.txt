@@ -1,0 +1,56 @@
+test_bad_baseline_vacuous (test_rsi.MutationTests.test_bad_baseline_vacuous) ... ok
+test_control_regression_is_not_a_kill (test_rsi.MutationTests.test_control_regression_is_not_a_kill) ... ok
+test_crash_before_decision_not_killed (test_rsi.MutationTests.test_crash_before_decision_not_killed) ... ok
+test_identical_source_not_applied (test_rsi.MutationTests.test_identical_source_not_applied) ... ok
+test_import_failure_not_killed (test_rsi.MutationTests.test_import_failure_not_killed) ... ok
+test_kill_RSI_001 (test_rsi.MutationTests.test_kill_RSI_001) ... ok
+test_kill_RSI_003 (test_rsi.MutationTests.test_kill_RSI_003) ... ok
+test_kill_RSI_004 (test_rsi.MutationTests.test_kill_RSI_004) ... ok
+test_kill_RSI_006 (test_rsi.MutationTests.test_kill_RSI_006) ... ok
+test_kill_RSI_008 (test_rsi.MutationTests.test_kill_RSI_008) ... ok
+test_kill_RSI_009 (test_rsi.MutationTests.test_kill_RSI_009) ... ok
+test_missing_anchor_not_applied (test_rsi.MutationTests.test_missing_anchor_not_applied) ... ok
+test_nonexecuted_or_unmapped_failure_vacuous (test_rsi.MutationTests.test_nonexecuted_or_unmapped_failure_vacuous) ... ok
+test_semantically_unchanged_patch_survives (test_rsi.MutationTests.test_semantically_unchanged_patch_survives) ... ok
+test_syntax_error_not_killed (test_rsi.MutationTests.test_syntax_error_not_killed) ... ok
+test_all_result_states_serialized_independently (test_rsi.ReportTests.test_all_result_states_serialized_independently) ... ok
+test_bad_schema_returns_structured_failure (test_rsi.ReportTests.test_bad_schema_returns_structured_failure) ... ok
+test_cli_invalid_fixture_nonzero_and_json (test_rsi.ReportTests.test_cli_invalid_fixture_nonzero_and_json) ... ok
+test_cli_unsupported_nonzero (test_rsi.ReportTests.test_cli_unsupported_nonzero) ... ok
+test_duplicate_fixture_ids_reject (test_rsi.ReportTests.test_duplicate_fixture_ids_reject) ... ok
+test_empty_suite_fails (test_rsi.ReportTests.test_empty_suite_fails) ... ok
+test_reports_deterministic (test_rsi.ReportTests.test_reports_deterministic) ... ok
+test_duplicate_keys_and_non_json_numbers_reject (test_rsi.SchemaTests.test_duplicate_keys_and_non_json_numbers_reject) ... ok
+test_expected_constraints_cannot_be_weakened (test_rsi.SchemaTests.test_expected_constraints_cannot_be_weakened) ... ok
+test_fixture_RSI_001 (test_rsi.SchemaTests.test_fixture_RSI_001) ... ok
+test_fixture_RSI_003 (test_rsi.SchemaTests.test_fixture_RSI_003) ... ok
+test_fixture_RSI_004 (test_rsi.SchemaTests.test_fixture_RSI_004) ... ok
+test_fixture_RSI_006 (test_rsi.SchemaTests.test_fixture_RSI_006) ... ok
+test_fixture_RSI_008 (test_rsi.SchemaTests.test_fixture_RSI_008) ... ok
+test_fixture_RSI_009 (test_rsi.SchemaTests.test_fixture_RSI_009) ... ok
+test_invalid_expected_states (test_rsi.SchemaTests.test_invalid_expected_states) ... ok
+test_malformed_schema_shapes_reject (test_rsi.SchemaTests.test_malformed_schema_shapes_reject) ... ok
+test_missing_expected_has_no_default (test_rsi.SchemaTests.test_missing_expected_has_no_default) ... ok
+test_missing_protected_relation (test_rsi.SchemaTests.test_missing_protected_relation) ... ok
+test_missing_relation_expected_has_no_default (test_rsi.SchemaTests.test_missing_relation_expected_has_no_default) ... ok
+test_numeric_boolean_not_coerced (test_rsi.SchemaTests.test_numeric_boolean_not_coerced) ... ok
+test_oneof_requires_exactly_one_match (test_rsi.SchemaTests.test_oneof_requires_exactly_one_match) ... ok
+test_unknown_fields_at_every_structural_level (test_rsi.SchemaTests.test_unknown_fields_at_every_structural_level) ... ok
+test_unknown_schema_keywords_reject (test_rsi.SchemaTests.test_unknown_schema_keywords_reject) ... ok
+test_wrong_component_shape (test_rsi.SchemaTests.test_wrong_component_shape) ... ok
+test_wrong_fixture_relation_mapping (test_rsi.SchemaTests.test_wrong_fixture_relation_mapping) ... ok
+test_atomic_both_commit_orders_checked (test_rsi.SemanticsTests.test_atomic_both_commit_orders_checked) ... ok
+test_broken_local_validity_is_invalid_fixture (test_rsi.SemanticsTests.test_broken_local_validity_is_invalid_fixture) ... ok
+test_extra_relation_change_is_invalid (test_rsi.SemanticsTests.test_extra_relation_change_is_invalid) ... ok
+test_initial_state_digest_is_checked (test_rsi.SemanticsTests.test_initial_state_digest_is_checked) ... ok
+test_signature_is_real_and_body_tampering_fails (test_rsi.SemanticsTests.test_signature_is_real_and_body_tampering_fails) ... ok
+test_status_evidence_binds_every_coordinate (test_rsi.SemanticsTests.test_status_evidence_binds_every_coordinate) ... ok
+test_three_levels_are_separate (test_rsi.SemanticsTests.test_three_levels_are_separate) ... ok
+test_unchanged_mutation_is_invalid_fixture (test_rsi.SemanticsTests.test_unchanged_mutation_is_invalid_fixture) ... ok
+test_unknown_evaluator_is_unsupported (test_rsi.SemanticsTests.test_unknown_evaluator_is_unsupported) ... ok
+test_valid_mutant_relation_is_invalid_fixture (test_rsi.SemanticsTests.test_valid_mutant_relation_is_invalid_fixture) ... ok
+
+----------------------------------------------------------------------
+Ran 51 tests in 0.788s
+
+OK

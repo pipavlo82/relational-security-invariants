@@ -1,0 +1,56 @@
+{
+  "schema": "relation-binding-fixture.v0",
+  "id": "RSI-003",
+  "protected_relation": "auth_before_commit",
+  "domain": "messaging",
+  "control": {
+    "components": {
+      "ciphertext": "256db96fb691b07afd596f9fcd75212340a4af98d65e86345f",
+      "state": {
+        "revision": 7,
+        "session": "initial"
+      }
+    },
+    "local_validity": [
+      "ciphertext_structure",
+      "state_structure"
+    ],
+    "relation_expected": true,
+    "expected": "ACCEPT"
+  },
+  "mutation": {
+    "components": {
+      "ciphertext": "006db96fb691b07afd596f9fcd75212340a4af98d65e86345f",
+      "state": {
+        "revision": 7,
+        "session": "initial"
+      }
+    },
+    "preserve_local_validity": [
+      "ciphertext_structure",
+      "state_structure"
+    ],
+    "changed_fields": [
+      "ciphertext"
+    ],
+    "relation_expected": false
+  },
+  "expected": "REJECT",
+  "failure_if": [
+    "accept",
+    "state_commit"
+  ],
+  "policy_version": "rsi-reference-policy.v0",
+  "evaluator": {
+    "name": "reference",
+    "version": "0"
+  },
+  "required_evidence": [
+    "ciphertext_authentication"
+  ],
+  "final_state_constraints": {
+    "unchanged_state": true
+  },
+  "notes": "Offline reference fixture; local validity is limited to the explicitly named checks.",
+  "initial_state_digest": "5fe8cb48da9101926e6100784a704df199c24e619b72a5f7a7cee0c3e0ea104f"
+}

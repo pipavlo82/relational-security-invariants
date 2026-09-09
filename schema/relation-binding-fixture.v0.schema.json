@@ -1,0 +1,1469 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Relation-Binding Conformance Fixture v0 (six closed profiles)",
+  "oneOf": [
+    {
+      "type": "object",
+      "properties": {
+        "schema": {
+          "const": "relation-binding-fixture.v0"
+        },
+        "id": {
+          "const": "RSI-001"
+        },
+        "protected_relation": {
+          "const": "signer_subject"
+        },
+        "domain": {
+          "const": "identity"
+        },
+        "control": {
+          "type": "object",
+          "properties": {
+            "components": {
+              "type": "object",
+              "properties": {
+                "artifact": {
+                  "type": "object",
+                  "properties": {
+                    "signer": {
+                      "enum": [
+                        "victim",
+                        "attacker"
+                      ]
+                    },
+                    "body": {
+                      "type": "object",
+                      "properties": {
+                        "subject": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "context": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "role": {
+                          "enum": [
+                            "member",
+                            "guest"
+                          ]
+                        },
+                        "payload": {
+                          "type": "string",
+                          "minLength": 1
+                        }
+                      },
+                      "required": [
+                        "subject",
+                        "context",
+                        "role",
+                        "payload"
+                      ],
+                      "additionalProperties": false
+                    },
+                    "signature": {
+                      "type": "string",
+                      "pattern": "^[0-9a-f]{128}$"
+                    }
+                  },
+                  "required": [
+                    "signer",
+                    "body",
+                    "signature"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "required": [
+                "artifact"
+              ],
+              "additionalProperties": false
+            },
+            "local_validity": {
+              "const": [
+                "structure",
+                "signature"
+              ]
+            },
+            "relation_expected": {
+              "const": true
+            },
+            "expected": {
+              "const": "ACCEPT"
+            }
+          },
+          "required": [
+            "components",
+            "local_validity",
+            "relation_expected",
+            "expected"
+          ],
+          "additionalProperties": false
+        },
+        "mutation": {
+          "type": "object",
+          "properties": {
+            "components": {
+              "type": "object",
+              "properties": {
+                "artifact": {
+                  "type": "object",
+                  "properties": {
+                    "signer": {
+                      "enum": [
+                        "victim",
+                        "attacker"
+                      ]
+                    },
+                    "body": {
+                      "type": "object",
+                      "properties": {
+                        "subject": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "context": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "role": {
+                          "enum": [
+                            "member",
+                            "guest"
+                          ]
+                        },
+                        "payload": {
+                          "type": "string",
+                          "minLength": 1
+                        }
+                      },
+                      "required": [
+                        "subject",
+                        "context",
+                        "role",
+                        "payload"
+                      ],
+                      "additionalProperties": false
+                    },
+                    "signature": {
+                      "type": "string",
+                      "pattern": "^[0-9a-f]{128}$"
+                    }
+                  },
+                  "required": [
+                    "signer",
+                    "body",
+                    "signature"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "required": [
+                "artifact"
+              ],
+              "additionalProperties": false
+            },
+            "preserve_local_validity": {
+              "const": [
+                "structure",
+                "signature"
+              ]
+            },
+            "changed_fields": {
+              "const": [
+                "artifact.signer",
+                "artifact.signature"
+              ]
+            },
+            "relation_expected": {
+              "const": false
+            }
+          },
+          "required": [
+            "components",
+            "preserve_local_validity",
+            "changed_fields",
+            "relation_expected"
+          ],
+          "additionalProperties": false
+        },
+        "expected": {
+          "const": "REJECT"
+        },
+        "failure_if": {
+          "const": [
+            "accept",
+            "authority_promotion"
+          ]
+        },
+        "policy_version": {
+          "const": "rsi-reference-policy.v0"
+        },
+        "evaluator": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "minLength": 1
+            },
+            "version": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "name",
+            "version"
+          ],
+          "additionalProperties": false
+        },
+        "required_evidence": {
+          "const": [
+            "authorized_subject"
+          ]
+        },
+        "initial_state_digest": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "final_state_constraints": {
+          "const": {
+            "no_promotion": true
+          }
+        },
+        "notes": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "schema",
+        "id",
+        "protected_relation",
+        "domain",
+        "control",
+        "mutation",
+        "expected",
+        "failure_if",
+        "policy_version",
+        "evaluator",
+        "required_evidence",
+        "final_state_constraints",
+        "notes"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "schema": {
+          "const": "relation-binding-fixture.v0"
+        },
+        "id": {
+          "const": "RSI-003"
+        },
+        "protected_relation": {
+          "const": "auth_before_commit"
+        },
+        "domain": {
+          "const": "messaging"
+        },
+        "control": {
+          "type": "object",
+          "properties": {
+            "components": {
+              "type": "object",
+              "properties": {
+                "ciphertext": {
+                  "type": "string",
+                  "pattern": "^(?:[0-9a-f]{2}){17,}$"
+                },
+                "state": {
+                  "type": "object",
+                  "properties": {
+                    "revision": {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    "session": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": [
+                    "revision",
+                    "session"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "required": [
+                "ciphertext",
+                "state"
+              ],
+              "additionalProperties": false
+            },
+            "local_validity": {
+              "const": [
+                "ciphertext_structure",
+                "state_structure"
+              ]
+            },
+            "relation_expected": {
+              "const": true
+            },
+            "expected": {
+              "const": "ACCEPT"
+            }
+          },
+          "required": [
+            "components",
+            "local_validity",
+            "relation_expected",
+            "expected"
+          ],
+          "additionalProperties": false
+        },
+        "mutation": {
+          "type": "object",
+          "properties": {
+            "components": {
+              "type": "object",
+              "properties": {
+                "ciphertext": {
+                  "type": "string",
+                  "pattern": "^(?:[0-9a-f]{2}){17,}$"
+                },
+                "state": {
+                  "type": "object",
+                  "properties": {
+                    "revision": {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    "session": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": [
+                    "revision",
+                    "session"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "required": [
+                "ciphertext",
+                "state"
+              ],
+              "additionalProperties": false
+            },
+            "preserve_local_validity": {
+              "const": [
+                "ciphertext_structure",
+                "state_structure"
+              ]
+            },
+            "changed_fields": {
+              "const": [
+                "ciphertext"
+              ]
+            },
+            "relation_expected": {
+              "const": false
+            }
+          },
+          "required": [
+            "components",
+            "preserve_local_validity",
+            "changed_fields",
+            "relation_expected"
+          ],
+          "additionalProperties": false
+        },
+        "expected": {
+          "const": "REJECT"
+        },
+        "failure_if": {
+          "const": [
+            "accept",
+            "state_commit"
+          ]
+        },
+        "policy_version": {
+          "const": "rsi-reference-policy.v0"
+        },
+        "evaluator": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "minLength": 1
+            },
+            "version": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "name",
+            "version"
+          ],
+          "additionalProperties": false
+        },
+        "required_evidence": {
+          "const": [
+            "ciphertext_authentication"
+          ]
+        },
+        "initial_state_digest": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "final_state_constraints": {
+          "const": {
+            "unchanged_state": true
+          }
+        },
+        "notes": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "schema",
+        "id",
+        "protected_relation",
+        "domain",
+        "control",
+        "mutation",
+        "expected",
+        "failure_if",
+        "policy_version",
+        "evaluator",
+        "required_evidence",
+        "final_state_constraints",
+        "notes"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "schema": {
+          "const": "relation-binding-fixture.v0"
+        },
+        "id": {
+          "const": "RSI-004"
+        },
+        "protected_relation": {
+          "const": "atomic_consumption"
+        },
+        "domain": {
+          "const": "messaging"
+        },
+        "control": {
+          "type": "object",
+          "properties": {
+            "components": {
+              "type": "object",
+              "properties": {
+                "revision": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "operations": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "consumer": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "position": {
+                        "type": "integer",
+                        "minimum": 0
+                      }
+                    },
+                    "required": [
+                      "consumer",
+                      "position"
+                    ],
+                    "additionalProperties": false
+                  },
+                  "minItems": 1,
+                  "uniqueItems": true
+                }
+              },
+              "required": [
+                "revision",
+                "operations"
+              ],
+              "additionalProperties": false
+            },
+            "local_validity": {
+              "const": [
+                "operation_structure",
+                "position_structure"
+              ]
+            },
+            "relation_expected": {
+              "const": true
+            },
+            "expected": {
+              "const": "ACCEPT"
+            }
+          },
+          "required": [
+            "components",
+            "local_validity",
+            "relation_expected",
+            "expected"
+          ],
+          "additionalProperties": false
+        },
+        "mutation": {
+          "type": "object",
+          "properties": {
+            "components": {
+              "type": "object",
+              "properties": {
+                "revision": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "operations": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "consumer": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "position": {
+                        "type": "integer",
+                        "minimum": 0
+                      }
+                    },
+                    "required": [
+                      "consumer",
+                      "position"
+                    ],
+                    "additionalProperties": false
+                  },
+                  "minItems": 1,
+                  "uniqueItems": true
+                }
+              },
+              "required": [
+                "revision",
+                "operations"
+              ],
+              "additionalProperties": false
+            },
+            "preserve_local_validity": {
+              "const": [
+                "operation_structure",
+                "position_structure"
+              ]
+            },
+            "changed_fields": {
+              "const": [
+                "operations"
+              ]
+            },
+            "relation_expected": {
+              "const": false
+            }
+          },
+          "required": [
+            "components",
+            "preserve_local_validity",
+            "changed_fields",
+            "relation_expected"
+          ],
+          "additionalProperties": false
+        },
+        "expected": {
+          "const": "REJECT"
+        },
+        "failure_if": {
+          "const": [
+            "duplicate_consumption"
+          ]
+        },
+        "policy_version": {
+          "const": "rsi-reference-policy.v0"
+        },
+        "evaluator": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "minLength": 1
+            },
+            "version": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "name",
+            "version"
+          ],
+          "additionalProperties": false
+        },
+        "required_evidence": {
+          "const": [
+            "exclusive_position_commit"
+          ]
+        },
+        "initial_state_digest": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "final_state_constraints": {
+          "const": {
+            "max_successful_consumers": 1
+          }
+        },
+        "notes": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "schema",
+        "id",
+        "protected_relation",
+        "domain",
+        "control",
+        "mutation",
+        "expected",
+        "failure_if",
+        "policy_version",
+        "evaluator",
+        "required_evidence",
+        "final_state_constraints",
+        "notes"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "schema": {
+          "const": "relation-binding-fixture.v0"
+        },
+        "id": {
+          "const": "RSI-006"
+        },
+        "protected_relation": {
+          "const": "context_binding"
+        },
+        "domain": {
+          "const": "context"
+        },
+        "control": {
+          "type": "object",
+          "properties": {
+            "components": {
+              "type": "object",
+              "properties": {
+                "artifact": {
+                  "type": "object",
+                  "properties": {
+                    "signer": {
+                      "enum": [
+                        "victim",
+                        "attacker"
+                      ]
+                    },
+                    "body": {
+                      "type": "object",
+                      "properties": {
+                        "subject": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "context": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "role": {
+                          "enum": [
+                            "member",
+                            "guest"
+                          ]
+                        },
+                        "payload": {
+                          "type": "string",
+                          "minLength": 1
+                        }
+                      },
+                      "required": [
+                        "subject",
+                        "context",
+                        "role",
+                        "payload"
+                      ],
+                      "additionalProperties": false
+                    },
+                    "signature": {
+                      "type": "string",
+                      "pattern": "^[0-9a-f]{128}$"
+                    }
+                  },
+                  "required": [
+                    "signer",
+                    "body",
+                    "signature"
+                  ],
+                  "additionalProperties": false
+                },
+                "context": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "artifact",
+                "context"
+              ],
+              "additionalProperties": false
+            },
+            "local_validity": {
+              "const": [
+                "structure",
+                "signature"
+              ]
+            },
+            "relation_expected": {
+              "const": true
+            },
+            "expected": {
+              "const": "ACCEPT"
+            }
+          },
+          "required": [
+            "components",
+            "local_validity",
+            "relation_expected",
+            "expected"
+          ],
+          "additionalProperties": false
+        },
+        "mutation": {
+          "type": "object",
+          "properties": {
+            "components": {
+              "type": "object",
+              "properties": {
+                "artifact": {
+                  "type": "object",
+                  "properties": {
+                    "signer": {
+                      "enum": [
+                        "victim",
+                        "attacker"
+                      ]
+                    },
+                    "body": {
+                      "type": "object",
+                      "properties": {
+                        "subject": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "context": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "role": {
+                          "enum": [
+                            "member",
+                            "guest"
+                          ]
+                        },
+                        "payload": {
+                          "type": "string",
+                          "minLength": 1
+                        }
+                      },
+                      "required": [
+                        "subject",
+                        "context",
+                        "role",
+                        "payload"
+                      ],
+                      "additionalProperties": false
+                    },
+                    "signature": {
+                      "type": "string",
+                      "pattern": "^[0-9a-f]{128}$"
+                    }
+                  },
+                  "required": [
+                    "signer",
+                    "body",
+                    "signature"
+                  ],
+                  "additionalProperties": false
+                },
+                "context": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "artifact",
+                "context"
+              ],
+              "additionalProperties": false
+            },
+            "preserve_local_validity": {
+              "const": [
+                "structure",
+                "signature"
+              ]
+            },
+            "changed_fields": {
+              "const": [
+                "context"
+              ]
+            },
+            "relation_expected": {
+              "const": false
+            }
+          },
+          "required": [
+            "components",
+            "preserve_local_validity",
+            "changed_fields",
+            "relation_expected"
+          ],
+          "additionalProperties": false
+        },
+        "expected": {
+          "const": "REJECT"
+        },
+        "failure_if": {
+          "const": [
+            "accept",
+            "provenance_promotion"
+          ]
+        },
+        "policy_version": {
+          "const": "rsi-reference-policy.v0"
+        },
+        "evaluator": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "minLength": 1
+            },
+            "version": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "name",
+            "version"
+          ],
+          "additionalProperties": false
+        },
+        "required_evidence": {
+          "const": [
+            "authenticated_context"
+          ]
+        },
+        "initial_state_digest": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "final_state_constraints": {
+          "const": {
+            "no_promotion": true
+          }
+        },
+        "notes": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "schema",
+        "id",
+        "protected_relation",
+        "domain",
+        "control",
+        "mutation",
+        "expected",
+        "failure_if",
+        "policy_version",
+        "evaluator",
+        "required_evidence",
+        "final_state_constraints",
+        "notes"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "schema": {
+          "const": "relation-binding-fixture.v0"
+        },
+        "id": {
+          "const": "RSI-008"
+        },
+        "protected_relation": {
+          "const": "status_evidence"
+        },
+        "domain": {
+          "const": "evidence"
+        },
+        "control": {
+          "type": "object",
+          "properties": {
+            "components": {
+              "type": "object",
+              "properties": {
+                "request": {
+                  "type": "object",
+                  "properties": {
+                    "subject": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "scope": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "operation": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": [
+                    "subject",
+                    "scope",
+                    "operation"
+                  ],
+                  "additionalProperties": false
+                },
+                "evidence": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "subject": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "scope": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "operation": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "kind": {
+                        "enum": [
+                          "recipient_ack",
+                          "durable_publication"
+                        ]
+                      },
+                      "success": {
+                        "type": "boolean"
+                      }
+                    },
+                    "required": [
+                      "subject",
+                      "scope",
+                      "operation",
+                      "kind",
+                      "success"
+                    ],
+                    "additionalProperties": false
+                  },
+                  "minItems": 1,
+                  "uniqueItems": true
+                }
+              },
+              "required": [
+                "request",
+                "evidence"
+              ],
+              "additionalProperties": false
+            },
+            "local_validity": {
+              "const": [
+                "request_structure",
+                "evidence_structure"
+              ]
+            },
+            "relation_expected": {
+              "const": true
+            },
+            "expected": {
+              "const": "ACCEPT"
+            }
+          },
+          "required": [
+            "components",
+            "local_validity",
+            "relation_expected",
+            "expected"
+          ],
+          "additionalProperties": false
+        },
+        "mutation": {
+          "type": "object",
+          "properties": {
+            "components": {
+              "type": "object",
+              "properties": {
+                "request": {
+                  "type": "object",
+                  "properties": {
+                    "subject": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "scope": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "operation": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": [
+                    "subject",
+                    "scope",
+                    "operation"
+                  ],
+                  "additionalProperties": false
+                },
+                "evidence": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "subject": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "scope": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "operation": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "kind": {
+                        "enum": [
+                          "recipient_ack",
+                          "durable_publication"
+                        ]
+                      },
+                      "success": {
+                        "type": "boolean"
+                      }
+                    },
+                    "required": [
+                      "subject",
+                      "scope",
+                      "operation",
+                      "kind",
+                      "success"
+                    ],
+                    "additionalProperties": false
+                  },
+                  "minItems": 1,
+                  "uniqueItems": true
+                }
+              },
+              "required": [
+                "request",
+                "evidence"
+              ],
+              "additionalProperties": false
+            },
+            "preserve_local_validity": {
+              "const": [
+                "request_structure",
+                "evidence_structure"
+              ]
+            },
+            "changed_fields": {
+              "const": [
+                "evidence"
+              ]
+            },
+            "relation_expected": {
+              "const": false
+            }
+          },
+          "required": [
+            "components",
+            "preserve_local_validity",
+            "changed_fields",
+            "relation_expected"
+          ],
+          "additionalProperties": false
+        },
+        "expected": {
+          "const": "REJECT"
+        },
+        "failure_if": {
+          "const": [
+            "accept",
+            "status_promotion"
+          ]
+        },
+        "policy_version": {
+          "const": "rsi-reference-policy.v0"
+        },
+        "evaluator": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "minLength": 1
+            },
+            "version": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "name",
+            "version"
+          ],
+          "additionalProperties": false
+        },
+        "required_evidence": {
+          "const": [
+            "recipient_ack_or_durable_publication_bound_to_subject_scope_operation"
+          ]
+        },
+        "initial_state_digest": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "final_state_constraints": {
+          "const": {
+            "no_promotion": true
+          }
+        },
+        "notes": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "schema",
+        "id",
+        "protected_relation",
+        "domain",
+        "control",
+        "mutation",
+        "expected",
+        "failure_if",
+        "policy_version",
+        "evaluator",
+        "required_evidence",
+        "final_state_constraints",
+        "notes"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "schema": {
+          "const": "relation-binding-fixture.v0"
+        },
+        "id": {
+          "const": "RSI-009"
+        },
+        "protected_relation": {
+          "const": "ingestion_equivalence"
+        },
+        "domain": {
+          "const": "ingestion"
+        },
+        "control": {
+          "type": "object",
+          "properties": {
+            "components": {
+              "type": "object",
+              "properties": {
+                "artifact": {
+                  "type": "object",
+                  "properties": {
+                    "signer": {
+                      "enum": [
+                        "victim",
+                        "attacker"
+                      ]
+                    },
+                    "body": {
+                      "type": "object",
+                      "properties": {
+                        "subject": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "context": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "role": {
+                          "enum": [
+                            "member",
+                            "guest"
+                          ]
+                        },
+                        "payload": {
+                          "type": "string",
+                          "minLength": 1
+                        }
+                      },
+                      "required": [
+                        "subject",
+                        "context",
+                        "role",
+                        "payload"
+                      ],
+                      "additionalProperties": false
+                    },
+                    "signature": {
+                      "type": "string",
+                      "pattern": "^[0-9a-f]{128}$"
+                    }
+                  },
+                  "required": [
+                    "signer",
+                    "body",
+                    "signature"
+                  ],
+                  "additionalProperties": false
+                },
+                "paths": {
+                  "const": [
+                    "live",
+                    "import",
+                    "snapshot",
+                    "restore"
+                  ]
+                }
+              },
+              "required": [
+                "artifact",
+                "paths"
+              ],
+              "additionalProperties": false
+            },
+            "local_validity": {
+              "const": [
+                "structure",
+                "signature"
+              ]
+            },
+            "relation_expected": {
+              "const": true
+            },
+            "expected": {
+              "const": "ACCEPT"
+            }
+          },
+          "required": [
+            "components",
+            "local_validity",
+            "relation_expected",
+            "expected"
+          ],
+          "additionalProperties": false
+        },
+        "mutation": {
+          "type": "object",
+          "properties": {
+            "components": {
+              "type": "object",
+              "properties": {
+                "artifact": {
+                  "type": "object",
+                  "properties": {
+                    "signer": {
+                      "enum": [
+                        "victim",
+                        "attacker"
+                      ]
+                    },
+                    "body": {
+                      "type": "object",
+                      "properties": {
+                        "subject": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "context": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "role": {
+                          "enum": [
+                            "member",
+                            "guest"
+                          ]
+                        },
+                        "payload": {
+                          "type": "string",
+                          "minLength": 1
+                        }
+                      },
+                      "required": [
+                        "subject",
+                        "context",
+                        "role",
+                        "payload"
+                      ],
+                      "additionalProperties": false
+                    },
+                    "signature": {
+                      "type": "string",
+                      "pattern": "^[0-9a-f]{128}$"
+                    }
+                  },
+                  "required": [
+                    "signer",
+                    "body",
+                    "signature"
+                  ],
+                  "additionalProperties": false
+                },
+                "paths": {
+                  "const": [
+                    "live",
+                    "import",
+                    "snapshot",
+                    "restore"
+                  ]
+                }
+              },
+              "required": [
+                "artifact",
+                "paths"
+              ],
+              "additionalProperties": false
+            },
+            "preserve_local_validity": {
+              "const": [
+                "structure",
+                "signature"
+              ]
+            },
+            "changed_fields": {
+              "const": [
+                "artifact.body.role",
+                "artifact.signature"
+              ]
+            },
+            "relation_expected": {
+              "const": false
+            }
+          },
+          "required": [
+            "components",
+            "preserve_local_validity",
+            "changed_fields",
+            "relation_expected"
+          ],
+          "additionalProperties": false
+        },
+        "expected": {
+          "const": "REJECT"
+        },
+        "failure_if": {
+          "const": [
+            "accept",
+            "policy_promotion"
+          ]
+        },
+        "policy_version": {
+          "const": "rsi-reference-policy.v0"
+        },
+        "evaluator": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "minLength": 1
+            },
+            "version": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "name",
+            "version"
+          ],
+          "additionalProperties": false
+        },
+        "required_evidence": {
+          "const": [
+            "member_role_under_same_policy"
+          ]
+        },
+        "initial_state_digest": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "final_state_constraints": {
+          "const": {
+            "required_paths": [
+              "live",
+              "import",
+              "snapshot",
+              "restore"
+            ],
+            "all_reject": true
+          }
+        },
+        "notes": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "schema",
+        "id",
+        "protected_relation",
+        "domain",
+        "control",
+        "mutation",
+        "expected",
+        "failure_if",
+        "policy_version",
+        "evaluator",
+        "required_evidence",
+        "final_state_constraints",
+        "notes"
+      ],
+      "additionalProperties": false
+    }
+  ]
+}

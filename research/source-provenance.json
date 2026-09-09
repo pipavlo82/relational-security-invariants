@@ -1,0 +1,8 @@
+{
+  "source_filename": "relational-security-invariants-novelty-research-v0.md",
+  "source_raw_sha256": "80ed386c04072f94713a275191ae45f583a860f92da088854371c2105a2830cd",
+  "normalized_copy_sha256": "80ed386c04072f94713a275191ae45f583a860f92da088854371c2105a2830cd",
+  "research_date": "2026-09-09",
+  "reported_audited_revision": "9fe2687b4022af1501c690397af4306b82bb53f9",
+  "evidence_class": "user-supplied research; underlying audit not independently rerun"
+}

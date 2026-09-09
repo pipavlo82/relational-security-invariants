@@ -1,0 +1,446 @@
+{
+  "mode": "conformance",
+  "results": [
+    {
+      "checks": [
+        {
+          "executed": true,
+          "id": "expected_outcome",
+          "passed": true,
+          "phase": "control"
+        },
+        {
+          "executed": true,
+          "id": "control_promotes",
+          "passed": true,
+          "phase": "control"
+        },
+        {
+          "executed": true,
+          "id": "expected_outcome",
+          "passed": true,
+          "phase": "mutation"
+        },
+        {
+          "executed": true,
+          "id": "unauthorized_subject_rejected",
+          "passed": true,
+          "phase": "mutation"
+        }
+      ],
+      "evaluator": {
+        "name": "reference",
+        "version": "0"
+      },
+      "fixture_digest": "0919b8706558a6cab32a57b58f0d62061009ed2d14df0708c2dab3985518665f",
+      "id": "RSI-001",
+      "observations": {
+        "control": {
+          "claim_validity": true,
+          "component_validity": {
+            "signature": true,
+            "structure": true
+          },
+          "observed": {
+            "authority_promotion": true,
+            "outcome": "ACCEPT"
+          },
+          "relation_validity": true
+        },
+        "mutation": {
+          "claim_validity": false,
+          "component_validity": {
+            "signature": true,
+            "structure": true
+          },
+          "observed": {
+            "authority_promotion": false,
+            "outcome": "REJECT"
+          },
+          "relation_validity": false
+        }
+      },
+      "policy_version": "rsi-reference-policy.v0",
+      "status": "PASS"
+    },
+    {
+      "checks": [
+        {
+          "executed": true,
+          "id": "expected_outcome",
+          "passed": true,
+          "phase": "control"
+        },
+        {
+          "executed": true,
+          "id": "control_commits_authenticated_state",
+          "passed": true,
+          "phase": "control"
+        },
+        {
+          "executed": true,
+          "id": "expected_outcome",
+          "passed": true,
+          "phase": "mutation"
+        },
+        {
+          "executed": true,
+          "id": "unauthenticated_state_unchanged",
+          "passed": true,
+          "phase": "mutation"
+        }
+      ],
+      "evaluator": {
+        "name": "reference",
+        "version": "0"
+      },
+      "fixture_digest": "1a8303a174fb3698cdae1ddc81a35da5321c973dcd95197637b24c0085c3a843",
+      "id": "RSI-003",
+      "observations": {
+        "control": {
+          "claim_validity": true,
+          "component_validity": {
+            "ciphertext_structure": true,
+            "state_structure": true
+          },
+          "observed": {
+            "final_state_digest": "ef40b9bea5f702abf0fbdff1b4be5ef13198e7f4a9b30c50e691f6be17a78f2a",
+            "outcome": "ACCEPT",
+            "state_commit": true,
+            "tentative_created": true
+          },
+          "relation_validity": true
+        },
+        "mutation": {
+          "claim_validity": false,
+          "component_validity": {
+            "ciphertext_structure": true,
+            "state_structure": true
+          },
+          "observed": {
+            "final_state_digest": "5fe8cb48da9101926e6100784a704df199c24e619b72a5f7a7cee0c3e0ea104f",
+            "outcome": "REJECT",
+            "state_commit": false,
+            "tentative_created": true
+          },
+          "relation_validity": false
+        }
+      },
+      "policy_version": "rsi-reference-policy.v0",
+      "status": "PASS"
+    },
+    {
+      "checks": [
+        {
+          "executed": true,
+          "id": "expected_outcome",
+          "passed": true,
+          "phase": "control"
+        },
+        {
+          "executed": true,
+          "id": "control_consumes_once",
+          "passed": true,
+          "phase": "control"
+        },
+        {
+          "executed": true,
+          "id": "expected_outcome",
+          "passed": true,
+          "phase": "mutation"
+        },
+        {
+          "executed": true,
+          "id": "one_position_one_consumer",
+          "passed": true,
+          "phase": "mutation"
+        },
+        {
+          "executed": true,
+          "id": "expected_outcome",
+          "passed": true,
+          "phase": "mutation"
+        },
+        {
+          "executed": true,
+          "id": "one_position_one_consumer",
+          "passed": true,
+          "phase": "mutation"
+        }
+      ],
+      "evaluator": {
+        "name": "reference",
+        "version": "0"
+      },
+      "fixture_digest": "fdc12e0951f4c9b8bdfc2ad548072e93daee02fe81d0cb127b7730c9ffeb5e06",
+      "id": "RSI-004",
+      "observations": {
+        "control": {
+          "claim_validity": true,
+          "component_validity": {
+            "operation_structure": true,
+            "position_structure": true
+          },
+          "observed": {
+            "consumed": [
+              {
+                "consumer": "worker-a",
+                "position": 7
+              }
+            ],
+            "decisions": [
+              "ACCEPT"
+            ],
+            "final_revision": 8,
+            "outcome": "ACCEPT"
+          },
+          "relation_validity": true
+        },
+        "mutation": {
+          "claim_validity": false,
+          "component_validity": {
+            "operation_structure": true,
+            "position_structure": true
+          },
+          "observed": {
+            "consumed": [
+              {
+                "consumer": "worker-a",
+                "position": 7
+              }
+            ],
+            "decisions": [
+              "ACCEPT",
+              "REJECT"
+            ],
+            "final_revision": 8,
+            "outcome": "REJECT"
+          },
+          "relation_validity": false
+        },
+        "reverse_schedule": {
+          "consumed": [
+            {
+              "consumer": "worker-b",
+              "position": 7
+            }
+          ],
+          "decisions": [
+            "ACCEPT",
+            "REJECT"
+          ],
+          "final_revision": 8,
+          "outcome": "REJECT"
+        }
+      },
+      "policy_version": "rsi-reference-policy.v0",
+      "status": "PASS"
+    },
+    {
+      "checks": [
+        {
+          "executed": true,
+          "id": "expected_outcome",
+          "passed": true,
+          "phase": "control"
+        },
+        {
+          "executed": true,
+          "id": "control_promotes",
+          "passed": true,
+          "phase": "control"
+        },
+        {
+          "executed": true,
+          "id": "expected_outcome",
+          "passed": true,
+          "phase": "mutation"
+        },
+        {
+          "executed": true,
+          "id": "foreign_context_rejected",
+          "passed": true,
+          "phase": "mutation"
+        }
+      ],
+      "evaluator": {
+        "name": "reference",
+        "version": "0"
+      },
+      "fixture_digest": "9a6a9c28d08e6b6a6c17ce079dbaf078ac3e3b39fb4667d1914a7ef051dcea9c",
+      "id": "RSI-006",
+      "observations": {
+        "control": {
+          "claim_validity": true,
+          "component_validity": {
+            "signature": true,
+            "structure": true
+          },
+          "observed": {
+            "outcome": "ACCEPT",
+            "provenance_promotion": true
+          },
+          "relation_validity": true
+        },
+        "mutation": {
+          "claim_validity": false,
+          "component_validity": {
+            "signature": true,
+            "structure": true
+          },
+          "observed": {
+            "outcome": "REJECT",
+            "provenance_promotion": false
+          },
+          "relation_validity": false
+        }
+      },
+      "policy_version": "rsi-reference-policy.v0",
+      "status": "PASS"
+    },
+    {
+      "checks": [
+        {
+          "executed": true,
+          "id": "expected_outcome",
+          "passed": true,
+          "phase": "control"
+        },
+        {
+          "executed": true,
+          "id": "control_confirms",
+          "passed": true,
+          "phase": "control"
+        },
+        {
+          "executed": true,
+          "id": "expected_outcome",
+          "passed": true,
+          "phase": "mutation"
+        },
+        {
+          "executed": true,
+          "id": "unjustified_status_rejected",
+          "passed": true,
+          "phase": "mutation"
+        }
+      ],
+      "evaluator": {
+        "name": "reference",
+        "version": "0"
+      },
+      "fixture_digest": "984d0f0cba95f0117465afff737715b2005a80e5a4dd7f611e420595d4b9fa1b",
+      "id": "RSI-008",
+      "observations": {
+        "control": {
+          "claim_validity": true,
+          "component_validity": {
+            "evidence_structure": true,
+            "request_structure": true
+          },
+          "observed": {
+            "outcome": "ACCEPT",
+            "status": "confirmed",
+            "status_promotion": true
+          },
+          "relation_validity": true
+        },
+        "mutation": {
+          "claim_validity": false,
+          "component_validity": {
+            "evidence_structure": true,
+            "request_structure": true
+          },
+          "observed": {
+            "outcome": "REJECT",
+            "status": "failed",
+            "status_promotion": false
+          },
+          "relation_validity": false
+        }
+      },
+      "policy_version": "rsi-reference-policy.v0",
+      "status": "PASS"
+    },
+    {
+      "checks": [
+        {
+          "executed": true,
+          "id": "expected_outcome",
+          "passed": true,
+          "phase": "control"
+        },
+        {
+          "executed": true,
+          "id": "control_all_paths_accept",
+          "passed": true,
+          "phase": "control"
+        },
+        {
+          "executed": true,
+          "id": "expected_outcome",
+          "passed": true,
+          "phase": "mutation"
+        },
+        {
+          "executed": true,
+          "id": "all_equivalent_paths_reject",
+          "passed": true,
+          "phase": "mutation"
+        }
+      ],
+      "evaluator": {
+        "name": "reference",
+        "version": "0"
+      },
+      "fixture_digest": "0d304a780eadb8349e7331cbdfcebf2062e942aed44472116b3ec37b119c0adc",
+      "id": "RSI-009",
+      "observations": {
+        "control": {
+          "claim_validity": true,
+          "component_validity": {
+            "signature": true,
+            "structure": true
+          },
+          "observed": {
+            "outcome": "ACCEPT",
+            "paths": {
+              "import": "ACCEPT",
+              "live": "ACCEPT",
+              "restore": "ACCEPT",
+              "snapshot": "ACCEPT"
+            },
+            "policy_promotion": true
+          },
+          "relation_validity": true
+        },
+        "mutation": {
+          "claim_validity": false,
+          "component_validity": {
+            "signature": true,
+            "structure": true
+          },
+          "observed": {
+            "outcome": "REJECT",
+            "paths": {
+              "import": "REJECT",
+              "live": "REJECT",
+              "restore": "REJECT",
+              "snapshot": "REJECT"
+            },
+            "policy_promotion": false
+          },
+          "relation_validity": false
+        }
+      },
+      "policy_version": "rsi-reference-policy.v0",
+      "status": "PASS"
+    }
+  ],
+  "totals": {
+    "FAIL": 0,
+    "INVALID_FIXTURE": 0,
+    "PASS": 6,
+    "UNSUPPORTED": 0
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "mode": "schema",
+  "results": [
+    {
+      "id": "RSI-001",
+      "status": "PASS"
+    },
+    {
+      "id": "RSI-003",
+      "status": "PASS"
+    },
+    {
+      "id": "RSI-004",
+      "status": "PASS"
+    },
+    {
+      "id": "RSI-006",
+      "status": "PASS"
+    },
+    {
+      "id": "RSI-008",
+      "status": "PASS"
+    },
+    {
+      "id": "RSI-009",
+      "status": "PASS"
+    }
+  ],
+  "totals": {
+    "FAIL": 0,
+    "INVALID_FIXTURE": 0,
+    "PASS": 6,
+    "UNSUPPORTED": 0
+  }
+}
