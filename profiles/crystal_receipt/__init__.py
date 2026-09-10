@@ -1,0 +1,1 @@
+"""Bounded Crystal Receipt integration."""

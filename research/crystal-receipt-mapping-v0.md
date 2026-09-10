@@ -1,97 +1,64 @@
-# Crystal Receipt / ReceiptOS mapping v0 — STOP assessment
+# Crystal Receipt / ReceiptOS mapping v0
 
-Status: no adapter, fixture corpus, expectation profile or domain mutation was
-implemented. Candidate identifiers below are proposed assessment labels, not
-registered fixtures. None was executed or admitted.
+## Scope and source authority
 
-## Exact source authority
+Implemented source relation: **Counterfactual Audit Boundary v0 accepted semantic-snapshot identity**. This is not context_binding, provenance_binding or a signed-operation relation. Both accepted snapshots can be unequal; discrimination is distinct from rejecting the artifact.
 
-Read-only source repository: `C:/Users/msi/dev/crystal-receipt`, remote
-`https://github.com/pipavlo82/crystal-receipt.git`.
-The local checkout is on `feature/tsei-spec-artifact-v0` at
-`46bed9ba8662ede63f0682ac6d2c93e52b6536cd`; it has no tracked changes and
-14 untracked entries. Those worktree files are not source evidence.
+Read-only source: `C:/Users/msi/dev/crystal-receipt`, remote `https://github.com/pipavlo82/crystal-receipt.git`. GitHub default/main is `45b46bf7df3a60b32583291f577a36bf19d22f00`, unchanged from the previous mapping. The worktree remains on `feature/tsei-spec-artifact-v0` at `46bed9ba8662ede63f0682ac6d2c93e52b6536cd`, tracked clean with 14 pre-existing untracked entries. Only canonical committed Git blobs were selected; no feature-branch content was used or modified.
 
-GitHub default branch and main ref were independently checked. Canonical main:
-`45b46bf7df3a60b32583291f577a36bf19d22f00`, also present as local origin/main.
-All evidence was read using exact-commit Git blobs, without checkout, fetch,
-source tests, index refresh or source writes. Lane K feature worktrees were not
-silently selected. Its frozen v1 SPEC is present in canonical main itself.
+Exact source paths, Git blob OIDs, raw SHA-256 and role are in `crystal-receipt-source-map-v0.json`. Five byte-identical source artifacts are retained inside RSI because CI must execute the real source implementation without modifying or requiring the external checkout:
 
-The admission package README at canonical main explicitly freezes member-byte
-integrity to `7d9b67c96f2b472f5b4acfef3f95b669eb24de7b`. That pin is not an
-ancestor of current main; it is selected because the canonical README explicitly
-names it as frozen byte authority, not because of an inferred landed status.
-The machine report records raw SHA-256, Git blob OID, current-main byte comparison,
-file path, source kind and interpretation boundary for each used artifact.
+- `conformance/counterfactual-audit-boundary-v0/SPEC.md`;
+- `conformance/counterfactual-audit-boundary-v0/vectors/V-SEM-MUTATION-DIFFERS.json`;
+- `conformance/counterfactual-audit-boundary-v0/vectors/V-SEM-MANIFEST-INVARIANT.json`;
+- `src/receiptos/challenge/counterfactual-audit-boundary.ts`;
+- `src/receiptos/canon/canonicalize.ts`.
 
-## Source-to-RSI assessment
+All five are at the canonical commit above. The two TypeScript implementation files remain exact source bytes. Their only runtime dependency is Node's built-in crypto module. Source-tree execution/imports outside RSI are not used. Source tests are evidence references, not claimed as a rerun of the entire Crystal Receipt suite.
 
-| Candidate | Exact source concept | Faithful interpretation | Mapping status |
-|---|---|---|---|
-| CR-RSI-001 | `V-SEM-MUTATION-DIFFERS`: `accepted_snapshot`, `canonical_snapshots_must_differ` | Both source snapshots are accepted, while changing one semantic value changes their canonical identity. Discrimination is distinct from rejecting the artifact. | UNSUPPORTED: no declared snapshot-equivalence relation/request in frozen RBCF. |
-| CR-RSI-002 | `V-SEM-MANIFEST-INVARIANT`: external `manifest_variants`, invariant semantic snapshot | Audit timestamps are outside the semantic artifact; three manifest variants preserve the same accepted canonical snapshot. This is real mirror-positive evidence. | UNSUPPORTED by current RBCF representation, not missing source evidence. |
-| CR-RSI-003 | frozen `clean_admitted` / `proof_root_mismatch` | Independently verified evidence root must agree with the portable proof-object root before Chronicle admission. | Candidate cross-object relation exists, but no native unsigned receipt/root-binding request is declared by frozen RBCF. |
-| CR-RSI-004 | `counterfactual-traversal-stability-v1` | Twelve authenticated schedules, fresh process per schedule/shared process within schedule, 120 member evaluations, separate semantic/stability axes. | Frozen in canonical main, but not executed or mapped. This is not the remembered graph-degree/local-neighborhood fixture shape. |
+## Concrete mapping
 
-Source paths at canonical main:
+Relation Profile: `crystal-receipt.semantic-snapshot.v0`, exact version `0`.
+Relation: `counterfactual_audit_boundary.semantic_snapshot_equivalence.v0`.
+Adapter and independent Expectation Profile: `crystal-receipt.v0` (different registries and implementations).
 
-- `conformance/counterfactual-audit-boundary-v0/SPEC.md`
-- `conformance/counterfactual-audit-boundary-v0/vectors/V-SEM-MANIFEST-INVARIANT.json`
-- `conformance/counterfactual-audit-boundary-v0/vectors/V-SEM-MUTATION-DIFFERS.json`
-- `conformance/counterfactual-conformance-v0/SPEC.md`
-- `conformance/counterfactual-traversal-stability-v1/SPEC.md`
-- `tests/fixtures/receiptos-chronicle-admission-v0/README.md`
+| Fixture/case | Exact source vector | Preserved | Changed | Independently derived result |
+|---|---|---|---|---|
+| CR-RSI-001 / control | V-SEM-MUTATION-DIFFERS baseline semantic artifact | Both local artifacts accepted; same values | Nothing | Canonical snapshots match; semantic identity preserved |
+| CR-RSI-001 / relation_substitution | V-SEM-MUTATION-DIFFERS baseline and mutated artifacts | Keys, parsing, local snapshot acceptance and external manifest | Only candidate `expected_conformance_observation` value | Both accepted; canonical snapshots differ; equivalence claim not preserved |
+| CR-RSI-002 / audit_timestamp_changed | V-SEM-MANIFEST-INVARIANT variants 0 and 1 | Exact semantic artifact and accepted canonical snapshot | External `manifest.audit_timestamp` | Semantic snapshots match |
+| CR-RSI-002 / audit_timestamp_removed | V-SEM-MANIFEST-INVARIANT variants 0 and 2 | Exact semantic artifact and accepted canonical snapshot | External timestamp removed | Semantic snapshots match |
 
-Frozen admission vector paths at the explicitly documented pin:
+Registered canonical identities are `crystal-receipt:CR-RSI-001` and `crystal-receipt:CR-RSI-002`. Source IDs remain separate. Fixtures reside under `corpora/crystal-receipt/fixtures/` to avoid changing the frozen legacy corpus's strict directory inventory. No files are silently skipped.
 
-- `tests/fixtures/receiptos-chronicle-admission-v0/vectors/01-clean-admitted.json`
-- `tests/fixtures/receiptos-chronicle-admission-v0/vectors/04-proof-root-mismatch.json`
+Inputs are two explicit endpoints, `baseline` and `candidate`, each containing `semantic_artifact` and a separate `manifest`. No proof, policy, state, signature or invented transition is added. Source payload field `expected_conformance_observation` is preserved as opaque semantic data; its text is never treated as an oracle command or authoritative expected result.
 
-The actual admission pair differs at `/input/proof_object/receipt_root` **and**
-`/input/options` (the negative omits options). It is not claimed to already be an
-exact one-field substitution fixture. A minimal reduction would require its own
-source-backed verification, which was not attempted after the STOP condition.
-No producer-signature or real-world authorization claim follows from these roots.
+## Actual versus expected
 
-## Exact model blocker
+Actual: the adapter passes only each endpoint's semantic artifact to the pinned `snapshotCounterfactualSemanticJson`, then invokes pinned `canonicalize`. Both returned accepted canonical snapshots are compared to determine semantic identity equivalence. The adapter returns observed relation state and canonical strings; it does not read the expectation artifact. The source implementation constructs/captures real snapshots rather than a Python adapter pretending to be ReceiptOS.
 
-`schema/registered-fixture.v0.schema.json` preserves these closed relations:
+Expected: a separate Python predictor applies the SPEC's ascending own-key/string-value rule to the supported JSON subset and independently checks equality by keys and values. It never imports/calls the adapter, source helper or observed-result function. External manifests do not participate in that derivation. Expected rows are generated by this rule, then pinned and atomically admitted by the unchanged Expectation Contract. Frozen source expected strings are cross-check evidence, not copied oracle rows.
 
-`signer_to_subject`, `authentication_before_commit`, `atomic_consumption`,
-`context_binding`, `evidence_bounded_status`, `ingestion_equivalence`.
+Internal outcomes distinguish accepted component snapshots from relation equality. The dependent claim is only `semantic_identity_preserved`; it is not producer authority, verifier correctness or substantive challenge acceptance. Top-level PASS means conformance with the independently admitted result, including a correctly discriminated negative.
 
-Its request operations are only `admit`, `transition`, `consume`, `confirm`,
-`ingest`. Every alternative requires `proof`, `policy` and `state`; the proof
-shape has `payload_hex`, `public_key_hex` and `signature_hex`. The profile field
-is fixed to `rsi-reference-profile.v0`. Request objects reject extra properties.
-There is no source artifact/snapshot/root-comparison request alternative.
+## Fidelity and limitations
 
-The source mirror operation is `semantic_snapshot`, with a semantic artifact
-and separately varied manifest metadata. Its independent derivation rule exists
-in the frozen SPEC. What is missing is an approved representation and explicit
-protected-relation declaration for that rule in the preserved RBCF profile.
+Mapping is lossless for these four concrete case inputs and their source-defined identity comparisons. Coverage is deliberately partial relative to the complete helper domain: only flat printable ASCII string artifacts and external audit timestamp dictionaries are admitted. The source also supports finite numbers, Unicode and host-level object inspection; RSI's current transport does not faithfully express all of those forms. They are not silently coerced or certified here. Accessor/proxy/cycle/symbol/array behavior is outside this corpus. Reserved audit_timestamp inside semantic input is not stripped or reclassified as external metadata.
 
-Relevant schema locations:
-`/properties/protected_relation/enum`, `/$defs/request/oneOf`, `/$defs/proof`,
-`/$defs/policy`, `/properties/profile_version`.
-RSI-CORE-2 requires the fixture to name its relation and full inputs; unsupported
-classes must fail rather than receive optimistic reinterpretation.
+There is no actual cryptographic proof, producer authority or downstream application promotion in these vectors. The negative prevents inheriting the baseline semantic identity; it does not demonstrate a broader authorization rejection.
 
-No workaround was implemented: no dummy Ed25519 proof, synthetic state/policy,
-identifier-based artifact lookup as hidden semantic input, new relation enum,
-replacement validator that silently accepts a different fixture model, or
-renaming snapshot equality to the existing signed `context_binding` predicate.
-No new field is proposed or added automatically. A separate semantic-profile
-model decision is required before resuming this candidate mapping.
+## Unimplemented candidates
 
-## Preserved and not claimed
+CR-RSI-003 is omitted/UNSUPPORTED as a distinct provenance/context authority claim. Inspected Chronicle admission material defines independently recomputed evidence-root consistency and proof-object identity. That separate admission seam is not treated as a provenance oracle or renamed snapshot semantics. The frozen mismatch vector at the README's explicit `7d9b67c96f2b472f5b4acfef3f95b669eb24de7b` pin was assessed only; it is not executed by this adapter. No CR-M4 is claimed.
 
-Preserved: source acceptance versus identity discrimination, external audit
-metadata versus semantic input, root consistency versus authorization, and
-Lane K semantic versus schedule-stability axes.
+CR-RSI-004 is omitted/UNSUPPORTED. Lane K v1 **is canonical**, but defines twelve authenticated fresh-process schedules and 120 member evaluations, not a graph-degree relation. The inspected SPEC alone does not establish the requested weak-observation-preserving global-substitution negative. No graph surrogate or snapshot-only result is promoted into a Lane K PASS. Full isolated schedule execution remains unverified.
 
-No lossy translation was admitted. The registration architecture remains usable,
-but architecture readiness did not prove that all real domains fit the frozen
-reference profile. Neither first-domain success nor cross-domain validation is
-claimed. Full source auditors and Lane K workers were not run.
+Omitted candidates are separately listed in the report; they are not registered fixtures, admitted expectations, executed checks or hidden PASS results.
+
+## Source pin and drift
+
+The fixture's optional relation-profile digest binds the immutable source-pin artifact. Registration pins exact repository commit and raw file digests. Profile validation and expectation-scope admission verify the source closure; mismatches are UNSUPPORTED availability failures before any expectation is admitted. The adapter stages and executes the already verified source bytes, avoiding a verify-then-import reread of mutable originals.
+
+`python tools/verify_crystal_source.py --source-repo C:/Users/msi/dev/crystal-receipt` explicitly verifies live canonical main and exact local Git blob identities read-only. An advanced main reports SOURCE_DRIFT_REPIN_REVALIDATION_REQUIRED; it does not select new semantics. Runtime and CI verify the pinned offline source closure; they do not poll upstream or dynamically download code.
+
+Trusted Python/Node code is not a filesystem sandbox. Independence is supported by separate implementations, closed input channels, source review, artifact-unavailability tests and tamper/mutation gates; it is not a proof that arbitrary malicious code cannot access files.
