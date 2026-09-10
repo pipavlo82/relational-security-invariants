@@ -24,3 +24,6 @@ jobs:
       - run: python tools/prove_can_fail.py --output artifacts/prove-can-fail.json
       - run: python tools/check_expectations.py
       - run: python tools/prove_expectations_can_fail.py --output artifacts/expectation-mutations.json
+      - run: python -m runner.extension_runtime --output artifacts/extension.json
+      - run: python tools/run_registered_mutations.py --output artifacts/registered-mutations.json
+      - run: python tools/check_extension_contract.py --mutations artifacts/registered-mutations.json --output artifacts/extension-validation.json

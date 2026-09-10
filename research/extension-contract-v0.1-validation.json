@@ -1,0 +1,441 @@
+{
+  "adapter_registry": {
+    "ids": [
+      "generic",
+      "messaging"
+    ]
+  },
+  "architecture_report_sha256": "8daf1b8528bfba57c415e22e9ce9ca4995dfd0eee3686e5cd542d912d0f3e2cc",
+  "base_head": "b881d2bee325dc86a8348e31d0d33e5b083cc3f4",
+  "ci": "Local checks complete; exact post-push CI status is recorded separately.",
+  "core_changed": false,
+  "deterministic_reports": true,
+  "existing_outcome_diff": [],
+  "expectation_contract_files_unchanged": true,
+  "expectation_mutation_counts": {
+    "after": 4,
+    "before": 4
+  },
+  "expectation_registry": {
+    "admissions": {
+      "core.synthetic.v0": {
+        "expectations_sha256": "e01b15510d45943b6b830cb729835c7040fbc8bb0b2ebf6301655c9df458f37f",
+        "fixture_set_digest": "2a5ad4067805e4e84ab43941b9a3d3fff5af09e7ba0f81cd687a1d43f2d54d91",
+        "profile_id": "core.synthetic.v0",
+        "profile_version": "0"
+      }
+    },
+    "ids": [
+      "core.synthetic.v0"
+    ]
+  },
+  "extensibility": {
+    "core_domain_branches": 0,
+    "external_fixture_ids_supported": true,
+    "unknown_adapter_reports_unsupported": true,
+    "unknown_profile_reports_unsupported": true
+  },
+  "extension_only_schema_diff": [
+    {
+      "after": "urn:rsi:registered-relation-binding-fixture:v0",
+      "before": "urn:rsi:relation-binding-fixture:v0",
+      "path": "/$id"
+    },
+    {
+      "after": {
+        "pattern": "^(?:[a-z0-9][a-z0-9._-]{0,63}:)?[A-Za-z0-9][A-Za-z0-9._-]{0,127}$",
+        "type": "string"
+      },
+      "before": {
+        "enum": [
+          "RSI-001",
+          "RSI-003",
+          "RSI-004",
+          "RSI-006",
+          "RSI-008",
+          "RSI-009"
+        ]
+      },
+      "path": "/properties/id"
+    },
+    {
+      "after": {
+        "additionalProperties": {
+          "$ref": "#/$defs/request"
+        },
+        "minProperties": 1,
+        "propertyNames": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"
+        },
+        "type": "object"
+      },
+      "before": {
+        "additionalProperties": false,
+        "properties": {
+          "generic": {
+            "$ref": "#/$defs/request"
+          },
+          "messaging": {
+            "$ref": "#/$defs/request"
+          }
+        },
+        "required": [
+          "messaging",
+          "generic"
+        ],
+        "type": "object"
+      },
+      "path": "/properties/cases/items/properties/requests"
+    }
+  ],
+  "external_domains_validated": false,
+  "files_changed": [
+    ".github/workflows/ci.yml",
+    "README.md",
+    "rsi/run.py",
+    "runner/adapter_registry.py",
+    "runner/extension_runtime.py",
+    "runner/fixture_registry.py",
+    "runner/mutation_registry.py",
+    "extensions/__init__.py",
+    "extensions/core.corpus.v0.json",
+    "extensions/corpora.v0.json",
+    "extensions/defaults.py",
+    "extensions/legacy_mutations.py",
+    "extensions/mutations.py",
+    "schema/fixture-corpus.v0.schema.json",
+    "schema/registered-fixture.v0.schema.json",
+    "spec/extension-contract-v0.md",
+    "tests/test_extensions.py",
+    "tools/prove_can_fail.py",
+    "tools/run_registered_mutations.py",
+    "tools/check_extension_contract.py",
+    "research/extension-contract-v0.1-baseline.json",
+    "research/extension-contract-v0.1-validation.json",
+    "research/extension-contract-v0.1-validation.md"
+  ],
+  "fixture_registry": {
+    "canonical_ids": [
+      "core:RSI-001",
+      "core:RSI-003",
+      "core:RSI-004",
+      "core:RSI-006",
+      "core:RSI-008",
+      "core:RSI-009"
+    ],
+    "deterministic_discovery": true
+  },
+  "fixture_totals": {
+    "FAIL": 0,
+    "INVALID_FIXTURE": 0,
+    "PASS": 36,
+    "UNSUPPORTED": 0
+  },
+  "implementation_commit": "Commit containing this report; exact resulting SHA is recorded after commit.",
+  "legacy_compatibility": {
+    "fixture_hashes_unchanged": true,
+    "legacy_mutations_unchanged": true,
+    "ordered_case_records_sha256": "30ff5005bac9924d5e0ee34eb781270ff7e8cd1ec6e7e019b48bfea420510f0f",
+    "outcomes_unchanged": true
+  },
+  "legacy_mutation_counts": {
+    "after": 12,
+    "before": 12
+  },
+  "legacy_patch_mapping_diff": "Only explicit target_adapter_id metadata added; all prior source patches and mapped checks identical.",
+  "limitations": [
+    "Architecture readiness does not establish real-domain conformance.",
+    "Predictor independence remains a trusted-code/provenance requirement; no arbitrary-code sandbox or fake EXP-M5 kill.",
+    "Legacy compatibility validator and patch catalogue retain explicit synthetic mappings outside generic execution logic.",
+    "Existing relation/operation definitions remain frozen; a future real-domain mismatch must be reported rather than silently changing the model."
+  ],
+  "mutation_registry": {
+    "implementation_hashes": {
+      "adapters/__init__.py": "606b74b6e072b7bad0583751b9e6def44af0561810e4a5bda0657fdddfdf3025",
+      "adapters/generic/__init__.py": "606b74b6e072b7bad0583751b9e6def44af0561810e4a5bda0657fdddfdf3025",
+      "adapters/generic/model.py": "347bd3d93ee8e00c5726f56f95a7d4c8128be496991396ea93863326284ee2e8",
+      "adapters/messaging/__init__.py": "606b74b6e072b7bad0583751b9e6def44af0561810e4a5bda0657fdddfdf3025",
+      "adapters/messaging/model.py": "ae2185f32be076ce37d184097c6451dd62b12bcdedb8fbd90ea88263cc556fa5",
+      "extensions/__init__.py": "0c05b8bfe1208f8b8b4ef67b6e6c4ab7e485b6451bd75c55592043958d06e093",
+      "extensions/defaults.py": "afd83e36bfbf7878fbe8d65ea82f07d0753cba3181d412ac29f0b90f7f8f8f95",
+      "extensions/legacy_mutations.py": "c0f2d248eb64c2fb9708a917994e4f4723314706199ca26e38f87c54147a0ccf",
+      "extensions/mutations.py": "d76b27027cac2e96f7d4159b808d2afdda71ee18a28beb551d2bcd7137c031a5",
+      "profiles/__init__.py": "9ecc308d707f9767ce3688d5f8f545f51a57958f44eb4cf0bb9282efd89a0449",
+      "profiles/defaults.py": "cd968c504c6717919ea856fd42a5fd339c20b1a2f64a697f3a90e93bd5a5efbf",
+      "profiles/synthetic.py": "1d6c206528ec487a02a282a251e8fdf700214b08b7ccd6a99dfb6904e1661310",
+      "rsi/__init__.py": "606b74b6e072b7bad0583751b9e6def44af0561810e4a5bda0657fdddfdf3025",
+      "rsi/codec.py": "439115f56455449346d4fb1aa0f9f1b87ef9298f4ce41b4f9aaef60748214af3",
+      "rsi/corpus.py": "4f91abe2cad84cf0d97173671cc593527b9166abd86a4e5d31b2187f8e511ecf",
+      "rsi/oracle.py": "23e7c1ffc26441ef7cb4e85282f2da6f91b017b685f2220a432110ca3232002b",
+      "rsi/run.py": "3cee105292d30a558f276b37b6e209c06ea2ce56d7ed57fddba93a53f34b3e7e",
+      "rsi/wire.py": "580bea885ecdfa473ac33d9886ec94b08e16ca229ac1e2f4c4870a584b5598e4",
+      "runner/__init__.py": "af4733b2c655532ca01649b163e9dc08a40b2f173fab828441ef70bffe2ef484",
+      "runner/adapter_registry.py": "7a96ed768563ed6f8e7b067108d855d1e06178abe7556957772dc964546c9af5",
+      "runner/execution.py": "c7234c885eef97e24a89b3b54041cff77de88311e4521e74f1a9f208dd82feb7",
+      "runner/expectation_contract.py": "bfe87feb88e843809dd6a0311a52bc78a634a59fa2c6f992d0a438cedfb7cb52",
+      "runner/expectation_registry.py": "4c8b55edabf9bfddb3306faf4c30dff2297f5630275e87807741e3cf01766a67",
+      "runner/extension_runtime.py": "1f026b43a40cd96b6920190c0d2d15f181954cabefbba75f184c13038945ace4",
+      "runner/fixture_registry.py": "cdfc7a5a792b54f44c73aa83dd0b6cfa205903f6485188bf4111414830f87051",
+      "runner/mutation_registry.py": "20e99f68b97228e86136984f419da9d6be4c09149dee7bfee9acc1f1644d8084",
+      "tests/__init__.py": "606b74b6e072b7bad0583751b9e6def44af0561810e4a5bda0657fdddfdf3025",
+      "tests/test_expectations.py": "d04c17111beec5d56d38b15f18d1bf7e278a062f2b3ca9d1b7be832525400edf",
+      "tests/test_extensions.py": "1ec873379f81c817d36cb2469d34b8fa72fe021f27414492d515ed471b412ef3",
+      "tests/test_rsi.py": "159c9fc01f540958cd77357b5c5f5c676754f0d53d51574664f4fb3e0947273d",
+      "tools/check_expectations.py": "70900a43893bcb4b51273e1822a0506fd6f2c73ec61fe50e0a65e6c05f3affc3",
+      "tools/check_extension_contract.py": "65aff055d5c5eec9d82f0ab34cf4103a16093545ec7ec82728a89de2a9656ab6",
+      "tools/generate_fixtures.py": "860dcb576f4e6e27f3c4b0be220bd4f12a2d2029229d419ed93932a2b6d59d96",
+      "tools/prove_can_fail.py": "112a50519ff48a9d473b144d533b549bef4a9deb3ed929898492d0e53b36e567",
+      "tools/prove_expectations_can_fail.py": "990fbb76a71cb1918c91bb13cd982a40d4f2721c77c8123ef79ce17390af4c41",
+      "tools/run_registered_mutations.py": "e30940e4e98bdf269a7f8d5f6d5aa885649cf4d79d363771eccfd3eacb299be8",
+      "tools/validate-fixtures.py": "230a42d6fd0a10b05b65db334c77529b7091d782e6d80a85db2a3b720ae351f2"
+    },
+    "mutations": [
+      {
+        "collateral": [],
+        "errors": [],
+        "expected_failure_phase": "admission",
+        "mapped_check": "PREDICTION_MISMATCH",
+        "mutation_id": "EXP-M1",
+        "status": "KILLED",
+        "target_id": "expectation-admission"
+      },
+      {
+        "collateral": [],
+        "errors": [],
+        "expected_failure_phase": "admission",
+        "mapped_check": "FIXTURE_SET_DIGEST",
+        "mutation_id": "EXP-M2",
+        "status": "KILLED",
+        "target_id": "expectation-admission"
+      },
+      {
+        "collateral": [
+          "tests.test_expectations.ExpectationTests.test_atomic_admission",
+          "tests.test_expectations.ExpectationTests.test_profile_failure_prevents_all_adapter_execution"
+        ],
+        "errors": [],
+        "expected_failure_phase": "test",
+        "mapped_check": "tests.test_expectations.ExpectationTests.test_modified_value_rejected",
+        "mutation_id": "EXP-M3",
+        "status": "KILLED",
+        "target_id": "expectation-admission"
+      },
+      {
+        "collateral": [
+          "tests.test_expectations.ExpectationTests.test_modified_value_rejected",
+          "tests.test_expectations.ExpectationTests.test_profile_failure_prevents_all_adapter_execution"
+        ],
+        "errors": [],
+        "expected_failure_phase": "test",
+        "mapped_check": "tests.test_expectations.ExpectationTests.test_atomic_admission",
+        "mutation_id": "EXP-M4",
+        "status": "KILLED",
+        "target_id": "expectation-admission"
+      },
+      {
+        "collateral": [],
+        "errors": [],
+        "expected_failure_phase": "decision",
+        "mapped_check": "RSI-001/mutation/generic",
+        "mutation_id": "RSI-001/generic",
+        "status": "KILLED",
+        "target_id": "generic"
+      },
+      {
+        "collateral": [],
+        "errors": [],
+        "expected_failure_phase": "decision",
+        "mapped_check": "RSI-001/mutation/messaging",
+        "mutation_id": "RSI-001/messaging",
+        "status": "KILLED",
+        "target_id": "messaging"
+      },
+      {
+        "collateral": [],
+        "errors": [],
+        "expected_failure_phase": "decision",
+        "mapped_check": "RSI-003/mutation/generic",
+        "mutation_id": "RSI-003/generic",
+        "status": "KILLED",
+        "target_id": "generic"
+      },
+      {
+        "collateral": [],
+        "errors": [],
+        "expected_failure_phase": "decision",
+        "mapped_check": "RSI-003/mutation/messaging",
+        "mutation_id": "RSI-003/messaging",
+        "status": "KILLED",
+        "target_id": "messaging"
+      },
+      {
+        "collateral": [],
+        "errors": [],
+        "expected_failure_phase": "decision",
+        "mapped_check": "RSI-004/mutation/generic",
+        "mutation_id": "RSI-004/generic",
+        "status": "KILLED",
+        "target_id": "generic"
+      },
+      {
+        "collateral": [],
+        "errors": [],
+        "expected_failure_phase": "decision",
+        "mapped_check": "RSI-004/mutation/messaging",
+        "mutation_id": "RSI-004/messaging",
+        "status": "KILLED",
+        "target_id": "messaging"
+      },
+      {
+        "collateral": [],
+        "errors": [],
+        "expected_failure_phase": "decision",
+        "mapped_check": "RSI-006/mutation/generic",
+        "mutation_id": "RSI-006/generic",
+        "status": "KILLED",
+        "target_id": "generic"
+      },
+      {
+        "collateral": [],
+        "errors": [],
+        "expected_failure_phase": "decision",
+        "mapped_check": "RSI-006/mutation/messaging",
+        "mutation_id": "RSI-006/messaging",
+        "status": "KILLED",
+        "target_id": "messaging"
+      },
+      {
+        "collateral": [],
+        "errors": [],
+        "expected_failure_phase": "decision",
+        "mapped_check": "RSI-008/mutation/generic",
+        "mutation_id": "RSI-008/generic",
+        "status": "KILLED",
+        "target_id": "generic"
+      },
+      {
+        "collateral": [],
+        "errors": [],
+        "expected_failure_phase": "decision",
+        "mapped_check": "RSI-008/mutation/messaging",
+        "mutation_id": "RSI-008/messaging",
+        "status": "KILLED",
+        "target_id": "messaging"
+      },
+      {
+        "collateral": [],
+        "errors": [],
+        "expected_failure_phase": "decision",
+        "mapped_check": "RSI-009/mutation/generic",
+        "mutation_id": "RSI-009/generic",
+        "status": "KILLED",
+        "target_id": "generic"
+      },
+      {
+        "collateral": [],
+        "errors": [],
+        "expected_failure_phase": "decision",
+        "mapped_check": "RSI-009/mutation/messaging",
+        "mutation_id": "RSI-009/messaging",
+        "status": "KILLED",
+        "target_id": "messaging"
+      }
+    ],
+    "schema": "rsi-registered-mutations.v0",
+    "totals": {
+      "KILLED": 16,
+      "NOT_APPLIED": 0,
+      "SURVIVED": 0,
+      "VACUOUS": 0
+    }
+  },
+  "phase2_architecture_gate": "READY",
+  "preserved_hashes": {
+    "fixtures/RSI-001-signer-to-subject.json": {
+      "after": "190593956ed776e1e1a8b4d147e8911d66032bea2e64d5e1532318be03791561",
+      "before": "190593956ed776e1e1a8b4d147e8911d66032bea2e64d5e1532318be03791561"
+    },
+    "fixtures/RSI-003-authentication-before-commit.json": {
+      "after": "e576bf9e747bf1fb4912839af835d905a5a1e819ee480a65254a365c3b3f7c18",
+      "before": "e576bf9e747bf1fb4912839af835d905a5a1e819ee480a65254a365c3b3f7c18"
+    },
+    "fixtures/RSI-004-atomic-consumption.json": {
+      "after": "8525041ca5d6de073b083d0234e6d31b35afb86b54a9fb9567e9f3109da907ac",
+      "before": "8525041ca5d6de073b083d0234e6d31b35afb86b54a9fb9567e9f3109da907ac"
+    },
+    "fixtures/RSI-006-context-binding.json": {
+      "after": "f1f275d39ead4cc99d9fd7b9f168d181806f31b1a38c8eaa76306809212cebdf",
+      "before": "f1f275d39ead4cc99d9fd7b9f168d181806f31b1a38c8eaa76306809212cebdf"
+    },
+    "fixtures/RSI-008-evidence-bounded-status.json": {
+      "after": "38a417d69d720e36a6c79252f6836661c47b937c09f892251231f2f10ed80511",
+      "before": "38a417d69d720e36a6c79252f6836661c47b937c09f892251231f2f10ed80511"
+    },
+    "fixtures/RSI-009-ingestion-equivalence.json": {
+      "after": "f5308d6f4218a1e51e764b25f14dda578d281976787c8536e553452cd3afb614",
+      "before": "f5308d6f4218a1e51e764b25f14dda578d281976787c8536e553452cd3afb614"
+    },
+    "manifest.json": {
+      "after": "363ba4679b91b64d241e1feaa1e0d72da22502eb7268bd4343c146f4267cf28f",
+      "before": "363ba4679b91b64d241e1feaa1e0d72da22502eb7268bd4343c146f4267cf28f"
+    },
+    "oracle/expectations.core.synthetic.v0.json": {
+      "after": "e01b15510d45943b6b830cb729835c7040fbc8bb0b2ebf6301655c9df458f37f",
+      "before": "e01b15510d45943b6b830cb729835c7040fbc8bb0b2ebf6301655c9df458f37f"
+    },
+    "oracle/expected.v0.json": {
+      "after": "4ab519a92a8c96c88632f2003e62384aab3aa064fdafb50a9a0decf1efb335aa",
+      "before": "4ab519a92a8c96c88632f2003e62384aab3aa064fdafb50a9a0decf1efb335aa"
+    },
+    "profiles/core.synthetic.v0.json": {
+      "after": "634b785a5296e875585aade01f6a7778466316ebcf3a46ff4876e45f0e3460c9",
+      "before": "634b785a5296e875585aade01f6a7778466316ebcf3a46ff4876e45f0e3460c9"
+    },
+    "profiles/synthetic.py": {
+      "after": "1d6c206528ec487a02a282a251e8fdf700214b08b7ccd6a99dfb6904e1661310",
+      "before": "1d6c206528ec487a02a282a251e8fdf700214b08b7ccd6a99dfb6904e1661310"
+    },
+    "rsi/oracle.py": {
+      "after": "23e7c1ffc26441ef7cb4e85282f2da6f91b017b685f2220a432110ca3232002b",
+      "before": "23e7c1ffc26441ef7cb4e85282f2da6f91b017b685f2220a432110ca3232002b"
+    },
+    "runner/expectation_contract.py": {
+      "after": "bfe87feb88e843809dd6a0311a52bc78a634a59fa2c6f992d0a438cedfb7cb52",
+      "before": "bfe87feb88e843809dd6a0311a52bc78a634a59fa2c6f992d0a438cedfb7cb52"
+    },
+    "runner/expectation_registry.py": {
+      "after": "4c8b55edabf9bfddb3306faf4c30dff2297f5630275e87807741e3cf01766a67",
+      "before": "4c8b55edabf9bfddb3306faf4c30dff2297f5630275e87807741e3cf01766a67"
+    },
+    "schema/expectations.v0.schema.json": {
+      "after": "7174fd7556608e31f4888b14ea5ab05407bab4d83c0a71b36707506293de0f05",
+      "before": "7174fd7556608e31f4888b14ea5ab05407bab4d83c0a71b36707506293de0f05"
+    },
+    "schema/observation.v0.schema.json": {
+      "after": "bbdea70bb0f614122b1fc582a2ed3fe64ef41faf8282135dfbf5323b554a018c",
+      "before": "bbdea70bb0f614122b1fc582a2ed3fe64ef41faf8282135dfbf5323b554a018c"
+    },
+    "schema/relation-binding-fixture.v0.schema.json": {
+      "after": "ab7c7390ea91d26fe1f1916c9f2ae7552a0077b69f2399c5ed76c199bc73f4ca",
+      "before": "ab7c7390ea91d26fe1f1916c9f2ae7552a0077b69f2399c5ed76c199bc73f4ca"
+    },
+    "spec/RSI-core-v0.md": {
+      "after": "fe9653df358e8ced1e3598dae06fe5520d5dd7c3fd4ef9a978873e8027f34851",
+      "before": "fe9653df358e8ced1e3598dae06fe5520d5dd7c3fd4ef9a978873e8027f34851"
+    },
+    "spec/expectation-contract-v0.md": {
+      "after": "6d6e3ed33b33410d311a77839e6e289dbef79bb1c064cb04c434315d085669cc",
+      "before": "6d6e3ed33b33410d311a77839e6e289dbef79bb1c064cb04c434315d085669cc"
+    }
+  },
+  "rbcf_original_schema_changed": false,
+  "result_schema_changed": false,
+  "schema": "rsi-extension-report.v0",
+  "test_totals": {
+    "after": 150,
+    "architecture_added": 57,
+    "before": 93,
+    "optimized_after": 150,
+    "optimized_before": 93
+  }
+}

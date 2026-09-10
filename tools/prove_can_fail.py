@@ -15,30 +15,8 @@ from rsi.codec import encode, load, digest
 
 STATUSES = ("KILLED", "SURVIVED", "VACUOUS", "NOT_APPLIED", "RUNNER_ERROR", "OFF_TARGET")
 
-def definitions():
-    records = []
-    patches = {
-      "messaging": {
-        "RSI-001": ('subject_ok = proof["public_key_hex"] == policy["subject_key"]  # M001', 'subject_ok = True  # M001'),
-        "RSI-003": ('authenticated = self.allowed(req["proof"], req["policy"])  # M003', 'self.state = candidate\n            authenticated = self.allowed(req["proof"], req["policy"])  # M003'),
-        "RSI-004": ('if self.state["revision"] != reads[worker]:  # M004', 'if False:  # M004'),
-        "RSI-006": ('scope_ok = body["scope"] == policy["scope"]  # M006', 'scope_ok = True  # M006'),
-        "RSI-008": ('if not any(qualified):  # M008', 'if False:  # M008'),
-        "RSI-009": ('ok = self.allowed(req["proof"], req["policy"])  # M009', 'ok = path == "import" or self.allowed(req["proof"], req["policy"])  # M009'),
-      },
-      "generic": {
-        "RSI-001": ('if proof["public_key_hex"] != policy["subject_key"]:  # M001', 'if False:  # M001'),
-        "RSI-003": ('permitted = self.permits(request["proof"], request["policy"])  # M003', 'if op == "transition":\n                self.store(candidate)\n            permitted = self.permits(request["proof"], request["policy"])  # M003'),
-        "RSI-004": ('WHERE id=1 AND revision=?",  # M004', 'WHERE id=1 AND ? >= 0",  # M004'),
-        "RSI-006": ('if record["scope"] != policy["scope"]:  # M006', 'if False:  # M006'),
-        "RSI-008": ('if matches == 0:  # M008', 'if False:  # M008'),
-        "RSI-009": ('permitted = self.permits(request["proof"], request["policy"])  # M009', 'permitted = path == "import" or self.permits(request["proof"], request["policy"])  # M009'),
-      }}
-    for adapter, family in patches.items():
-        for ident, (old, new) in family.items():
-            records.append({"id": ident + "/" + adapter, "path": "adapters/" + adapter + "/model.py",
-                "old": old, "new": new, "mapped_cases": [ident + "/mutation/" + adapter]})
-    return records
+from extensions.legacy_mutations import definitions
+
 
 def copy_repo(destination):
     shutil.copytree(ROOT, destination, ignore=shutil.ignore_patterns(".git", ".venv", "__pycache__", "artifacts", "*.pyc"))
@@ -83,6 +61,7 @@ def exercise(definition):
             return result
         result["mutant_evidence_digest"] = report["evidence_digest"]
         cases = report["evidence"]["cases"]
+        result["check_events"] = [{"check_id":row["key"], "status":row["status"] if row["status"] in ("PASS","FAIL") else "ERROR", "phase":"decision" if row["status"] in ("PASS","FAIL") else "execution"} for row in cases]
         failed = {row["key"] for row in cases if row["status"] == "FAIL"}
         mapped = set(definition["mapped_cases"])
         result["killed_by"] = sorted(failed & mapped)

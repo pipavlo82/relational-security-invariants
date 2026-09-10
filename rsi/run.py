@@ -10,7 +10,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 def source_identity(root):
     files = []
-    for directory in ["rsi", "runner", "profiles", "adapters", "schema", "fixtures", "oracle", "spec", "tools", "tests", "research"]:
+    for directory in ["rsi", "runner", "profiles", "extensions", "adapters", "schema", "fixtures", "oracle", "spec", "tools", "tests", "research"]:
         files.extend(p for p in (root/directory).rglob("*") if p.is_file() and p.suffix in (".py", ".json", ".md"))
     files += [root/"manifest.json", root/"requirements-dev.txt"]
     return {p.relative_to(root).as_posix(): raw_digest(p.read_bytes()) for p in sorted(files) if p.is_file()}

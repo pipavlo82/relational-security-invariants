@@ -119,3 +119,5 @@ is no public release or selected open-source license yet; see `LICENSE` and
 `SECURITY.md`. No version tag is a frozen conformance claim in this first commit.
 
 Expectation extensibility: [Expectation Contract v0.1](spec/expectation-contract-v0.md), with the [extension architecture checkpoint](spec/extension-contract-v0.md).
+
+Registered execution: `python -m runner.extension_runtime --output artifacts/extension.json`; see the [Extension Contract](spec/extension-contract-v0.md).
