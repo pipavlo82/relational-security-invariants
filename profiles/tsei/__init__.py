@@ -1,0 +1,1 @@
+"""Serializer/adoption scope only."""
