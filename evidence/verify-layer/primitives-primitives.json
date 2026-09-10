@@ -1,0 +1,682 @@
+{
+  "schema": "trustless-ai.primitives.v0",
+  "updated": "2026-09-03",
+  "note": "Discovery/INDEX surface — NOT a source of truth. Authority is the referenced contract bytes (eth_getCode), repo state, or conformance package; this file only points at them. A mismatch means the ENTRY is stale, not that the registry is truth — run check.py to detect drift. Status: LIVE=deployed/live, SHIPPED=code+vectors verifiable, PUBLISHED=note (CC0), DRAFT=spec in the ERC process.",
+  "count": 55,
+  "primitives": [
+    {
+      "id": "agent-market-escrow",
+      "name": "AgentMarketEscrow",
+      "what": "On-chain escrow for agent services — list, buy, settle.",
+      "status": "LIVE",
+      "chain": "mainnet",
+      "proof": {
+        "type": "contract",
+        "address": "0x82feaa28527adddfba29b5587c7b58d3e1e2c739",
+        "chain": "mainnet"
+      },
+      "verify": "eth_getCode 0x82feaa28527adddfba29b5587c7b58d3e1e2c739 on mainnet (non-empty)",
+      "verified_at": "2026-09-03"
+    },
+    {
+      "id": "mcp-entitlement-registry",
+      "name": "MCPEntitlementRegistry",
+      "what": "Buy an MCP capability that's carried by the agent NFT.",
+      "status": "LIVE",
+      "chain": "mainnet",
+      "proof": {
+        "type": "contract",
+        "address": "0x6374556D1c19924584644BD48ebecF444e43Ed9F",
+        "chain": "mainnet"
+      },
+      "verify": "eth_getCode 0x6374556D1c19924584644BD48ebecF444e43Ed9F on mainnet (non-empty)",
+      "verified_at": "2026-09-03"
+    },
+    {
+      "id": "truth-anchor",
+      "name": "TruthAnchor — ERC-8281 OCP (ours)",
+      "what": "Our ERC-8281 commitment anchor: record(digest)->Recorded; /verify showcase L3 reads it. Distinct from Vincent Wu's ERC-8263 TruthAnchorV1 (a separate primitive).",
+      "status": "LIVE",
+      "chain": "mainnet",
+      "proof": {
+        "type": "contract",
+        "address": "0x1e2A118a2bf1C240aE6fDe187c07f905D360f094",
+        "chain": "mainnet"
+      },
+      "verify": "eth_getCode 0x1e2A118a2bf1C240aE6fDe187c07f905D360f094 on mainnet (non-empty)",
+      "verified_at": "2026-09-03"
+    },
+    {
+      "id": "attestation-index",
+      "name": "AttestationIndex — ERC-8281-compatible (ccip-router)",
+      "what": "ERC-8281 OCP-compatible commitment store (signerOf/commitmentOf) — the ccip-router mesh anchor.",
+      "status": "LIVE",
+      "chain": "mainnet",
+      "proof": {
+        "type": "contract",
+        "address": "0xc7BCCD785Fb994e570d0ca10D0F7899d87C82210",
+        "chain": "mainnet"
+      },
+      "verify": "eth_getCode 0xc7BCCD785Fb994e570d0ca10D0F7899d87C82210 on mainnet (non-empty)",
+      "verified_at": "2026-09-03"
+    },
+    {
+      "id": "genesis-agent-registry",
+      "name": "GenesisAgentRegistry (production)",
+      "what": "Mint-your-agent registry — the live deployment used by ai.verticecriativo.pt.",
+      "status": "LIVE",
+      "chain": "mainnet",
+      "proof": {
+        "type": "contract",
+        "address": "0x8b5AF3A59f81c7e16617E8Eb824BC6FfB792A2C3",
+        "chain": "mainnet"
+      },
+      "verify": "eth_getCode 0x8b5AF3A59f81c7e16617E8Eb824BC6FfB792A2C3 on mainnet (non-empty)",
+      "verified_at": "2026-09-03"
+    },
+    {
+      "id": "genesis-agent-registry-ref",
+      "name": "GenesisAgentRegistry (reference)",
+      "what": "Second mainnet deployment, Sourcify-verified — the genesis-self-source example in agent-contracts-examples.",
+      "status": "LIVE",
+      "chain": "mainnet",
+      "proof": {
+        "type": "contract",
+        "address": "0xe91934aB1f6A40cc1Bb4cD530FEFF56dFE524963",
+        "chain": "mainnet"
+      },
+      "verify": "eth_getCode 0xe91934aB1f6A40cc1Bb4cD530FEFF56dFE524963 on mainnet (non-empty)",
+      "verified_at": "2026-09-03"
+    },
+    {
+      "id": "pq-binding-anchor",
+      "name": "PqBindingAnchor — wallet PQ binding",
+      "what": "Non-custodial WALLET PQ key binding, first-write-immutable — testnet rail, mainnet after testing. NOTE: the AGENT PQ binding is separate and LIVE — KYA-L4 (SLH-DSA + ML-DSA) attestor binding anchored on mainnet via TruthAnchor 0x1e2A118a (tx 0x469655a0…); 29 agents epoch-anchored on Base Sepolia; recompute at ai.verticecriativo.pt/quantum.",
+      "status": "LIVE",
+      "chain": "sepolia",
+      "proof": {
+        "type": "contract",
+        "address": "0x0E6A09577f22A38239d4916C092E149BfB4AB57d",
+        "chain": "sepolia"
+      },
+      "verify": "eth_getCode 0x0E6A09577f22A38239d4916C092E149BfB4AB57d on sepolia (non-empty)",
+      "verified_at": "2026-09-03"
+    },
+    {
+      "id": "recompute:pq-key-binding-v0",
+      "name": "pq-key-binding-v0",
+      "what": "recomputable primitive (conformance vectors).",
+      "status": "SHIPPED",
+      "proof": {
+        "type": "recompute-recipe",
+        "ref": "trustless-ai/recompute-kit/conformance/pq-key-binding-v0"
+      },
+      "verify": "run the recompute-kit conformance suite for this recipe",
+      "verified_at": "2026-09-03"
+    },
+    {
+      "id": "recompute:pq-key-binding-v1",
+      "name": "pq-key-binding-v1",
+      "what": "recomputable primitive (conformance vectors).",
+      "status": "SHIPPED",
+      "proof": {
+        "type": "recompute-recipe",
+        "ref": "trustless-ai/recompute-kit/conformance/pq-key-binding-v1"
+      },
+      "verify": "run the recompute-kit conformance suite for this recipe",
+      "verified_at": "2026-09-03"
+    },
+    {
+      "id": "recompute:pq-key-binding-v1-profile",
+      "name": "pq-key-binding-v1-profile",
+      "what": "recomputable primitive (conformance vectors).",
+      "status": "SHIPPED",
+      "proof": {
+        "type": "recompute-recipe",
+        "ref": "trustless-ai/recompute-kit/conformance/pq-key-binding-v1-profile"
+      },
+      "verify": "run the recompute-kit conformance suite for this recipe",
+      "verified_at": "2026-09-03"
+    },
+    {
+      "id": "recompute:pq-recovery-classes-v0",
+      "name": "pq-recovery-classes-v0",
+      "what": "recomputable primitive (conformance vectors).",
+      "status": "SHIPPED",
+      "proof": {
+        "type": "recompute-recipe",
+        "ref": "trustless-ai/recompute-kit/conformance/pq-recovery-classes-v0"
+      },
+      "verify": "run the recompute-kit conformance suite for this recipe",
+      "verified_at": "2026-09-03"
+    },
+    {
+      "id": "recompute:captured-admission-v0",
+      "name": "captured-admission-v0",
+      "what": "recomputable primitive (conformance vectors).",
+      "status": "SHIPPED",
+      "proof": {
+        "type": "recompute-recipe",
+        "ref": "trustless-ai/recompute-kit/conformance/captured-admission-v0"
+      },
+      "verify": "run the recompute-kit conformance suite for this recipe",
+      "verified_at": "2026-09-03"
+    },
+    {
+      "id": "recompute:captured-admission-v0-review-profile",
+      "name": "captured-admission-v0-review-profile",
+      "what": "recomputable primitive (conformance vectors).",
+      "status": "SHIPPED",
+      "proof": {
+        "type": "recompute-recipe",
+        "ref": "trustless-ai/recompute-kit/conformance/captured-admission-v0-review-profile"
+      },
+      "verify": "run the recompute-kit conformance suite for this recipe",
+      "verified_at": "2026-09-03"
+    },
+    {
+      "id": "recompute:captured-admission-v0-review-profile-deadline",
+      "name": "captured-admission-v0-review-profile-deadline",
+      "what": "recomputable primitive (conformance vectors).",
+      "status": "SHIPPED",
+      "proof": {
+        "type": "recompute-recipe",
+        "ref": "trustless-ai/recompute-kit/conformance/captured-admission-v0-review-profile-deadline"
+      },
+      "verify": "run the recompute-kit conformance suite for this recipe",
+      "verified_at": "2026-09-03"
+    },
+    {
+      "id": "recompute:companion-envelope-v0",
+      "name": "companion-envelope-v0",
+      "what": "recomputable primitive (conformance vectors).",
+      "status": "SHIPPED",
+      "proof": {
+        "type": "recompute-recipe",
+        "ref": "trustless-ai/recompute-kit/conformance/companion-envelope-v0"
+      },
+      "verify": "run the recompute-kit conformance suite for this recipe",
+      "verified_at": "2026-09-03"
+    },
+    {
+      "id": "recompute:convention-hash-v0",
+      "name": "convention-hash-v0",
+      "what": "recomputable primitive (conformance vectors).",
+      "status": "SHIPPED",
+      "proof": {
+        "type": "recompute-recipe",
+        "ref": "trustless-ai/recompute-kit/conformance/convention-hash-v0"
+      },
+      "verify": "run the recompute-kit conformance suite for this recipe",
+      "verified_at": "2026-09-03"
+    },
+    {
+      "id": "recompute:provenance-anchor-v0",
+      "name": "provenance-anchor-v0",
+      "what": "recomputable primitive (conformance vectors).",
+      "status": "SHIPPED",
+      "proof": {
+        "type": "recompute-recipe",
+        "ref": "trustless-ai/recompute-kit/conformance/provenance-anchor-v0"
+      },
+      "verify": "run the recompute-kit conformance suite for this recipe",
+      "verified_at": "2026-09-03"
+    },
+    {
+      "id": "recompute:storage-root-v0",
+      "name": "storage-root-v0",
+      "what": "recomputable primitive (conformance vectors).",
+      "status": "SHIPPED",
+      "proof": {
+        "type": "recompute-recipe",
+        "ref": "trustless-ai/recompute-kit/conformance/storage-root-v0"
+      },
+      "verify": "run the recompute-kit conformance suite for this recipe",
+      "verified_at": "2026-09-03"
+    },
+    {
+      "id": "recompute:encode-json-utf8-lf-v0",
+      "name": "encode-json-utf8-lf-v0",
+      "what": "recomputable primitive (conformance vectors).",
+      "status": "SHIPPED",
+      "proof": {
+        "type": "recompute-recipe",
+        "ref": "trustless-ai/recompute-kit/conformance/encode-json-utf8-lf-v0"
+      },
+      "verify": "run the recompute-kit conformance suite for this recipe",
+      "verified_at": "2026-09-03"
+    },
+    {
+      "id": "recompute:erc-8309-envelope-v0",
+      "name": "erc-8309-envelope-v0",
+      "what": "recomputable primitive (conformance vectors).",
+      "status": "SHIPPED",
+      "proof": {
+        "type": "recompute-recipe",
+        "ref": "trustless-ai/recompute-kit/conformance/erc-8309-envelope-v0"
+      },
+      "verify": "run the recompute-kit conformance suite for this recipe",
+      "verified_at": "2026-09-03"
+    },
+    {
+      "id": "recompute:erc8275-win-rate-bps-v0",
+      "name": "erc8275-win-rate-bps-v0",
+      "what": "recomputable primitive (conformance vectors).",
+      "status": "SHIPPED",
+      "proof": {
+        "type": "recompute-recipe",
+        "ref": "trustless-ai/recompute-kit/conformance/erc8275-win-rate-bps-v0"
+      },
+      "verify": "run the recompute-kit conformance suite for this recipe",
+      "verified_at": "2026-09-03"
+    },
+    {
+      "id": "recompute:communication-chain-v0",
+      "name": "communication-chain-v0",
+      "what": "recomputable primitive (conformance vectors).",
+      "status": "SHIPPED",
+      "proof": {
+        "type": "recompute-recipe",
+        "ref": "trustless-ai/recompute-kit/conformance/communication-chain-v0"
+      },
+      "verify": "run the recompute-kit conformance suite for this recipe",
+      "verified_at": "2026-09-03"
+    },
+    {
+      "id": "recompute:chronicle-checkpoint-continuity-v0",
+      "name": "chronicle-checkpoint-continuity-v0",
+      "what": "recomputable primitive (conformance vectors).",
+      "status": "SHIPPED",
+      "proof": {
+        "type": "recompute-recipe",
+        "ref": "trustless-ai/recompute-kit/conformance/chronicle-checkpoint-continuity-v0"
+      },
+      "verify": "run the recompute-kit conformance suite for this recipe",
+      "verified_at": "2026-09-03"
+    },
+    {
+      "id": "recompute:crc-claim-v0",
+      "name": "crc-claim-v0",
+      "what": "recomputable primitive (conformance vectors).",
+      "status": "SHIPPED",
+      "proof": {
+        "type": "recompute-recipe",
+        "ref": "trustless-ai/recompute-kit/conformance/crc-claim-v0"
+      },
+      "verify": "run the recompute-kit conformance suite for this recipe",
+      "verified_at": "2026-09-03"
+    },
+    {
+      "id": "recompute:aggregate-budget-v0",
+      "name": "aggregate-budget-v0",
+      "what": "recomputable primitive (conformance vectors).",
+      "status": "SHIPPED",
+      "proof": {
+        "type": "recompute-recipe",
+        "ref": "trustless-ai/recompute-kit/conformance/aggregate-budget-v0"
+      },
+      "verify": "run the recompute-kit conformance suite for this recipe",
+      "verified_at": "2026-09-03"
+    },
+    {
+      "id": "recompute:dex-calldata-v0",
+      "name": "dex-calldata-v0",
+      "what": "recomputable primitive (conformance vectors).",
+      "status": "SHIPPED",
+      "proof": {
+        "type": "recompute-recipe",
+        "ref": "trustless-ai/recompute-kit/conformance/dex-calldata-v0"
+      },
+      "verify": "run the recompute-kit conformance suite for this recipe",
+      "verified_at": "2026-09-03"
+    },
+    {
+      "id": "recompute:ens-write-v0",
+      "name": "ens-write-v0",
+      "what": "recomputable primitive (conformance vectors).",
+      "status": "SHIPPED",
+      "proof": {
+        "type": "recompute-recipe",
+        "ref": "trustless-ai/recompute-kit/conformance/ens-write-v0"
+      },
+      "verify": "run the recompute-kit conformance suite for this recipe",
+      "verified_at": "2026-09-03"
+    },
+    {
+      "id": "recompute:id-write-v0",
+      "name": "id-write-v0",
+      "what": "recomputable primitive (conformance vectors).",
+      "status": "SHIPPED",
+      "proof": {
+        "type": "recompute-recipe",
+        "ref": "trustless-ai/recompute-kit/conformance/id-write-v0"
+      },
+      "verify": "run the recompute-kit conformance suite for this recipe",
+      "verified_at": "2026-09-03"
+    },
+    {
+      "id": "recompute:nft-fulfill-v0",
+      "name": "nft-fulfill-v0",
+      "what": "recomputable primitive (conformance vectors).",
+      "status": "SHIPPED",
+      "proof": {
+        "type": "recompute-recipe",
+        "ref": "trustless-ai/recompute-kit/conformance/nft-fulfill-v0"
+      },
+      "verify": "run the recompute-kit conformance suite for this recipe",
+      "verified_at": "2026-09-03"
+    },
+    {
+      "id": "recompute:deils-leg2-reveal-v0",
+      "name": "deils-leg2-reveal-v0",
+      "what": "recomputable primitive (conformance vectors).",
+      "status": "SHIPPED",
+      "proof": {
+        "type": "recompute-recipe",
+        "ref": "trustless-ai/recompute-kit/conformance/deils-leg2-reveal-v0"
+      },
+      "verify": "run the recompute-kit conformance suite for this recipe",
+      "verified_at": "2026-09-03"
+    },
+    {
+      "id": "recompute:tee-inference-v0",
+      "name": "tee-inference-v0",
+      "what": "recomputable primitive (conformance vectors).",
+      "status": "SHIPPED",
+      "proof": {
+        "type": "recompute-recipe",
+        "ref": "trustless-ai/recompute-kit/conformance/tee-inference-v0"
+      },
+      "verify": "run the recompute-kit conformance suite for this recipe",
+      "verified_at": "2026-09-03"
+    },
+    {
+      "id": "recompute:tee-inference-enclave-v0",
+      "name": "tee-inference-enclave-v0",
+      "what": "recomputable primitive (conformance vectors).",
+      "status": "SHIPPED",
+      "proof": {
+        "type": "recompute-recipe",
+        "ref": "trustless-ai/recompute-kit/conformance/tee-inference-enclave-v0"
+      },
+      "verify": "run the recompute-kit conformance suite for this recipe",
+      "verified_at": "2026-09-03"
+    },
+    {
+      "id": "recompute:serializer-bindings",
+      "name": "serializer-bindings",
+      "what": "recomputable primitive (conformance vectors).",
+      "status": "SHIPPED",
+      "proof": {
+        "type": "recompute-recipe",
+        "ref": "trustless-ai/recompute-kit/conformance/serializer-bindings"
+      },
+      "verify": "run the recompute-kit conformance suite for this recipe",
+      "verified_at": "2026-09-03"
+    },
+    {
+      "id": "repo:verify-layer",
+      "name": "verify-layer",
+      "what": "verify-don't-trust layer — prove account/storage state via eth_getProof vs stateRoot.",
+      "status": "SHIPPED",
+      "proof": {
+        "type": "repo",
+        "ref": "github.com/trustless-ai/verify-layer"
+      },
+      "verify": "open the repo / run its suite",
+      "verified_at": "2026-09-03"
+    },
+    {
+      "id": "repo:recompute-kit",
+      "name": "recompute-kit",
+      "what": "the toolkit: recompute primitives + recipes + conformance vectors + MCP.",
+      "status": "SHIPPED",
+      "proof": {
+        "type": "repo",
+        "ref": "github.com/trustless-ai/recompute-kit"
+      },
+      "verify": "open the repo / run its suite",
+      "verified_at": "2026-09-03"
+    },
+    {
+      "id": "repo:agent-sdk",
+      "name": "agent-sdk",
+      "what": "off-chain SDK — typed contract clients + deploy/test kit for the agent ERCs.",
+      "status": "SHIPPED",
+      "proof": {
+        "type": "repo",
+        "ref": "github.com/trustless-ai/agent-sdk"
+      },
+      "verify": "open the repo / run its suite",
+      "verified_at": "2026-09-03"
+    },
+    {
+      "id": "repo:ccip-router",
+      "name": "ccip-router",
+      "what": "the coordination layer CCIP-Read was missing — peer sync, dedup, mesh.",
+      "status": "SHIPPED",
+      "proof": {
+        "type": "repo",
+        "ref": "github.com/trustless-ai/ccip-router"
+      },
+      "verify": "open the repo / run its suite",
+      "verified_at": "2026-09-03"
+    },
+    {
+      "id": "repo:zkIE",
+      "name": "zkIE",
+      "what": "Zero-Knowledge Inference Engine (prototype).",
+      "status": "SHIPPED",
+      "proof": {
+        "type": "repo",
+        "ref": "github.com/trustless-ai/zkIE"
+      },
+      "verify": "open the repo / run its suite",
+      "verified_at": "2026-09-03"
+    },
+    {
+      "id": "repo:recompute-lens",
+      "name": "recompute-lens",
+      "what": "human surface over recompute-kit — watch an off-chain claim recompute.",
+      "status": "SHIPPED",
+      "proof": {
+        "type": "repo",
+        "ref": "github.com/trustless-ai/recompute-lens"
+      },
+      "verify": "open the repo / run its suite",
+      "verified_at": "2026-09-03"
+    },
+    {
+      "id": "repo:eip7702-rescue",
+      "name": "eip7702-rescue",
+      "what": "forensic MCP + hardened delegate for atomic EIP-7702 asset rescue.",
+      "status": "SHIPPED",
+      "proof": {
+        "type": "repo",
+        "ref": "github.com/trustless-ai/eip7702-rescue"
+      },
+      "verify": "open the repo / run its suite",
+      "verified_at": "2026-09-03"
+    },
+    {
+      "id": "repo:pq-agent-binding",
+      "name": "pq-agent-binding",
+      "what": "recomputable post-quantum key binding for on-chain AI agents.",
+      "status": "SHIPPED",
+      "proof": {
+        "type": "repo",
+        "ref": "github.com/trustless-ai/pq-agent-binding"
+      },
+      "verify": "open the repo / run its suite",
+      "verified_at": "2026-09-03"
+    },
+    {
+      "id": "repo:agent-ercs",
+      "name": "agent-ercs",
+      "what": "ERCs + base implementations for the trustless-AI agent stack.",
+      "status": "SHIPPED",
+      "proof": {
+        "type": "repo",
+        "ref": "github.com/trustless-ai/agent-ercs"
+      },
+      "verify": "open the repo / run its suite",
+      "verified_at": "2026-09-03"
+    },
+    {
+      "id": "repo:cross-reference-console",
+      "name": "cross-reference-console",
+      "what": "multi-operator mutual-recompute surface — LIVE at trustless-ai.eth.",
+      "status": "LIVE",
+      "proof": {
+        "type": "repo",
+        "ref": "github.com/trustless-ai/cross-reference-console"
+      },
+      "verify": "open the repo / run its suite",
+      "verified_at": "2026-09-03"
+    },
+    {
+      "id": "note:collapsed-state-note",
+      "name": "collapsed-state-note",
+      "what": "'A written rule has no failure mode' — collapsed states + the five tiers.",
+      "status": "PUBLISHED",
+      "proof": {
+        "type": "repo",
+        "ref": "github.com/trustless-ai/collapsed-state-note"
+      },
+      "verify": "read it (CC0)",
+      "verified_at": "2026-09-03"
+    },
+    {
+      "id": "note:observation-conditions-note",
+      "name": "observation-conditions-note",
+      "what": "'A reading is incomplete without the conditions that produced it.'",
+      "status": "PUBLISHED",
+      "proof": {
+        "type": "repo",
+        "ref": "github.com/trustless-ai/observation-conditions-note"
+      },
+      "verify": "read it (CC0)",
+      "verified_at": "2026-09-03"
+    },
+    {
+      "id": "note:composed-attestation-note",
+      "name": "composed-attestation-note",
+      "what": "four independent commitments over one event — the seam rules.",
+      "status": "PUBLISHED",
+      "proof": {
+        "type": "repo",
+        "ref": "github.com/trustless-ai/composed-attestation-note"
+      },
+      "verify": "read it (CC0)",
+      "verified_at": "2026-09-03"
+    },
+    {
+      "id": "surface:agent-verify",
+      "name": "gateway.verticecriativo.pt/agent/verify",
+      "what": "Public no-auth attestation verify — hand it a hash, get the attested turn back.",
+      "status": "LIVE",
+      "proof": {
+        "type": "surface",
+        "url": "https://gateway.verticecriativo.pt/agent/verify/0x096e9df2fccbaf49525a22d3537670ec83746157846f0c25509a6483fe1d0a91"
+      },
+      "verify": "GET https://gateway.verticecriativo.pt/agent/verify/0x096e9df2fccbaf49525a22d3537670ec83746157846f0c25509a6483fe1d0a91 -> 200; recompute in-browser",
+      "verified_at": "2026-09-03"
+    },
+    {
+      "id": "surface:verify-showcase",
+      "name": "ai.verticecriativo.pt/verify",
+      "what": "The /verify four-surface recompute showcase (WYRIWE L1-L3 + EIP-712 L4 + on-chain anchor).",
+      "status": "LIVE",
+      "proof": {
+        "type": "surface",
+        "url": "https://ai.verticecriativo.pt/verify"
+      },
+      "verify": "GET https://ai.verticecriativo.pt/verify -> 200; recompute in-browser",
+      "verified_at": "2026-09-03"
+    },
+    {
+      "id": "surface:review",
+      "name": "ai.verticecriativo.pt/review",
+      "what": "invinoveritas /review verdict — recompute a signed review in-browser (NIP-01 + BIP-340).",
+      "status": "LIVE",
+      "proof": {
+        "type": "surface",
+        "url": "https://ai.verticecriativo.pt/review"
+      },
+      "verify": "GET https://ai.verticecriativo.pt/review -> 200; recompute in-browser",
+      "verified_at": "2026-09-03"
+    },
+    {
+      "id": "surface:quantum",
+      "name": "ai.verticecriativo.pt/quantum",
+      "what": "Post-quantum key-binding recompute (SLH-DSA / ML-DSA), served live.",
+      "status": "LIVE",
+      "proof": {
+        "type": "surface",
+        "url": "https://ai.verticecriativo.pt/quantum"
+      },
+      "verify": "GET https://ai.verticecriativo.pt/quantum -> 200; recompute in-browser",
+      "verified_at": "2026-09-03"
+    },
+    {
+      "id": "surface:console",
+      "name": "cross-reference-console (trustless-ai.eth)",
+      "what": "Multi-operator mutual-recompute matrix — LIVE on trustless-ai.eth.",
+      "status": "LIVE",
+      "proof": {
+        "type": "surface",
+        "url": "https://trustless-ai.eth.limo/"
+      },
+      "verify": "GET https://trustless-ai.eth.limo/ -> 200; recompute in-browser",
+      "verified_at": "2026-09-03"
+    },
+    {
+      "id": "erc-8299",
+      "name": "ERC-8299 — WYRIWE — what-you-run-is-what-you-explain (input provenance).",
+      "what": "co-author (TMerlini+Vincent+Fede+Jimmy+Damon).",
+      "status": "DRAFT",
+      "proof": {
+        "type": "erc",
+        "ref": "ethereum/ERCs#1810"
+      },
+      "verify": "open the ERC PR / assets",
+      "verified_at": "2026-09-03"
+    },
+    {
+      "id": "erc-8354",
+      "name": "ERC-8354 — Confidential Agent Policy Verdicts (ZK allow/deny).",
+      "what": "co-maintainer; expiry-bound circuit PR ethereum/ERCs#1989.",
+      "status": "DRAFT",
+      "proof": {
+        "type": "erc",
+        "ref": "ethereum/ERCs (merged #1919)"
+      },
+      "verify": "open the ERC PR / assets",
+      "verified_at": "2026-09-03"
+    },
+    {
+      "id": "erc-8373",
+      "name": "ERC-8373 — Post-Quantum Anchored Key Binding.",
+      "what": "author.",
+      "status": "DRAFT",
+      "proof": {
+        "type": "erc",
+        "ref": "assets/erc-8373 (ethereum/ERCs)"
+      },
+      "verify": "open the ERC PR / assets",
+      "verified_at": "2026-09-03"
+    },
+    {
+      "id": "erc-8294",
+      "name": "ERC-8294 — VNI — Verifiable Network Inference.",
+      "what": "co-author (Tiago).",
+      "status": "DRAFT",
+      "proof": {
+        "type": "erc",
+        "ref": "ethereum/ERCs"
+      },
+      "verify": "open the ERC PR / assets",
+      "verified_at": "2026-09-03"
+    }
+  ]
+}
