@@ -95,6 +95,57 @@
           "comparator"
         ]
       ],
+      "h2_update": {
+        "author_independence": "UNKNOWN",
+        "baseline_head": "c31c4cb1bb112c7f2b415b9721ee3078044dbdb7",
+        "classification": "MODERATE",
+        "definition": "evidence/crystal-receipt/SPEC.md",
+        "definition_sha256": "9c17bd826c4a789464dab80c78a136153f3d9ce2f253198d0cf386bdef3a6d0b",
+        "edges": [
+          [
+            "definition",
+            "C input validation and retained-pair semantics"
+          ],
+          [
+            "source vector input bytes",
+            "C standalone parser"
+          ],
+          [
+            "C token snapshots",
+            "external comparison harness"
+          ],
+          [
+            "A/B/D",
+            "external comparison harness"
+          ]
+        ],
+        "executable_imports": [
+          "node:fs",
+          "node:crypto"
+        ],
+        "experiments": [
+          "H2-M1 external metadata projection",
+          "H2-M2 ignored semantic substitution"
+        ],
+        "harness": "tools/check_crystal_cleanroom.py",
+        "harness_boundary": "All C subprocess outputs complete before A/B computation and D admission; only raw input and definition bytes enter C.",
+        "not_shared": [
+          "rsi.codec",
+          "source semantic helpers",
+          "adapter/predictor evaluators",
+          "frozen expectation artifacts"
+        ],
+        "procedurally_blind": false,
+        "score_after": 10,
+        "score_before": 10,
+        "semantic_route": "Restricted duplicate-rejecting parser -> ordered semantic pairs -> manual printable-string tokens -> equality",
+        "shared_with_existing_legs": [
+          "pinned definition/interpretation origin",
+          "immutable source input bytes",
+          "Node/V8 runtime with TypeScript actual"
+        ],
+        "third_leg": "reproducers/crystal-receipt-cleanroom/reproduce.mjs"
+      },
       "limit": "Direct imports plus manually reviewed dynamic exec/JS paths; not a complete noninterference proof",
       "predictor_modules": [
         "profiles/crystal_receipt/expectation.py"

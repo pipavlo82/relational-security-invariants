@@ -26,6 +26,37 @@ Shared: `rsi/codec.py`, `runner/expectation_contract.py`, `runner/execution.py`,
 
 SPEC-derived equality/json.dumps vs snapshotCounterfactualSemanticJson + canonicalize + relation.observed. Source files and direct imports are enumerated in JSON. Third leg: Frozen SPEC, V-SEM-MANIFEST-INVARIANT, mutation vector, direct canonical-string assertions.
 
+### H2 update: Crystal only
+
+The original H1 graph above remains the historical pair assessment. H2 adds
+`reproducers/crystal-receipt-cleanroom/reproduce.mjs`: a separate restricted
+parser and ordered-pair/token derivation from the frozen SPEC. It imports
+only Node fs/crypto. It does not import rsi.codec or any A/B evaluator, and
+never reads frozen expectation rows. The comparison harness is outside the
+reproducer directory and evaluates all C results before A/B/D.
+
+```mermaid
+flowchart LR
+ D[Pinned semantic definition] -. governs .-> A[Source TypeScript actual]
+ D -. governs .-> B[Separate Python predictor]
+ D --> C[H2 parser and token derivation]
+ I[Immutable input bytes] --> C
+ I --> AB[RSI transport for A/B]
+ AB --> A
+ AB --> B
+ A --> X[External comparison harness]
+ B --> X
+ C --> X
+ F[Atomically admitted frozen rows] --> X
+```
+
+The C path bypasses rsi.codec; A/B and admission retain it. Immutable inputs
+are deliberately shared. Node/V8 remains shared with A, as does the human
+interpretation origin. H2-M1/M2 catch selected common-mode projection errors;
+author independence remains UNKNOWN and procedural blindness is not claimed.
+Score stays 10/15 MODERATE under the unchanged H1 rubric. Other domain
+entries and their scores are unchanged.
+
 ## RVR digest-binding
 
 Actual: `adapters/rvr/model.py`, `adapters/rvr/__init__.py` -> observed result.

@@ -1,0 +1,187 @@
+{
+  "schema": "crystal-cleanroom-golden.v0",
+  "vectors": [
+    {
+      "definition_expected": {
+        "canonical_baseline": "{\"challenge_id\":\"observed_not_validated\",\"expected_conformance_observation\":\"preserve semantic non-elevation\",\"profile_id\":\"counterfactual-review-v0\"}",
+        "canonical_candidate": "{\"challenge_id\":\"observed_not_validated\",\"expected_conformance_observation\":\"preserve semantic non-elevation\",\"profile_id\":\"counterfactual-review-v0\"}",
+        "semantic_identity_preserved": true
+      },
+      "derivation": "Identical retained pairs.",
+      "existing_admitted_row": "CR-RSI-001/control",
+      "id": "CR-H2-G1",
+      "input": {
+        "baseline": {
+          "manifest": {},
+          "semantic_artifact": {
+            "challenge_id": "observed_not_validated",
+            "expected_conformance_observation": "preserve semantic non-elevation",
+            "profile_id": "counterfactual-review-v0"
+          }
+        },
+        "candidate": {
+          "manifest": {},
+          "semantic_artifact": {
+            "challenge_id": "observed_not_validated",
+            "expected_conformance_observation": "preserve semantic non-elevation",
+            "profile_id": "counterfactual-review-v0"
+          }
+        }
+      },
+      "input_path": "inputs/CR-H2-G1.json",
+      "input_sha256": "0f88c70b0c915c7e056d2421c04b3011be15de31a6a35d5d6669ec9dae7abb00",
+      "source": {
+        "commit": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+        "definition_path": "conformance/counterfactual-audit-boundary-v0/SPEC.md",
+        "definition_sha256": "9c17bd826c4a789464dab80c78a136153f3d9ce2f253198d0cf386bdef3a6d0b",
+        "evidence_class": "semantic contract plus source vector input",
+        "input_vector_path": "conformance/counterfactual-audit-boundary-v0/vectors/V-SEM-MUTATION-DIFFERS.json",
+        "input_vector_sha256": "c92915e29cda954db6c0aaa44bbcb958c741e51a86fd7bca7bd9f767434c433d",
+        "repo": "pipavlo82/crystal-receipt",
+        "sections": [
+          "Semantic input domain",
+          "Audit metadata domain"
+        ]
+      },
+      "vector_sha256": "be837388c8adf19af3cbed0abf3e82417604c07c1b412a623a29f1a9f8405b16"
+    },
+    {
+      "definition_expected": {
+        "canonical_baseline": "{\"challenge_id\":\"observed_not_validated\",\"expected_conformance_observation\":\"preserve semantic non-elevation\",\"profile_id\":\"counterfactual-review-v0\"}",
+        "canonical_candidate": "{\"challenge_id\":\"observed_not_validated\",\"expected_conformance_observation\":\"incorrectly promote observation\",\"profile_id\":\"counterfactual-review-v0\"}",
+        "semantic_identity_preserved": false
+      },
+      "derivation": "One retained semantic value changes.",
+      "existing_admitted_row": "CR-RSI-001/relation_substitution",
+      "id": "CR-H2-G2",
+      "input": {
+        "baseline": {
+          "manifest": {},
+          "semantic_artifact": {
+            "challenge_id": "observed_not_validated",
+            "expected_conformance_observation": "preserve semantic non-elevation",
+            "profile_id": "counterfactual-review-v0"
+          }
+        },
+        "candidate": {
+          "manifest": {},
+          "semantic_artifact": {
+            "challenge_id": "observed_not_validated",
+            "expected_conformance_observation": "incorrectly promote observation",
+            "profile_id": "counterfactual-review-v0"
+          }
+        }
+      },
+      "input_path": "inputs/CR-H2-G2.json",
+      "input_sha256": "3efc9a11e5402d29765773c7c0d171807bbd564705a6276215bf3ecead1252f4",
+      "source": {
+        "commit": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+        "definition_path": "conformance/counterfactual-audit-boundary-v0/SPEC.md",
+        "definition_sha256": "9c17bd826c4a789464dab80c78a136153f3d9ce2f253198d0cf386bdef3a6d0b",
+        "evidence_class": "semantic contract plus source vector input",
+        "input_vector_path": "conformance/counterfactual-audit-boundary-v0/vectors/V-SEM-MUTATION-DIFFERS.json",
+        "input_vector_sha256": "c92915e29cda954db6c0aaa44bbcb958c741e51a86fd7bca7bd9f767434c433d",
+        "repo": "pipavlo82/crystal-receipt",
+        "sections": [
+          "Semantic input domain",
+          "Audit metadata domain"
+        ]
+      },
+      "vector_sha256": "ae8ecdf5615a15a83c8b29aea2731d0609a453ad3953875dc5663b8766e7d0a1"
+    },
+    {
+      "definition_expected": {
+        "canonical_baseline": "{\"challenge_id\":\"observed_not_validated\",\"expected_conformance_observation\":\"preserve semantic non-elevation\",\"profile_id\":\"counterfactual-review-v0\"}",
+        "canonical_candidate": "{\"challenge_id\":\"observed_not_validated\",\"expected_conformance_observation\":\"preserve semantic non-elevation\",\"profile_id\":\"counterfactual-review-v0\"}",
+        "semantic_identity_preserved": true
+      },
+      "derivation": "Only external audit metadata changes.",
+      "existing_admitted_row": "CR-RSI-002/audit_timestamp_changed",
+      "id": "CR-H2-G3",
+      "input": {
+        "baseline": {
+          "manifest": {
+            "audit_timestamp": "2026-07-27T12:00:00Z"
+          },
+          "semantic_artifact": {
+            "challenge_id": "observed_not_validated",
+            "expected_conformance_observation": "preserve semantic non-elevation",
+            "profile_id": "counterfactual-review-v0"
+          }
+        },
+        "candidate": {
+          "manifest": {
+            "audit_timestamp": "2026-08-05T12:00:00Z"
+          },
+          "semantic_artifact": {
+            "challenge_id": "observed_not_validated",
+            "expected_conformance_observation": "preserve semantic non-elevation",
+            "profile_id": "counterfactual-review-v0"
+          }
+        }
+      },
+      "input_path": "inputs/CR-H2-G3.json",
+      "input_sha256": "722f0d82d914e731d5b4132ff68105f1c01155d1f2fbafa7dab4477818863fe4",
+      "source": {
+        "commit": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+        "definition_path": "conformance/counterfactual-audit-boundary-v0/SPEC.md",
+        "definition_sha256": "9c17bd826c4a789464dab80c78a136153f3d9ce2f253198d0cf386bdef3a6d0b",
+        "evidence_class": "semantic contract plus source vector input",
+        "input_vector_path": "conformance/counterfactual-audit-boundary-v0/vectors/V-SEM-MANIFEST-INVARIANT.json",
+        "input_vector_sha256": "9330a797b15b74d8c3372b866e9bc9f9e842e142de9a6f6b47581bbf92004749",
+        "repo": "pipavlo82/crystal-receipt",
+        "sections": [
+          "Semantic input domain",
+          "Audit metadata domain"
+        ]
+      },
+      "vector_sha256": "f647334ee66150ee88c82ac6a3af5c0e9b5f94374345c1c6373b48e61a71ed49"
+    },
+    {
+      "definition_expected": {
+        "canonical_baseline": "{\"challenge_id\":\"observed_not_validated\",\"expected_conformance_observation\":\"preserve semantic non-elevation\",\"profile_id\":\"counterfactual-review-v0\"}",
+        "canonical_candidate": "{\"challenge_id\":\"observed_not_validated\",\"expected_conformance_observation\":\"preserve semantic non-elevation\",\"profile_id\":\"counterfactual-review-v0\"}",
+        "semantic_identity_preserved": true
+      },
+      "derivation": "Only external audit metadata is removed.",
+      "existing_admitted_row": "CR-RSI-002/audit_timestamp_removed",
+      "id": "CR-H2-G4",
+      "input": {
+        "baseline": {
+          "manifest": {
+            "audit_timestamp": "2026-07-27T12:00:00Z"
+          },
+          "semantic_artifact": {
+            "challenge_id": "observed_not_validated",
+            "expected_conformance_observation": "preserve semantic non-elevation",
+            "profile_id": "counterfactual-review-v0"
+          }
+        },
+        "candidate": {
+          "manifest": {},
+          "semantic_artifact": {
+            "challenge_id": "observed_not_validated",
+            "expected_conformance_observation": "preserve semantic non-elevation",
+            "profile_id": "counterfactual-review-v0"
+          }
+        }
+      },
+      "input_path": "inputs/CR-H2-G4.json",
+      "input_sha256": "785ec77ed32aae1add1264f2e850ca794f2b35c0379b82015b1b4cec4ba09cef",
+      "source": {
+        "commit": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+        "definition_path": "conformance/counterfactual-audit-boundary-v0/SPEC.md",
+        "definition_sha256": "9c17bd826c4a789464dab80c78a136153f3d9ce2f253198d0cf386bdef3a6d0b",
+        "evidence_class": "semantic contract plus source vector input",
+        "input_vector_path": "conformance/counterfactual-audit-boundary-v0/vectors/V-SEM-MANIFEST-INVARIANT.json",
+        "input_vector_sha256": "9330a797b15b74d8c3372b866e9bc9f9e842e142de9a6f6b47581bbf92004749",
+        "repo": "pipavlo82/crystal-receipt",
+        "sections": [
+          "Semantic input domain",
+          "Audit metadata domain"
+        ]
+      },
+      "vector_sha256": "923609a70f26e3557febe18c90d1fc4954af00fcd8c10f83563dacd9a892b5f3"
+    }
+  ]
+}
