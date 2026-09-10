@@ -1,0 +1,859 @@
+{
+  "schema": "rsi-relation-profile-evidence-closure.v0",
+  "status": "DESIGN_EVIDENCE_ONLY",
+  "rsi": {
+    "head": "05f3853756ad9deb0e5d08d54dfdfd462652a801",
+    "branch": "main",
+    "tracked_hash_differences": [],
+    "tracked_files_checked": 78,
+    "prior_design_hashes": {
+      "research/relation-profile-comparison-v0.md": "458d9fc0285b6f19e6bfc715a443ff78fc089ba5bf9a0f7165057c3f81522a95",
+      "research/relation-profile-source-map-v0.json": "d782db87dd7ad777fd3eb25bdf50b822687166937f131719dc9404e58029cd79",
+      "spec/relation-profile-contract-v0.design.md": "5ebe90715753705557b01bf96b170c115e023a2570cb25cf7ac853dfc6420ba9"
+    },
+    "preexisting_report_hash_differences": []
+  },
+  "rvr": {
+    "repos": [
+      {
+        "repository": "trustless-ai/recompute-kit",
+        "branch": "main",
+        "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5"
+      },
+      {
+        "repository": "babyblueviper1/invinoveritas",
+        "branch": "main",
+        "commit": "bdba0b674c2b2d301b75b4b23a33702b0bacfa64"
+      },
+      {
+        "repository": "damonzwicker/erc8309-companion-drafts",
+        "branch": "main",
+        "commit": "02fef5fd1f54eff9221b863cc746cb74a97f3220"
+      },
+      {
+        "repository": "pipavlo82/recomputable-verification-receipts",
+        "branch": "main",
+        "commit": "287c0ea1c2578c1833405bc2476975f95addbada"
+      }
+    ],
+    "commits": [
+      "15f7f59ac47b3358492bd5741143c418b5d657f5",
+      "bdba0b674c2b2d301b75b4b23a33702b0bacfa64",
+      "02fef5fd1f54eff9221b863cc746cb74a97f3220",
+      "287c0ea1c2578c1833405bc2476975f95addbada"
+    ],
+    "files": [
+      {
+        "source_id": "RVR-01",
+        "repository": "trustless-ai/recompute-kit",
+        "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+        "branch": "main",
+        "path": "conformance/profile-amendment-v0/profile-amendment-v0.spec.md",
+        "sha256": "6088753df1f0c428f14ccb954179ff5441af1684d2f289761e872a7a3a17c50b",
+        "git_blob_oid": "1aa66f50a526798f242235d7ea36f7f85b8c02c0",
+        "source_class": "normative spec",
+        "url": "https://github.com/trustless-ai/recompute-kit/blob/15f7f59ac47b3358492bd5741143c418b5d657f5/conformance/profile-amendment-v0/profile-amendment-v0.spec.md",
+        "identifiers": [
+          "# profile-amendment.v0",
+          "## Why",
+          "## Construction",
+          "## Rule",
+          "## Scope",
+          "## Vectors"
+        ],
+        "inspection": "Exact-SHA repository bytes; source scope distinguished from independent execution"
+      },
+      {
+        "source_id": "RVR-02",
+        "repository": "trustless-ai/recompute-kit",
+        "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+        "branch": "main",
+        "path": "conformance/profile-amendment-v0/profile-amendment-v0.vectors.json",
+        "sha256": "79cd891adcb9019da5f4b3c81e01e8c083ba036d4ae25577f53873b17a105f74",
+        "git_blob_oid": "725cf599d038759f632b1310b853ebb3c64267e3",
+        "source_class": "vector",
+        "url": "https://github.com/trustless-ai/recompute-kit/blob/15f7f59ac47b3358492bd5741143c418b5d657f5/conformance/profile-amendment-v0/profile-amendment-v0.vectors.json",
+        "identifiers": [
+          "permitted",
+          "permitted-distinct-pubkey",
+          "bare-swap-no-amendment",
+          "buyer-only",
+          "supplier-only",
+          "wrong-prior",
+          "wrong-escrow",
+          "auth-names-wrong-digest"
+        ],
+        "inspection": "Exact-SHA repository bytes; source scope distinguished from independent execution"
+      },
+      {
+        "source_id": "RVR-03",
+        "repository": "trustless-ai/recompute-kit",
+        "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+        "branch": "main",
+        "path": "conformance/profile-amendment-v0/profile-amendment-v0.reference.mjs",
+        "sha256": "915343ece23fb7b2a84906bfe1b6700be4d53bec61cecb04a2f09ee3f57d3ad7",
+        "git_blob_oid": "26f6a85dd19227241b6322c23518c92b6ae6bbe6",
+        "source_class": "reference implementation",
+        "url": "https://github.com/trustless-ai/recompute-kit/blob/15f7f59ac47b3358492bd5741143c418b5d657f5/conformance/profile-amendment-v0/profile-amendment-v0.reference.mjs",
+        "identifiers": [],
+        "inspection": "Exact-SHA repository bytes; source scope distinguished from independent execution"
+      },
+      {
+        "source_id": "RVR-04",
+        "repository": "trustless-ai/recompute-kit",
+        "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+        "branch": "main",
+        "path": "conformance/verdict-profile-binding-v0/verdict-profile-binding-v0.spec.md",
+        "sha256": "a58aa6f4e88043b10c385f75368fd8f7429234d947a3f7c1122d67a19f41c309",
+        "git_blob_oid": "88e75d390be30412c387de4dbe0d1e4faaefe881",
+        "source_class": "normative spec",
+        "url": "https://github.com/trustless-ai/recompute-kit/blob/15f7f59ac47b3358492bd5741143c418b5d657f5/conformance/verdict-profile-binding-v0/verdict-profile-binding-v0.spec.md",
+        "identifiers": [
+          "# verdict-profile-binding.v0",
+          "## Why",
+          "## Construction",
+          "## Rule",
+          "## Composition",
+          "## Scope",
+          "## Vectors"
+        ],
+        "inspection": "Exact-SHA repository bytes; source scope distinguished from independent execution"
+      },
+      {
+        "source_id": "RVR-05",
+        "repository": "trustless-ai/recompute-kit",
+        "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+        "branch": "main",
+        "path": "conformance/verdict-profile-binding-v0/verdict-profile-binding-v0.vectors.json",
+        "sha256": "4a50b2fb74de7974ca197b1c627413bfc39f41363ed786ae79465ab9ee751f0a",
+        "git_blob_oid": "714f902ac5383378af43845f48a8735255fce61a",
+        "source_class": "vector",
+        "url": "https://github.com/trustless-ai/recompute-kit/blob/15f7f59ac47b3358492bd5741143c418b5d657f5/conformance/verdict-profile-binding-v0/verdict-profile-binding-v0.vectors.json",
+        "identifiers": [
+          "bound",
+          "bound-distinct-verdict",
+          "profile-omitted",
+          "wrong-profile",
+          "signature-over-wrong-core",
+          "resolver-absent"
+        ],
+        "inspection": "Exact-SHA repository bytes; source scope distinguished from independent execution"
+      },
+      {
+        "source_id": "RVR-06",
+        "repository": "trustless-ai/recompute-kit",
+        "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+        "branch": "main",
+        "path": "conformance/verdict-profile-binding-v0/verdict-profile-binding-v0.reference.mjs",
+        "sha256": "20e86353e6a97f5c38d0883920a117fd6e8684a0cb23bc6b5bd1ead03d03957f",
+        "git_blob_oid": "6a49659fc98a062fa972070893cd5579c9573ce1",
+        "source_class": "reference implementation",
+        "url": "https://github.com/trustless-ai/recompute-kit/blob/15f7f59ac47b3358492bd5741143c418b5d657f5/conformance/verdict-profile-binding-v0/verdict-profile-binding-v0.reference.mjs",
+        "identifiers": [],
+        "inspection": "Exact-SHA repository bytes; source scope distinguished from independent execution"
+      },
+      {
+        "source_id": "RVR-07",
+        "repository": "trustless-ai/recompute-kit",
+        "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+        "branch": "main",
+        "path": "conformance/companion-envelope-v0/companion-envelope-v0.spec.md",
+        "sha256": "9ba69fb49e55be03de5749117b004464f0f8f4b12f052b063461c7030f1ee4c4",
+        "git_blob_oid": "00e1a910d1838afc29ddd7ed4781094ee6e4f43f",
+        "source_class": "normative spec",
+        "url": "https://github.com/trustless-ai/recompute-kit/blob/15f7f59ac47b3358492bd5741143c418b5d657f5/conformance/companion-envelope-v0/companion-envelope-v0.spec.md",
+        "identifiers": [
+          "# companion-envelope.v0 — the verdict commits to its companion",
+          "## Construction (constructs in one direction)",
+          "## Resolution",
+          "## Scope of `committed`",
+          "## Conformance"
+        ],
+        "inspection": "Exact-SHA repository bytes; source scope distinguished from independent execution"
+      },
+      {
+        "source_id": "RVR-08",
+        "repository": "trustless-ai/recompute-kit",
+        "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+        "branch": "main",
+        "path": "conformance/companion-envelope-v0/companion-envelope-v0.vectors.json",
+        "sha256": "b285ce5091cfe806c238b2b657422b283ddb69c6d0ba0c5501579f34593b57b1",
+        "git_blob_oid": "39e8409ca1e2e4d76c78aa75c74edeab05aaa2d7",
+        "source_class": "vector",
+        "url": "https://github.com/trustless-ai/recompute-kit/blob/15f7f59ac47b3358492bd5741143c418b5d657f5/conformance/companion-envelope-v0/companion-envelope-v0.vectors.json",
+        "identifiers": [
+          "committed",
+          "committed-distinct-signature",
+          "wrong-core-not-committed",
+          "missing-content-address-unresolved",
+          "absence-unresolved"
+        ],
+        "inspection": "Exact-SHA repository bytes; source scope distinguished from independent execution"
+      },
+      {
+        "source_id": "RVR-09",
+        "repository": "trustless-ai/recompute-kit",
+        "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+        "branch": "main",
+        "path": "conformance/companion-envelope-v0/companion-envelope-v0.reference.mjs",
+        "sha256": "6eee905c5503fe93f91dc10eae060058bd6356056f5b65fab0936fb121b49726",
+        "git_blob_oid": "45a275bdce0f1303ef0ec197639d88c445817efd",
+        "source_class": "reference implementation",
+        "url": "https://github.com/trustless-ai/recompute-kit/blob/15f7f59ac47b3358492bd5741143c418b5d657f5/conformance/companion-envelope-v0/companion-envelope-v0.reference.mjs",
+        "identifiers": [],
+        "inspection": "Exact-SHA repository bytes; source scope distinguished from independent execution"
+      },
+      {
+        "source_id": "RVR-10",
+        "repository": "trustless-ai/recompute-kit",
+        "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+        "branch": "main",
+        "path": "conformance/profile-amendment-v0/amendment_gate.py",
+        "sha256": "1ea58b0e847b41244d925aae541cca7a113814eb62888d67eef6a2a4dc0c80f7",
+        "git_blob_oid": "c9a6702c9fb7b405adacd8249ab0d99c4f9e89bf",
+        "source_class": "reference implementation",
+        "url": "https://github.com/trustless-ai/recompute-kit/blob/15f7f59ac47b3358492bd5741143c418b5d657f5/conformance/profile-amendment-v0/amendment_gate.py",
+        "identifiers": [
+          "jcs",
+          "sha",
+          "profile_cc",
+          "profile_transition",
+          "run"
+        ],
+        "inspection": "Exact-SHA repository bytes; source scope distinguished from independent execution"
+      },
+      {
+        "source_id": "RVR-11",
+        "repository": "trustless-ai/recompute-kit",
+        "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+        "branch": "main",
+        "path": "conformance/verdict-profile-binding-v0/verdict_binding_gate.py",
+        "sha256": "4cdad8693974dbdcbf8ffc7a48850ec8ea6bf767f10dc0fbd3435754d37deefa",
+        "git_blob_oid": "050a39f20202edd0496e19c3acdebd45d9336f3f",
+        "source_class": "reference implementation",
+        "url": "https://github.com/trustless-ai/recompute-kit/blob/15f7f59ac47b3358492bd5741143c418b5d657f5/conformance/verdict-profile-binding-v0/verdict_binding_gate.py",
+        "identifiers": [
+          "jcs",
+          "sha",
+          "verdict_binding",
+          "run"
+        ],
+        "inspection": "Exact-SHA repository bytes; source scope distinguished from independent execution"
+      },
+      {
+        "source_id": "RVR-12",
+        "repository": "trustless-ai/recompute-kit",
+        "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+        "branch": "main",
+        "path": "conformance/erc-8309-envelope-v0/README.md",
+        "sha256": "bd9012f8e4305db7a7fd4d73728a844d83d82a8937a0f2d363b87da0517afd85",
+        "git_blob_oid": "2cb345c36d6ba169d1e02ac0131b3504a1fe1e6d",
+        "source_class": "comment/documentation",
+        "url": "https://github.com/trustless-ai/recompute-kit/blob/15f7f59ac47b3358492bd5741143c418b5d657f5/conformance/erc-8309-envelope-v0/README.md",
+        "identifiers": [
+          "# erc-8309-envelope-v0 — resolution-envelope golden set (§5 `erc-8309.envelope`)",
+          "## What it pins",
+          "## The wrong-serializer counterfactual leg — DISCHARGED against encode-json-utf8-lf.v0",
+          "## Provenance",
+          "## Run",
+          "# or directly:"
+        ],
+        "inspection": "Exact-SHA repository bytes; source scope distinguished from independent execution"
+      },
+      {
+        "source_id": "RVR-13",
+        "repository": "trustless-ai/recompute-kit",
+        "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+        "branch": "main",
+        "path": "conformance/erc-8309-envelope-v0/erc-8309-envelope-grade.py",
+        "sha256": "6101419bd615069fa57e8ea0562cf88dd93fa416f15b87afa9e9dd12cbaff976",
+        "git_blob_oid": "c251ce805e141fed72b4d548cff772b634dc2b6e",
+        "source_class": "reference implementation",
+        "url": "https://github.com/trustless-ai/recompute-kit/blob/15f7f59ac47b3358492bd5741143c418b5d657f5/conformance/erc-8309-envelope-v0/erc-8309-envelope-grade.py",
+        "identifiers": [
+          "sha",
+          "jcs",
+          "_v0_validate",
+          "lf_v0_counterfactual",
+          "main"
+        ],
+        "inspection": "Exact-SHA repository bytes; source scope distinguished from independent execution"
+      },
+      {
+        "source_id": "RVR-25",
+        "repository": "babyblueviper1/invinoveritas",
+        "commit": "bdba0b674c2b2d301b75b4b23a33702b0bacfa64",
+        "branch": "main",
+        "path": "integrations/conformance/erc-8309-vantage/README.md",
+        "sha256": "0d0523e60bfb2fb643dade1bf1825a829757fd88b480a980d1eafd4f5d3d4a64",
+        "git_blob_oid": "c5a0d183d938ee47001793a82dbaa13ba9f2897d",
+        "source_class": "comment/documentation",
+        "url": "https://github.com/babyblueviper1/invinoveritas/blob/bdba0b674c2b2d301b75b4b23a33702b0bacfa64/integrations/conformance/erc-8309-vantage/README.md",
+        "identifiers": [
+          "# ERC-8309 vantage-authority companion — reference consumer + mutation gates",
+          "## Coverage, reported by surface — never as one total",
+          "## Binding universe — v0.3.3 §5's exact seven names",
+          "## M6 was replaced, not relabeled",
+          "## The wrong-serializer obligation is PARTIALLY discharged",
+          "## The gate found a hole in its own suite on the first run",
+          "## A kill must be an assertion, not an error (2026-08-24)",
+          "## Runtime pins",
+          "## Kill classification is phase-bound (2026-08-25)",
+          "## §5 schemas — envelope and verdict (2026-08-25)"
+        ],
+        "inspection": "Exact-SHA repository bytes; source scope distinguished from independent execution"
+      },
+      {
+        "source_id": "RVR-26",
+        "repository": "babyblueviper1/invinoveritas",
+        "commit": "bdba0b674c2b2d301b75b4b23a33702b0bacfa64",
+        "branch": "main",
+        "path": "integrations/conformance/erc-8309-vantage/services/vantage_resolution.py",
+        "sha256": "8dd0bad03e6bc0335d6a690e3fb7eb448a4ccb1b6389115aab65474a21e55858",
+        "git_blob_oid": "cbb3c524ad957e350064f9562643f6d64e9ae514",
+        "source_class": "reference implementation",
+        "url": "https://github.com/babyblueviper1/invinoveritas/blob/bdba0b674c2b2d301b75b4b23a33702b0bacfa64/integrations/conformance/erc-8309-vantage/services/vantage_resolution.py",
+        "identifiers": [
+          "encode_json_utf8_lf",
+          "encode_jcs",
+          "encode_for",
+          "digest",
+          "committed_set_digest",
+          "inspected_set_digest",
+          "classify_divergence",
+          "profile_a_surface",
+          "profile_b_quorum",
+          "compose_a_plus_optional_b"
+        ],
+        "inspection": "Exact-SHA repository bytes; source scope distinguished from independent execution"
+      },
+      {
+        "source_id": "RVR-27",
+        "repository": "babyblueviper1/invinoveritas",
+        "commit": "bdba0b674c2b2d301b75b4b23a33702b0bacfa64",
+        "branch": "main",
+        "path": "integrations/conformance/erc-8309-vantage/tests/test_vantage_resolution.py",
+        "sha256": "70552833bc06593c0db48bb0d516dda233eca13c4dd6d475736da3adcb39673d",
+        "git_blob_oid": "d2866bc8c00735d740af58f371dad24e0dd9d7e1",
+        "source_class": "test",
+        "url": "https://github.com/babyblueviper1/invinoveritas/blob/bdba0b674c2b2d301b75b4b23a33702b0bacfa64/integrations/conformance/erc-8309-vantage/tests/test_vantage_resolution.py",
+        "identifiers": [
+          "att",
+          "_envelope",
+          "test_blob_form_is_sorted_key_utf8_with_exactly_one_trailing_lf",
+          "test_the_two_serializers_differ_by_exactly_the_trailing_byte",
+          "test_erc8309_envelope_is_bound_to_jcs_not_the_lf_form",
+          "test_frozen_blob_domains_keep_the_lf_form_unchanged",
+          "test_preexisting_jcs_domains_are_unchanged",
+          "test_serializer_is_never_inferred_for_an_unbound_schema",
+          "test_refusal_1_divergence_is_not_agreement",
+          "test_refusal_2_resolved_is_a_distinct_type_from_agreement",
+          "test_refusal_3_judgment_is_not_execution",
+          "test_same_signer_equivocation_is_byzantine_evidence",
+          "test_multi_signer_divergence_is_not_flagged_as_equivocation",
+          "test_honest_vantage_conditioned_divergence_is_not_a_fault",
+          "test_undeclared_class_divergence_is_unexplained_not_silently_honest",
+          "test_unsigned_0x_record_is_structurally_ineligible",
+          "test_malformed_length_signature_is_ineligible",
+          "test_ineligible_rows_never_enter_the_v2_commitment",
+          "test_cryptographic_eligibility_is_recomputed_not_inherited",
+          "test_source_peer_is_excluded_from_identity_by_enumeration",
+          "test_v2_is_a_set_commitment_never_a_count",
+          "test_v2_is_order_independent",
+          "test_window_over_signed_timestamps_is_rejected",
+          "test_global_independence_claim_is_rejected",
+          "test_no_finality_unless_declared",
+          "test_profile_a_resolves_nothing",
+          "test_profile_a_envelope_claims_nothing",
+          "test_agreement_only_on_genuine_observation_level_agreement",
+          "test_insufficient_observation_carries_inspected_set_commitment",
+          "test_quorum_counts_distinct_signers_not_attestations",
+          "test_quorum_failure_falls_back_to_profile_a_never_to_agreement",
+          "test_resolved_carries_digest_inline_and_set_by_reference",
+          "test_resolving_profile_without_a_retrievable_ref_is_rejected",
+          "test_profile_b_requires_attest_retain_declared",
+          "test_supersession_does_not_mutate_the_prior_claim",
+          "test_evaluation_id_binds_the_committed_evidence_set",
+          "test_composition_discloses_what_b_inherited_from_a",
+          "test_uncrecomputed_cryptographic_eligibility_is_disclosed_not_silent",
+          "test_verdict_carries_v1_through_v5",
+          "test_verdict_is_canonically_serializable_and_recomputable",
+          "test_companion_binds_two_schemas_not_one",
+          "test_unsigned_preimage_uses_the_specs_own_named_canonical_object",
+          "test_binding_table_is_exactly_the_seven_v033_schema_names",
+          "test_envelope_and_verdict_are_separate_bindings_not_an_alias",
+          "test_spec_version_is_pinned_to_the_current_cut_literally",
+          "test_verdict_self_identifies_with_the_verdict_schema_not_the_document_id",
+          "test_envelope_self_identifies_with_the_envelope_schema"
+        ],
+        "inspection": "Exact-SHA repository bytes; source scope distinguished from independent execution"
+      },
+      {
+        "source_id": "RVR-28",
+        "repository": "babyblueviper1/invinoveritas",
+        "commit": "bdba0b674c2b2d301b75b4b23a33702b0bacfa64",
+        "branch": "main",
+        "path": "integrations/conformance/erc-8309-vantage/conformance/erc-8309-vantage/schema/erc-8309.envelope.schema.json",
+        "sha256": "de1395884ac62fc5d05b39fc3d5401ab993c54a64cb22cd1d385d7a32da71821",
+        "git_blob_oid": "ba78ec8e7ef85cd2a027a06b331809b536ec666f",
+        "source_class": "schema",
+        "url": "https://github.com/babyblueviper1/invinoveritas/blob/bdba0b674c2b2d301b75b4b23a33702b0bacfa64/integrations/conformance/erc-8309-vantage/conformance/erc-8309-vantage/schema/erc-8309.envelope.schema.json",
+        "identifiers": [],
+        "inspection": "Exact-SHA repository bytes; source scope distinguished from independent execution"
+      },
+      {
+        "source_id": "RVR-29",
+        "repository": "babyblueviper1/invinoveritas",
+        "commit": "bdba0b674c2b2d301b75b4b23a33702b0bacfa64",
+        "branch": "main",
+        "path": "integrations/conformance/erc-8309-vantage/conformance/erc-8309-vantage/schema/erc-8309.verdict.schema.json",
+        "sha256": "97b6403633bbe6e49c7bf39cb4ceed69892ef62d0ede274823447d5d1ae86f9e",
+        "git_blob_oid": "a7a7a7199e2563ec98fe3ec3a55f4e37ef3f9c74",
+        "source_class": "schema",
+        "url": "https://github.com/babyblueviper1/invinoveritas/blob/bdba0b674c2b2d301b75b4b23a33702b0bacfa64/integrations/conformance/erc-8309-vantage/conformance/erc-8309-vantage/schema/erc-8309.verdict.schema.json",
+        "identifiers": [],
+        "inspection": "Exact-SHA repository bytes; source scope distinguished from independent execution"
+      },
+      {
+        "source_id": "RVR-30",
+        "repository": "damonzwicker/erc8309-companion-drafts",
+        "commit": "02fef5fd1f54eff9221b863cc746cb74a97f3220",
+        "branch": "main",
+        "path": "8309-vantage-authority-companion-v0.3.9.md",
+        "sha256": "6401eba79926af05af740ccaa3efe4a94981a38b9b7527850104713130dea191",
+        "git_blob_oid": "132c01154361f3e4edb89c137be140a204f0bd31",
+        "source_class": "normative draft",
+        "url": "https://github.com/damonzwicker/erc8309-companion-drafts/blob/02fef5fd1f54eff9221b863cc746cb74a97f3220/8309-vantage-authority-companion-v0.3.9.md",
+        "identifiers": [
+          "# Vantage-Authority Resolution Profiles for ERC-8309",
+          "## Companion Specification — Draft v0.3.9",
+          "## 1. Abstract",
+          "## 2. The Three Refusals (design principles)",
+          "## 3. Terminology and fault taxonomy",
+          "## 4. Base dependencies and named extensions",
+          "### 4.1 Required base behavior (normative, by citation)",
+          "### 4.2 Base extension: ATTEST-RETAIN — LANDED (ccip-router#4 @ 02678910a2f86033053300585f2c154c49ac0fc0, merged to canonical main)",
+          "## 5. The resolution envelope",
+          "## 6. Output-state taxonomy (normative)",
+          "### 6a. Evaluation identity, supersession, and finality (Q3, resolved)",
+          "## 7. Profiles",
+          "### 7.0 Profile A — Divergence Surfacing (normative default)",
+          "### 7.1 Profile B — Quorum (opt-in)",
+          "### 7.2 Profile C — Registry-Weighted Authority (opt-in)",
+          "### 7.3 Profile D — Declared Priority (opt-in; kept per Q4)",
+          "## 8. Vantage-class taxonomy",
+          "## 9. Insufficient-observation proof obligation",
+          "## 10. Conformance",
+          "## 11. Security considerations",
+          "## 12. Lineage and acknowledgments",
+          "## 13. Resolution and ratification record"
+        ],
+        "inspection": "Exact-SHA repository bytes; source scope distinguished from independent execution"
+      },
+      {
+        "source_id": "RVR-31",
+        "repository": "damonzwicker/erc8309-companion-drafts",
+        "commit": "02fef5fd1f54eff9221b863cc746cb74a97f3220",
+        "branch": "main",
+        "path": "cuts/8309-vantage-authority-companion-v0.3.3.md",
+        "sha256": "032cfc4a81722a5fb2f44a302492bf2afbfe9e3edfb54c0ad9b56953ccad8860",
+        "git_blob_oid": "875838eebe92c517bfd29d4943e429804c67bd00",
+        "source_class": "normative draft",
+        "url": "https://github.com/damonzwicker/erc8309-companion-drafts/blob/02fef5fd1f54eff9221b863cc746cb74a97f3220/cuts/8309-vantage-authority-companion-v0.3.3.md",
+        "identifiers": [
+          "# Vantage-Authority Resolution Profiles for ERC-8309",
+          "## Companion Specification — Draft v0.3.3",
+          "## 1. Abstract",
+          "## 2. The Three Refusals (design principles)",
+          "## 3. Terminology and fault taxonomy",
+          "## 4. Base dependencies and named extensions",
+          "### 4.1 Required base behavior (normative, by citation)",
+          "### 4.2 Base extension: ATTEST-RETAIN — IMPLEMENTED AND VERIFIED (ccip-router#4, pending merge to canonical main)",
+          "## 5. The resolution envelope",
+          "## 6. Output-state taxonomy (normative)",
+          "### 6a. Evaluation identity, supersession, and finality (Q3, resolved)",
+          "## 7. Profiles",
+          "### 7.0 Profile A — Divergence Surfacing (normative default)",
+          "### 7.1 Profile B — Quorum (opt-in)",
+          "### 7.2 Profile C — Registry-Weighted Authority (opt-in)",
+          "### 7.3 Profile D — Declared Priority (opt-in; kept per Q4)",
+          "## 8. Vantage-class taxonomy",
+          "## 9. Insufficient-observation proof obligation",
+          "## 10. Conformance",
+          "## 11. Security considerations",
+          "## 12. Lineage and acknowledgments",
+          "## 13. Resolution and ratification record"
+        ],
+        "inspection": "Exact-SHA repository bytes; source scope distinguished from independent execution"
+      },
+      {
+        "source_id": "RVR-32",
+        "repository": "pipavlo82/recomputable-verification-receipts",
+        "commit": "287c0ea1c2578c1833405bc2476975f95addbada",
+        "branch": "main",
+        "path": "docs/spec/RECOMPUTABLE_VERIFICATION_RECEIPTS_V0.md",
+        "sha256": "81077ddbf50624bc70941cf53a4f542604e926a653d7fcb3a36310ff5430b973",
+        "git_blob_oid": "8bd2ae2962d0151998cdf3244e8cc2317215c742",
+        "source_class": "normative spec",
+        "url": "https://github.com/pipavlo82/recomputable-verification-receipts/blob/287c0ea1c2578c1833405bc2476975f95addbada/docs/spec/RECOMPUTABLE_VERIFICATION_RECEIPTS_V0.md",
+        "identifiers": [
+          "# Recomputable Verification Receipts v0",
+          "## 1. Scope",
+          "## 2. Independent axes",
+          "## 3. Receipt",
+          "## 4. rvr-canonical-json-v0",
+          "### 4.1 Exact string escaping",
+          "## 5. Identity rules",
+          "## 6. Verification Profile closure",
+          "### 6.1 Dependency resolution",
+          "### 6.2 Meaning of committed UNAVAILABLE",
+          "## 7. Canonical result and projections",
+          "## 8. Generic SHA256_EQUALS profile",
+          "## 9. Recomputation procedure",
+          "## 10. Required falsification cases",
+          "## 11. Adversarial semantic mutant/witness audit"
+        ],
+        "inspection": "Exact-SHA repository bytes; source scope distinguished from independent execution"
+      }
+    ],
+    "closed_questions": [
+      "A-to-A without amendment: effective remains prior A; both amendment references report unresolved; not universal ACCEPT.",
+      "Exact-predicate composition can bind verdict A independently of amendment status; this does not resolve observation divergence.",
+      "Companion Profile A is a named divergence-surfacing profile, not the arbitrary commitment A placeholder.",
+      "Unresolved must be scoped: amendment not permitted, verdict/companion binding not established, or preserved substantive divergence are different claims.",
+      "R2 composition with distinct transition/effective/verdict-binding outputs is supported; no universal state machine or boolean collapse required."
+    ],
+    "open_questions": [
+      "No published end-to-end no-change vector spanning amendment, verdict binding and companion resolution was found in the pinned sets.",
+      "Binding gates do not verify bilateral or resolver signature cryptography.",
+      "Reference consumer version 0.3.3 is not automatically full conformance to companion draft 0.3.9."
+    ],
+    "inconsistencies": [
+      "Amendment prose describes no-change normal resolution but no-amendment reference output is unresolved with prior effective profile. Retained without relabeling.",
+      "Arbitrary malformed non-object amendment can raise AttributeError; not all malformed inputs produce semantic unresolved.",
+      "Reference consumer docstring mentions 0.2.2, runtime/tests pin 0.3.3; current normative companion draft is 0.3.9."
+    ],
+    "recommended_decomposition": "R2: transition binding plus verdict binding; preserve substantive resolution as a distinct source-defined output when applicable",
+    "classification": "YELLOW"
+  },
+  "pq": {
+    "repos": [
+      {
+        "repository": "trustless-ai/recompute-kit",
+        "branch": "main",
+        "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5"
+      }
+    ],
+    "commits": [
+      "15f7f59ac47b3358492bd5741143c418b5d657f5"
+    ],
+    "files": [
+      {
+        "source_id": "PQ-14",
+        "repository": "trustless-ai/recompute-kit",
+        "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+        "branch": "main",
+        "path": "conformance/pq-key-binding-v0/pq-key-binding-v0.spec.md",
+        "sha256": "877499e8dae1d20e6e3f056cc48337f08755af63fef0c66d58ca44e628928af0",
+        "git_blob_oid": "feb4f0696a546e9911ea9c669d17dbb527b31719",
+        "source_class": "normative spec",
+        "url": "https://github.com/trustless-ai/recompute-kit/blob/15f7f59ac47b3358492bd5741143c418b5d657f5/conformance/pq-key-binding-v0/pq-key-binding-v0.spec.md",
+        "identifiers": [
+          "# pq_key_binding.v0 — anchored PQ-key binding + cutoff (shared cross-impl profile)",
+          "## Why (the load-bearing point)",
+          "## The binding statement — byte-compatible via JCS",
+          "## Companion, not tag",
+          "## Dual-signed, self-verifying, anchored",
+          "## Verifier rule — cutoff by ANCHOR TIME, consumer policy",
+          "## Rotation",
+          "## Revocation (not rotation)",
+          "## Per-agent bindings, batch-Merkle anchored (per-agent Phase 2)",
+          "## Conformance (this suite)"
+        ],
+        "inspection": "Exact-SHA repository bytes; source scope distinguished from independent execution"
+      },
+      {
+        "source_id": "PQ-15",
+        "repository": "trustless-ai/recompute-kit",
+        "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+        "branch": "main",
+        "path": "conformance/pq-key-binding-v0/pq-key-binding-v0.rotation.json",
+        "sha256": "150817aef5862ef601f487ef2f038917bfe78fa302bdf546607a40a7215adee6",
+        "git_blob_oid": "bbf2b5af28a74edda751a6c1f822ab2fb01633e8",
+        "source_class": "signed-object artifact",
+        "url": "https://github.com/trustless-ai/recompute-kit/blob/15f7f59ac47b3358492bd5741143c418b5d657f5/conformance/pq-key-binding-v0/pq-key-binding-v0.rotation.json",
+        "identifiers": [],
+        "inspection": "Exact-SHA repository bytes; source scope distinguished from independent execution"
+      },
+      {
+        "source_id": "PQ-16",
+        "repository": "trustless-ai/recompute-kit",
+        "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+        "branch": "main",
+        "path": "conformance/pq-key-binding-v0/pq-key-binding-v0.rotation-vectors.json",
+        "sha256": "2c046fdaaebe1a8e71b99b191cbd8efa48abe7b6449e5f4b32cc30f1750d6b1a",
+        "git_blob_oid": "31ec45eed7d4a4909e40851bc815ed29c9dba6f8",
+        "source_class": "vector",
+        "url": "https://github.com/trustless-ai/recompute-kit/blob/15f7f59ac47b3358492bd5741143c418b5d657f5/conformance/pq-key-binding-v0/pq-key-binding-v0.rotation-vectors.json",
+        "identifiers": [
+          "artifact before any binding → ungoverned",
+          "at genesis anchor → genesis governs",
+          "BETWEEN rotations → genesis still governs",
+          "exactly AT rotation anchor → rotation-1 governs",
+          "after rotation → rotation-1 governs",
+          "post-cutoff after rotation, companion under NEW in-force key → admit",
+          "post-cutoff after rotation, companion under RETIRED key → reject (rotation enforced)"
+        ],
+        "inspection": "Exact-SHA repository bytes; source scope distinguished from independent execution"
+      },
+      {
+        "source_id": "PQ-17",
+        "repository": "trustless-ai/recompute-kit",
+        "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+        "branch": "main",
+        "path": "conformance/pq-key-binding-v0/pq-key-binding-v0.revocation.json",
+        "sha256": "b97752168fd1071a7a00c72cd584f2e14f24a7314719bdbabc0b089e630151bc",
+        "git_blob_oid": "50773d6554aa51e8c4da94de18db9d286eb20976",
+        "source_class": "signed-object artifact",
+        "url": "https://github.com/trustless-ai/recompute-kit/blob/15f7f59ac47b3358492bd5741143c418b5d657f5/conformance/pq-key-binding-v0/pq-key-binding-v0.revocation.json",
+        "identifiers": [],
+        "inspection": "Exact-SHA repository bytes; source scope distinguished from independent execution"
+      },
+      {
+        "source_id": "PQ-18",
+        "repository": "trustless-ai/recompute-kit",
+        "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+        "branch": "main",
+        "path": "conformance/pq-key-binding-v0/pq-key-binding-v0.revocation-vectors.json",
+        "sha256": "3481360d3ffa5e785ca640a06994a9724ab6e7cee1a2e033102e70b91f31cac0",
+        "git_blob_oid": "f3c6022c4f4edb57d993309d8844562a023b5d73",
+        "source_class": "vector",
+        "url": "https://github.com/trustless-ai/recompute-kit/blob/15f7f59ac47b3358492bd5741143c418b5d657f5/conformance/pq-key-binding-v0/pq-key-binding-v0.revocation-vectors.json",
+        "identifiers": [
+          "before binding existed → ungoverned",
+          "after binding, BEFORE revocation → governed (stays valid)",
+          "exactly AT revocation anchor time → no longer governed",
+          "after revocation → no longer governed",
+          "pre-revocation post-cutoff, valid companion under the (then-live) key → admit",
+          "post-revocation post-cutoff, valid companion under the REVOKED key → still rejected (binding is gone)"
+        ],
+        "inspection": "Exact-SHA repository bytes; source scope distinguished from independent execution"
+      },
+      {
+        "source_id": "PQ-19",
+        "repository": "trustless-ai/recompute-kit",
+        "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+        "branch": "main",
+        "path": "conformance/pq-key-binding-v0/pq-key-binding-v0.cutoff-vectors.json",
+        "sha256": "7cfd7e8906b0afbfa1d000e99177ab797b2f757dc2d71364ff79cc48fbc506f7",
+        "git_blob_oid": "541fc1b67e8487cf39ac075f81efd9d54ccc6f81",
+        "source_class": "vector",
+        "url": "https://github.com/trustless-ai/recompute-kit/blob/15f7f59ac47b3358492bd5741143c418b5d657f5/conformance/pq-key-binding-v0/pq-key-binding-v0.cutoff-vectors.json",
+        "identifiers": [
+          "pre-cutoff anchored, no companion",
+          "post-cutoff, valid companion under in-force key",
+          "post-cutoff, no companion",
+          "post-cutoff, companion present but invalid",
+          "post-cutoff, valid companion but under a NON-in-force key",
+          "artifact anchored before any binding existed",
+          "revocation slot — artifact anchored BEFORE revocation still governed (stays valid)",
+          "revocation slot — artifact anchored AT/AFTER revocation no longer governed"
+        ],
+        "inspection": "Exact-SHA repository bytes; source scope distinguished from independent execution"
+      },
+      {
+        "source_id": "PQ-20",
+        "repository": "trustless-ai/recompute-kit",
+        "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+        "branch": "main",
+        "path": "conformance/pq-key-binding-v0/pq-key-binding-v0.vectors.json",
+        "sha256": "9ee62960f0fade98ee107ee600feac3bca9b6b1157c273568ee060efec235823",
+        "git_blob_oid": "d0c3c17c94292a0b4399ea503b5b133b9a2dadc7",
+        "source_class": "vector",
+        "url": "https://github.com/trustless-ai/recompute-kit/blob/15f7f59ac47b3358492bd5741143c418b5d657f5/conformance/pq-key-binding-v0/pq-key-binding-v0.vectors.json",
+        "identifiers": [
+          "invinoveritas-pq-key-binding-v1-live",
+          "kya-l4-pq-key-binding-v0-slh-dsa",
+          "kya-l4-pq-key-binding-v0-rotation-1-slh-dsa",
+          "kya-example-binding-v0-slh-dsa",
+          "kya-key-revocation-v0-of-example"
+        ],
+        "inspection": "Exact-SHA repository bytes; source scope distinguished from independent execution"
+      },
+      {
+        "source_id": "PQ-21",
+        "repository": "trustless-ai/recompute-kit",
+        "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+        "branch": "main",
+        "path": "conformance/pq-key-binding-v0/deep_recompute.py",
+        "sha256": "8b43d22524a2f9c18ee90e302afd84a604b5b5cb949d4325203a86479187ba46",
+        "git_blob_oid": "7d5f6b185a96fe2a8cb915f7ba28f8bb54d518a8",
+        "source_class": "reference implementation",
+        "url": "https://github.com/trustless-ai/recompute-kit/blob/15f7f59ac47b3358492bd5741143c418b5d657f5/conformance/pq-key-binding-v0/deep_recompute.py",
+        "identifiers": [
+          "jcs",
+          "cc_of",
+          "fold_merkle",
+          "check_per_agent_anchor",
+          "check_rotation",
+          "check_revocation",
+          "run"
+        ],
+        "inspection": "Exact-SHA repository bytes; source scope distinguished from independent execution"
+      },
+      {
+        "source_id": "PQ-22",
+        "repository": "trustless-ai/recompute-kit",
+        "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+        "branch": "main",
+        "path": "conformance/pq-key-binding-v0/cutoff_enforce.py",
+        "sha256": "a11d528b97bd88b7850a679122e1bbaec162bf98f6164587c23e47f9174df528",
+        "git_blob_oid": "8c760df6d2e22804d964484575e8a54513d8c687",
+        "source_class": "reference implementation",
+        "url": "https://github.com/trustless-ai/recompute-kit/blob/15f7f59ac47b3358492bd5741143c418b5d657f5/conformance/pq-key-binding-v0/cutoff_enforce.py",
+        "identifiers": [
+          "resolve_in_force",
+          "apply_revocations",
+          "admit",
+          "run"
+        ],
+        "inspection": "Exact-SHA repository bytes; source scope distinguished from independent execution"
+      },
+      {
+        "source_id": "PQ-23",
+        "repository": "trustless-ai/recompute-kit",
+        "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+        "branch": "main",
+        "path": "conformance/pq-key-binding-v0/gate.py",
+        "sha256": "36347585715c22d8862aae34e6d5ab84b5e9283e08fa8366382fba9935e66d43",
+        "git_blob_oid": "db31d484a7a2df5185d3c0c4767c7997f5b35e8d",
+        "source_class": "reference implementation",
+        "url": "https://github.com/trustless-ai/recompute-kit/blob/15f7f59ac47b3358492bd5741143c418b5d657f5/conformance/pq-key-binding-v0/gate.py",
+        "identifiers": [
+          "jcs",
+          "compact",
+          "_hex_tokens",
+          "lint_spec",
+          "recompute"
+        ],
+        "inspection": "Exact-SHA repository bytes; source scope distinguished from independent execution"
+      },
+      {
+        "source_id": "PQ-24",
+        "repository": "trustless-ai/recompute-kit",
+        "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+        "branch": "main",
+        "path": "conformance/pq-key-binding-v0/suite.json",
+        "sha256": "bcd7a1eeeb9e9b392cb917d900313636051c5b4eac18bf12a0d8ded02a9df6dc",
+        "git_blob_oid": "20aa57a2987cb5fdc6671fcbef6f0198dcbdad00",
+        "source_class": "manifest",
+        "url": "https://github.com/trustless-ai/recompute-kit/blob/15f7f59ac47b3358492bd5741143c418b5d657f5/conformance/pq-key-binding-v0/suite.json",
+        "identifiers": [],
+        "inspection": "Exact-SHA repository bytes; source scope distinguished from independent execution"
+      }
+    ],
+    "closed_questions": [
+      "Policy vectors evaluate cutoff and key selection over supplied binding history and validity flags; they do not prove authenticated transition continuity.",
+      "Rotation artifact exists with predecessor pointer and continuity/new-key signatures over successor statement digest.",
+      "Offline deep_recompute check_rotation verifies hashes/canonical string and defers signatures; artifact existence does not establish authenticated authority.",
+      "Historical eligibility depends on proven anchor time and governing binding, not evaluation-time current key or created_at.",
+      "Current draft explicitly supports a policy-only scope and requires stronger evidence for full authority claims."
+    ],
+    "open_questions": [
+      "Signatures were not independently verified in this pass.",
+      "Applicable successor anchor/inclusion and complete trusted-chain/current-authority closure are not established by the supplied rotation policy vectors.",
+      "Subject substitution and stale-history completeness are not exercised by the policy function as authenticated-authority checks.",
+      "Equal-time competing bindings and comprehensive replay/fork resolution are not established by the inspected policy vectors."
+    ],
+    "inconsistencies": [
+      "Spec reports signatures verify in a deep lane; the shipped offline deep_recompute.py explicitly defers signatures.",
+      "Deferred labels say ML-DSA while pinned rotation/revocation objects identify SLH-DSA-SHA2-192s.",
+      "Rotation binding_anchor_time is explicitly intended; it is not an independently verified chain inclusion receipt."
+    ],
+    "stronger_claim_status": "UNSUPPORTED: full authenticated current-authority transition validation",
+    "supported_validation_scope": "Policy/cutoff/as-of evaluation conditional on supplied history/validity evidence; exact statement hash/link consistency",
+    "recommended_decomposition": [
+      "R_transition: trusted predecessor to signed successor and activation evidence",
+      "R_auth: subject to governing binding at source-defined anchor/as-of",
+      "R_artifact: artifact/companion to that governing key under consumer cutoff"
+    ],
+    "classification": "YELLOW"
+  },
+  "independent_checks": {
+    "probe_class": "exact pinned reference functions in memory; derived probes are not normative vectors",
+    "amendment_vectors": {
+      "matched": 8,
+      "total": 8
+    },
+    "verdict_vectors": {
+      "matched": 6,
+      "total": 6
+    },
+    "derived_A_no_amendment": {
+      "prior_profile_commitment": "cc458bd42359a4dcd873cd3bde38cc45e5562f51f674c214b4659030317c70ce",
+      "new_profile_commitment": "cc458bd42359a4dcd873cd3bde38cc45e5562f51f674c214b4659030317c70ce",
+      "amendment_cc": null,
+      "transition_status": "unresolved",
+      "effective_profile_commitment": "cc458bd42359a4dcd873cd3bde38cc45e5562f51f674c214b4659030317c70ce"
+    },
+    "derived_verdict_A_after_no_amendment": {
+      "verdict_core_cc": "7464a2611f474e7104ec7d501eeaec99de97b25ef9e5f202485bbef356c583b0",
+      "resolution_status": "bound",
+      "bound_profile_commitment": "cc458bd42359a4dcd873cd3bde38cc45e5562f51f674c214b4659030317c70ce"
+    },
+    "malformed_nonobject_amendment": "AttributeError",
+    "pq_policy_vectors": {
+      "rotation": {
+        "matched": 7,
+        "total": 7
+      },
+      "revocation": {
+        "matched": 6,
+        "total": 6
+      },
+      "cutoff": {
+        "matched": 8,
+        "total": 8
+      }
+    },
+    "rotation_byte_checks": {
+      "canonical_string_equal": true,
+      "content_address_equal": true,
+      "predecessor_link_equal": true,
+      "signature_verification_performed": false,
+      "anchor_verification_performed": false
+    }
+  },
+  "design_readiness": {
+    "rvr": "YELLOW",
+    "pq": "YELLOW",
+    "implementation_ready": true,
+    "scope": "Generic Relation Profile Contract only, for approval; no implementation authorized or performed. Existing draft can represent both without domain-specific core branches.",
+    "semantic_model_change_required": false,
+    "required_schema_change_from_this_evidence": false,
+    "clarifications_before_implementation": [
+      "A/B commitment placeholders are not ERC-8309 Profiles A/B; no universal A-to-A ACCEPT.",
+      "Keep effective profile, transition status, verdict-binding status and substantive resolution separate.",
+      "Record offline PQ deep-lane signature deferral and full-authority unsupported boundary; policy-only success is not authenticated transition evidence."
+    ],
+    "prior_design_files_modified": false,
+    "proposed_diffs_in": [
+      "research/rvr-relation-matrix-v0.md",
+      "research/pq-authority-matrix-v0.md"
+    ]
+  },
+  "actions": {
+    "new_files": [
+      "research/rvr-relation-matrix-v0.md",
+      "research/pq-authority-matrix-v0.md",
+      "research/relation-profile-evidence-closure-v0.json"
+    ],
+    "external_repository_modifications": false,
+    "code_or_schema_modifications": false,
+    "commit": false,
+    "push": false,
+    "baseline_suite_rerun": false,
+    "tooling_failure": "An overlong inline probe command failed to spawn (Windows 206); no execution occurred. Shorter exact-SHA in-memory retry completed.",
+    "memory_updates": "Not performed: current task restricts work to this repository and evidence artifacts."
+  }
+}

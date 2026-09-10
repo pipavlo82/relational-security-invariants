@@ -121,3 +121,5 @@ is no public release or selected open-source license yet; see `LICENSE` and
 Expectation extensibility: [Expectation Contract v0.1](spec/expectation-contract-v0.md), with the [extension architecture checkpoint](spec/extension-contract-v0.md).
 
 Registered execution: `python -m runner.extension_runtime --output artifacts/extension.json`; see the [Extension Contract](spec/extension-contract-v0.md).
+
+The additive [Relation Profile Contract v0.1](spec/relation-profile-contract-v0.md) supports profile-defined relation inputs alongside the unchanged legacy corpus.

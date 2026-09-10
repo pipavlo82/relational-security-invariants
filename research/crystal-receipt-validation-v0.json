@@ -1,0 +1,353 @@
+{
+  "baseline": {
+    "exact_legacy_outcome_diff": [],
+    "existing_ci": {
+      "head": "05f3853756ad9deb0e5d08d54dfdfd462652a801",
+      "new_ci_run": false,
+      "status": "success",
+      "url": "https://github.com/pipavlo82/relational-security-invariants/actions/runs/34424963934"
+    },
+    "fail": 0,
+    "invalid_fixture": 0,
+    "legacy_pass": 36,
+    "optimized_tests": 150,
+    "post_report_structured_sha256": "a09c821f4c2a45ede169e531425f550e5fd5003945f4e8974b4249e31fb30803",
+    "registered_mutations": {
+      "KILLED": 16,
+      "NOT_APPLIED": 0,
+      "SURVIVED": 0,
+      "VACUOUS": 0
+    },
+    "report_metadata_note": "Source inventory hashes change when untracked review reports are added; all 36 complete ordered case records are identical.",
+    "structured_extension_sha256": "9af964a7f04308f083686310959cc247ccae588726254c6cc17cafbc5005b3bc",
+    "structured_legacy_sha256": "51baec4d78ecb0f7b2f701d277b1c9173482bd769b0a09b7d4b59b4bbefc7d06",
+    "tests": 150,
+    "unsupported": 0
+  },
+  "blocker": {
+    "allowed_operations": [
+      "admit",
+      "transition",
+      "consume",
+      "confirm",
+      "ingest"
+    ],
+    "allowed_protected_relations": [
+      "signer_to_subject",
+      "authentication_before_commit",
+      "atomic_consumption",
+      "context_binding",
+      "evidence_bounded_status",
+      "ingestion_equivalence"
+    ],
+    "code": "NO_APPROVED_RBCF_SEMANTIC_REPRESENTATION",
+    "missing_abstraction": "An explicitly approved semantic profile/input representation for unsigned source artifacts and their snapshot/root/traversal relations. No new field or relation is added in this task.",
+    "rbcf_supports_source_operation": false,
+    "reason": "The frozen RBCF reference vocabulary and full-input shape describe six signed-operation relations. The real semantic-snapshot equivalence and evidence/proof-root binding candidates have no authorized declaration/request representation. Renaming them to context_binding or evidence_bounded_status, adding dummy Ed25519 proof/state/policy, tunneling semantic input through identity fields, or replacing the fixture validator would reinterpret/bypass the preserved model.",
+    "schema_locations": [
+      "/properties/protected_relation/enum",
+      "/$defs/request/oneOf",
+      "/$defs/proof",
+      "/$defs/policy",
+      "/properties/profile_version"
+    ],
+    "source_mirror_exists": true,
+    "source_operation": "semantic_snapshot"
+  },
+  "candidate_assessments": [
+    {
+      "executed": false,
+      "finding": "Source requires accepted snapshots to differ after one semantic value changes; snapshot acceptance must not be reinterpreted as receipt authorization. Frozen RBCF has no corresponding declared relation.",
+      "id": "crystal-receipt:CR-RSI-001",
+      "source": "V-SEM-MUTATION-DIFFERS",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "executed": false,
+      "finding": "Real mirror-positive exists: same semantic artifact, three external manifest/audit metadata variants, accepted matching snapshots. Independent derivation follows the frozen snapshot rule; mapping to the current signed-operation model is blocked.",
+      "id": "crystal-receipt:CR-RSI-002",
+      "source": "V-SEM-MANIFEST-INVARIANT",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "actual_frozen_input_diff": [
+        "/input/options",
+        "/input/proof_object/receipt_root"
+      ],
+      "executed": false,
+      "finding": "Source-bound cross-object root equality is evidenced; producer identity/authorization claims are not inferred. No native root-binding request/relation in preserved RBCF.",
+      "id": "crystal-receipt:CR-RSI-003",
+      "source": "clean_admitted / proof_root_mismatch",
+      "source_control_expected": "admitted",
+      "source_negative_expected": "rejected",
+      "source_reason": "proof_root_mismatch",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "executed": false,
+      "finding": "Lane K v1 is present and frozen in canonical main: twelve fresh-process schedules, 120 member evaluations and separate semantic/stability axes. It is not an evidenced local-degree/global-graph substitution fixture, and no schedules were executed.",
+      "id": "crystal-receipt:CR-RSI-004",
+      "source": "counterfactual-traversal-stability-v1",
+      "status": "UNSUPPORTED"
+    }
+  ],
+  "candidate_totals": {
+    "executed": 0,
+    "total": 4,
+    "unsupported": 4
+  },
+  "commit_created": false,
+  "contracts_note": "Registries remain available, but no Crystal Receipt profile or fixture was admitted; this is a semantic-fit STOP, not evidence of generic runner failure.",
+  "core_changed": false,
+  "domain": "crystal-receipt",
+  "expectation_contract_reused": false,
+  "extension_contract_reused": false,
+  "fixtures": {
+    "fail": 0,
+    "invalid_fixture": 0,
+    "pass": 0,
+    "registered": 0,
+    "total": 0,
+    "unsupported": 0
+  },
+  "generic_runner_changed": false,
+  "head_after": "05f3853756ad9deb0e5d08d54dfdfd462652a801",
+  "head_before": "05f3853756ad9deb0e5d08d54dfdfd462652a801",
+  "limitations": [
+    "STOP was reached before adapter/predictor/mutation implementation.",
+    "Source expected rows are reported as frozen evidence, not promoted to RSI fixture oracles.",
+    "No full Crystal Receipt suite/package auditor was run; blob identities were checked read-only.",
+    "Optional Lane K real execution remains unverified.",
+    "Architecture registration readiness does not establish representability of every domain in the frozen reference model.",
+    "No first external-domain success or cross-domain validation claim is made."
+  ],
+  "mutations": {
+    "killed": 0,
+    "not_applied": 0,
+    "survived": 0,
+    "total": 0,
+    "vacuous": 0
+  },
+  "preservation_hashes": {
+    "fixtures/RSI-001-signer-to-subject.json": {
+      "after": "190593956ed776e1e1a8b4d147e8911d66032bea2e64d5e1532318be03791561",
+      "before": "190593956ed776e1e1a8b4d147e8911d66032bea2e64d5e1532318be03791561"
+    },
+    "fixtures/RSI-003-authentication-before-commit.json": {
+      "after": "e576bf9e747bf1fb4912839af835d905a5a1e819ee480a65254a365c3b3f7c18",
+      "before": "e576bf9e747bf1fb4912839af835d905a5a1e819ee480a65254a365c3b3f7c18"
+    },
+    "fixtures/RSI-004-atomic-consumption.json": {
+      "after": "8525041ca5d6de073b083d0234e6d31b35afb86b54a9fb9567e9f3109da907ac",
+      "before": "8525041ca5d6de073b083d0234e6d31b35afb86b54a9fb9567e9f3109da907ac"
+    },
+    "fixtures/RSI-006-context-binding.json": {
+      "after": "f1f275d39ead4cc99d9fd7b9f168d181806f31b1a38c8eaa76306809212cebdf",
+      "before": "f1f275d39ead4cc99d9fd7b9f168d181806f31b1a38c8eaa76306809212cebdf"
+    },
+    "fixtures/RSI-008-evidence-bounded-status.json": {
+      "after": "38a417d69d720e36a6c79252f6836661c47b937c09f892251231f2f10ed80511",
+      "before": "38a417d69d720e36a6c79252f6836661c47b937c09f892251231f2f10ed80511"
+    },
+    "fixtures/RSI-009-ingestion-equivalence.json": {
+      "after": "f5308d6f4218a1e51e764b25f14dda578d281976787c8536e553452cd3afb614",
+      "before": "f5308d6f4218a1e51e764b25f14dda578d281976787c8536e553452cd3afb614"
+    },
+    "oracle/expectations.core.synthetic.v0.json": {
+      "after": "e01b15510d45943b6b830cb729835c7040fbc8bb0b2ebf6301655c9df458f37f",
+      "before": "e01b15510d45943b6b830cb729835c7040fbc8bb0b2ebf6301655c9df458f37f"
+    },
+    "oracle/expected.v0.json": {
+      "after": "4ab519a92a8c96c88632f2003e62384aab3aa064fdafb50a9a0decf1efb335aa",
+      "before": "4ab519a92a8c96c88632f2003e62384aab3aa064fdafb50a9a0decf1efb335aa"
+    },
+    "profiles/core.synthetic.v0.json": {
+      "after": "634b785a5296e875585aade01f6a7778466316ebcf3a46ff4876e45f0e3460c9",
+      "before": "634b785a5296e875585aade01f6a7778466316ebcf3a46ff4876e45f0e3460c9"
+    },
+    "profiles/synthetic.py": {
+      "after": "1d6c206528ec487a02a282a251e8fdf700214b08b7ccd6a99dfb6904e1661310",
+      "before": "1d6c206528ec487a02a282a251e8fdf700214b08b7ccd6a99dfb6904e1661310"
+    },
+    "rsi/oracle.py": {
+      "after": "23e7c1ffc26441ef7cb4e85282f2da6f91b017b685f2220a432110ca3232002b",
+      "before": "23e7c1ffc26441ef7cb4e85282f2da6f91b017b685f2220a432110ca3232002b"
+    },
+    "rsi/run.py": {
+      "after": "3cee105292d30a558f276b37b6e209c06ea2ce56d7ed57fddba93a53f34b3e7e",
+      "before": "3cee105292d30a558f276b37b6e209c06ea2ce56d7ed57fddba93a53f34b3e7e"
+    },
+    "runner/adapter_registry.py": {
+      "after": "7a96ed768563ed6f8e7b067108d855d1e06178abe7556957772dc964546c9af5",
+      "before": "7a96ed768563ed6f8e7b067108d855d1e06178abe7556957772dc964546c9af5"
+    },
+    "runner/execution.py": {
+      "after": "c7234c885eef97e24a89b3b54041cff77de88311e4521e74f1a9f208dd82feb7",
+      "before": "c7234c885eef97e24a89b3b54041cff77de88311e4521e74f1a9f208dd82feb7"
+    },
+    "runner/expectation_contract.py": {
+      "after": "bfe87feb88e843809dd6a0311a52bc78a634a59fa2c6f992d0a438cedfb7cb52",
+      "before": "bfe87feb88e843809dd6a0311a52bc78a634a59fa2c6f992d0a438cedfb7cb52"
+    },
+    "runner/expectation_registry.py": {
+      "after": "4c8b55edabf9bfddb3306faf4c30dff2297f5630275e87807741e3cf01766a67",
+      "before": "4c8b55edabf9bfddb3306faf4c30dff2297f5630275e87807741e3cf01766a67"
+    },
+    "runner/extension_runtime.py": {
+      "after": "1f026b43a40cd96b6920190c0d2d15f181954cabefbba75f184c13038945ace4",
+      "before": "1f026b43a40cd96b6920190c0d2d15f181954cabefbba75f184c13038945ace4"
+    },
+    "runner/fixture_registry.py": {
+      "after": "cdfc7a5a792b54f44c73aa83dd0b6cfa205903f6485188bf4111414830f87051",
+      "before": "cdfc7a5a792b54f44c73aa83dd0b6cfa205903f6485188bf4111414830f87051"
+    },
+    "runner/mutation_registry.py": {
+      "after": "20e99f68b97228e86136984f419da9d6be4c09149dee7bfee9acc1f1644d8084",
+      "before": "20e99f68b97228e86136984f419da9d6be4c09149dee7bfee9acc1f1644d8084"
+    },
+    "schema/expectations.v0.schema.json": {
+      "after": "7174fd7556608e31f4888b14ea5ab05407bab4d83c0a71b36707506293de0f05",
+      "before": "7174fd7556608e31f4888b14ea5ab05407bab4d83c0a71b36707506293de0f05"
+    },
+    "schema/fixture-corpus.v0.schema.json": {
+      "after": "23f246d8b44661948698baead7c7fab55b5aa7e1dbd7ccbcbd092b09d6b81196",
+      "before": "23f246d8b44661948698baead7c7fab55b5aa7e1dbd7ccbcbd092b09d6b81196"
+    },
+    "schema/observation.v0.schema.json": {
+      "after": "bbdea70bb0f614122b1fc582a2ed3fe64ef41faf8282135dfbf5323b554a018c",
+      "before": "bbdea70bb0f614122b1fc582a2ed3fe64ef41faf8282135dfbf5323b554a018c"
+    },
+    "schema/registered-fixture.v0.schema.json": {
+      "after": "a3dd12dd3313a291166dd04a0a412d36116f0fdd520a0b3b03b4794cc04b9e49",
+      "before": "a3dd12dd3313a291166dd04a0a412d36116f0fdd520a0b3b03b4794cc04b9e49"
+    },
+    "schema/relation-binding-fixture.v0.schema.json": {
+      "after": "ab7c7390ea91d26fe1f1916c9f2ae7552a0077b69f2399c5ed76c199bc73f4ca",
+      "before": "ab7c7390ea91d26fe1f1916c9f2ae7552a0077b69f2399c5ed76c199bc73f4ca"
+    },
+    "spec/RSI-core-v0.md": {
+      "after": "fe9653df358e8ced1e3598dae06fe5520d5dd7c3fd4ef9a978873e8027f34851",
+      "before": "fe9653df358e8ced1e3598dae06fe5520d5dd7c3fd4ef9a978873e8027f34851"
+    },
+    "spec/expectation-contract-v0.md": {
+      "after": "6d6e3ed33b33410d311a77839e6e289dbef79bb1c064cb04c434315d085669cc",
+      "before": "6d6e3ed33b33410d311a77839e6e289dbef79bb1c064cb04c434315d085669cc"
+    }
+  },
+  "pushed": false,
+  "schema": "rsi-domain-validation.v0",
+  "semantic_exceptions_added": 0,
+  "source": {
+    "artifacts": [
+      {
+        "bytes": 4400,
+        "commit": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+        "git_blob_oid": "8287dc7dcaf88f582ebf32104d8494c8f1341f56",
+        "invariant": "semantic-snapshot / manifest audit metadata boundary",
+        "path": "conformance/counterfactual-audit-boundary-v0/SPEC.md",
+        "permalink": "https://github.com/pipavlo82/crystal-receipt/blob/45b46bf7df3a60b32583291f577a36bf19d22f00/conformance/counterfactual-audit-boundary-v0/SPEC.md",
+        "repo": "https://github.com/pipavlo82/crystal-receipt",
+        "sha256": "9c17bd826c4a789464dab80c78a136153f3d9ce2f253198d0cf386bdef3a6d0b",
+        "source_kind": "normative"
+      },
+      {
+        "bytes": 887,
+        "commit": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+        "git_blob_oid": "501e3cf3971e2fe0aae0a789c84b7907c50a85b1",
+        "invariant": "V-SEM-MANIFEST-INVARIANT",
+        "path": "conformance/counterfactual-audit-boundary-v0/vectors/V-SEM-MANIFEST-INVARIANT.json",
+        "permalink": "https://github.com/pipavlo82/crystal-receipt/blob/45b46bf7df3a60b32583291f577a36bf19d22f00/conformance/counterfactual-audit-boundary-v0/vectors/V-SEM-MANIFEST-INVARIANT.json",
+        "repo": "https://github.com/pipavlo82/crystal-receipt",
+        "sha256": "9330a797b15b74d8c3372b866e9bc9f9e842e142de9a6f6b47581bbf92004749",
+        "source_kind": "frozen fixture"
+      },
+      {
+        "bytes": 744,
+        "commit": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+        "git_blob_oid": "3dfde347ab90321930566f4a6594fa177b0d7654",
+        "invariant": "V-SEM-MUTATION-DIFFERS",
+        "path": "conformance/counterfactual-audit-boundary-v0/vectors/V-SEM-MUTATION-DIFFERS.json",
+        "permalink": "https://github.com/pipavlo82/crystal-receipt/blob/45b46bf7df3a60b32583291f577a36bf19d22f00/conformance/counterfactual-audit-boundary-v0/vectors/V-SEM-MUTATION-DIFFERS.json",
+        "repo": "https://github.com/pipavlo82/crystal-receipt",
+        "sha256": "c92915e29cda954db6c0aaa44bbcb958c741e51a86fd7bca7bd9f767434c433d",
+        "source_kind": "frozen fixture"
+      },
+      {
+        "bytes": 4786,
+        "commit": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+        "git_blob_oid": "ceb86703664266f891cbc72ce5f45e0fd745d429",
+        "invariant": "counterfactual-conformance-v0 / DCN identity",
+        "path": "conformance/counterfactual-conformance-v0/SPEC.md",
+        "permalink": "https://github.com/pipavlo82/crystal-receipt/blob/45b46bf7df3a60b32583291f577a36bf19d22f00/conformance/counterfactual-conformance-v0/SPEC.md",
+        "repo": "https://github.com/pipavlo82/crystal-receipt",
+        "sha256": "d1d3a0dbeeed8eb49756f919d95f5ba8c7d283ddc5ca263449c73cbd74f0536b",
+        "source_kind": "normative"
+      },
+      {
+        "bytes": 5901,
+        "commit": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+        "git_blob_oid": "82070dc2f06a595c6e1abc7136c90b1ef52a1299",
+        "invariant": "Lane K v1 traversal stability",
+        "path": "conformance/counterfactual-traversal-stability-v1/SPEC.md",
+        "permalink": "https://github.com/pipavlo82/crystal-receipt/blob/45b46bf7df3a60b32583291f577a36bf19d22f00/conformance/counterfactual-traversal-stability-v1/SPEC.md",
+        "repo": "https://github.com/pipavlo82/crystal-receipt",
+        "sha256": "4127eb43467dde3a3889ceb7ffa3051d334f0b1556c404ea8557fd28e87c509c",
+        "source_kind": "normative"
+      },
+      {
+        "bytes": 2734,
+        "commit": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+        "git_blob_oid": "8d8e4a0824aa7f3453742d9171266aef7aadac88",
+        "invariant": "frozen admission member-byte authority",
+        "path": "tests/fixtures/receiptos-chronicle-admission-v0/README.md",
+        "permalink": "https://github.com/pipavlo82/crystal-receipt/blob/45b46bf7df3a60b32583291f577a36bf19d22f00/tests/fixtures/receiptos-chronicle-admission-v0/README.md",
+        "repo": "https://github.com/pipavlo82/crystal-receipt",
+        "sha256": "505bce62220d05ff08a24d9f01e25d875c4c1a267a460bf8d7065c756b1e6fec",
+        "source_kind": "normative"
+      },
+      {
+        "bytes": 12347,
+        "canonical_main_sha256": "2240d512c105328033bdf24c2af145d6b0067a98f3d527b39620c34adecc2a7d",
+        "commit": "7d9b67c96f2b472f5b4acfef3f95b669eb24de7b",
+        "frozen_bytes_equal_canonical_main": true,
+        "git_blob_oid": "8577188aa93c03f14356ac2690f8e4143c362f23",
+        "invariant": "clean_admitted",
+        "path": "tests/fixtures/receiptos-chronicle-admission-v0/vectors/01-clean-admitted.json",
+        "permalink": "https://github.com/pipavlo82/crystal-receipt/blob/7d9b67c96f2b472f5b4acfef3f95b669eb24de7b/tests/fixtures/receiptos-chronicle-admission-v0/vectors/01-clean-admitted.json",
+        "repo": "https://github.com/pipavlo82/crystal-receipt",
+        "selection_authority": "Canonical main README explicitly defines this immutable raw-Git-blob pin; not inferred from branch ancestry.",
+        "sha256": "2240d512c105328033bdf24c2af145d6b0067a98f3d527b39620c34adecc2a7d",
+        "source_kind": "frozen fixture"
+      },
+      {
+        "bytes": 11282,
+        "canonical_main_sha256": "524e207d3135c8befcd7bfaac9cc2119b413e6f7a90c375e89b98c21df545247",
+        "commit": "7d9b67c96f2b472f5b4acfef3f95b669eb24de7b",
+        "frozen_bytes_equal_canonical_main": true,
+        "git_blob_oid": "89693bffa7daffbdcc33526442e0344cd97d81c7",
+        "invariant": "proof_root_mismatch",
+        "path": "tests/fixtures/receiptos-chronicle-admission-v0/vectors/04-proof-root-mismatch.json",
+        "permalink": "https://github.com/pipavlo82/crystal-receipt/blob/7d9b67c96f2b472f5b4acfef3f95b669eb24de7b/tests/fixtures/receiptos-chronicle-admission-v0/vectors/04-proof-root-mismatch.json",
+        "repo": "https://github.com/pipavlo82/crystal-receipt",
+        "selection_authority": "Canonical main README explicitly defines this immutable raw-Git-blob pin; not inferred from branch ancestry.",
+        "sha256": "524e207d3135c8befcd7bfaac9cc2119b413e6f7a90c375e89b98c21df545247",
+        "source_kind": "frozen fixture"
+      }
+    ],
+    "canonical_branch": "main",
+    "commit": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+    "frozen_admission_pin": "7d9b67c96f2b472f5b4acfef3f95b669eb24de7b",
+    "frozen_pin_is_ancestor_of_main": false,
+    "local_branch": "feature/tsei-spec-artifact-v0",
+    "local_head": "46bed9ba8662ede63f0682ac6d2c93e52b6536cd",
+    "local_origin_main": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+    "local_path": "C:\\Users\\msi\\dev\\crystal-receipt",
+    "local_remote": "https://github.com/pipavlo82/crystal-receipt.git",
+    "local_status_sha256": "10314b2b0db63710efc2313debcdf74e6c8710691a5335fec11a6479ab995796",
+    "local_tracked_clean": true,
+    "local_untracked_count": 14,
+    "repo": "https://github.com/pipavlo82/crystal-receipt",
+    "selection": "GitHub default main/ref independently checked; exact commit blobs read locally. No fetch, checkout, source tests or source writes. Feature worktree bytes excluded."
+  },
+  "status": "STOPPED_BEFORE_IMPLEMENTATION"
+}

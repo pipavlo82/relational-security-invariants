@@ -27,3 +27,6 @@ jobs:
       - run: python -m runner.extension_runtime --output artifacts/extension.json
       - run: python tools/run_registered_mutations.py --output artifacts/registered-mutations.json
       - run: python tools/check_extension_contract.py --mutations artifacts/registered-mutations.json --output artifacts/extension-validation.json
+      - run: python -m runner.relation_runtime --output artifacts/relations.json
+      - run: python tools/prove_relations_can_fail.py --output artifacts/relation-mutations.json
+      - run: python tools/check_relation_contract.py --legacy-mutations artifacts/registered-mutations.json --relation-mutations artifacts/relation-mutations.json --output artifacts/relation-contract-check.json
