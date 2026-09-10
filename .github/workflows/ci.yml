@@ -22,3 +22,5 @@ jobs:
       - run: python -m unittest discover -s tests -v
       - run: python -O -m unittest discover -s tests -v
       - run: python tools/prove_can_fail.py --output artifacts/prove-can-fail.json
+      - run: python tools/check_expectations.py
+      - run: python tools/prove_expectations_can_fail.py --output artifacts/expectation-mutations.json

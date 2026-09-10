@@ -1,0 +1,197 @@
+{
+  "schema": "rsi-expectation-contract-validation.v0",
+  "base_head": "4698cccb1dbb1638b241e1d409e0897eb53dc86e",
+  "implementation_commit": "The commit containing this report; exact resulting SHA is reported after commit.",
+  "preserved_hashes": {
+    "spec/RSI-core-v0.md": {
+      "before": "fe9653df358e8ced1e3598dae06fe5520d5dd7c3fd4ef9a978873e8027f34851",
+      "after": "fe9653df358e8ced1e3598dae06fe5520d5dd7c3fd4ef9a978873e8027f34851"
+    },
+    "schema/relation-binding-fixture.v0.schema.json": {
+      "before": "ab7c7390ea91d26fe1f1916c9f2ae7552a0077b69f2399c5ed76c199bc73f4ca",
+      "after": "ab7c7390ea91d26fe1f1916c9f2ae7552a0077b69f2399c5ed76c199bc73f4ca"
+    },
+    "schema/observation.v0.schema.json": {
+      "before": "bbdea70bb0f614122b1fc582a2ed3fe64ef41faf8282135dfbf5323b554a018c",
+      "after": "bbdea70bb0f614122b1fc582a2ed3fe64ef41faf8282135dfbf5323b554a018c"
+    },
+    "oracle/expected.v0.json": {
+      "before": "4ab519a92a8c96c88632f2003e62384aab3aa064fdafb50a9a0decf1efb335aa",
+      "after": "4ab519a92a8c96c88632f2003e62384aab3aa064fdafb50a9a0decf1efb335aa"
+    },
+    "rsi/oracle.py": {
+      "before": "23e7c1ffc26441ef7cb4e85282f2da6f91b017b685f2220a432110ca3232002b",
+      "after": "23e7c1ffc26441ef7cb4e85282f2da6f91b017b685f2220a432110ca3232002b"
+    },
+    "manifest.json": {
+      "before": "363ba4679b91b64d241e1feaa1e0d72da22502eb7268bd4343c146f4267cf28f",
+      "after": "363ba4679b91b64d241e1feaa1e0d72da22502eb7268bd4343c146f4267cf28f"
+    },
+    "fixtures/RSI-001-signer-to-subject.json": {
+      "before": "190593956ed776e1e1a8b4d147e8911d66032bea2e64d5e1532318be03791561",
+      "after": "190593956ed776e1e1a8b4d147e8911d66032bea2e64d5e1532318be03791561"
+    },
+    "fixtures/RSI-003-authentication-before-commit.json": {
+      "before": "e576bf9e747bf1fb4912839af835d905a5a1e819ee480a65254a365c3b3f7c18",
+      "after": "e576bf9e747bf1fb4912839af835d905a5a1e819ee480a65254a365c3b3f7c18"
+    },
+    "fixtures/RSI-004-atomic-consumption.json": {
+      "before": "8525041ca5d6de073b083d0234e6d31b35afb86b54a9fb9567e9f3109da907ac",
+      "after": "8525041ca5d6de073b083d0234e6d31b35afb86b54a9fb9567e9f3109da907ac"
+    },
+    "fixtures/RSI-006-context-binding.json": {
+      "before": "f1f275d39ead4cc99d9fd7b9f168d181806f31b1a38c8eaa76306809212cebdf",
+      "after": "f1f275d39ead4cc99d9fd7b9f168d181806f31b1a38c8eaa76306809212cebdf"
+    },
+    "fixtures/RSI-008-evidence-bounded-status.json": {
+      "before": "38a417d69d720e36a6c79252f6836661c47b937c09f892251231f2f10ed80511",
+      "after": "38a417d69d720e36a6c79252f6836661c47b937c09f892251231f2f10ed80511"
+    },
+    "fixtures/RSI-009-ingestion-equivalence.json": {
+      "before": "f5308d6f4218a1e51e764b25f14dda578d281976787c8536e553452cd3afb614",
+      "after": "f5308d6f4218a1e51e764b25f14dda578d281976787c8536e553452cd3afb614"
+    }
+  },
+  "core_changed": false,
+  "fixture_schema_changed": false,
+  "result_schema_changed": false,
+  "expectation_schema": {
+    "legacy_artifact_changed": false,
+    "new_envelope": "schema/expectations.v0.schema.json",
+    "artifact_sha256": "e01b15510d45943b6b830cb729835c7040fbc8bb0b2ebf6301655c9df458f37f",
+    "fixture_set_digest": "2a5ad4067805e4e84ab43941b9a3d3fff5af09e7ba0f81cd687a1d43f2d54d91",
+    "migration": "New parallel versioned envelope; no legacy row or file rewrite"
+  },
+  "tests": {
+    "before": 52,
+    "after": 93,
+    "optimized_before": 52,
+    "optimized_after": 93,
+    "architecture_added": 41
+  },
+  "fixtures": {
+    "files_before": 6,
+    "files_after": 6,
+    "rows_before": 36,
+    "rows_after": 36,
+    "totals": {
+      "FAIL": 0,
+      "INVALID_FIXTURE": 0,
+      "PASS": 36,
+      "UNSUPPORTED": 0
+    },
+    "ordered_records_identical": true,
+    "ordered_records_sha256_before": "1ac86c330074c7fb22c0606658f3c2ae90c501dbc05cf0f5060aa8408e90c02b",
+    "ordered_records_sha256_after": "1ac86c330074c7fb22c0606658f3c2ae90c501dbc05cf0f5060aa8408e90c02b",
+    "changed_rows": []
+  },
+  "structured_baseline_sha256": "c4067be8b6e9f2efb049b2ac19b2d6d2910c67935f20a13330d5b0eb3277d620",
+  "structured_postcheck_sha256": "79340e7957a8b02e5cc53ac1e089d27740d9fa9066ed730587d59eb76c76a94f",
+  "structured_report_note": "Full report hashes differ due to source identities, scope metadata, and explicit totals/admission fields. All 36 complete ordered case records and legacy counts are identical. Postcheck equals deterministic rerun; later report/document files only change source metadata.",
+  "mutations": {
+    "legacy_before": {
+      "KILLED": 12,
+      "SURVIVED": 0,
+      "VACUOUS": 0,
+      "NOT_APPLIED": 0
+    },
+    "legacy_after": {
+      "KILLED": 12,
+      "SURVIVED": 0,
+      "VACUOUS": 0,
+      "NOT_APPLIED": 0
+    },
+    "expectation_counts": {
+      "KILLED": 4,
+      "NOT_APPLIED": 0,
+      "SURVIVED": 0,
+      "VACUOUS": 0
+    },
+    "expectation_checks": [
+      {
+        "collateral": [],
+        "executed_check": "PREDICTION_MISMATCH",
+        "id": "EXP-M1",
+        "kind": "recorded_evidence_tamper",
+        "mapped_check": "PREDICTION_MISMATCH",
+        "status": "KILLED"
+      },
+      {
+        "collateral": [],
+        "executed_check": "FIXTURE_SET_DIGEST",
+        "id": "EXP-M2",
+        "kind": "recorded_evidence_tamper",
+        "mapped_check": "FIXTURE_SET_DIGEST",
+        "status": "KILLED"
+      },
+      {
+        "collateral": [
+          "tests.test_expectations.ExpectationTests.test_atomic_admission",
+          "tests.test_expectations.ExpectationTests.test_profile_failure_prevents_all_adapter_execution"
+        ],
+        "exit_code": 1,
+        "id": "EXP-M3",
+        "kind": "source_enforcement_mutation",
+        "mapped_check": "tests.test_expectations.ExpectationTests.test_modified_value_rejected",
+        "mutant_sha256": "f17cade9e685f58405e187109536cd46400c85e4487e089a2ab3fec45a7b9286",
+        "source_sha256": "bfe87feb88e843809dd6a0311a52bc78a634a59fa2c6f992d0a438cedfb7cb52",
+        "status": "KILLED"
+      },
+      {
+        "collateral": [
+          "tests.test_expectations.ExpectationTests.test_modified_value_rejected",
+          "tests.test_expectations.ExpectationTests.test_profile_failure_prevents_all_adapter_execution"
+        ],
+        "exit_code": 1,
+        "id": "EXP-M4",
+        "kind": "source_enforcement_mutation",
+        "mapped_check": "tests.test_expectations.ExpectationTests.test_atomic_admission",
+        "mutant_sha256": "899e5eaefd50b4e8b49d0ab5ff86c173b5bbd546a4d9dc2d4dae6a3f14b937ba",
+        "source_sha256": "bfe87feb88e843809dd6a0311a52bc78a634a59fa2c6f992d0a438cedfb7cb52",
+        "status": "KILLED"
+      }
+    ],
+    "provenance_rules": [
+      {
+        "classification": "PROVENANCE_RULE_NOT_A_MUTATION",
+        "id": "EXP-M5",
+        "reason": "Trusted Python callables are not sandboxed. Arbitrary filesystem reads/closures cannot be ruled out by an honest generic mechanical test. Input-channel separation, evaluation order, direct self-validation rejection and source review are required; no fake kill is counted."
+      }
+    ]
+  },
+  "files_changed": [
+    ".github/workflows/ci.yml",
+    "README.md",
+    "rsi/run.py",
+    "oracle/expectations.core.synthetic.v0.json",
+    "profiles/__init__.py",
+    "profiles/core.synthetic.v0.json",
+    "profiles/defaults.py",
+    "profiles/synthetic.py",
+    "runner/__init__.py",
+    "runner/adapter_registry.py",
+    "runner/execution.py",
+    "runner/expectation_contract.py",
+    "runner/expectation_registry.py",
+    "schema/expectations.v0.schema.json",
+    "spec/expectation-contract-v0.md",
+    "spec/extension-contract-v0.md",
+    "tests/test_expectations.py",
+    "tools/check_expectations.py",
+    "tools/prove_expectations_can_fail.py",
+    "research/expectation-contract-v0.1-validation.json",
+    "research/expectation-contract-v0.1-validation.md"
+  ],
+  "static_audit": "No fixture-ID, domain-name, adapter-name or dynamic-import matches in runner/, rsi/run.py or unchanged rsi/oracle.py. Existing synthetic-specific restrictions remain outside generic core.",
+  "remaining_assumptions": [
+    "Synthetic scope uses frozen RBCF schema, exact corpus verification and explicit legacy adapter execution order.",
+    "Original corpus mutation gate remains fixed to its 12 mappings.",
+    "General namespaced RBCF IDs and deterministic directory discovery are not implemented in this expectation-only task.",
+    "Trusted predictor independence requires source/provenance review; arbitrary Python code is not sandboxed."
+  ],
+  "extension_expectation_gate_resolved": true,
+  "phase2_ready": false,
+  "external_adapters_implemented": false,
+  "pre_push_checks": "All required local checks passed; CI is configured for both Python 3.12 and 3.13. Exact post-push CI status is reported separately.",
+  "historical_untracked_reports": "Three superseded gate reports preserved locally under ignored artifacts/expectation-v0.1/prior-gates; extension design updated in place."
+}

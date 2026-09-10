@@ -117,3 +117,5 @@ milestone needs pinned real target revisions and independent adapter authors.
 No third-party vulnerability report or live exploit details are included. There
 is no public release or selected open-source license yet; see `LICENSE` and
 `SECURITY.md`. No version tag is a frozen conformance claim in this first commit.
+
+Expectation extensibility: [Expectation Contract v0.1](spec/expectation-contract-v0.md), with the [extension architecture checkpoint](spec/extension-contract-v0.md).
