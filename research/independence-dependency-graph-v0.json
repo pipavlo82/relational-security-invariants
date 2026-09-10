@@ -1,0 +1,1001 @@
+{
+  "domains": [
+    {
+      "adapter_modules": [
+        "adapters/crystal_receipt/execute.mjs",
+        "adapters/crystal_receipt/model.py",
+        "adapters/crystal_receipt/__init__.py"
+      ],
+      "direct_python_imports": {
+        "adapters/crystal_receipt/__init__.py": [],
+        "adapters/crystal_receipt/model.py": [
+          "pathlib",
+          "profiles.crystal_receipt.relation",
+          "profiles.crystal_receipt.source",
+          "rsi.codec",
+          "shutil",
+          "subprocess",
+          "tempfile"
+        ],
+        "profiles/crystal_receipt/expectation.py": [
+          "json",
+          "pathlib",
+          "profiles.crystal_receipt.source",
+          "rsi.codec",
+          "runner.expectation_registry",
+          "runner.relation_runtime"
+        ],
+        "profiles/crystal_receipt/relation.py": [
+          "adapters.crystal_receipt.model",
+          "profiles.crystal_receipt.source",
+          "runner.relation_profile"
+        ],
+        "profiles/crystal_receipt/source.py": [
+          "pathlib",
+          "rsi.codec",
+          "runner.expectation_contract",
+          "runner.relation_profile_registry"
+        ],
+        "rsi/codec.py": [
+          "hashlib",
+          "json",
+          "pathlib"
+        ],
+        "runner/execution.py": [
+          "copy",
+          "rsi.codec",
+          "runner.expectation_contract",
+          "runner.expectation_registry"
+        ],
+        "runner/expectation_contract.py": [
+          "dataclasses",
+          "pathlib",
+          "rsi.codec"
+        ],
+        "runner/relation_runtime.py": [
+          "argparse",
+          "copy",
+          "dataclasses",
+          "extensions.relations",
+          "jsonschema",
+          "pathlib",
+          "rsi.codec",
+          "runner.execution",
+          "runner.expectation_contract",
+          "runner.expectation_registry",
+          "runner.extension_runtime",
+          "runner.relation_profile",
+          "runner.relation_profile_registry"
+        ]
+      },
+      "domain": "crystal_receipt",
+      "edges": [
+        [
+          "shared fixture",
+          "predictor"
+        ],
+        [
+          "shared fixture",
+          "adapter"
+        ],
+        [
+          "predictor",
+          "atomic admission"
+        ],
+        [
+          "frozen expected artifact",
+          "atomic admission"
+        ],
+        [
+          "atomic admission",
+          "comparator"
+        ],
+        [
+          "adapter",
+          "comparator"
+        ]
+      ],
+      "limit": "Direct imports plus manually reviewed dynamic exec/JS paths; not a complete noninterference proof",
+      "predictor_modules": [
+        "profiles/crystal_receipt/expectation.py"
+      ],
+      "runtime_route": "SPEC-derived equality/json.dumps vs snapshotCounterfactualSemanticJson + canonicalize + relation.observed",
+      "shared_nodes": [
+        "rsi/codec.py",
+        "runner/expectation_contract.py",
+        "runner/execution.py",
+        "runner/relation_runtime.py",
+        "profiles/crystal_receipt/source.py",
+        "profiles/crystal_receipt/relation.py"
+      ],
+      "source_artifacts": [
+        "evidence/crystal-receipt/canonicalize.ts",
+        "evidence/crystal-receipt/counterfactual-audit-boundary.ts",
+        "evidence/crystal-receipt/source-pin.v0.json",
+        "evidence/crystal-receipt/SPEC.md",
+        "evidence/crystal-receipt/V-SEM-MANIFEST-INVARIANT.json",
+        "evidence/crystal-receipt/V-SEM-MUTATION-DIFFERS.json"
+      ]
+    },
+    {
+      "adapter_modules": [
+        "adapters/rvr/model.py",
+        "adapters/rvr/__init__.py"
+      ],
+      "direct_python_imports": {
+        "adapters/rvr/__init__.py": [],
+        "adapters/rvr/model.py": [
+          "copy",
+          "profiles.rvr.relation",
+          "profiles.rvr.source"
+        ],
+        "profiles/rvr/expectation.py": [
+          "hashlib",
+          "json",
+          "pathlib",
+          "profiles.rvr.source",
+          "rsi.codec",
+          "runner.expectation_registry",
+          "runner.relation_runtime"
+        ],
+        "profiles/rvr/relation.py": [
+          "adapters.rvr.model",
+          "profiles.rvr.source",
+          "rsi.codec",
+          "runner.relation_profile"
+        ],
+        "profiles/rvr/source.py": [
+          "pathlib",
+          "rsi.codec",
+          "runner.expectation_contract",
+          "runner.relation_profile_registry"
+        ],
+        "rsi/codec.py": [
+          "hashlib",
+          "json",
+          "pathlib"
+        ],
+        "runner/execution.py": [
+          "copy",
+          "rsi.codec",
+          "runner.expectation_contract",
+          "runner.expectation_registry"
+        ],
+        "runner/expectation_contract.py": [
+          "dataclasses",
+          "pathlib",
+          "rsi.codec"
+        ],
+        "runner/relation_runtime.py": [
+          "argparse",
+          "copy",
+          "dataclasses",
+          "extensions.relations",
+          "jsonschema",
+          "pathlib",
+          "rsi.codec",
+          "runner.execution",
+          "runner.expectation_contract",
+          "runner.expectation_registry",
+          "runner.extension_runtime",
+          "runner.relation_profile",
+          "runner.relation_profile_registry"
+        ]
+      },
+      "domain": "rvr",
+      "edges": [
+        [
+          "shared fixture",
+          "predictor"
+        ],
+        [
+          "shared fixture",
+          "adapter"
+        ],
+        [
+          "predictor",
+          "atomic admission"
+        ],
+        [
+          "frozen expected artifact",
+          "atomic admission"
+        ],
+        [
+          "atomic admission",
+          "comparator"
+        ],
+        [
+          "adapter",
+          "comparator"
+        ]
+      ],
+      "limit": "Direct imports plus manually reviewed dynamic exec/JS paths; not a complete noninterference proof",
+      "predictor_modules": [
+        "profiles/rvr/expectation.py"
+      ],
+      "runtime_route": "Independent functions implementing same Rule/Scope predicates, canonical JSON/SHA256; adapter execs amendment_gate and verdict_binding_gate",
+      "shared_nodes": [
+        "rsi/codec.py",
+        "runner/expectation_contract.py",
+        "runner/execution.py",
+        "runner/relation_runtime.py",
+        "profiles/rvr/source.py",
+        "profiles/rvr/relation.py"
+      ],
+      "source_artifacts": [
+        "evidence/rvr/amendment_gate.py",
+        "evidence/rvr/profile-amendment-v0.reference.mjs",
+        "evidence/rvr/profile-amendment-v0.spec.md",
+        "evidence/rvr/profile-amendment-v0.vectors.json",
+        "evidence/rvr/source-pin.v0.json",
+        "evidence/rvr/verdict-profile-binding-v0.reference.mjs",
+        "evidence/rvr/verdict-profile-binding-v0.spec.md",
+        "evidence/rvr/verdict-profile-binding-v0.vectors.json",
+        "evidence/rvr/verdict_binding_gate.py"
+      ]
+    },
+    {
+      "adapter_modules": [
+        "adapters/tsei/encoder.mjs",
+        "adapters/tsei/model.py",
+        "adapters/tsei/__init__.py"
+      ],
+      "direct_python_imports": {
+        "adapters/tsei/__init__.py": [],
+        "adapters/tsei/model.py": [
+          "contextlib",
+          "functools",
+          "json",
+          "pathlib",
+          "profiles.tsei.relation",
+          "profiles.tsei.source",
+          "rsi.codec",
+          "shutil",
+          "subprocess",
+          "tempfile"
+        ],
+        "profiles/tsei/expectation.py": [
+          "hashlib",
+          "json",
+          "pathlib",
+          "profiles.tsei.source",
+          "rsi.codec",
+          "runner.expectation_registry",
+          "runner.relation_runtime"
+        ],
+        "profiles/tsei/relation.py": [
+          "adapters.tsei.model",
+          "json",
+          "jsonschema",
+          "profiles.tsei.source",
+          "rsi.codec",
+          "runner.relation_profile"
+        ],
+        "profiles/tsei/source.py": [
+          "rsi.codec",
+          "runner.expectation_contract",
+          "runner.relation_profile_registry"
+        ],
+        "rsi/codec.py": [
+          "hashlib",
+          "json",
+          "pathlib"
+        ],
+        "runner/execution.py": [
+          "copy",
+          "rsi.codec",
+          "runner.expectation_contract",
+          "runner.expectation_registry"
+        ],
+        "runner/expectation_contract.py": [
+          "dataclasses",
+          "pathlib",
+          "rsi.codec"
+        ],
+        "runner/relation_runtime.py": [
+          "argparse",
+          "copy",
+          "dataclasses",
+          "extensions.relations",
+          "jsonschema",
+          "pathlib",
+          "rsi.codec",
+          "runner.execution",
+          "runner.expectation_contract",
+          "runner.expectation_registry",
+          "runner.extension_runtime",
+          "runner.relation_profile",
+          "runner.relation_profile_registry"
+        ]
+      },
+      "domain": "tsei",
+      "edges": [
+        [
+          "shared fixture",
+          "predictor"
+        ],
+        [
+          "shared fixture",
+          "adapter"
+        ],
+        [
+          "predictor",
+          "atomic admission"
+        ],
+        [
+          "frozen expected artifact",
+          "atomic admission"
+        ],
+        [
+          "atomic admission",
+          "comparator"
+        ],
+        [
+          "adapter",
+          "comparator"
+        ]
+      ],
+      "limit": "Direct imports plus manually reviewed dynamic exec/JS paths; not a complete noninterference proof",
+      "predictor_modules": [
+        "profiles/tsei/expectation.py"
+      ],
+      "runtime_route": "json.dumps/hash + hard-coded chronology membership vs TS encoder, source record validator and pinned record/chronology",
+      "shared_nodes": [
+        "rsi/codec.py",
+        "runner/expectation_contract.py",
+        "runner/execution.py",
+        "runner/relation_runtime.py",
+        "profiles/tsei/source.py",
+        "profiles/tsei/relation.py"
+      ],
+      "source_artifacts": [
+        "evidence/tsei/crystal-receipt-authority-object-b-valid-v1.json",
+        "evidence/tsei/crystal-receipt-encode-json-utf8-lf-v0.ts",
+        "evidence/tsei/crystal-receipt-README.md",
+        "evidence/tsei/recompute-kit-binding-record.schema.json",
+        "evidence/tsei/recompute-kit-binding-record.vectors.json",
+        "evidence/tsei/recompute-kit-encode-json-utf8-lf-v0.spec.md",
+        "evidence/tsei/recompute-kit-encode-json-utf8-lf-v0.vectors.json",
+        "evidence/tsei/recompute-kit-README.md",
+        "evidence/tsei/recompute-kit-tsei.frozen-artifact.json",
+        "evidence/tsei/recompute-kit-validate_binding_record.py",
+        "evidence/tsei/source-pin.v0.json",
+        "evidence/tsei/tsei-encode-json-utf8-lf-v0.test.ts",
+        "evidence/tsei/tsei-ia-real-v2-20260824-02.production-grounding.json"
+      ]
+    },
+    {
+      "adapter_modules": [
+        "adapters/pq/model.py",
+        "adapters/pq/__init__.py"
+      ],
+      "direct_python_imports": {
+        "adapters/pq/__init__.py": [],
+        "adapters/pq/model.py": [
+          "copy",
+          "json",
+          "profiles.pq.relation",
+          "profiles.pq.source"
+        ],
+        "profiles/pq/expectation.py": [
+          "hashlib",
+          "json",
+          "pathlib",
+          "profiles.pq.source",
+          "rsi.codec",
+          "runner.expectation_registry",
+          "runner.relation_runtime"
+        ],
+        "profiles/pq/relation.py": [
+          "adapters.pq.model",
+          "profiles.pq.source",
+          "rsi.codec",
+          "runner.relation_profile"
+        ],
+        "profiles/pq/source.py": [
+          "pathlib",
+          "rsi.codec",
+          "runner.expectation_contract",
+          "runner.relation_profile_registry"
+        ],
+        "rsi/codec.py": [
+          "hashlib",
+          "json",
+          "pathlib"
+        ],
+        "runner/execution.py": [
+          "copy",
+          "rsi.codec",
+          "runner.expectation_contract",
+          "runner.expectation_registry"
+        ],
+        "runner/expectation_contract.py": [
+          "dataclasses",
+          "pathlib",
+          "rsi.codec"
+        ],
+        "runner/relation_runtime.py": [
+          "argparse",
+          "copy",
+          "dataclasses",
+          "extensions.relations",
+          "jsonschema",
+          "pathlib",
+          "rsi.codec",
+          "runner.execution",
+          "runner.expectation_contract",
+          "runner.expectation_registry",
+          "runner.extension_runtime",
+          "runner.relation_profile",
+          "runner.relation_profile_registry"
+        ]
+      },
+      "domain": "pq",
+      "edges": [
+        [
+          "shared fixture",
+          "predictor"
+        ],
+        [
+          "shared fixture",
+          "adapter"
+        ],
+        [
+          "predictor",
+          "atomic admission"
+        ],
+        [
+          "frozen expected artifact",
+          "atomic admission"
+        ],
+        [
+          "atomic admission",
+          "comparator"
+        ],
+        [
+          "adapter",
+          "comparator"
+        ],
+        [
+          "source apply_revocations",
+          "actual policy input"
+        ],
+        [
+          "source apply_revocations",
+          "predictor policy input"
+        ],
+        [
+          "actual resolved key",
+          "test predictor snapshot_key"
+        ]
+      ],
+      "limit": "Direct imports plus manually reviewed dynamic exec/JS paths; not a complete noninterference proof",
+      "predictor_modules": [
+        "profiles/pq/expectation.py"
+      ],
+      "runtime_route": "Sorted governing-binding obligations vs pinned cutoff_enforce.admit/resolve_in_force and deep_recompute",
+      "shared_nodes": [
+        "rsi/codec.py",
+        "runner/expectation_contract.py",
+        "runner/execution.py",
+        "runner/relation_runtime.py",
+        "profiles/pq/source.py",
+        "profiles/pq/relation.py"
+      ],
+      "shared_test_only_node": {
+        "detail": "Both source admit and expectation receive bindings produced by the SAME source apply_revocations function. snapshot_key is populated from actual resolved_pq_pubkey. Comparison covers policy outputs, not independent revocation preprocessing or snapshot selection. Original vector expected fields provide partial fixed evidence. Registered policy scope is not invalidated.",
+        "function": "test_source_vector_reproduction",
+        "path": "tests/test_pq.py"
+      },
+      "source_artifacts": [
+        "evidence/pq/cutoff_enforce.py",
+        "evidence/pq/deep_recompute.py",
+        "evidence/pq/gate.py",
+        "evidence/pq/pq-key-binding-v0.cutoff-vectors.json",
+        "evidence/pq/pq-key-binding-v0.revocation-vectors.json",
+        "evidence/pq/pq-key-binding-v0.revocation.json",
+        "evidence/pq/pq-key-binding-v0.rotation-vectors.json",
+        "evidence/pq/pq-key-binding-v0.rotation.json",
+        "evidence/pq/pq-key-binding-v0.spec.md",
+        "evidence/pq/pq-key-binding-v0.vectors.json",
+        "evidence/pq/source-pin.v0.json",
+        "evidence/pq/suite.json"
+      ]
+    },
+    {
+      "adapter_modules": [
+        "adapters/tas/execute.mjs",
+        "adapters/tas/model.py",
+        "adapters/tas/__init__.py"
+      ],
+      "direct_python_imports": {
+        "adapters/tas/__init__.py": [],
+        "adapters/tas/model.py": [
+          "copy",
+          "pathlib",
+          "profiles.tas.source",
+          "rsi.codec",
+          "shutil",
+          "subprocess"
+        ],
+        "profiles/tas/expectation.py": [
+          "pathlib",
+          "profiles.tas.source",
+          "rsi.codec",
+          "runner.expectation_registry",
+          "runner.relation_runtime"
+        ],
+        "profiles/tas/relation.py": [
+          "adapters.tas.model",
+          "profiles.tas.source",
+          "re",
+          "rsi.codec",
+          "runner.relation_profile"
+        ],
+        "profiles/tas/source.py": [
+          "pathlib",
+          "rsi.codec",
+          "runner.expectation_contract",
+          "runner.relation_profile_registry"
+        ],
+        "rsi/codec.py": [
+          "hashlib",
+          "json",
+          "pathlib"
+        ],
+        "runner/execution.py": [
+          "copy",
+          "rsi.codec",
+          "runner.expectation_contract",
+          "runner.expectation_registry"
+        ],
+        "runner/expectation_contract.py": [
+          "dataclasses",
+          "pathlib",
+          "rsi.codec"
+        ],
+        "runner/relation_runtime.py": [
+          "argparse",
+          "copy",
+          "dataclasses",
+          "extensions.relations",
+          "jsonschema",
+          "pathlib",
+          "rsi.codec",
+          "runner.execution",
+          "runner.expectation_contract",
+          "runner.expectation_registry",
+          "runner.extension_runtime",
+          "runner.relation_profile",
+          "runner.relation_profile_registry"
+        ]
+      },
+      "domain": "tas",
+      "edges": [
+        [
+          "shared fixture",
+          "predictor"
+        ],
+        [
+          "shared fixture",
+          "adapter"
+        ],
+        [
+          "predictor",
+          "atomic admission"
+        ],
+        [
+          "frozen expected artifact",
+          "atomic admission"
+        ],
+        [
+          "atomic admission",
+          "comparator"
+        ],
+        [
+          "adapter",
+          "comparator"
+        ]
+      ],
+      "limit": "Direct imports plus manually reviewed dynamic exec/JS paths; not a complete noninterference proof",
+      "predictor_modules": [
+        "profiles/tas/expectation.py"
+      ],
+      "runtime_route": "Tuple/address/membership obligations vs pinned gate/service/manifest with controlled resolver and SDK invoke port",
+      "shared_nodes": [
+        "rsi/codec.py",
+        "runner/expectation_contract.py",
+        "runner/execution.py",
+        "runner/relation_runtime.py",
+        "profiles/tas/source.py",
+        "profiles/tas/relation.py"
+      ],
+      "source_artifacts": [
+        "evidence/tas/agent-sdk.v1.json",
+        "evidence/tas/build-entry.ts",
+        "evidence/tas/build.cjs",
+        "evidence/tas/noble-hashes-LICENSE",
+        "evidence/tas/package-lock.json",
+        "evidence/tas/package.json",
+        "evidence/tas/protected-baseline.v0.json",
+        "evidence/tas/source-pin.v0.json",
+        "evidence/tas/source-runtime.mjs",
+        "evidence/tas/viem-LICENSE"
+      ]
+    },
+    {
+      "adapter_modules": [
+        "adapters/consult_escrow/execute.mjs",
+        "adapters/consult_escrow/model.py"
+      ],
+      "direct_python_imports": {
+        "adapters/consult_escrow/model.py": [
+          "pathlib",
+          "profiles.consult_escrow.source",
+          "rsi.codec",
+          "shutil",
+          "subprocess"
+        ],
+        "profiles/consult_escrow/crypto.py": [],
+        "profiles/consult_escrow/expectation.py": [
+          "pathlib",
+          "profiles.consult_escrow.crypto",
+          "profiles.consult_escrow.source",
+          "rsi.codec",
+          "runner.expectation_registry",
+          "runner.relation_runtime"
+        ],
+        "profiles/consult_escrow/relation.py": [
+          "adapters.consult_escrow.model",
+          "profiles.consult_escrow.source",
+          "re",
+          "rsi.codec",
+          "runner.relation_profile"
+        ],
+        "profiles/consult_escrow/source.py": [
+          "pathlib",
+          "rsi.codec",
+          "runner.expectation_contract",
+          "runner.relation_profile_registry"
+        ],
+        "rsi/codec.py": [
+          "hashlib",
+          "json",
+          "pathlib"
+        ],
+        "runner/execution.py": [
+          "copy",
+          "rsi.codec",
+          "runner.expectation_contract",
+          "runner.expectation_registry"
+        ],
+        "runner/expectation_contract.py": [
+          "dataclasses",
+          "pathlib",
+          "rsi.codec"
+        ],
+        "runner/relation_runtime.py": [
+          "argparse",
+          "copy",
+          "dataclasses",
+          "extensions.relations",
+          "jsonschema",
+          "pathlib",
+          "rsi.codec",
+          "runner.execution",
+          "runner.expectation_contract",
+          "runner.expectation_registry",
+          "runner.extension_runtime",
+          "runner.relation_profile",
+          "runner.relation_profile_registry"
+        ]
+      },
+      "domain": "consult_escrow",
+      "edges": [
+        [
+          "shared fixture",
+          "predictor"
+        ],
+        [
+          "shared fixture",
+          "adapter"
+        ],
+        [
+          "predictor",
+          "atomic admission"
+        ],
+        [
+          "frozen expected artifact",
+          "atomic admission"
+        ],
+        [
+          "atomic admission",
+          "comparator"
+        ],
+        [
+          "adapter",
+          "comparator"
+        ]
+      ],
+      "limit": "Direct imports plus manually reviewed dynamic exec/JS paths; not a complete noninterference proof",
+      "predictor_modules": [
+        "profiles/consult_escrow/expectation.py",
+        "profiles/consult_escrow/crypto.py"
+      ],
+      "runtime_route": "Keccak/secp256k1 and state predicates vs source bytecode/ecrecover/storage/transfer execution",
+      "shared_nodes": [
+        "rsi/codec.py",
+        "runner/expectation_contract.py",
+        "runner/execution.py",
+        "runner/relation_runtime.py",
+        "profiles/consult_escrow/source.py",
+        "profiles/consult_escrow/relation.py"
+      ],
+      "source_artifacts": [
+        "evidence/consult-escrow/build-entry.mjs",
+        "evidence/consult-escrow/build.cjs",
+        "evidence/consult-escrow/canonical.json",
+        "evidence/consult-escrow/compile.cjs",
+        "evidence/consult-escrow/ConsultEscrow.sol",
+        "evidence/consult-escrow/ConsultEscrow.t.sol",
+        "evidence/consult-escrow/evm-runtime.mjs",
+        "evidence/consult-escrow/foundry.toml",
+        "evidence/consult-escrow/IConsultEscrow.sol",
+        "evidence/consult-escrow/job.json",
+        "evidence/consult-escrow/package-lock.json",
+        "evidence/consult-escrow/package.json",
+        "evidence/consult-escrow/protected-baseline.v0.json",
+        "evidence/consult-escrow/README.source.md",
+        "evidence/consult-escrow/replay.json",
+        "evidence/consult-escrow/REPRODUCING.md",
+        "evidence/consult-escrow/sdk-recompute.py",
+        "evidence/consult-escrow/signature.json",
+        "evidence/consult-escrow/source-pin.v0.json",
+        "evidence/consult-escrow/THIRD_PARTY_LICENSES.txt"
+      ]
+    },
+    {
+      "adapter_modules": [
+        "adapters/verify_layer/execute.mjs",
+        "adapters/verify_layer/model.py",
+        "adapters/verify_layer/__init__.py"
+      ],
+      "direct_python_imports": {
+        "adapters/verify_layer/__init__.py": [],
+        "adapters/verify_layer/model.py": [
+          "pathlib",
+          "profiles.verify_layer.source",
+          "rsi.codec",
+          "shutil",
+          "subprocess"
+        ],
+        "profiles/verify_layer/expectation.py": [
+          "pathlib",
+          "profiles.verify_layer.oracle",
+          "profiles.verify_layer.source",
+          "rsi.codec",
+          "runner.expectation_registry",
+          "runner.relation_runtime"
+        ],
+        "profiles/verify_layer/oracle.py": [],
+        "profiles/verify_layer/relation.py": [
+          "adapters.verify_layer.model",
+          "profiles.verify_layer.source",
+          "re",
+          "rsi.codec",
+          "runner.relation_profile"
+        ],
+        "profiles/verify_layer/source.py": [
+          "pathlib",
+          "rsi.codec",
+          "runner.expectation_contract",
+          "runner.relation_profile_registry"
+        ],
+        "rsi/codec.py": [
+          "hashlib",
+          "json",
+          "pathlib"
+        ],
+        "runner/execution.py": [
+          "copy",
+          "rsi.codec",
+          "runner.expectation_contract",
+          "runner.expectation_registry"
+        ],
+        "runner/expectation_contract.py": [
+          "dataclasses",
+          "pathlib",
+          "rsi.codec"
+        ],
+        "runner/relation_runtime.py": [
+          "argparse",
+          "copy",
+          "dataclasses",
+          "extensions.relations",
+          "jsonschema",
+          "pathlib",
+          "rsi.codec",
+          "runner.execution",
+          "runner.expectation_contract",
+          "runner.expectation_registry",
+          "runner.extension_runtime",
+          "runner.relation_profile",
+          "runner.relation_profile_registry"
+        ]
+      },
+      "domain": "verify_layer",
+      "edges": [
+        [
+          "shared fixture",
+          "predictor"
+        ],
+        [
+          "shared fixture",
+          "adapter"
+        ],
+        [
+          "predictor",
+          "atomic admission"
+        ],
+        [
+          "frozen expected artifact",
+          "atomic admission"
+        ],
+        [
+          "atomic admission",
+          "comparator"
+        ],
+        [
+          "adapter",
+          "comparator"
+        ]
+      ],
+      "limit": "Direct imports plus manually reviewed dynamic exec/JS paths; not a complete noninterference proof",
+      "predictor_modules": [
+        "profiles/verify_layer/expectation.py",
+        "profiles/verify_layer/oracle.py"
+      ],
+      "runtime_route": "Custom Python nibble/path/leaf obligations vs JS verifier with offline RPC replay",
+      "shared_nodes": [
+        "rsi/codec.py",
+        "runner/expectation_contract.py",
+        "runner/execution.py",
+        "runner/relation_runtime.py",
+        "profiles/verify_layer/source.py",
+        "profiles/verify_layer/relation.py"
+      ],
+      "source_artifacts": [
+        "evidence/verify-layer/alternate-rpc-header.json",
+        "evidence/verify-layer/build-entry.mjs",
+        "evidence/verify-layer/build.cjs",
+        "evidence/verify-layer/LICENSE",
+        "evidence/verify-layer/package-lock.json",
+        "evidence/verify-layer/package.json",
+        "evidence/verify-layer/primitives-check.py",
+        "evidence/verify-layer/primitives-primitives.json",
+        "evidence/verify-layer/proof-runtime.mjs",
+        "evidence/verify-layer/protected-baseline.v0.json",
+        "evidence/verify-layer/README.md",
+        "evidence/verify-layer/REPRODUCE.md",
+        "evidence/verify-layer/rpc-header.json",
+        "evidence/verify-layer/rpc-proof.json",
+        "evidence/verify-layer/source-pin.v0.json",
+        "evidence/verify-layer/verify.mjs"
+      ]
+    },
+    {
+      "adapter_modules": [
+        "adapters/generic/model.py",
+        "adapters/messaging/model.py",
+        "rsi/wire.py"
+      ],
+      "direct_python_imports": {
+        "adapters/generic/model.py": [
+          "rsi.codec",
+          "rsi.wire",
+          "sqlite3"
+        ],
+        "adapters/messaging/model.py": [
+          "copy",
+          "rsi.codec",
+          "rsi.wire"
+        ],
+        "profiles/synthetic.py": [
+          "pathlib",
+          "rsi.codec",
+          "rsi.corpus",
+          "rsi.oracle",
+          "runner.expectation_registry"
+        ],
+        "rsi/codec.py": [
+          "hashlib",
+          "json",
+          "pathlib"
+        ],
+        "rsi/oracle.py": [
+          "copy",
+          "cryptography.exceptions",
+          "cryptography.hazmat.primitives.asymmetric.ed25519",
+          "rsi.codec"
+        ],
+        "rsi/wire.py": [
+          "cryptography.exceptions",
+          "cryptography.hazmat.primitives.asymmetric.ed25519",
+          "rsi.codec"
+        ],
+        "runner/execution.py": [
+          "copy",
+          "rsi.codec",
+          "runner.expectation_contract",
+          "runner.expectation_registry"
+        ],
+        "runner/expectation_contract.py": [
+          "dataclasses",
+          "pathlib",
+          "rsi.codec"
+        ],
+        "runner/relation_runtime.py": [
+          "argparse",
+          "copy",
+          "dataclasses",
+          "extensions.relations",
+          "jsonschema",
+          "pathlib",
+          "rsi.codec",
+          "runner.execution",
+          "runner.expectation_contract",
+          "runner.expectation_registry",
+          "runner.extension_runtime",
+          "runner.relation_profile",
+          "runner.relation_profile_registry"
+        ]
+      },
+      "domain": "legacy",
+      "edges": [
+        [
+          "shared fixture",
+          "predictor"
+        ],
+        [
+          "shared fixture",
+          "adapter"
+        ],
+        [
+          "predictor",
+          "atomic admission"
+        ],
+        [
+          "frozen expected artifact",
+          "atomic admission"
+        ],
+        [
+          "atomic admission",
+          "comparator"
+        ],
+        [
+          "adapter",
+          "comparator"
+        ]
+      ],
+      "limit": "Direct imports plus manually reviewed dynamic exec/JS paths; not a complete noninterference proof",
+      "predictor_modules": [
+        "profiles/synthetic.py",
+        "rsi/oracle.py"
+      ],
+      "runtime_route": "rsi.oracle predicates vs separate adapters; inspect vs wire.valid_signature use same cryptography and codec",
+      "shared_nodes": [
+        "rsi/codec.py",
+        "runner/expectation_contract.py",
+        "runner/execution.py",
+        "runner/relation_runtime.py"
+      ],
+      "source_artifacts": [
+        "tools/generate_fixtures.py",
+        "oracle/expected.v0.json",
+        "manifest.json"
+      ]
+    }
+  ],
+  "rsi_head": "45a00875702ed733dfe77c8ba7c30e9a9a93644c",
+  "schema": "rsi-independence-dependency-graph.v0"
+}
