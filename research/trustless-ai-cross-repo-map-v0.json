@@ -1,0 +1,3144 @@
+{
+  "baseline": {
+    "all_prior_tracked_hashes_unchanged": true,
+    "checks": 64,
+    "exact_outcome_diff": 0,
+    "fail": 0,
+    "invalid_fixture": 0,
+    "killed": 45,
+    "not_applied": 0,
+    "optimized_tests": 337,
+    "post_document_checks": 64,
+    "post_document_optimized_tests": 337,
+    "post_document_tests": 337,
+    "prior_mutation_record_diff": 0,
+    "semantic_files_changed": 0,
+    "source_logs": "artifacts/synthesis/baseline-0.log through baseline-8.log",
+    "survived": 0,
+    "tests": 337,
+    "tracked_hash_count": 239,
+    "unsupported": 0,
+    "vacuous": 0
+  },
+  "consumer_source_drift": {
+    "current_commit": "76d19dc394b208d01ba368382b3e5f4f2c18f0ee",
+    "current_sha256": "8dd0bad03e6bc0335d6a690e3fb7eb448a4ccb1b6389115aab65474a21e55858",
+    "file_unchanged": true,
+    "path": "integrations/conformance/erc-8309-vantage/services/vantage_resolution.py",
+    "prior_commit": "bdba0b674c2b2d301b75b4b23a33702b0bacfa64",
+    "prior_sha256": "8dd0bad03e6bc0335d6a690e3fb7eb448a4ccb1b6389115aab65474a21e55858",
+    "repo": "babyblueviper1/invinoveritas"
+  },
+  "cross_repo_conformance_plane": {
+    "ecosystem_coverage": "PARTIALLY SUPPORTED",
+    "evidence": [
+      "four materially different source-defined relation families",
+      "64 checks and 45 mapped kills reproduced",
+      "same unchanged generic architecture since Relation Profile implementation",
+      "atomic independent expectation admission with provenance caveats",
+      "explicit unsupported capabilities"
+    ],
+    "not_supported": [
+      "universal security layer",
+      "all Trustless AI repositories verified",
+      "all semantic relations covered",
+      "complete authenticated end-to-end execution/settlement chain",
+      "mathematical novelty/completeness"
+    ],
+    "scope": "Implementation-facing, source-pinned conformance for the four admitted relation surfaces only; conditional PQ supplied-evidence policy lane included. No ecosystem-wide runtime composition guarantee.",
+    "status": "SUPPORTED"
+  },
+  "cross_repo_edges": [
+    {
+      "consumer": "pipavlo82/relational-security-invariants",
+      "declares": "frozen Crystal spec",
+      "dependent_claim": "semantic identity preserved",
+      "edge_id": "E01",
+      "evidence": [
+        "S006"
+      ],
+      "evidence_producer": "pipavlo82/crystal-receipt",
+      "kind": "source-backed integration/dependency",
+      "locally_correct_but_relation_wrong": "Both snapshots process successfully but one protected value differs",
+      "potential_overclaimer": "pipavlo82/relational-security-invariants",
+      "producer": "pipavlo82/crystal-receipt",
+      "relation": "accepted semantic snapshot equivalence",
+      "result_consumer": "pipavlo82/relational-security-invariants",
+      "rsi_coverage": "4 checks; CR-M1..3",
+      "status": "validated bounded profile",
+      "verifies": "native TypeScript versus Python predictor"
+    },
+    {
+      "consumer": "pipavlo82/relational-security-invariants",
+      "declares": "pinned amendment/verdict specs",
+      "dependent_claim": "digest binding only",
+      "edge_id": "E02",
+      "evidence": [
+        "S064",
+        "S065",
+        "S068"
+      ],
+      "evidence_producer": "trustless-ai/recompute-kit",
+      "kind": "source-backed integration/dependency",
+      "locally_correct_but_relation_wrong": "Both commitments are valid but verdict points to stale effective profile",
+      "potential_overclaimer": "pipavlo82/relational-security-invariants",
+      "producer": "trustless-ai/recompute-kit",
+      "relation": "profile transition and verdict digest bindings",
+      "result_consumer": "pipavlo82/relational-security-invariants",
+      "rsi_coverage": "10 checks; RVR-M1..6; see pinned evidence/rvr specs",
+      "status": "validated bounded profile",
+      "verifies": "pinned Python reference versus separate predictor"
+    },
+    {
+      "consumer": "pipavlo82/crystal-receipt",
+      "declares": "registry serializer contract and explicit immutable record",
+      "dependent_claim": "forward serializer coverage, not provenance authority",
+      "edge_id": "E03",
+      "evidence": [
+        "S047",
+        "S005"
+      ],
+      "evidence_producer": "trustless-ai/recompute-kit",
+      "kind": "source-backed integration/dependency",
+      "locally_correct_but_relation_wrong": "Valid bytes under another serializer or before adoption cannot inherit current binding",
+      "potential_overclaimer": "pipavlo82/crystal-receipt",
+      "producer": "trustless-ai/recompute-kit",
+      "relation": "schema serializer record to producer adoption/effective boundary",
+      "result_consumer": "pipavlo82/crystal-receipt",
+      "rsi_coverage": "7 TSEI checks; finite pinned chronology; TSEI-M1..6",
+      "status": "partially validated",
+      "verifies": "native adopted encoder, registry checker and separate RSI predictor"
+    },
+    {
+      "consumer": "pipavlo82/relational-security-invariants",
+      "declares": "pinned recompute-kit v0 cutoff policy, not v1 retroactively",
+      "dependent_claim": "conditional eligibility, no anchor/transition authentication",
+      "edge_id": "E04",
+      "evidence": [
+        "S072",
+        "S080",
+        "S074",
+        "S079"
+      ],
+      "evidence_producer": "trustless-ai/recompute-kit",
+      "kind": "source-backed integration/dependency",
+      "locally_correct_but_relation_wrong": "Locally valid old key or stale snapshot is not current authority",
+      "potential_overclaimer": "pipavlo82/relational-security-invariants",
+      "producer": "trustless-ai/recompute-kit",
+      "relation": "supplied history to as-of governing binding",
+      "result_consumer": "pipavlo82/relational-security-invariants",
+      "rsi_coverage": "7 checks; PQ-M1..7; exact v0 source pin in evidence/pq; v1 sources are boundary context only",
+      "status": "validated v0 policy subset only",
+      "verifies": "source cutoff_enforce versus separate predictor"
+    },
+    {
+      "consumer": "trustless-ai/ccip-router",
+      "declares": "CCIP TSEI observation contract",
+      "dependent_claim": "receipt observation identity, not TSEI authority",
+      "edge_id": "E05",
+      "evidence": [
+        "S031",
+        "S029"
+      ],
+      "evidence_producer": "pipavlo82/crystal-receipt",
+      "kind": "source-backed integration/dependency",
+      "locally_correct_but_relation_wrong": "Receipt is valid JSON but digest/instance endpoint differs; sourcePeer is not signer",
+      "potential_overclaimer": "trustless-ai/ccip-router",
+      "producer": "pipavlo82/crystal-receipt",
+      "relation": "exact public receipt bytes to signed Profile A observation",
+      "result_consumer": "trustless-ai/ccip-router",
+      "rsi_coverage": "No RSI transport/ingestion fixture",
+      "status": "mapped unvalidated",
+      "verifies": "gateway signature recovery / downstream consumer"
+    },
+    {
+      "consumer": "babyblueviper1/invinoveritas",
+      "declares": "base reference and companion profiles",
+      "dependent_claim": "divergence surfaced with disclosed limitations",
+      "edge_id": "E06",
+      "evidence": [
+        "S027",
+        "S003"
+      ],
+      "evidence_producer": "trustless-ai/ccip-router",
+      "kind": "source-backed integration/dependency",
+      "locally_correct_but_relation_wrong": "Both attestations validate but distinct observations are collapsed to agreement",
+      "potential_overclaimer": "babyblueviper1/invinoveritas",
+      "producer": "trustless-ai/ccip-router",
+      "relation": "preserved observation set to Profile A consumer envelope",
+      "result_consumer": "babyblueviper1/invinoveritas",
+      "rsi_coverage": "Existing RVR digest fixtures do not execute this end-to-end edge",
+      "status": "mapped unvalidated",
+      "verifies": "reference consumer"
+    },
+    {
+      "consumer": "babyblueviper1/invinoveritas",
+      "declares": "versioned companion",
+      "dependent_claim": "profile-qualified resolution, not agreement/finality",
+      "edge_id": "E07",
+      "evidence": [
+        "S004",
+        "S003"
+      ],
+      "evidence_producer": "damonzwicker/erc8309-companion-drafts",
+      "kind": "source-backed integration/dependency",
+      "locally_correct_but_relation_wrong": "Consumer uses a coherent old profile while downstream assumes current one",
+      "potential_overclaimer": "babyblueviper1/invinoveritas",
+      "producer": "damonzwicker/erc8309-companion-drafts",
+      "relation": "declared resolution profile to evaluation/verdict interpretation",
+      "result_consumer": "babyblueviper1/invinoveritas",
+      "rsi_coverage": "No whole current-draft conformance assertion",
+      "status": "mapped unvalidated",
+      "verifies": "reference consumer tests, not run here"
+    },
+    {
+      "consumer": "pipavlo82/recomputable-verification-receipts",
+      "declares": "RVR signed-verdict v1 profile",
+      "dependent_claim": "artifact authenticity under pinned key, not judgment correctness",
+      "edge_id": "E08",
+      "evidence": [
+        "S010"
+      ],
+      "evidence_producer": "babyblueviper1/invinoveritas",
+      "kind": "source-backed integration/dependency",
+      "locally_correct_but_relation_wrong": "Valid signed artifact attached to different policy/claim/evidence identity",
+      "potential_overclaimer": "pipavlo82/recomputable-verification-receipts",
+      "producer": "babyblueviper1/invinoveritas",
+      "relation": "exact historical signed verdict artifact to RVR verification profile",
+      "result_consumer": "pipavlo82/recomputable-verification-receipts",
+      "rsi_coverage": "Not the RSI amendment authentication lane",
+      "status": "mapped unvalidated",
+      "verifies": "specified BIP-340/event/digest procedure; not executed in this synthesis"
+    },
+    {
+      "consumer": "trustless-ai/recompute-kit",
+      "declares": "PQ v1 section 10",
+      "dependent_claim": "derived post-cutover authority; legacy inheritance stays weaker",
+      "edge_id": "E09",
+      "evidence": [
+        "S034",
+        "S044"
+      ],
+      "evidence_producer": "trustless-ai/pq-agent-binding",
+      "kind": "source-backed integration/dependency",
+      "locally_correct_but_relation_wrong": "Correct local sequence/vector output does not prove complete anchored manifest history",
+      "potential_overclaimer": "trustless-ai/recompute-kit",
+      "producer": "trustless-ai/pq-agent-binding",
+      "relation": "temporal authority design to captured-admission v1 profile",
+      "result_consumer": "trustless-ai/recompute-kit",
+      "rsi_coverage": "RSI v0 policy does not cover v1 admission/manifest closure",
+      "status": "mapped unvalidated",
+      "verifies": "captured-admission checker plus required external profile obligations"
+    },
+    {
+      "consumer": "trustless-ai/agent-sdk",
+      "declares": "ERC8301 interface preimage",
+      "dependent_claim": "task/reply identity, not action occurrence",
+      "edge_id": "E10",
+      "evidence": [
+        "S013",
+        "S021"
+      ],
+      "evidence_producer": "trustless-ai/agent-ercs",
+      "kind": "source-backed integration/dependency",
+      "locally_correct_but_relation_wrong": "Well-formed task from another run can be hashed correctly but not belong to this run",
+      "potential_overclaimer": "trustless-ai/agent-sdk",
+      "producer": "trustless-ai/agent-ercs",
+      "relation": "workflow task/reply/run preimage to recomputed hash",
+      "result_consumer": "trustless-ai/agent-sdk",
+      "rsi_coverage": "No RSI task/reply fixture",
+      "status": "mapped unvalidated",
+      "verifies": "SDK recompute; workflow implementation"
+    },
+    {
+      "consumer": "trustless-ai/agent-sdk",
+      "declares": "ConsultEscrow release implementation",
+      "dependent_claim": "release eligibility for exact job",
+      "edge_id": "E11",
+      "evidence": [
+        "S015",
+        "S018",
+        "S024"
+      ],
+      "evidence_producer": "trustless-ai/agent-ercs",
+      "kind": "source-backed integration/dependency",
+      "locally_correct_but_relation_wrong": "Same valid signature/result reused for different job",
+      "potential_overclaimer": "trustless-ai/agent-sdk",
+      "producer": "trustless-ai/agent-ercs",
+      "relation": "job/result commitment and attestor to settlement",
+      "result_consumer": "trustless-ai/agent-sdk",
+      "rsi_coverage": "No RSI escrow execution",
+      "status": "mapped unvalidated",
+      "verifies": "EIP191 recovery and on-chain job commitment"
+    },
+    {
+      "consumer": "trustless-ai/agent-sdk",
+      "declares": "PolicyAction canonical preimage",
+      "dependent_claim": "action commitment identity, not policy proof or executed action",
+      "edge_id": "E12",
+      "evidence": [
+        "S017",
+        "S025"
+      ],
+      "evidence_producer": "trustless-ai/agent-ercs",
+      "kind": "source-backed integration/dependency",
+      "locally_correct_but_relation_wrong": "Valid digest for different chain/domain/target remains a wrong action authorization",
+      "potential_overclaimer": "trustless-ai/agent-sdk",
+      "producer": "trustless-ai/agent-ercs",
+      "relation": "policy action envelope to action/verdict commitment",
+      "result_consumer": "trustless-ai/agent-sdk",
+      "rsi_coverage": "No RSI guard/execution fixture",
+      "status": "mapped unvalidated",
+      "verifies": "SDK pure computation; future guard/prover"
+    },
+    {
+      "consumer": "trustless-ai/trustless-agent-substrate",
+      "declares": "reviewed TAS manifest and Profile",
+      "dependent_claim": "permitted invocation; external handle is not completed action",
+      "edge_id": "E13",
+      "evidence": [
+        "S056",
+        "S057",
+        "S055"
+      ],
+      "evidence_producer": "trustless-ai/agent-sdk",
+      "kind": "source-backed integration/dependency",
+      "locally_correct_but_relation_wrong": "Valid SDK method invoked under wrong wallet or contract context",
+      "potential_overclaimer": "trustless-ai/trustless-agent-substrate",
+      "producer": "trustless-ai/agent-sdk",
+      "relation": "reviewed SDK binding to context-bound invocation",
+      "result_consumer": "trustless-ai/trustless-agent-substrate",
+      "rsi_coverage": "No RSI TAS runtime fixture",
+      "status": "mapped unvalidated",
+      "verifies": "TAS operation gate and wallet/block checks"
+    },
+    {
+      "consumer": "trustless-ai/trustless-agent-substrate",
+      "declares": "Profile-selected workflow and source verifier",
+      "dependent_claim": "source verification applicable to this invocation",
+      "edge_id": "E14",
+      "evidence": [
+        "S058",
+        "S059",
+        "S060",
+        "S013"
+      ],
+      "evidence_producer": "trustless-ai/agent-ercs",
+      "kind": "source-backed integration/dependency",
+      "locally_correct_but_relation_wrong": "Individually verified source and deployment refer to different workflow contexts",
+      "potential_overclaimer": "trustless-ai/trustless-agent-substrate",
+      "producer": "trustless-ai/agent-ercs",
+      "relation": "workflow source/deployment identity to current execution gate",
+      "result_consumer": "trustless-ai/trustless-agent-substrate",
+      "rsi_coverage": "No RSI deployment/context fixture",
+      "status": "mapped unvalidated",
+      "verifies": "TAS fingerprint/context gate"
+    },
+    {
+      "consumer": "pipavlo82/crystal-receipt",
+      "declares": "ReceiptOS portable boundary and exporter byte contract",
+      "dependent_claim": "identity/integrity only",
+      "edge_id": "E15",
+      "evidence": [
+        "S048",
+        "S005"
+      ],
+      "evidence_producer": "trustless-ai/recompute-kit",
+      "kind": "source-backed integration/dependency",
+      "locally_correct_but_relation_wrong": "Correct capsule root does not establish proof validity or downstream admission",
+      "potential_overclaimer": "pipavlo82/crystal-receipt",
+      "producer": "trustless-ai/recompute-kit",
+      "relation": "capsule root to portable object/import identity",
+      "result_consumer": "pipavlo82/crystal-receipt",
+      "rsi_coverage": "CR semantic-snapshot profile does not validate exporter/importer seam",
+      "status": "mapped unvalidated",
+      "verifies": "exporter root recomputation and recipient verifier"
+    },
+    {
+      "consumer": "trustless-ai/agent-sdk",
+      "declares": "ERC8275 convention pin and event-derived role",
+      "dependent_claim": "convention-correct value, not complete settled history",
+      "edge_id": "E16",
+      "evidence": [
+        "S022",
+        "S023",
+        "S042"
+      ],
+      "evidence_producer": "trustless-ai/agent-ercs",
+      "kind": "declared/candidate composition",
+      "locally_correct_but_relation_wrong": "Correct arithmetic over wrong event set/convention yields unsupported standing",
+      "potential_overclaimer": "trustless-ai/agent-sdk",
+      "producer": "trustless-ai/agent-ercs",
+      "relation": "settled outcome evidence to reputation convention/value",
+      "result_consumer": "trustless-ai/agent-sdk",
+      "rsi_coverage": "No RSI event-to-reputation fixture",
+      "status": "declared composition; event extraction unverified",
+      "verifies": "SDK value checker; event authority/extraction not established here"
+    },
+    {
+      "consumer": "trustless-ai/primitives",
+      "declares": "registry check kind",
+      "dependent_claim": "reference reachable, not conformance",
+      "edge_id": "E17",
+      "evidence": [
+        "S036",
+        "S037"
+      ],
+      "evidence_producer": "trustless-ai/recompute-kit",
+      "kind": "source-backed integration/dependency",
+      "locally_correct_but_relation_wrong": "Recipe exists but is stale or semantically failing; existence PASS still holds",
+      "potential_overclaimer": "trustless-ai/primitives",
+      "producer": "trustless-ai/recompute-kit",
+      "relation": "recipe existence to registry discovery status",
+      "result_consumer": "trustless-ai/primitives",
+      "rsi_coverage": "No RSI index-status fixture",
+      "status": "mapped unvalidated",
+      "verifies": "GitHub lookup in checker"
+    },
+    {
+      "consumer": "trustless-ai/primitives",
+      "declares": "registry index",
+      "dependent_claim": "discovery only, not proof authority",
+      "edge_id": "E18",
+      "evidence": [
+        "S037",
+        "S036",
+        "S062"
+      ],
+      "evidence_producer": "trustless-ai/verify-layer",
+      "kind": "discovery edge",
+      "locally_correct_but_relation_wrong": "Repo is reachable while header verification is absent",
+      "potential_overclaimer": "trustless-ai/primitives",
+      "producer": "trustless-ai/verify-layer",
+      "relation": "verifier repository reference to index availability",
+      "result_consumer": "trustless-ai/primitives",
+      "rsi_coverage": "No RSI index-status fixture",
+      "status": "mapped unvalidated",
+      "verifies": "GitHub existence check"
+    },
+    {
+      "consumer": "trustless-ai/semantic-abi",
+      "declares": "Semantic ABI manifest and source adapter contract",
+      "dependent_claim": "typed compatibility and bounded observation, not universal truth",
+      "edge_id": "E19",
+      "evidence": [
+        "S049",
+        "S052"
+      ],
+      "evidence_producer": "babyblueviper1/invinoveritas",
+      "kind": "source-backed integration/dependency",
+      "locally_correct_but_relation_wrong": "Authentic signed verdict remains distinct from correct judgment",
+      "potential_overclaimer": "trustless-ai/semantic-abi",
+      "producer": "babyblueviper1/invinoveritas",
+      "relation": "signed decision artifact to typed claim/authority evaluation",
+      "result_consumer": "trustless-ai/semantic-abi",
+      "rsi_coverage": "Semantic ABI has its own adapter path; not rerun/modified here",
+      "status": "mapped unvalidated by RSI",
+      "verifies": "Semantic ABI linker/adapter"
+    },
+    {
+      "consumer": "trustless-ai/agent-ercs",
+      "declares": "organization role map",
+      "dependent_claim": "discovery/navigation only",
+      "edge_id": "E20",
+      "evidence": [
+        "S011",
+        "S012"
+      ],
+      "evidence_producer": "trustless-ai/.github",
+      "kind": "discovery edge",
+      "locally_correct_but_relation_wrong": "Organization says production/audited while a selected surface is interface-only",
+      "potential_overclaimer": "trustless-ai/agent-ercs",
+      "producer": "trustless-ai/.github",
+      "relation": "declared ecosystem role to component implementation",
+      "result_consumer": "trustless-ai/agent-ercs",
+      "rsi_coverage": "No executable RSI coverage claimed",
+      "status": "README/architecture only",
+      "verifies": "reader must inspect actual component and audit/deployment evidence"
+    }
+  ],
+  "discovery_edges": 2,
+  "edge_count": 20,
+  "false_promotion_boundaries": [
+    {
+      "boundary_id": "B01",
+      "edges": [
+        "E02"
+      ],
+      "evidence": [
+        "S064",
+        "S065",
+        "S068"
+      ],
+      "mutation": "RVR-M5/M6",
+      "rsi_status": "mechanically blocked",
+      "stronger_claim": "cryptographic authentication",
+      "upstream_relation": "digest binding"
+    },
+    {
+      "boundary_id": "B02",
+      "edges": [
+        "E03"
+      ],
+      "evidence": [
+        "S005",
+        "S047"
+      ],
+      "mutation": "TSEI-M5/M6",
+      "rsi_status": "mechanically blocked",
+      "stronger_claim": "provenance authority",
+      "upstream_relation": "serializer/adoption success"
+    },
+    {
+      "boundary_id": "B03",
+      "edges": [
+        "E04"
+      ],
+      "evidence": [
+        "S072",
+        "S074",
+        "S079",
+        "S080"
+      ],
+      "mutation": "PQ-M5/M6",
+      "rsi_status": "mechanically blocked",
+      "stronger_claim": "authenticated transition continuity",
+      "upstream_relation": "policy/as-of plus metadata"
+    },
+    {
+      "boundary_id": "B04",
+      "edges": [
+        "E04"
+      ],
+      "evidence": [
+        "S072",
+        "S074",
+        "S079",
+        "S080"
+      ],
+      "mutation": "PQ-M3; independent anchor verification absent",
+      "rsi_status": "mechanically blocked for supplied-evidence policy case",
+      "stronger_claim": "proven historical eligibility",
+      "upstream_relation": "created_at before cutoff"
+    },
+    {
+      "boundary_id": "B05",
+      "edges": [
+        "E03",
+        "E04"
+      ],
+      "evidence": [
+        "S005",
+        "S047",
+        "S072",
+        "S074",
+        "S079",
+        "S080"
+      ],
+      "mutation": "PQ-M2/M4; TSEI-M4",
+      "rsi_status": "mechanically blocked for pinned history",
+      "stronger_claim": "historical governing binding",
+      "upstream_relation": "current binding"
+    },
+    {
+      "boundary_id": "B06",
+      "edges": [
+        "E01"
+      ],
+      "evidence": [
+        "S006"
+      ],
+      "mutation": "CR-M1/M3",
+      "rsi_status": "mechanically blocked",
+      "stronger_claim": "same semantic identity",
+      "upstream_relation": "locally accepted snapshot"
+    },
+    {
+      "boundary_id": "B07",
+      "edges": [
+        "E01"
+      ],
+      "evidence": [
+        "S006"
+      ],
+      "mutation": "CR-M2",
+      "rsi_status": "mirror-positive mechanically protected",
+      "stronger_claim": "changed protected semantic snapshot",
+      "upstream_relation": "changed external metadata"
+    },
+    {
+      "boundary_id": "B08",
+      "edges": [
+        "E02"
+      ],
+      "evidence": [
+        "S064",
+        "S065",
+        "S068"
+      ],
+      "mutation": "RVR-M2/M4",
+      "rsi_status": "mechanically blocked",
+      "stronger_claim": "transition ACCEPT or divergence resolved",
+      "upstream_relation": "effective profile A retained"
+    },
+    {
+      "boundary_id": "B09",
+      "edges": [
+        "E04"
+      ],
+      "evidence": [
+        "S072",
+        "S074",
+        "S079",
+        "S080"
+      ],
+      "mutation": "PQ-M7",
+      "rsi_status": "mechanically blocked",
+      "stronger_claim": "verified ML-DSA algorithm identity",
+      "upstream_relation": "SLH artifact with ML-DSA label"
+    },
+    {
+      "boundary_id": "B10",
+      "edges": [
+        "E05",
+        "E06"
+      ],
+      "evidence": [
+        "S003",
+        "S027",
+        "S029",
+        "S031"
+      ],
+      "mutation": "none",
+      "rsi_status": "source-backed boundary; no RSI edge mutation",
+      "stronger_claim": "TSEI authority / vantage independence / action occurrence",
+      "upstream_relation": "valid signed observation"
+    },
+    {
+      "boundary_id": "B11",
+      "edges": [
+        "E18"
+      ],
+      "evidence": [
+        "S036",
+        "S037",
+        "S062"
+      ],
+      "mutation": "none",
+      "rsi_status": "source-backed boundary; no RSI mutation",
+      "stronger_claim": "consensus-valid header",
+      "upstream_relation": "state inclusion against root"
+    },
+    {
+      "boundary_id": "B12",
+      "edges": [
+        "E17",
+        "E18"
+      ],
+      "evidence": [
+        "S036",
+        "S037",
+        "S062"
+      ],
+      "mutation": "none",
+      "rsi_status": "source-backed boundary; no RSI mutation",
+      "stronger_claim": "semantic validity / independent consensus",
+      "upstream_relation": "index presence / RPC agreement"
+    },
+    {
+      "boundary_id": "B13",
+      "edges": [
+        "E10",
+        "E11",
+        "E12",
+        "E13"
+      ],
+      "evidence": [
+        "S013",
+        "S015",
+        "S017",
+        "S018",
+        "S021",
+        "S024",
+        "S025",
+        "S055",
+        "S056",
+        "S057"
+      ],
+      "mutation": "none",
+      "rsi_status": "source-backed boundary; no RSI mutation",
+      "stronger_claim": "executed or settled action",
+      "upstream_relation": "correct SDK hash"
+    },
+    {
+      "boundary_id": "B14",
+      "edges": [
+        "E19"
+      ],
+      "evidence": [
+        "S049",
+        "S052"
+      ],
+      "mutation": "none",
+      "rsi_status": "inferred composition risk; no RSI integration test",
+      "stronger_claim": "truth of producer declaration",
+      "upstream_relation": "valid manifest compatibility"
+    },
+    {
+      "boundary_id": "B15",
+      "edges": [],
+      "evidence": [
+        "S014"
+      ],
+      "mutation": "none",
+      "rsi_status": "source explicitly separates; no RSI mutation",
+      "stronger_claim": "current ownership authority",
+      "upstream_relation": "immutable source NFT provenance"
+    },
+    {
+      "boundary_id": "B16",
+      "edges": [
+        "E16"
+      ],
+      "evidence": [
+        "S022",
+        "S023",
+        "S042"
+      ],
+      "mutation": "none",
+      "rsi_status": "unverified evidence-extraction edge",
+      "stronger_claim": "complete authentic settled history",
+      "upstream_relation": "reputation formula matches"
+    },
+    {
+      "boundary_id": "B17",
+      "edges": [],
+      "evidence": [
+        "S045"
+      ],
+      "mutation": "none",
+      "rsi_status": "source-backed gate; not RSI tested",
+      "stronger_claim": "originated this proposal/artifact",
+      "upstream_relation": "earlier transaction exists"
+    }
+  ],
+  "generic_core_reuse": {
+    "architecture_base": "30e13ba3a39915c91a607f70975c669ead7a231e",
+    "core_changes": 0,
+    "domain_specific_branches": 0,
+    "evidence": [
+      "tests/test_pq.py::PQTests.test_same_pipeline_four_domains",
+      "runner/relation_runtime.py",
+      "runner/extension_runtime.py",
+      "runner/execution.py",
+      "runner/expectation_contract.py",
+      "extensions/pq.py"
+    ],
+    "generic_hashes": {
+      "rsi/__init__.py": "606b74b6e072b7bad0583751b9e6def44af0561810e4a5bda0657fdddfdf3025",
+      "rsi/codec.py": "439115f56455449346d4fb1aa0f9f1b87ef9298f4ce41b4f9aaef60748214af3",
+      "rsi/corpus.py": "4f91abe2cad84cf0d97173671cc593527b9166abd86a4e5d31b2187f8e511ecf",
+      "rsi/oracle.py": "23e7c1ffc26441ef7cb4e85282f2da6f91b017b685f2220a432110ca3232002b",
+      "rsi/run.py": "3cee105292d30a558f276b37b6e209c06ea2ce56d7ed57fddba93a53f34b3e7e",
+      "rsi/wire.py": "580bea885ecdfa473ac33d9886ec94b08e16ca229ac1e2f4c4870a584b5598e4",
+      "runner/__init__.py": "af4733b2c655532ca01649b163e9dc08a40b2f173fab828441ef70bffe2ef484",
+      "runner/adapter_registry.py": "7a96ed768563ed6f8e7b067108d855d1e06178abe7556957772dc964546c9af5",
+      "runner/execution.py": "c7234c885eef97e24a89b3b54041cff77de88311e4521e74f1a9f208dd82feb7",
+      "runner/expectation_contract.py": "bfe87feb88e843809dd6a0311a52bc78a634a59fa2c6f992d0a438cedfb7cb52",
+      "runner/expectation_registry.py": "4c8b55edabf9bfddb3306faf4c30dff2297f5630275e87807741e3cf01766a67",
+      "runner/extension_runtime.py": "1f026b43a40cd96b6920190c0d2d15f181954cabefbba75f184c13038945ace4",
+      "runner/fixture_registry.py": "cdfc7a5a792b54f44c73aa83dd0b6cfa205903f6485188bf4111414830f87051",
+      "runner/mutation_registry.py": "20e99f68b97228e86136984f419da9d6be4c09149dee7bfee9acc1f1644d8084",
+      "runner/relation_profile.py": "06728cbd2da5c959f90802011d7a309b1c455f9b867a704f246ad71c84f08427",
+      "runner/relation_profile_registry.py": "922e579a76dc40194c94b6f9a7cf90c59cb19cbcb73650c04de8beb7c025f6dd",
+      "runner/relation_runtime.py": "7b567bc61d86c5926f3fe485b6920d44119241ec20c4a00f4db579a78024eaf0",
+      "schema/expectations.v0.schema.json": "7174fd7556608e31f4888b14ea5ab05407bab4d83c0a71b36707506293de0f05",
+      "schema/fixture-corpus.v0.schema.json": "23f246d8b44661948698baead7c7fab55b5aa7e1dbd7ccbcbd092b09d6b81196",
+      "schema/observation.v0.schema.json": "bbdea70bb0f614122b1fc582a2ed3fe64ef41faf8282135dfbf5323b554a018c",
+      "schema/profiled-relation-fixture.v0.schema.json": "d9e5dd018e9b7eb712cbc6bb81e5e3001b97b9eba1b6592974cb40abdc4fab0a",
+      "schema/registered-fixture.v0.schema.json": "a3dd12dd3313a291166dd04a0a412d36116f0fdd520a0b3b03b4794cc04b9e49",
+      "schema/relation-binding-fixture.v0.schema.json": "ab7c7390ea91d26fe1f1916c9f2ae7552a0077b69f2399c5ed76c199bc73f4ca"
+    },
+    "same_comparator": true,
+    "same_expectation_admission": true,
+    "same_extension_registry": true,
+    "same_relation_registry": true,
+    "same_runner": true,
+    "same_taxonomy": true,
+    "semantic_exceptions": 0
+  },
+  "independence_review": [
+    {
+      "actual": "pinned TypeScript via Node; Python relation wrapper",
+      "author_independent": "not established",
+      "classification": "source-derived separately implemented; helper language independent",
+      "codebase_independent": "upstream helper versus RSI predictor; wrapper/oracle in same RSI repo",
+      "domain": "Crystal Receipt",
+      "expected": "Python flat-string-map obligations from frozen spec",
+      "language_independent": "yes for substantive helper",
+      "limit": "Shared interpretation and finite subset can share blind spots."
+    },
+    {
+      "actual": "pinned Python reference",
+      "author_independent": "not established",
+      "classification": "source-derived separately implemented",
+      "codebase_independent": "upstream reference versus RSI predictor; shared encoding assumptions",
+      "domain": "RVR digest",
+      "expected": "separate Python predicates and JSON/digest computation",
+      "language_independent": "no",
+      "limit": "No-call separation prevents direct self-validation, not correlated semantic mistakes."
+    },
+    {
+      "actual": "TypeScript encoder plus Python registry checker and chronology wrapper",
+      "author_independent": "not established",
+      "classification": "source-derived separately implemented; partial language independence",
+      "codebase_independent": "upstream producer/checker distinct; wrapper/oracle share pins",
+      "domain": "TSEI serializer/adoption",
+      "expected": "Python ASCII/integer serializer and finite chronology obligations",
+      "language_independent": "encoder yes; chronology no",
+      "limit": "Finite snapshots, not general ancestry or independent provenance authority."
+    },
+    {
+      "actual": "pinned Python cutoff policy plus RSI scope guard",
+      "author_independent": "not established",
+      "classification": "source-derived separately implemented",
+      "codebase_independent": "upstream function versus RSI predictor; same trusted runtime",
+      "domain": "PQ policy/as-of",
+      "expected": "separate Python interval/policy derivation",
+      "language_independent": "no",
+      "limit": "Both depend on supplied history/anchor/signature-validity flags. Neither authenticates them."
+    }
+  ],
+  "inspection_mode": "read-only pinned GitHub source blobs; external tests/deployments not executed",
+  "limitations": [
+    "All new external implementation behavior is source-inspected, not newly executed/deployment-verified.",
+    "Whole-repository status never follows from selected function/profile validation.",
+    "No author independence established; Python correlated-oracle risks remain.",
+    "No existing schema, profile, fixture, mutation record or source repo modified.",
+    "Memory Palace remained read-only because this task explicitly restricts writes to RSI."
+  ],
+  "missing_edge_ranking": [
+    {
+      "evidence": "production code and explicit tests",
+      "importance": "high",
+      "independence": "separate tuple/revision obligations feasible",
+      "mirror": "source test exists",
+      "negative": "source-backed",
+      "promotion_risk": "high",
+      "rank": 1,
+      "target": "TAS workflow/context gate"
+    },
+    {
+      "evidence": "Solidity implementation and job replay test",
+      "importance": "high",
+      "independence": "independent preimage/recovery plus EVM",
+      "mirror": "source-derived candidate",
+      "negative": "source-backed",
+      "promotion_risk": "high",
+      "rank": 2,
+      "target": "ConsultEscrow job-bound release"
+    },
+    {
+      "evidence": "code/demo; offline corpus missing",
+      "importance": "high",
+      "independence": "second MPT oracle required",
+      "mirror": "source-derived candidate",
+      "negative": "source-backed",
+      "promotion_risk": "high",
+      "rank": 3,
+      "target": "verify-layer root/header boundary"
+    },
+    {
+      "evidence": "SDK and bps vectors",
+      "importance": "high",
+      "independence": "integer formula easy; event authority harder",
+      "mirror": "version-preserving representation",
+      "negative": "wrong convention easy; event set needs evidence",
+      "promotion_risk": "high",
+      "rank": 4,
+      "target": "ERC8275 convention/reputation attribution"
+    },
+    {
+      "evidence": "production adapter and receipt",
+      "importance": "high",
+      "independence": "separate hash/recovery feasible",
+      "mirror": "forwarding peer changes, signature unchanged",
+      "negative": "instance/digest/signer endpoint",
+      "promotion_risk": "high",
+      "rank": 5,
+      "target": "TSEI receipt to CCIP observation/consumer"
+    },
+    {
+      "evidence": "exporter and portable boundary",
+      "importance": "medium-high",
+      "independence": "exact byte contract needed",
+      "mirror": "repeat deterministic export",
+      "negative": "same root with different content",
+      "promotion_risk": "high",
+      "rank": 6,
+      "target": "ReceiptOS export/import identity"
+    },
+    {
+      "evidence": "design and profile vectors",
+      "importance": "high",
+      "independence": "authenticated complete history required",
+      "mirror": "submitted_at and duplicate retransmit",
+      "negative": "omitted earlier manifest/predecessor",
+      "promotion_risk": "high",
+      "rank": 7,
+      "target": "PQ v1 manifest/acceptance closure"
+    },
+    {
+      "evidence": "spec/vectors; real origination positive pending",
+      "importance": "medium",
+      "independence": "source-bound witness resolver required",
+      "mirror": "same exact bound artifact",
+      "negative": "unrelated earlier transaction",
+      "promotion_risk": "high",
+      "rank": 8,
+      "target": "Origination anchor binding"
+    }
+  ],
+  "mutation_coverage": [
+    {
+      "family": "legacy",
+      "record": {
+        "collateral": [],
+        "errors": [],
+        "expected_failure_phase": "admission",
+        "mapped_check": "PREDICTION_MISMATCH",
+        "mutation_id": "EXP-M1",
+        "status": "KILLED",
+        "target_id": "expectation-admission"
+      }
+    },
+    {
+      "family": "legacy",
+      "record": {
+        "collateral": [],
+        "errors": [],
+        "expected_failure_phase": "admission",
+        "mapped_check": "FIXTURE_SET_DIGEST",
+        "mutation_id": "EXP-M2",
+        "status": "KILLED",
+        "target_id": "expectation-admission"
+      }
+    },
+    {
+      "family": "legacy",
+      "record": {
+        "collateral": [
+          "tests.test_expectations.ExpectationTests.test_atomic_admission",
+          "tests.test_expectations.ExpectationTests.test_profile_failure_prevents_all_adapter_execution"
+        ],
+        "errors": [],
+        "expected_failure_phase": "test",
+        "mapped_check": "tests.test_expectations.ExpectationTests.test_modified_value_rejected",
+        "mutation_id": "EXP-M3",
+        "status": "KILLED",
+        "target_id": "expectation-admission"
+      }
+    },
+    {
+      "family": "legacy",
+      "record": {
+        "collateral": [
+          "tests.test_expectations.ExpectationTests.test_modified_value_rejected",
+          "tests.test_expectations.ExpectationTests.test_profile_failure_prevents_all_adapter_execution"
+        ],
+        "errors": [],
+        "expected_failure_phase": "test",
+        "mapped_check": "tests.test_expectations.ExpectationTests.test_atomic_admission",
+        "mutation_id": "EXP-M4",
+        "status": "KILLED",
+        "target_id": "expectation-admission"
+      }
+    },
+    {
+      "family": "legacy",
+      "record": {
+        "collateral": [],
+        "errors": [],
+        "expected_failure_phase": "decision",
+        "mapped_check": "RSI-001/mutation/generic",
+        "mutation_id": "RSI-001/generic",
+        "status": "KILLED",
+        "target_id": "generic"
+      }
+    },
+    {
+      "family": "legacy",
+      "record": {
+        "collateral": [],
+        "errors": [],
+        "expected_failure_phase": "decision",
+        "mapped_check": "RSI-001/mutation/messaging",
+        "mutation_id": "RSI-001/messaging",
+        "status": "KILLED",
+        "target_id": "messaging"
+      }
+    },
+    {
+      "family": "legacy",
+      "record": {
+        "collateral": [],
+        "errors": [],
+        "expected_failure_phase": "decision",
+        "mapped_check": "RSI-003/mutation/generic",
+        "mutation_id": "RSI-003/generic",
+        "status": "KILLED",
+        "target_id": "generic"
+      }
+    },
+    {
+      "family": "legacy",
+      "record": {
+        "collateral": [],
+        "errors": [],
+        "expected_failure_phase": "decision",
+        "mapped_check": "RSI-003/mutation/messaging",
+        "mutation_id": "RSI-003/messaging",
+        "status": "KILLED",
+        "target_id": "messaging"
+      }
+    },
+    {
+      "family": "legacy",
+      "record": {
+        "collateral": [],
+        "errors": [],
+        "expected_failure_phase": "decision",
+        "mapped_check": "RSI-004/mutation/generic",
+        "mutation_id": "RSI-004/generic",
+        "status": "KILLED",
+        "target_id": "generic"
+      }
+    },
+    {
+      "family": "legacy",
+      "record": {
+        "collateral": [],
+        "errors": [],
+        "expected_failure_phase": "decision",
+        "mapped_check": "RSI-004/mutation/messaging",
+        "mutation_id": "RSI-004/messaging",
+        "status": "KILLED",
+        "target_id": "messaging"
+      }
+    },
+    {
+      "family": "legacy",
+      "record": {
+        "collateral": [],
+        "errors": [],
+        "expected_failure_phase": "decision",
+        "mapped_check": "RSI-006/mutation/generic",
+        "mutation_id": "RSI-006/generic",
+        "status": "KILLED",
+        "target_id": "generic"
+      }
+    },
+    {
+      "family": "legacy",
+      "record": {
+        "collateral": [],
+        "errors": [],
+        "expected_failure_phase": "decision",
+        "mapped_check": "RSI-006/mutation/messaging",
+        "mutation_id": "RSI-006/messaging",
+        "status": "KILLED",
+        "target_id": "messaging"
+      }
+    },
+    {
+      "family": "legacy",
+      "record": {
+        "collateral": [],
+        "errors": [],
+        "expected_failure_phase": "decision",
+        "mapped_check": "RSI-008/mutation/generic",
+        "mutation_id": "RSI-008/generic",
+        "status": "KILLED",
+        "target_id": "generic"
+      }
+    },
+    {
+      "family": "legacy",
+      "record": {
+        "collateral": [],
+        "errors": [],
+        "expected_failure_phase": "decision",
+        "mapped_check": "RSI-008/mutation/messaging",
+        "mutation_id": "RSI-008/messaging",
+        "status": "KILLED",
+        "target_id": "messaging"
+      }
+    },
+    {
+      "family": "legacy",
+      "record": {
+        "collateral": [],
+        "errors": [],
+        "expected_failure_phase": "decision",
+        "mapped_check": "RSI-009/mutation/generic",
+        "mutation_id": "RSI-009/generic",
+        "status": "KILLED",
+        "target_id": "generic"
+      }
+    },
+    {
+      "family": "legacy",
+      "record": {
+        "collateral": [],
+        "errors": [],
+        "expected_failure_phase": "decision",
+        "mapped_check": "RSI-009/mutation/messaging",
+        "mutation_id": "RSI-009/messaging",
+        "status": "KILLED",
+        "target_id": "messaging"
+      }
+    },
+    {
+      "family": "rp",
+      "record": {
+        "collateral": [
+          "tests.test_relation_profiles.RelationTests.test_profile_order_outcomes"
+        ],
+        "errors": [],
+        "expected_failure_phase": "test",
+        "mapped_check": "tests.test_relation_profiles.RelationTests.test_unknown_profile",
+        "mutation_id": "RP-M1",
+        "status": "KILLED",
+        "target_id": "relation-contract"
+      }
+    },
+    {
+      "family": "rp",
+      "record": {
+        "collateral": [
+          "tests.test_relation_profiles.RelationTests.test_no_latest_with_available_versions"
+        ],
+        "errors": [],
+        "expected_failure_phase": "test",
+        "mapped_check": "tests.test_relation_profiles.RelationTests.test_version",
+        "mutation_id": "RP-M2",
+        "status": "KILLED",
+        "target_id": "relation-contract"
+      }
+    },
+    {
+      "family": "rp",
+      "record": {
+        "collateral": [
+          "tests.test_relation_profiles.RelationTests.test_relation_id_opaque"
+        ],
+        "errors": [],
+        "expected_failure_phase": "test",
+        "mapped_check": "tests.test_relation_profiles.RelationTests.test_static_opacity",
+        "mutation_id": "RP-M3",
+        "status": "KILLED",
+        "target_id": "relation-contract"
+      }
+    },
+    {
+      "family": "rp",
+      "record": {
+        "collateral": [
+          "tests.test_relation_profiles.RelationTests.test_alias_namespaces_independent_profiles",
+          "tests.test_relation_profiles.RelationTests.test_case_id_opaque",
+          "tests.test_relation_profiles.RelationTests.test_descriptor_exact_match",
+          "tests.test_relation_profiles.RelationTests.test_historical",
+          "tests.test_relation_profiles.RelationTests.test_mirror",
+          "tests.test_relation_profiles.RelationTests.test_no_universal_slots",
+          "tests.test_relation_profiles.RelationTests.test_opaque_fixture_id",
+          "tests.test_relation_profiles.RelationTests.test_profile_id_opaque",
+          "tests.test_relation_profiles.RelationTests.test_relation_id_opaque",
+          "tests.test_relation_profiles.RelationTests.test_substitution",
+          "tests.test_relation_profiles.RelationTests.test_valid"
+        ],
+        "errors": [],
+        "expected_failure_phase": "test",
+        "mapped_check": "tests.test_relation_profiles.RelationTests.test_rich",
+        "mutation_id": "RP-M4",
+        "status": "KILLED",
+        "target_id": "relation-contract"
+      }
+    },
+    {
+      "family": "rp",
+      "record": {
+        "collateral": [],
+        "errors": [],
+        "expected_failure_phase": "test",
+        "mapped_check": "tests.test_relation_profiles.RelationTests.test_mirror",
+        "mutation_id": "RP-M5",
+        "status": "KILLED",
+        "target_id": "relation-contract"
+      }
+    },
+    {
+      "family": "rp",
+      "record": {
+        "collateral": [],
+        "errors": [],
+        "expected_failure_phase": "test",
+        "mapped_check": "tests.test_relation_profiles.RelationTests.test_historical",
+        "mutation_id": "RP-M6",
+        "status": "KILLED",
+        "target_id": "relation-contract"
+      }
+    },
+    {
+      "family": "rp",
+      "record": {
+        "collateral": [
+          "tests.test_relation_profiles.RelationTests.test_atomic_cases",
+          "tests.test_relation_profiles.RelationTests.test_protected_legacy_hashes"
+        ],
+        "errors": [],
+        "expected_failure_phase": "test",
+        "mapped_check": "tests.test_relation_profiles.RelationTests.test_tamper",
+        "mutation_id": "RP-M7",
+        "status": "KILLED",
+        "target_id": "relation-contract"
+      }
+    },
+    {
+      "family": "cr",
+      "record": {
+        "collateral": [
+          "tests.test_crystal_receipt.CrystalTests.test_combined_registration",
+          "tests.test_crystal_receipt.CrystalTests.test_pipeline"
+        ],
+        "errors": [],
+        "expected_failure_phase": "test",
+        "mapped_check": "tests.test_crystal_receipt.CrystalTests.test_negative",
+        "mutation_id": "CR-M1",
+        "status": "KILLED",
+        "target_id": "crystal-receipt.v0"
+      }
+    },
+    {
+      "family": "cr",
+      "record": {
+        "collateral": [
+          "tests.test_crystal_receipt.CrystalTests.test_combined_registration",
+          "tests.test_crystal_receipt.CrystalTests.test_pipeline"
+        ],
+        "errors": [],
+        "expected_failure_phase": "test",
+        "mapped_check": "tests.test_crystal_receipt.CrystalTests.test_mirror",
+        "mutation_id": "CR-M2",
+        "status": "KILLED",
+        "target_id": "crystal-receipt.v0"
+      }
+    },
+    {
+      "family": "cr",
+      "record": {
+        "collateral": [
+          "tests.test_crystal_receipt.CrystalTests.test_combined_registration",
+          "tests.test_crystal_receipt.CrystalTests.test_pipeline"
+        ],
+        "errors": [],
+        "expected_failure_phase": "test",
+        "mapped_check": "tests.test_crystal_receipt.CrystalTests.test_negative",
+        "mutation_id": "CR-M3",
+        "status": "KILLED",
+        "target_id": "crystal-receipt.v0"
+      }
+    },
+    {
+      "family": "rvr",
+      "record": {
+        "collateral": [
+          "tests.test_rvr.RVRTests.test_layer_separation",
+          "tests.test_rvr.RVRTests.test_no_amendment",
+          "tests.test_rvr.RVRTests.test_pipeline",
+          "tests.test_rvr.RVRTests.test_same_generic_pipeline_two_domains"
+        ],
+        "errors": [],
+        "expected_failure_phase": "test",
+        "mapped_check": "tests.test_rvr.RVRTests.test_unbound_substitution",
+        "mutation_id": "RVR-M1",
+        "status": "KILLED",
+        "target_id": "rvr.digest-binding.v0"
+      }
+    },
+    {
+      "family": "rvr",
+      "record": {
+        "collateral": [
+          "tests.test_rvr.RVRTests.test_layer_separation",
+          "tests.test_rvr.RVRTests.test_pipeline",
+          "tests.test_rvr.RVRTests.test_same_generic_pipeline_two_domains",
+          "tests.test_rvr.RVRTests.test_unbound_substitution"
+        ],
+        "errors": [],
+        "expected_failure_phase": "test",
+        "mapped_check": "tests.test_rvr.RVRTests.test_no_amendment",
+        "mutation_id": "RVR-M2",
+        "status": "KILLED",
+        "target_id": "rvr.digest-binding.v0"
+      }
+    },
+    {
+      "family": "rvr",
+      "record": {
+        "collateral": [
+          "tests.test_rvr.RVRTests.test_pipeline",
+          "tests.test_rvr.RVRTests.test_same_generic_pipeline_two_domains"
+        ],
+        "errors": [],
+        "expected_failure_phase": "test",
+        "mapped_check": "tests.test_rvr.RVRTests.test_wrong_verdict",
+        "mutation_id": "RVR-M3",
+        "status": "KILLED",
+        "target_id": "rvr.digest-binding.v0"
+      }
+    },
+    {
+      "family": "rvr",
+      "record": {
+        "collateral": [
+          "tests.test_rvr.RVRTests.test_pipeline",
+          "tests.test_rvr.RVRTests.test_same_generic_pipeline_two_domains"
+        ],
+        "errors": [],
+        "expected_failure_phase": "test",
+        "mapped_check": "tests.test_rvr.RVRTests.test_layer_separation",
+        "mutation_id": "RVR-M4",
+        "status": "KILLED",
+        "target_id": "rvr.digest-binding.v0"
+      }
+    },
+    {
+      "family": "rvr",
+      "record": {
+        "collateral": [
+          "tests.test_rvr.RVRTests.test_bilateral_binding",
+          "tests.test_rvr.RVRTests.test_correct_verdict",
+          "tests.test_rvr.RVRTests.test_pipeline",
+          "tests.test_rvr.RVRTests.test_same_generic_pipeline_two_domains",
+          "tests.test_rvr.RVRTests.test_signed_digest_not_authentication",
+          "tests.test_rvr.RVRTests.test_wrong_verdict"
+        ],
+        "errors": [],
+        "expected_failure_phase": "test",
+        "mapped_check": "tests.test_rvr.RVRTests.test_no_crypto_promotion",
+        "mutation_id": "RVR-M5",
+        "status": "KILLED",
+        "target_id": "rvr.digest-binding.v0"
+      }
+    },
+    {
+      "family": "rvr",
+      "record": {
+        "collateral": [
+          "tests.test_rvr.RVRTests.test_no_crypto_promotion",
+          "tests.test_rvr.RVRTests.test_pipeline",
+          "tests.test_rvr.RVRTests.test_same_generic_pipeline_two_domains"
+        ],
+        "errors": [],
+        "expected_failure_phase": "test",
+        "mapped_check": "tests.test_rvr.RVRTests.test_pubkeys_not_authentication",
+        "mutation_id": "RVR-M6",
+        "status": "KILLED",
+        "target_id": "rvr.digest-binding.v0"
+      }
+    },
+    {
+      "family": "tsei",
+      "record": {
+        "collateral": [
+          "tests.test_tsei.TSEITests.test_pipeline",
+          "tests.test_tsei.TSEITests.test_same_pipeline_three_domains",
+          "tests.test_tsei.TSEITests.test_schema_valid_record_is_not_pinned_binding"
+        ],
+        "errors": [],
+        "expected_failure_phase": "test",
+        "mapped_check": "tests.test_tsei.TSEITests.test_wrong_serializer",
+        "mutation_id": "TSEI-M1",
+        "status": "KILLED",
+        "target_id": "tsei.serializer-adoption.v0"
+      }
+    },
+    {
+      "family": "tsei",
+      "record": {
+        "collateral": [
+          "tests.test_tsei.TSEITests.test_pipeline",
+          "tests.test_tsei.TSEITests.test_same_pipeline_three_domains"
+        ],
+        "errors": [],
+        "expected_failure_phase": "test",
+        "mapped_check": "tests.test_tsei.TSEITests.test_mechanism_not_adoption",
+        "mutation_id": "TSEI-M2",
+        "status": "KILLED",
+        "target_id": "tsei.serializer-adoption.v0"
+      }
+    },
+    {
+      "family": "tsei",
+      "record": {
+        "collateral": [
+          "tests.test_tsei.TSEITests.test_pipeline",
+          "tests.test_tsei.TSEITests.test_same_pipeline_three_domains"
+        ],
+        "errors": [],
+        "expected_failure_phase": "test",
+        "mapped_check": "tests.test_tsei.TSEITests.test_adoption_not_record",
+        "mutation_id": "TSEI-M3",
+        "status": "KILLED",
+        "target_id": "tsei.serializer-adoption.v0"
+      }
+    },
+    {
+      "family": "tsei",
+      "record": {
+        "collateral": [
+          "tests.test_tsei.TSEITests.test_pipeline",
+          "tests.test_tsei.TSEITests.test_same_pipeline_three_domains"
+        ],
+        "errors": [],
+        "expected_failure_phase": "test",
+        "mapped_check": "tests.test_tsei.TSEITests.test_nonretroactivity",
+        "mutation_id": "TSEI-M4",
+        "status": "KILLED",
+        "target_id": "tsei.serializer-adoption.v0"
+      }
+    },
+    {
+      "family": "tsei",
+      "record": {
+        "collateral": [
+          "tests.test_tsei.TSEITests.test_pipeline",
+          "tests.test_tsei.TSEITests.test_record_introduction",
+          "tests.test_tsei.TSEITests.test_reported_labels_not_authority",
+          "tests.test_tsei.TSEITests.test_same_pipeline_three_domains",
+          "tests.test_tsei.TSEITests.test_serializer_control"
+        ],
+        "errors": [],
+        "expected_failure_phase": "test",
+        "mapped_check": "tests.test_tsei.TSEITests.test_no_authority_promotion",
+        "mutation_id": "TSEI-M5",
+        "status": "KILLED",
+        "target_id": "tsei.serializer-adoption.v0"
+      }
+    },
+    {
+      "family": "tsei",
+      "record": {
+        "collateral": [
+          "tests.test_tsei.TSEITests.test_label_changes_have_no_authority_effect",
+          "tests.test_tsei.TSEITests.test_no_authority_promotion",
+          "tests.test_tsei.TSEITests.test_pipeline",
+          "tests.test_tsei.TSEITests.test_same_pipeline_three_domains"
+        ],
+        "errors": [],
+        "expected_failure_phase": "test",
+        "mapped_check": "tests.test_tsei.TSEITests.test_reported_labels_not_authority",
+        "mutation_id": "TSEI-M6",
+        "status": "KILLED",
+        "target_id": "tsei.serializer-adoption.v0"
+      }
+    },
+    {
+      "family": "pq",
+      "record": {
+        "collateral": [
+          "tests.test_pq.PQTests.test_pipeline",
+          "tests.test_pq.PQTests.test_same_pipeline_four_domains"
+        ],
+        "errors": [],
+        "expected_failure_phase": "test",
+        "mapped_check": "tests.test_pq.PQTests.test_old_key_after_cutoff",
+        "mutation_id": "PQ-M1",
+        "status": "KILLED",
+        "target_id": "pq.policy-asof.v0"
+      }
+    },
+    {
+      "family": "pq",
+      "record": {
+        "collateral": [
+          "tests.test_pq.PQTests.test_anchor_evidence_not_verified",
+          "tests.test_pq.PQTests.test_pipeline",
+          "tests.test_pq.PQTests.test_same_pipeline_four_domains",
+          "tests.test_pq.PQTests.test_signing_not_anchor"
+        ],
+        "errors": [],
+        "expected_failure_phase": "test",
+        "mapped_check": "tests.test_pq.PQTests.test_historical_anchor",
+        "mutation_id": "PQ-M2",
+        "status": "KILLED",
+        "target_id": "pq.policy-asof.v0"
+      }
+    },
+    {
+      "family": "pq",
+      "record": {
+        "collateral": [
+          "tests.test_pq.PQTests.test_pipeline",
+          "tests.test_pq.PQTests.test_same_pipeline_four_domains"
+        ],
+        "errors": [],
+        "expected_failure_phase": "test",
+        "mapped_check": "tests.test_pq.PQTests.test_signing_not_anchor",
+        "mutation_id": "PQ-M3",
+        "status": "KILLED",
+        "target_id": "pq.policy-asof.v0"
+      }
+    },
+    {
+      "family": "pq",
+      "record": {
+        "collateral": [
+          "tests.test_pq.PQTests.test_pipeline",
+          "tests.test_pq.PQTests.test_same_pipeline_four_domains"
+        ],
+        "errors": [],
+        "expected_failure_phase": "test",
+        "mapped_check": "tests.test_pq.PQTests.test_stale_snapshot",
+        "mutation_id": "PQ-M4",
+        "status": "KILLED",
+        "target_id": "pq.policy-asof.v0"
+      }
+    },
+    {
+      "family": "pq",
+      "record": {
+        "collateral": [
+          "tests.test_pq.PQTests.test_algorithm_label",
+          "tests.test_pq.PQTests.test_before_cutoff",
+          "tests.test_pq.PQTests.test_historical_anchor",
+          "tests.test_pq.PQTests.test_metadata_not_authentication",
+          "tests.test_pq.PQTests.test_new_key_after_cutoff",
+          "tests.test_pq.PQTests.test_pipeline",
+          "tests.test_pq.PQTests.test_same_pipeline_four_domains",
+          "tests.test_pq.PQTests.test_stale_snapshot"
+        ],
+        "errors": [],
+        "expected_failure_phase": "test",
+        "mapped_check": "tests.test_pq.PQTests.test_no_crypto_promotion",
+        "mutation_id": "PQ-M5",
+        "status": "KILLED",
+        "target_id": "pq.policy-asof.v0"
+      }
+    },
+    {
+      "family": "pq",
+      "record": {
+        "collateral": [
+          "tests.test_pq.PQTests.test_algorithm_label",
+          "tests.test_pq.PQTests.test_no_crypto_promotion",
+          "tests.test_pq.PQTests.test_pipeline",
+          "tests.test_pq.PQTests.test_same_pipeline_four_domains"
+        ],
+        "errors": [],
+        "expected_failure_phase": "test",
+        "mapped_check": "tests.test_pq.PQTests.test_metadata_not_authentication",
+        "mutation_id": "PQ-M6",
+        "status": "KILLED",
+        "target_id": "pq.policy-asof.v0"
+      }
+    },
+    {
+      "family": "pq",
+      "record": {
+        "collateral": [
+          "tests.test_pq.PQTests.test_before_cutoff",
+          "tests.test_pq.PQTests.test_historical_anchor",
+          "tests.test_pq.PQTests.test_metadata_not_authentication",
+          "tests.test_pq.PQTests.test_new_key_after_cutoff",
+          "tests.test_pq.PQTests.test_no_crypto_promotion",
+          "tests.test_pq.PQTests.test_old_key_after_cutoff",
+          "tests.test_pq.PQTests.test_pipeline",
+          "tests.test_pq.PQTests.test_same_pipeline_four_domains",
+          "tests.test_pq.PQTests.test_signing_not_anchor",
+          "tests.test_pq.PQTests.test_stale_snapshot"
+        ],
+        "errors": [],
+        "expected_failure_phase": "test",
+        "mapped_check": "tests.test_pq.PQTests.test_algorithm_label",
+        "mutation_id": "PQ-M7",
+        "status": "KILLED",
+        "target_id": "pq.policy-asof.v0"
+      }
+    }
+  ],
+  "mutation_summary": [
+    {
+      "boundary": "signer/subject; authentication before commit; atomic consumption; context binding; evidence-bounded status; ingestion equivalence",
+      "family": "Legacy synthetic",
+      "killed": 12,
+      "limitation": "two adapters per six mapped controls; not external production coverage"
+    },
+    {
+      "boundary": "recorded expectation tamper, fixture-set binding, predictor equality, atomic admission",
+      "family": "Expectation Contract",
+      "killed": 4,
+      "limitation": "EXP-M5 predictor provenance is a review rule, not a fake mechanical kill"
+    },
+    {
+      "boundary": "resolution, exact version, identifier opacity, rich state, mirror, historical anchor, expectation admission",
+      "family": "Relation Profile Contract",
+      "killed": 7,
+      "limitation": "RP-M5/M6 are architecture test-profile mutations, not real-domain evidence"
+    },
+    {
+      "boundary": "protected snapshot discrimination; metadata mirror; local validity not semantic identity",
+      "family": "Crystal Receipt",
+      "killed": 3,
+      "limitation": "CR-M1/M3 share negative; count not independent relation count"
+    },
+    {
+      "boundary": "unbound transition, no-op/resolution separation, stale verdict, unresolved layers, digest/pubkey non-promotion",
+      "family": "RVR digest",
+      "killed": 6,
+      "limitation": "stronger crypto field is wrapper guard, not signature verification"
+    },
+    {
+      "boundary": "wrong serializer, mechanism/adoption/record split, non-retroactivity, success/label non-promotion",
+      "family": "TSEI serializer/adoption",
+      "killed": 6,
+      "limitation": "finite chronology and unsupported authority guard"
+    },
+    {
+      "boundary": "old/current key, historical/current scope, signing versus anchor, stale snapshot, policy/metadata non-promotion, algorithm label",
+      "family": "PQ policy/as-of",
+      "killed": 7,
+      "limitation": "conditional evidence lane, not authenticated chain"
+    }
+  ],
+  "next_validation_targets": [
+    {
+      "adapter_source": "Pinned production sourceGate.ts and operationService.ts with controlled SDK port; deployment verifier is a separately scoped obligation.",
+      "blocker": "Pin TypeScript/dependency closure; distinguish supplied verified context from independent deployment or consensus verification. Chain-bound runtime currently Anvil-only.",
+      "control": "Upstream sourceGate verified context is accepted and matching current context allows invocation.",
+      "edges": [
+        "E13",
+        "E14"
+      ],
+      "evidence": [
+        "S058",
+        "S060",
+        "S057",
+        "S059"
+      ],
+      "mirror_positive": "Existing sourceGate test accepts a newer exact block hash when fingerprint and chain/RPC/workflow context are unchanged. Literal block-hash equality is not the source rule.",
+      "mutation": "Drop workflowAddress comparison or invoke SDK before gate assertion.",
+      "negative": "Keep the fingerprint and valid context shape but replace workflowAddress, chain or RPC; gate refuses and no invocation occurs. Include stale fingerprint and in-flight invalidation.",
+      "new_relation_family": "Verified source/deployment identity to current invocation applicability and race invalidation.",
+      "phase": "Candidate 2E: Workflow verification-to-invocation context",
+      "predictor_source": "Separately implement tuple/revision obligations from sameContext, snapshot and sourceGate tests; do not call the gate for expected results.",
+      "protected_relation": "Accepted source/deployment fingerprint applies to current chain/RPC/workflow context before SDK invocation.",
+      "rank": 1,
+      "repos": [
+        "trustless-ai/trustless-agent-substrate",
+        "trustless-ai/agent-sdk",
+        "trustless-ai/agent-ercs"
+      ]
+    },
+    {
+      "adapter_source": "Exact ConsultEscrow.sol in isolated EVM/Foundry harness.",
+      "blocker": "Pin compiler/EVM/dependencies. SDK comment says resultText is emitted, but contract Released contains resultHash, not text. Supply pinned text preimage or work with resultHash. Signature preimage lacks chain/contract separation; do not claim global replay resistance.",
+      "control": "test_release_happyPath opens job A, signs commitment, releases once to provider.",
+      "edges": [
+        "E11"
+      ],
+      "evidence": [
+        "S015",
+        "S018",
+        "S024"
+      ],
+      "mirror_positive": "Proposed from public release implementation: different transaction relayer submits same job-bound signature; msg.sender does not select the attestor. Exact mirror pair not yet a published test.",
+      "mutation": "Omit jobId from commitment or bypass recovered attestor comparison.",
+      "negative": "test_signature_isBoundToJobId: two valid open jobs share resultHash/attestor; valid A signature must not release B.",
+      "new_relation_family": "Authenticated evidence gating durable monetary state transition.",
+      "phase": "Candidate 2F: Job-bound settlement release",
+      "predictor_source": "Solidity commitment preimage/state obligations plus independent EIP-191 recovery; SDK hash is a cross-check, not sole oracle.",
+      "protected_relation": "Attestor signature binds exact jobId/resultHash whose escrow state and payment change.",
+      "rank": 2,
+      "repos": [
+        "trustless-ai/agent-ercs",
+        "trustless-ai/agent-sdk"
+      ]
+    },
+    {
+      "adapter_source": "Pinned checkAccountProof / verifyStorage logic isolated from live main() and credential access.",
+      "blocker": "No frozen offline proof corpus inspected; independently pin one and second oracle. LightClientHeaderSource is unwired. Deterministic tests must not need live RPC credentials.",
+      "control": "Pin exact public EIP-1186 account/storage proof and selected block root.",
+      "edges": [
+        "E18"
+      ],
+      "evidence": [
+        "S063",
+        "S062",
+        "S036"
+      ],
+      "mirror_positive": "Proposed representation test: hex letter-case changes with identical decoded proof/root bytes. Requires validation; no existing frozen mirror vector claimed.",
+      "mutation": "Ignore root binding or promote RPC-TRUSTED to consensus verified after proof success.",
+      "negative": "Keep valid original proof bytes, substitute another well-formed expected stateRoot; MPT local consistency cannot imply boundToHeader.",
+      "new_relation_family": "Cryptographic state inclusion versus independent header/consensus authority.",
+      "phase": "Candidate 2G: State-proof binding and header-authority separation",
+      "predictor_source": "Separate MPT/RLP/root implementation plus pinned account/slot and explicit RPC-TRUSTED header obligation.",
+      "protected_relation": "Self-consistent MPT proof binds to selected stateRoot/address/slot; proof success retains header trust class.",
+      "rank": 3,
+      "repos": [
+        "trustless-ai/verify-layer",
+        "trustless-ai/primitives"
+      ]
+    }
+  ],
+  "repos": [
+    {
+      "branch": "main",
+      "evidence": [
+        "S012",
+        "S015",
+        "S016",
+        "S017",
+        "S013",
+        "S014"
+      ],
+      "evidence_gaps": "No RSI execution of these contracts; deployment/audit descriptions not independently verified here",
+      "head": "01283ca57305f915afb560d23359a27fd748eb5a",
+      "layer": "standards + settlement implementation",
+      "mutation_coverage": 0,
+      "next_fixture_family": "job-bound settlement; policy-action replay scope",
+      "protected_relations": [
+        "agent/proof-profile authorization",
+        "workflow task/reply/run binding",
+        "job/result/attestor settlement binding",
+        "chain/domain/action commitment",
+        "immutable source-token provenance versus live ownership"
+      ],
+      "relation_consumer": "SDK clients; workflow agents; escrow beneficiaries",
+      "relation_producer": "contract implementations; signers; workflow emitters",
+      "repo": "trustless-ai/agent-ercs",
+      "role": "Solidity interfaces and a concrete ConsultEscrow base; interface declarations are not proof of deployed enforcement",
+      "rsi_profile": [],
+      "status": "mapped but unvalidated"
+    },
+    {
+      "branch": "main",
+      "evidence": [
+        "S020",
+        "S019",
+        "S024",
+        "S022",
+        "S025"
+      ],
+      "evidence_gaps": "Pure hash/formula reproduction does not authenticate event completeness, action execution or proof validity",
+      "head": "e41b117893fb56bc869922de378daf91aad63def",
+      "layer": "recompute + runtime client",
+      "mutation_coverage": 0,
+      "next_fixture_family": "workflow source/context gate; settlement; convention-pinned reputation",
+      "protected_relations": [
+        "task/reply hash preimage",
+        "settlement commitment",
+        "policy action/verdict digest",
+        "issued convention to reputation value"
+      ],
+      "relation_consumer": "TAS reviewed SDK bindings; downstream verifiers",
+      "relation_producer": "SDK recompute functions and callers supplying evidence",
+      "repo": "trustless-ai/agent-sdk",
+      "role": "Typed off-chain clients and pure recomputation; integration index explicitly is not endorsement",
+      "rsi_profile": [],
+      "status": "mapped but unvalidated"
+    },
+    {
+      "branch": "main",
+      "evidence": [
+        "S038",
+        "S047",
+        "S048",
+        "S045",
+        "S044"
+      ],
+      "evidence_gaps": "Only selected v0 lanes admitted; v1 PQ, other recipes and live authority resolvers not RSI-tested",
+      "head": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+      "layer": "recompute/verify + registry",
+      "mutation_coverage": 19,
+      "next_fixture_family": "receipt export/import identity; provenance-anchor relation",
+      "protected_relations": [
+        "profile/verdict digest binding",
+        "serializer/adoption binding",
+        "conditional PQ policy/as-of",
+        "capsule root/portable object identity",
+        "anchor-to-proposal/artifact origination binding"
+      ],
+      "relation_consumer": "RSI; SDK; ReceiptOS; gateway/consumer implementations",
+      "relation_producer": "reference functions; serializer registry; capsule exporter",
+      "repo": "trustless-ai/recompute-kit",
+      "role": "Source-pinned recompute recipes, conformance vectors, serializers and evidence-capsule builders",
+      "rsi_profile": [
+        "rvr.digest-binding.v0",
+        "tsei.serializer-adoption.v0",
+        "pq.policy-asof.v0"
+      ],
+      "status": "partially validated"
+    },
+    {
+      "branch": "main",
+      "evidence": [
+        "S028",
+        "S027",
+        "S031",
+        "S029",
+        "S030"
+      ],
+      "evidence_gaps": "TSEI receipt transport does not recompute private authority; deployment notes not live-reverified; no RSI mesh/settlement fixture",
+      "head": "6bd66611b88a4751a0acc233c718aa9a13294de4",
+      "layer": "runtime + evidence transport",
+      "mutation_coverage": 0,
+      "next_fixture_family": "TSEI receipt-to-observation; message-to-action non-promotion",
+      "protected_relations": [
+        "exact receipt bytes to signed observation",
+        "origin signer versus forwarding peer",
+        "observation identity versus attestation identity",
+        "snapshot/period/sender to reveal commitment"
+      ],
+      "relation_consumer": "Profile A consumer; settlement contracts",
+      "relation_producer": "gateway signer; mesh nodes",
+      "repo": "trustless-ai/ccip-router",
+      "role": "Signed observation mesh, divergence preservation, TSEI Profile A transport and commit/reveal settlement",
+      "rsi_profile": [],
+      "status": "mapped but unvalidated"
+    },
+    {
+      "branch": "main",
+      "evidence": [
+        "S049",
+        "S052",
+        "S051",
+        "S050"
+      ],
+      "evidence_gaps": "Not integrated into RSI; declarations do not independently authenticate their own truth; owner-independent authorship is a source rule, not audited here",
+      "head": "d15c666dfccff17f7350fe97d2fc7b71cb2cbaee",
+      "layer": "standards + semantic composition + conformance",
+      "mutation_coverage": 0,
+      "next_fixture_family": "manifest-to-runtime claim correspondence; read-only during hackathon",
+      "protected_relations": [
+        "producer establishes to consumer consumes compatibility",
+        "explicit negative claim boundary",
+        "pair outcome versus backend conformance"
+      ],
+      "relation_consumer": "semantic linker and downstream composition",
+      "relation_producer": "component manifest authors and source-specific adapters",
+      "repo": "trustless-ai/semantic-abi",
+      "role": "Typed claim/authority/scope/time compatibility linker plus its own protected-relation adapter evaluation",
+      "rsi_profile": [],
+      "status": "mapped but unvalidated"
+    },
+    {
+      "branch": "feature/tas-poc",
+      "evidence": [
+        "S053",
+        "S058",
+        "S059",
+        "S057",
+        "S060",
+        "S056"
+      ],
+      "evidence_gaps": "Local Anvil chain-bound scope; live chat/concrete proof provider deferred; no RSI end-to-end execution claim",
+      "head": "a344ef80f7c52c03b9183814d1874b8054639c3e",
+      "layer": "runtime + deployment verification",
+      "mutation_coverage": 0,
+      "next_fixture_family": "workflow fingerprint/context substitution",
+      "protected_relations": [
+        "verified source/deployed runtime fingerprint to execution context",
+        "current member wallet at exact block to caller authorization",
+        "reviewed manifest to SDK invocation"
+      ],
+      "relation_consumer": "workflow operation service and SDK port",
+      "relation_producer": "Profile resolver; compiler/code reader; manifest loader",
+      "repo": "trustless-ai/trustless-agent-substrate",
+      "role": "TypeScript runtime with Profile-bound discovery, workflow verification and statically reviewed SDK calls; default branch is feature/tas-poc",
+      "rsi_profile": [],
+      "status": "mapped but unvalidated"
+    },
+    {
+      "branch": "main",
+      "evidence": [
+        "S033",
+        "S034"
+      ],
+      "evidence_gaps": "RSI PQ validates recompute-kit v0 supplied history, not this full v1 construction or this repo wholesale",
+      "head": "4f934ad31e96979002d818cd8a5f12909c1b6713",
+      "layer": "identity/authority specification",
+      "mutation_coverage": 0,
+      "next_fixture_family": "earliest-anchor completeness; authenticated successor binding",
+      "protected_relations": [
+        "acceptance sequence/authorization/manifest/anchor decomposition",
+        "governs_from from closed manifest chain",
+        "frozen legacy inheritance versus derived post-cutover ordering"
+      ],
+      "relation_consumer": "recompute-kit profile and future wallet consumers",
+      "relation_producer": "binding owner; producer acceptance log; anchor publisher",
+      "repo": "trustless-ai/pq-agent-binding",
+      "role": "PQ binding design and v1 temporal authority construction; not the executed v0 policy checker",
+      "rsi_profile": [],
+      "status": "mapped but unvalidated"
+    },
+    {
+      "branch": "main",
+      "evidence": [
+        "S062",
+        "S063"
+      ],
+      "evidence_gaps": "LightClientHeaderSource throws not wired; demo uses live RPC and no frozen offline proof corpus inspected",
+      "head": "84afc4b738dc37269089c858404eed8086435f5d",
+      "layer": "recompute/verify",
+      "mutation_coverage": 0,
+      "next_fixture_family": "state-proof/root binding with header-authority non-promotion",
+      "protected_relations": [
+        "stateRoot to account proof",
+        "account storageRoot to slot proof/value",
+        "proof validity versus consensus header authority"
+      ],
+      "relation_consumer": "verification result / proposed wallet consumer",
+      "relation_producer": "RPC proof provider and header source",
+      "repo": "trustless-ai/verify-layer",
+      "role": "MPT account/storage verification against supplied header stateRoot; trust labels distinguish header source",
+      "rsi_profile": [],
+      "status": "mapped but unvalidated"
+    },
+    {
+      "branch": "main",
+      "evidence": [
+        "S035",
+        "S036",
+        "S037"
+      ],
+      "evidence_gaps": "Two endpoints are not proven independent consensus; presence/HTTP 200 is not semantic conformance",
+      "head": "6b39e9540d4bd0a78decb588c0a8e328c303f208",
+      "layer": "discovery/coordination",
+      "mutation_coverage": 0,
+      "next_fixture_family": "index corroboration/status-promotion fail-closed",
+      "protected_relations": [
+        "index entry to referenced repo/recipe existence",
+        "RPC code-presence corroboration to bounded status"
+      ],
+      "relation_consumer": "discovery consumers; CI",
+      "relation_producer": "index maintainers; RPC/GitHub observations",
+      "repo": "trustless-ai/primitives",
+      "role": "Discovery index plus drift checker; registry explicitly is not authority",
+      "rsi_profile": [],
+      "status": "mapped but unvalidated"
+    },
+    {
+      "branch": "main",
+      "evidence": [
+        "S011"
+      ],
+      "evidence_gaps": "Marketing/deployment/audit statements do not establish whole-stack verification",
+      "head": "63fcf1911eeb129e71919a3f629e8fc08dc56b9d",
+      "layer": "discovery/coordination",
+      "mutation_coverage": 0,
+      "next_fixture_family": "none: use component sources",
+      "protected_relations": [],
+      "relation_consumer": "ecosystem readers",
+      "relation_producer": "documentation authors",
+      "repo": "trustless-ai/.github",
+      "role": "Organization front door and declared boundary-chain map; not an executable verifier",
+      "rsi_profile": [],
+      "status": "README/architecture only"
+    },
+    {
+      "branch": "main",
+      "evidence": [
+        "S005",
+        "S006",
+        "S007",
+        "S008"
+      ],
+      "evidence_gaps": "Only semantic-snapshot and serializer/adoption subsets; no universal authority or occurrence claim; Lane K not covered",
+      "head": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+      "layer": "evidence/provenance + conformance",
+      "mutation_coverage": 9,
+      "next_fixture_family": "capsule exporter/importer identity; separate authority evidence closure",
+      "protected_relations": [
+        "accepted semantic snapshot equivalence",
+        "serializer producer adoption",
+        "portable artifact identity and downstream admission boundaries"
+      ],
+      "relation_consumer": "RSI; recompute-kit registry/exporter; CCIP TSEI adapter",
+      "relation_producer": "ReceiptOS producer; frozen conformance artifacts",
+      "repo": "pipavlo82/crystal-receipt",
+      "role": "ReceiptOS packages supplied evidence into portable recomputable artifacts; TSEI is a separate specification hosted here",
+      "rsi_profile": [
+        "crystal-receipt.v0",
+        "tsei.serializer-adoption.v0"
+      ],
+      "status": "partially validated"
+    },
+    {
+      "branch": "main",
+      "evidence": [
+        "S009",
+        "S010"
+      ],
+      "evidence_gaps": "This repo signed-verdict BIP-340 profile is distinct from the unimplemented authentication of RSI amendment vectors",
+      "head": "287c0ea1c2578c1833405bc2476975f95addbada",
+      "layer": "evidence/receipt + verification specification",
+      "mutation_coverage": 0,
+      "next_fixture_family": "separately approved signed-verdict binding adapter",
+      "protected_relations": [
+        "artifact/policy/decision/event bindings under exact Verification Profile",
+        "signed verdict authenticity versus judgment correctness"
+      ],
+      "relation_consumer": "recomputer and receipt consumer",
+      "relation_producer": "profile author and receipt producer; external signed artifact producer",
+      "repo": "pipavlo82/recomputable-verification-receipts",
+      "role": "Verification profiles bind proposition/evidence/result and separate semantic outcome from recomputation status",
+      "rsi_profile": [
+        "rvr.digest-binding.v0 (adjacent recompute-kit lane, not this whole repo)"
+      ],
+      "status": "partially mapped; separate RSI digest lane only"
+    },
+    {
+      "branch": "main",
+      "evidence": [
+        "S004"
+      ],
+      "evidence_gaps": "Current draft v0.3.9 versus consumer SPEC_VERSION 0.3.3; no blanket latest-draft compliance claim",
+      "head": "f5f36778e7cbf6c26fd61a7d66b70b9108447746",
+      "layer": "standards/resolution policy",
+      "mutation_coverage": 0,
+      "next_fixture_family": "envelope/consumer composition and status preservation",
+      "protected_relations": [
+        "observation-set/envelope/verdict binding",
+        "resolution versus agreement",
+        "layer-qualified unresolved and independence declarations"
+      ],
+      "relation_consumer": "reference consumer and adjacent RVR layer",
+      "relation_producer": "companion profile author; resolution consumer",
+      "repo": "damonzwicker/erc8309-companion-drafts",
+      "role": "Resolution-policy layer above divergence-preserving base; Profile A resolves nothing",
+      "rsi_profile": [],
+      "status": "mapped but unvalidated"
+    },
+    {
+      "branch": "main",
+      "evidence": [
+        "S001",
+        "S003",
+        "S002"
+      ],
+      "evidence_gaps": "Canonical HEAD advanced; inspected vantage_resolution.py bytes unchanged from prior pin; live execution not checked",
+      "head": "76d19dc394b208d01ba368382b3e5f4f2c18f0ee",
+      "layer": "runtime consumer + evidence producer",
+      "mutation_coverage": 0,
+      "next_fixture_family": "signed observation set to consumer verdict binding",
+      "protected_relations": [
+        "observation state to envelope/verdict with disclosed limitations",
+        "signed verdict artifact bindings"
+      ],
+      "relation_consumer": "downstream receipt/recompute consumers",
+      "relation_producer": "vantage-resolution consumer; verdict producer",
+      "repo": "babyblueviper1/invinoveritas",
+      "role": "Reference Profile A/B consumer and signed verdict producer; historical/current sources kept distinct",
+      "rsi_profile": [],
+      "status": "mapped but unvalidated"
+    }
+  ],
+  "repository_private": true,
+  "rsi_branch": "main",
+  "rsi_head": "5e964b0335b42d1f8e298bb8b6afdbead6254f5a",
+  "schema": "rsi-cross-repo-synthesis.v0",
+  "source_files": [
+    {
+      "branch": "main",
+      "commit": "01283ca57305f915afb560d23359a27fd748eb5a",
+      "evidence_class": "README/architecture only",
+      "evidence_id": "S012",
+      "path": "README.md",
+      "repo": "trustless-ai/agent-ercs",
+      "sha256": "f91be29279f4f0854122a3aadfe575e22a5a9e0129e7b4591c3207eb7013cbc4",
+      "url": "https://github.com/trustless-ai/agent-ercs/blob/01283ca57305f915afb560d23359a27fd748eb5a/README.md"
+    },
+    {
+      "branch": "main",
+      "commit": "e41b117893fb56bc869922de378daf91aad63def",
+      "evidence_class": "README/architecture only",
+      "evidence_id": "S020",
+      "path": "README.md",
+      "repo": "trustless-ai/agent-sdk",
+      "sha256": "db05f2cfcaf6c8f99a5ecde2cb55406bb9114394eb18d799841d7f150d2d63bf",
+      "url": "https://github.com/trustless-ai/agent-sdk/blob/e41b117893fb56bc869922de378daf91aad63def/README.md"
+    },
+    {
+      "branch": "main",
+      "commit": "e41b117893fb56bc869922de378daf91aad63def",
+      "evidence_class": "README/architecture only",
+      "evidence_id": "S019",
+      "path": "INTEGRATIONS.md",
+      "repo": "trustless-ai/agent-sdk",
+      "sha256": "3d8c7a0a736d8f91a437cdfeb3abadca770cc5c4041cd534894de41ae1d88811",
+      "url": "https://github.com/trustless-ai/agent-sdk/blob/e41b117893fb56bc869922de378daf91aad63def/INTEGRATIONS.md"
+    },
+    {
+      "branch": "main",
+      "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+      "evidence_class": "README/architecture only",
+      "evidence_id": "S038",
+      "path": "README.md",
+      "repo": "trustless-ai/recompute-kit",
+      "sha256": "7e1b9266733d35bfef66dc475a210a02e1338e727a9388a66ab9b3261b502569",
+      "url": "https://github.com/trustless-ai/recompute-kit/blob/15f7f59ac47b3358492bd5741143c418b5d657f5/README.md"
+    },
+    {
+      "branch": "main",
+      "commit": "6bd66611b88a4751a0acc233c718aa9a13294de4",
+      "evidence_class": "README/architecture only",
+      "evidence_id": "S028",
+      "path": "README.md",
+      "repo": "trustless-ai/ccip-router",
+      "sha256": "8b0c88866f5299d0ae93c1b911a42e763d407fdf7fb07b619c7979ca9d69665f",
+      "url": "https://github.com/trustless-ai/ccip-router/blob/6bd66611b88a4751a0acc233c718aa9a13294de4/README.md"
+    },
+    {
+      "branch": "main",
+      "commit": "6bd66611b88a4751a0acc233c718aa9a13294de4",
+      "evidence_class": "README/architecture only",
+      "evidence_id": "S027",
+      "path": "INTEGRATION.md",
+      "repo": "trustless-ai/ccip-router",
+      "sha256": "e7cafbfd206eb9a84d2195979b02b938c9c1c2d221f7ca8fc4c8163c1617a20c",
+      "url": "https://github.com/trustless-ai/ccip-router/blob/6bd66611b88a4751a0acc233c718aa9a13294de4/INTEGRATION.md"
+    },
+    {
+      "branch": "main",
+      "commit": "6bd66611b88a4751a0acc233c718aa9a13294de4",
+      "evidence_class": "README/architecture only",
+      "evidence_id": "S029",
+      "path": "conformance/tsei-profile-a-v0/README.md",
+      "repo": "trustless-ai/ccip-router",
+      "sha256": "9613ce4502c8234c236f8818e5f7e557d386edd484afe62a39bb0d9e32236125",
+      "url": "https://github.com/trustless-ai/ccip-router/blob/6bd66611b88a4751a0acc233c718aa9a13294de4/conformance/tsei-profile-a-v0/README.md"
+    },
+    {
+      "branch": "main",
+      "commit": "6bd66611b88a4751a0acc233c718aa9a13294de4",
+      "evidence_class": "implementation",
+      "evidence_id": "S031",
+      "path": "src/integrations/tseiProfileA.ts",
+      "repo": "trustless-ai/ccip-router",
+      "sha256": "c67e9fef196db9041daaa26f93720c7811691dc71f21404eb31df28d2e607693",
+      "url": "https://github.com/trustless-ai/ccip-router/blob/6bd66611b88a4751a0acc233c718aa9a13294de4/src/integrations/tseiProfileA.ts"
+    },
+    {
+      "branch": "main",
+      "commit": "d15c666dfccff17f7350fe97d2fc7b71cb2cbaee",
+      "evidence_class": "README/architecture only",
+      "evidence_id": "S049",
+      "path": "README.md",
+      "repo": "trustless-ai/semantic-abi",
+      "sha256": "f20050889a9e9b2a03fb450add57a0e707ded53c9e0836c7ba23579e5c4e7794",
+      "url": "https://github.com/trustless-ai/semantic-abi/blob/d15c666dfccff17f7350fe97d2fc7b71cb2cbaee/README.md"
+    },
+    {
+      "branch": "main",
+      "commit": "d15c666dfccff17f7350fe97d2fc7b71cb2cbaee",
+      "evidence_class": "spec",
+      "evidence_id": "S052",
+      "path": "schema/manifest-v0.md",
+      "repo": "trustless-ai/semantic-abi",
+      "sha256": "1361dbd123ae3f270ed39d1236b91d49d3ccdb9161dcfbdec4579a50be4f0a02",
+      "url": "https://github.com/trustless-ai/semantic-abi/blob/d15c666dfccff17f7350fe97d2fc7b71cb2cbaee/schema/manifest-v0.md"
+    },
+    {
+      "branch": "main",
+      "commit": "d15c666dfccff17f7350fe97d2fc7b71cb2cbaee",
+      "evidence_class": "implementation",
+      "evidence_id": "S051",
+      "path": "runner/src/linker.mjs",
+      "repo": "trustless-ai/semantic-abi",
+      "sha256": "bae8e519361989bfadbb5d226cb9940255cd954c60b40ba42136a2b11161d391",
+      "url": "https://github.com/trustless-ai/semantic-abi/blob/d15c666dfccff17f7350fe97d2fc7b71cb2cbaee/runner/src/linker.mjs"
+    },
+    {
+      "branch": "main",
+      "commit": "d15c666dfccff17f7350fe97d2fc7b71cb2cbaee",
+      "evidence_class": "implementation",
+      "evidence_id": "S050",
+      "path": "runner/src/evaluate.mjs",
+      "repo": "trustless-ai/semantic-abi",
+      "sha256": "a2f1c3caaaeeb37b7067618f7ee0b98bddece859baee7dfbfc68a44be58699b0",
+      "url": "https://github.com/trustless-ai/semantic-abi/blob/d15c666dfccff17f7350fe97d2fc7b71cb2cbaee/runner/src/evaluate.mjs"
+    },
+    {
+      "branch": "feature/tas-poc",
+      "commit": "a344ef80f7c52c03b9183814d1874b8054639c3e",
+      "evidence_class": "README/architecture only",
+      "evidence_id": "S053",
+      "path": "README.md",
+      "repo": "trustless-ai/trustless-agent-substrate",
+      "sha256": "6a50e66550d96afbc93673fa980efab5d9e1b12dd06102cf743476ff7693e529",
+      "url": "https://github.com/trustless-ai/trustless-agent-substrate/blob/a344ef80f7c52c03b9183814d1874b8054639c3e/README.md"
+    },
+    {
+      "branch": "feature/tas-poc",
+      "commit": "a344ef80f7c52c03b9183814d1874b8054639c3e",
+      "evidence_class": "README/architecture only",
+      "evidence_id": "S054",
+      "path": "docs/tas/IMPLEMENTATION.md",
+      "repo": "trustless-ai/trustless-agent-substrate",
+      "sha256": "0324aa556a20bb7109fa70caeb5771050bcee29e75a004b3980e0ad68c06caee",
+      "url": "https://github.com/trustless-ai/trustless-agent-substrate/blob/a344ef80f7c52c03b9183814d1874b8054639c3e/docs/tas/IMPLEMENTATION.md"
+    },
+    {
+      "branch": "feature/tas-poc",
+      "commit": "a344ef80f7c52c03b9183814d1874b8054639c3e",
+      "evidence_class": "implementation",
+      "evidence_id": "S058",
+      "path": "src/core/workflow/sourceGate.ts",
+      "repo": "trustless-ai/trustless-agent-substrate",
+      "sha256": "b25f179911fb28f5877185055a6d016e92722545c838a64ebdcc621aad4286c3",
+      "url": "https://github.com/trustless-ai/trustless-agent-substrate/blob/a344ef80f7c52c03b9183814d1874b8054639c3e/src/core/workflow/sourceGate.ts"
+    },
+    {
+      "branch": "feature/tas-poc",
+      "commit": "a344ef80f7c52c03b9183814d1874b8054639c3e",
+      "evidence_class": "implementation",
+      "evidence_id": "S059",
+      "path": "src/core/workflow/sourceVerifier.ts",
+      "repo": "trustless-ai/trustless-agent-substrate",
+      "sha256": "0947eca9d928a3fd30e9b547550c3c037245f42d3ca635514499d2d340067bf5",
+      "url": "https://github.com/trustless-ai/trustless-agent-substrate/blob/a344ef80f7c52c03b9183814d1874b8054639c3e/src/core/workflow/sourceVerifier.ts"
+    },
+    {
+      "branch": "feature/tas-poc",
+      "commit": "a344ef80f7c52c03b9183814d1874b8054639c3e",
+      "evidence_class": "implementation",
+      "evidence_id": "S057",
+      "path": "src/core/workflow/operationService.ts",
+      "repo": "trustless-ai/trustless-agent-substrate",
+      "sha256": "a8771c4514a3481667cf4c3dafa7adacc626797be8aa5bad7e3d0975869f31f5",
+      "url": "https://github.com/trustless-ai/trustless-agent-substrate/blob/a344ef80f7c52c03b9183814d1874b8054639c3e/src/core/workflow/operationService.ts"
+    },
+    {
+      "branch": "main",
+      "commit": "4f934ad31e96979002d818cd8a5f12909c1b6713",
+      "evidence_class": "README/architecture only",
+      "evidence_id": "S033",
+      "path": "README.md",
+      "repo": "trustless-ai/pq-agent-binding",
+      "sha256": "6c66159be16269f16d3c8d62d0ea639ba3ea36c855a4eb399c7790264478eb1c",
+      "url": "https://github.com/trustless-ai/pq-agent-binding/blob/4f934ad31e96979002d818cd8a5f12909c1b6713/README.md"
+    },
+    {
+      "branch": "main",
+      "commit": "4f934ad31e96979002d818cd8a5f12909c1b6713",
+      "evidence_class": "README/architecture only",
+      "evidence_id": "S034",
+      "path": "spec/v1-temporal-authority.md",
+      "repo": "trustless-ai/pq-agent-binding",
+      "sha256": "2d0e2df322c42f23994941d77567c253ee2dd3ca1790c4bd0103079471abf6a5",
+      "url": "https://github.com/trustless-ai/pq-agent-binding/blob/4f934ad31e96979002d818cd8a5f12909c1b6713/spec/v1-temporal-authority.md"
+    },
+    {
+      "branch": "main",
+      "commit": "84afc4b738dc37269089c858404eed8086435f5d",
+      "evidence_class": "README/architecture only",
+      "evidence_id": "S062",
+      "path": "README.md",
+      "repo": "trustless-ai/verify-layer",
+      "sha256": "9bb10a5646701d5c516b7b818bd58f327f530c50f0b60a8455ec36a2b0c883d9",
+      "url": "https://github.com/trustless-ai/verify-layer/blob/84afc4b738dc37269089c858404eed8086435f5d/README.md"
+    },
+    {
+      "branch": "main",
+      "commit": "84afc4b738dc37269089c858404eed8086435f5d",
+      "evidence_class": "implementation",
+      "evidence_id": "S063",
+      "path": "verify.mjs",
+      "repo": "trustless-ai/verify-layer",
+      "sha256": "ece05db266d1eb86ff71f47aa5a0666ada611dfd496ef0982e570406a28fb2d2",
+      "url": "https://github.com/trustless-ai/verify-layer/blob/84afc4b738dc37269089c858404eed8086435f5d/verify.mjs"
+    },
+    {
+      "branch": "main",
+      "commit": "6b39e9540d4bd0a78decb588c0a8e328c303f208",
+      "evidence_class": "README/architecture only",
+      "evidence_id": "S035",
+      "path": "README.md",
+      "repo": "trustless-ai/primitives",
+      "sha256": "a63d40430eb09ae303dd16c6b8347177cdb36e89421fd40e78de94f61381efd2",
+      "url": "https://github.com/trustless-ai/primitives/blob/6b39e9540d4bd0a78decb588c0a8e328c303f208/README.md"
+    },
+    {
+      "branch": "main",
+      "commit": "6b39e9540d4bd0a78decb588c0a8e328c303f208",
+      "evidence_class": "implementation",
+      "evidence_id": "S036",
+      "path": "check.py",
+      "repo": "trustless-ai/primitives",
+      "sha256": "1a5bd8fbc8c332943dd4123573425f3f2667bae511e2bbd4540acda52343699c",
+      "url": "https://github.com/trustless-ai/primitives/blob/6b39e9540d4bd0a78decb588c0a8e328c303f208/check.py"
+    },
+    {
+      "branch": "main",
+      "commit": "6b39e9540d4bd0a78decb588c0a8e328c303f208",
+      "evidence_class": "registry",
+      "evidence_id": "S037",
+      "path": "primitives.json",
+      "repo": "trustless-ai/primitives",
+      "sha256": "5709f7ea1c9923077ac6f4e9443f87c48c45fa2ac0509f678c1bf445f353641f",
+      "url": "https://github.com/trustless-ai/primitives/blob/6b39e9540d4bd0a78decb588c0a8e328c303f208/primitives.json"
+    },
+    {
+      "branch": "main",
+      "commit": "63fcf1911eeb129e71919a3f629e8fc08dc56b9d",
+      "evidence_class": "README/architecture only",
+      "evidence_id": "S011",
+      "path": "profile/README.md",
+      "repo": "trustless-ai/.github",
+      "sha256": "a947d75afe6e0dd1e6b9f74d779620f6a28bc47fd0a6581010ed3ca4b65339c5",
+      "url": "https://github.com/trustless-ai/.github/blob/63fcf1911eeb129e71919a3f629e8fc08dc56b9d/profile/README.md"
+    },
+    {
+      "branch": "main",
+      "commit": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+      "evidence_class": "README/architecture only",
+      "evidence_id": "S005",
+      "path": "README.md",
+      "repo": "pipavlo82/crystal-receipt",
+      "sha256": "9d1f24afba889edf6ce618989bcf746a81f84c0c9240ac603c27caf3b3c4eed0",
+      "url": "https://github.com/pipavlo82/crystal-receipt/blob/45b46bf7df3a60b32583291f577a36bf19d22f00/README.md"
+    },
+    {
+      "branch": "main",
+      "commit": "f5f36778e7cbf6c26fd61a7d66b70b9108447746",
+      "evidence_class": "spec",
+      "evidence_id": "S004",
+      "path": "8309-vantage-authority-companion-v0.3.9.md",
+      "repo": "damonzwicker/erc8309-companion-drafts",
+      "sha256": "6401eba79926af05af740ccaa3efe4a94981a38b9b7527850104713130dea191",
+      "url": "https://github.com/damonzwicker/erc8309-companion-drafts/blob/f5f36778e7cbf6c26fd61a7d66b70b9108447746/8309-vantage-authority-companion-v0.3.9.md"
+    },
+    {
+      "branch": "main",
+      "commit": "76d19dc394b208d01ba368382b3e5f4f2c18f0ee",
+      "evidence_class": "README/architecture only",
+      "evidence_id": "S001",
+      "path": "README.md",
+      "repo": "babyblueviper1/invinoveritas",
+      "sha256": "6a596b14ceeba6788853f4ed10d0fe86199796f93fc6f9cf79505fd5ce8395ee",
+      "url": "https://github.com/babyblueviper1/invinoveritas/blob/76d19dc394b208d01ba368382b3e5f4f2c18f0ee/README.md"
+    },
+    {
+      "branch": "main",
+      "commit": "287c0ea1c2578c1833405bc2476975f95addbada",
+      "evidence_class": "README/architecture only",
+      "evidence_id": "S009",
+      "path": "README.md",
+      "repo": "pipavlo82/recomputable-verification-receipts",
+      "sha256": "c3292b9877143da1a127d1c9534c22975208b6fd1ec0658ccf7d6f16edc04193",
+      "url": "https://github.com/pipavlo82/recomputable-verification-receipts/blob/287c0ea1c2578c1833405bc2476975f95addbada/README.md"
+    },
+    {
+      "branch": "main",
+      "commit": "01283ca57305f915afb560d23359a27fd748eb5a",
+      "evidence_class": "implementation",
+      "evidence_id": "S015",
+      "path": "contracts/settlement/ConsultEscrow/ConsultEscrow.sol",
+      "repo": "trustless-ai/agent-ercs",
+      "sha256": "373e1f6feab886d1115eceef391cebce97a16b51d4bdfdfb1e5bd4bdb3bd07f5",
+      "url": "https://github.com/trustless-ai/agent-ercs/blob/01283ca57305f915afb560d23359a27fd748eb5a/contracts/settlement/ConsultEscrow/ConsultEscrow.sol"
+    },
+    {
+      "branch": "main",
+      "commit": "01283ca57305f915afb560d23359a27fd748eb5a",
+      "evidence_class": "test/vector",
+      "evidence_id": "S018",
+      "path": "test/settlement/ConsultEscrow/ConsultEscrow.t.sol",
+      "repo": "trustless-ai/agent-ercs",
+      "sha256": "6514b07c495618755a03d5206eff67804bd62fc70189e97316e26e5f455f78cc",
+      "url": "https://github.com/trustless-ai/agent-ercs/blob/01283ca57305f915afb560d23359a27fd748eb5a/test/settlement/ConsultEscrow/ConsultEscrow.t.sol"
+    },
+    {
+      "branch": "main",
+      "commit": "01283ca57305f915afb560d23359a27fd748eb5a",
+      "evidence_class": "implementation",
+      "evidence_id": "S016",
+      "path": "contracts/verify/ERC8274/IAgentVerifier.sol",
+      "repo": "trustless-ai/agent-ercs",
+      "sha256": "115942e5c66f76e8447f9cae51f80d6820a09c22609022bcd8443455b49baa36",
+      "url": "https://github.com/trustless-ai/agent-ercs/blob/01283ca57305f915afb560d23359a27fd748eb5a/contracts/verify/ERC8274/IAgentVerifier.sol"
+    },
+    {
+      "branch": "main",
+      "commit": "01283ca57305f915afb560d23359a27fd748eb5a",
+      "evidence_class": "implementation",
+      "evidence_id": "S017",
+      "path": "contracts/verify/ERC8354/PolicyAction.sol",
+      "repo": "trustless-ai/agent-ercs",
+      "sha256": "9698c60db69fbae636164c22620407a0868589d7a1466fed5d1b4e213f4ec64f",
+      "url": "https://github.com/trustless-ai/agent-ercs/blob/01283ca57305f915afb560d23359a27fd748eb5a/contracts/verify/ERC8354/PolicyAction.sol"
+    },
+    {
+      "branch": "main",
+      "commit": "01283ca57305f915afb560d23359a27fd748eb5a",
+      "evidence_class": "implementation",
+      "evidence_id": "S013",
+      "path": "contracts/execution/ERC8301/IAgentWorkflow.sol",
+      "repo": "trustless-ai/agent-ercs",
+      "sha256": "3b70fa7cb571a345f1fea244dbd57b6d5f8e5062923107f962e13854fb7ad429",
+      "url": "https://github.com/trustless-ai/agent-ercs/blob/01283ca57305f915afb560d23359a27fd748eb5a/contracts/execution/ERC8301/IAgentWorkflow.sol"
+    },
+    {
+      "branch": "main",
+      "commit": "01283ca57305f915afb560d23359a27fd748eb5a",
+      "evidence_class": "implementation",
+      "evidence_id": "S014",
+      "path": "contracts/identity/ERC8323/IAgentSourceBinding.sol",
+      "repo": "trustless-ai/agent-ercs",
+      "sha256": "09520190130278f6ef613a5f9e2421c650fda3ec56f01dd20a9c938488da7b85",
+      "url": "https://github.com/trustless-ai/agent-ercs/blob/01283ca57305f915afb560d23359a27fd748eb5a/contracts/identity/ERC8323/IAgentSourceBinding.sol"
+    },
+    {
+      "branch": "main",
+      "commit": "e41b117893fb56bc869922de378daf91aad63def",
+      "evidence_class": "implementation",
+      "evidence_id": "S023",
+      "path": "python/src/agent_sdk/reputation/erc8275/recompute.py",
+      "repo": "trustless-ai/agent-sdk",
+      "sha256": "0beb1da0890ea72a5d927718f97d5cae7f70eaa41dae13d159261ad5057181c3",
+      "url": "https://github.com/trustless-ai/agent-sdk/blob/e41b117893fb56bc869922de378daf91aad63def/python/src/agent_sdk/reputation/erc8275/recompute.py"
+    },
+    {
+      "branch": "main",
+      "commit": "e41b117893fb56bc869922de378daf91aad63def",
+      "evidence_class": "implementation",
+      "evidence_id": "S022",
+      "path": "python/src/agent_sdk/reputation/erc8275/conventions.py",
+      "repo": "trustless-ai/agent-sdk",
+      "sha256": "e0530c05a0351be77ed759f869093b0edb9100845826b05d7f85f03ac13692e9",
+      "url": "https://github.com/trustless-ai/agent-sdk/blob/e41b117893fb56bc869922de378daf91aad63def/python/src/agent_sdk/reputation/erc8275/conventions.py"
+    },
+    {
+      "branch": "main",
+      "commit": "e41b117893fb56bc869922de378daf91aad63def",
+      "evidence_class": "test/vector",
+      "evidence_id": "S026",
+      "path": "python/tests/reputation/erc8275/test_recompute.py",
+      "repo": "trustless-ai/agent-sdk",
+      "sha256": "377c2fb48d54ed0f34df032f44166ca1ef2cac1def13bb715dbee64f0d730c35",
+      "url": "https://github.com/trustless-ai/agent-sdk/blob/e41b117893fb56bc869922de378daf91aad63def/python/tests/reputation/erc8275/test_recompute.py"
+    },
+    {
+      "branch": "main",
+      "commit": "e41b117893fb56bc869922de378daf91aad63def",
+      "evidence_class": "implementation",
+      "evidence_id": "S025",
+      "path": "python/src/agent_sdk/verify/erc8354/recompute.py",
+      "repo": "trustless-ai/agent-sdk",
+      "sha256": "6217f347c0ab337b41f0b5fe672f40c9330f8fc9cd8ba6c831febf33d79ea9de",
+      "url": "https://github.com/trustless-ai/agent-sdk/blob/e41b117893fb56bc869922de378daf91aad63def/python/src/agent_sdk/verify/erc8354/recompute.py"
+    },
+    {
+      "branch": "main",
+      "commit": "e41b117893fb56bc869922de378daf91aad63def",
+      "evidence_class": "implementation",
+      "evidence_id": "S021",
+      "path": "python/src/agent_sdk/execution/erc8301/recompute.py",
+      "repo": "trustless-ai/agent-sdk",
+      "sha256": "a29e539bcd1f643cc867f8d353fe4270b5f28f274896602e9c75b90f335f5f33",
+      "url": "https://github.com/trustless-ai/agent-sdk/blob/e41b117893fb56bc869922de378daf91aad63def/python/src/agent_sdk/execution/erc8301/recompute.py"
+    },
+    {
+      "branch": "main",
+      "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+      "evidence_class": "spec",
+      "evidence_id": "S042",
+      "path": "conformance/erc8275-win-rate-bps-v0/erc8275-win-rate-bps-v0.spec.md",
+      "repo": "trustless-ai/recompute-kit",
+      "sha256": "ba71b0787a80abed00d12bf3a5ad54ce08b162b3c104d3b9a947284e36c65fe6",
+      "url": "https://github.com/trustless-ai/recompute-kit/blob/15f7f59ac47b3358492bd5741143c418b5d657f5/conformance/erc8275-win-rate-bps-v0/erc8275-win-rate-bps-v0.spec.md"
+    },
+    {
+      "branch": "main",
+      "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+      "evidence_class": "test/vector",
+      "evidence_id": "S043",
+      "path": "conformance/erc8275-win-rate-bps-v0/erc8275-win-rate-bps-v0.vectors.json",
+      "repo": "trustless-ai/recompute-kit",
+      "sha256": "01d354ec0cf5f1b5de88526fdb22461c72ed296ae5d289efbb26ba4ec7c88c49",
+      "url": "https://github.com/trustless-ai/recompute-kit/blob/15f7f59ac47b3358492bd5741143c418b5d657f5/conformance/erc8275-win-rate-bps-v0/erc8275-win-rate-bps-v0.vectors.json"
+    },
+    {
+      "branch": "main",
+      "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+      "evidence_class": "spec",
+      "evidence_id": "S045",
+      "path": "conformance/provenance-anchor-v0/provenance-anchor-v0.spec.md",
+      "repo": "trustless-ai/recompute-kit",
+      "sha256": "528adff80003446b66249daf0b485bb42b628e541d55eeff0558bf5a1b38bd3e",
+      "url": "https://github.com/trustless-ai/recompute-kit/blob/15f7f59ac47b3358492bd5741143c418b5d657f5/conformance/provenance-anchor-v0/provenance-anchor-v0.spec.md"
+    },
+    {
+      "branch": "main",
+      "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+      "evidence_class": "spec",
+      "evidence_id": "S041",
+      "path": "conformance/companion-envelope-v0/companion-envelope-v0.spec.md",
+      "repo": "trustless-ai/recompute-kit",
+      "sha256": "9ba69fb49e55be03de5749117b004464f0f8f4b12f052b063461c7030f1ee4c4",
+      "url": "https://github.com/trustless-ai/recompute-kit/blob/15f7f59ac47b3358492bd5741143c418b5d657f5/conformance/companion-envelope-v0/companion-envelope-v0.spec.md"
+    },
+    {
+      "branch": "main",
+      "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+      "evidence_class": "README/architecture only",
+      "evidence_id": "S047",
+      "path": "conformance/serializer-bindings/README.md",
+      "repo": "trustless-ai/recompute-kit",
+      "sha256": "4b0e9b4b80fdd08c5eccde02f1d7986072ab812a59076bb5dfb2db9154f69ccc",
+      "url": "https://github.com/trustless-ai/recompute-kit/blob/15f7f59ac47b3358492bd5741143c418b5d657f5/conformance/serializer-bindings/README.md"
+    },
+    {
+      "branch": "main",
+      "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+      "evidence_class": "README/architecture only",
+      "evidence_id": "S044",
+      "path": "conformance/pq-key-binding-v1-profile/README.md",
+      "repo": "trustless-ai/recompute-kit",
+      "sha256": "75c77408d9e3d8796249a0a54118bf151d97cf81150a869410fe02f11da33ada",
+      "url": "https://github.com/trustless-ai/recompute-kit/blob/15f7f59ac47b3358492bd5741143c418b5d657f5/conformance/pq-key-binding-v1-profile/README.md"
+    },
+    {
+      "branch": "main",
+      "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+      "evidence_class": "implementation",
+      "evidence_id": "S048",
+      "path": "mcp/receiptos.py",
+      "repo": "trustless-ai/recompute-kit",
+      "sha256": "9895f203ce8c85e83b03ed6ee089834ba00256cc747db2cb7f941a1a9f724cc5",
+      "url": "https://github.com/trustless-ai/recompute-kit/blob/15f7f59ac47b3358492bd5741143c418b5d657f5/mcp/receiptos.py"
+    },
+    {
+      "branch": "main",
+      "commit": "6bd66611b88a4751a0acc233c718aa9a13294de4",
+      "evidence_class": "implementation",
+      "evidence_id": "S030",
+      "path": "contracts/CommitRevealSettlerV2.sol",
+      "repo": "trustless-ai/ccip-router",
+      "sha256": "bae65a5eb8ad01f0fc836771f14d571771dd76fe7faa4a440457d7afe5b33cbd",
+      "url": "https://github.com/trustless-ai/ccip-router/blob/6bd66611b88a4751a0acc233c718aa9a13294de4/contracts/CommitRevealSettlerV2.sol"
+    },
+    {
+      "branch": "main",
+      "commit": "6bd66611b88a4751a0acc233c718aa9a13294de4",
+      "evidence_class": "implementation",
+      "evidence_id": "S032",
+      "path": "src/mesh/messages.ts",
+      "repo": "trustless-ai/ccip-router",
+      "sha256": "93b5a70dfd39a4ce64df65cadbbc47ee08b8982de8680f532bc8d8a50ccdafc9",
+      "url": "https://github.com/trustless-ai/ccip-router/blob/6bd66611b88a4751a0acc233c718aa9a13294de4/src/mesh/messages.ts"
+    },
+    {
+      "branch": "main",
+      "commit": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+      "evidence_class": "spec",
+      "evidence_id": "S006",
+      "path": "conformance/counterfactual-audit-boundary-v0/SPEC.md",
+      "repo": "pipavlo82/crystal-receipt",
+      "sha256": "9c17bd826c4a789464dab80c78a136153f3d9ce2f253198d0cf386bdef3a6d0b",
+      "url": "https://github.com/pipavlo82/crystal-receipt/blob/45b46bf7df3a60b32583291f577a36bf19d22f00/conformance/counterfactual-audit-boundary-v0/SPEC.md"
+    },
+    {
+      "branch": "main",
+      "commit": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+      "evidence_class": "README/architecture only",
+      "evidence_id": "S007",
+      "path": "conformance/tsei-invariant-discrimination-v0/README.md",
+      "repo": "pipavlo82/crystal-receipt",
+      "sha256": "b2dc0105767b26d2f53dcf4b6ef4c3ba37f4b5eb7798ce8fb5a370f2fa91d549",
+      "url": "https://github.com/pipavlo82/crystal-receipt/blob/45b46bf7df3a60b32583291f577a36bf19d22f00/conformance/tsei-invariant-discrimination-v0/README.md"
+    },
+    {
+      "branch": "main",
+      "commit": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+      "evidence_class": "deployment/reference (reported)",
+      "evidence_id": "S008",
+      "path": "conformance/tsei-invariant-discrimination-v0/public-receipts/tsei-ia-real-v2-20260824-02.production-grounding.json",
+      "repo": "pipavlo82/crystal-receipt",
+      "sha256": "09349e8257da2b94227f7af7f8e4dcdcca9e715dc460e1f419e53a14a22e5a07",
+      "url": "https://github.com/pipavlo82/crystal-receipt/blob/45b46bf7df3a60b32583291f577a36bf19d22f00/conformance/tsei-invariant-discrimination-v0/public-receipts/tsei-ia-real-v2-20260824-02.production-grounding.json"
+    },
+    {
+      "branch": "feature/tas-poc",
+      "commit": "a344ef80f7c52c03b9183814d1874b8054639c3e",
+      "evidence_class": "test/vector",
+      "evidence_id": "S060",
+      "path": "test/unit/workflow/sourceGate.test.ts",
+      "repo": "trustless-ai/trustless-agent-substrate",
+      "sha256": "7709401c4d88836903cc4ae9a385bf722fe98efcf3497b8dd7e952b1f7d23077",
+      "url": "https://github.com/trustless-ai/trustless-agent-substrate/blob/a344ef80f7c52c03b9183814d1874b8054639c3e/test/unit/workflow/sourceGate.test.ts"
+    },
+    {
+      "branch": "feature/tas-poc",
+      "commit": "a344ef80f7c52c03b9183814d1874b8054639c3e",
+      "evidence_class": "test/vector",
+      "evidence_id": "S061",
+      "path": "test/unit/workflow/sourceVerifier.test.ts",
+      "repo": "trustless-ai/trustless-agent-substrate",
+      "sha256": "f2532ab87b7dff15ee31b2ac1b4c4ac463977bb3f0c33fcd8896f2fb3e13a360",
+      "url": "https://github.com/trustless-ai/trustless-agent-substrate/blob/a344ef80f7c52c03b9183814d1874b8054639c3e/test/unit/workflow/sourceVerifier.test.ts"
+    },
+    {
+      "branch": "feature/tas-poc",
+      "commit": "a344ef80f7c52c03b9183814d1874b8054639c3e",
+      "evidence_class": "implementation",
+      "evidence_id": "S056",
+      "path": "src/clients/workflow/agentSdkClient.ts",
+      "repo": "trustless-ai/trustless-agent-substrate",
+      "sha256": "817d87bc4f71425e089448e946a661acfdebaf7cd154515ad1a4b08431cbe251",
+      "url": "https://github.com/trustless-ai/trustless-agent-substrate/blob/a344ef80f7c52c03b9183814d1874b8054639c3e/src/clients/workflow/agentSdkClient.ts"
+    },
+    {
+      "branch": "feature/tas-poc",
+      "commit": "a344ef80f7c52c03b9183814d1874b8054639c3e",
+      "evidence_class": "registry",
+      "evidence_id": "S055",
+      "path": "manifests/agent-sdk.v1.json",
+      "repo": "trustless-ai/trustless-agent-substrate",
+      "sha256": "a5d756d16fc25f030da07a6cac2849942bd5be06bcfaa4cbda74c424350c6d6b",
+      "url": "https://github.com/trustless-ai/trustless-agent-substrate/blob/a344ef80f7c52c03b9183814d1874b8054639c3e/manifests/agent-sdk.v1.json"
+    },
+    {
+      "branch": "main",
+      "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+      "evidence_class": "test/vector",
+      "evidence_id": "S039",
+      "path": "conformance/communication-chain-v0/communication-chain-v0.vectors.json",
+      "repo": "trustless-ai/recompute-kit",
+      "sha256": "d9d63cc82903d89c220f62f22035ff1901619124707a2acccd293cfc5c2dec6e",
+      "url": "https://github.com/trustless-ai/recompute-kit/blob/15f7f59ac47b3358492bd5741143c418b5d657f5/conformance/communication-chain-v0/communication-chain-v0.vectors.json"
+    },
+    {
+      "branch": "main",
+      "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+      "evidence_class": "implementation",
+      "evidence_id": "S040",
+      "path": "conformance/communication-chain-v0/gate.ts",
+      "repo": "trustless-ai/recompute-kit",
+      "sha256": "6f5c3b10ff65d8b2b5bcbb0b1597b3e455fd6c338345deceedd7e30cb655775c",
+      "url": "https://github.com/trustless-ai/recompute-kit/blob/15f7f59ac47b3358492bd5741143c418b5d657f5/conformance/communication-chain-v0/gate.ts"
+    },
+    {
+      "branch": "main",
+      "commit": "287c0ea1c2578c1833405bc2476975f95addbada",
+      "evidence_class": "spec",
+      "evidence_id": "S010",
+      "path": "profiles/invinoveritas-signed-verdict-v1/SPEC.md",
+      "repo": "pipavlo82/recomputable-verification-receipts",
+      "sha256": "754957d1f2f83f25a3aac6dfc48577b316f194c006671139129e6d4e5bbafb52",
+      "url": "https://github.com/pipavlo82/recomputable-verification-receipts/blob/287c0ea1c2578c1833405bc2476975f95addbada/profiles/invinoveritas-signed-verdict-v1/SPEC.md"
+    },
+    {
+      "branch": "main",
+      "commit": "76d19dc394b208d01ba368382b3e5f4f2c18f0ee",
+      "evidence_class": "implementation",
+      "evidence_id": "S003",
+      "path": "integrations/conformance/erc-8309-vantage/services/vantage_resolution.py",
+      "repo": "babyblueviper1/invinoveritas",
+      "sha256": "8dd0bad03e6bc0335d6a690e3fb7eb448a4ccb1b6389115aab65474a21e55858",
+      "url": "https://github.com/babyblueviper1/invinoveritas/blob/76d19dc394b208d01ba368382b3e5f4f2c18f0ee/integrations/conformance/erc-8309-vantage/services/vantage_resolution.py"
+    },
+    {
+      "branch": "main",
+      "commit": "76d19dc394b208d01ba368382b3e5f4f2c18f0ee",
+      "evidence_class": "README/architecture only",
+      "evidence_id": "S002",
+      "path": "integrations/conformance/erc-8309-vantage/README.md",
+      "repo": "babyblueviper1/invinoveritas",
+      "sha256": "0d0523e60bfb2fb643dade1bf1825a829757fd88b480a980d1eafd4f5d3d4a64",
+      "url": "https://github.com/babyblueviper1/invinoveritas/blob/76d19dc394b208d01ba368382b3e5f4f2c18f0ee/integrations/conformance/erc-8309-vantage/README.md"
+    },
+    {
+      "branch": "main",
+      "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+      "evidence_class": "test/vector",
+      "evidence_id": "S046",
+      "path": "conformance/provenance-anchor-v0/provenance-anchor-v0.vectors.json",
+      "repo": "trustless-ai/recompute-kit",
+      "sha256": "b5417c3225edb7e2a587abcf290be8ca9c8f3e259efa03569853dff5661a1946",
+      "url": "https://github.com/trustless-ai/recompute-kit/blob/15f7f59ac47b3358492bd5741143c418b5d657f5/conformance/provenance-anchor-v0/provenance-anchor-v0.vectors.json"
+    },
+    {
+      "branch": "main",
+      "commit": "e41b117893fb56bc869922de378daf91aad63def",
+      "evidence_class": "implementation",
+      "evidence_id": "S024",
+      "path": "python/src/agent_sdk/settlement/erc8203/recompute.py",
+      "repo": "trustless-ai/agent-sdk",
+      "sha256": "6960e4dd22a8dd62cc0171ceefc1b014bfe8f28b2a0cd8df14214cc803f4c980",
+      "url": "https://github.com/trustless-ai/agent-sdk/blob/e41b117893fb56bc869922de378daf91aad63def/python/src/agent_sdk/settlement/erc8203/recompute.py"
+    },
+    {
+      "branch": "main",
+      "canonical_blob_reverified": true,
+      "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+      "evidence_class": "normative conformance spec",
+      "evidence_id": "S064",
+      "path": "conformance/profile-amendment-v0/profile-amendment-v0.spec.md",
+      "repo": "trustless-ai/recompute-kit",
+      "sha256": "6088753df1f0c428f14ccb954179ff5441af1684d2f289761e872a7a3a17c50b",
+      "url": "https://github.com/trustless-ai/recompute-kit/blob/15f7f59ac47b3358492bd5741143c418b5d657f5/conformance/profile-amendment-v0/profile-amendment-v0.spec.md"
+    },
+    {
+      "branch": "main",
+      "canonical_blob_reverified": true,
+      "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+      "evidence_class": "reference implementation",
+      "evidence_id": "S065",
+      "path": "conformance/profile-amendment-v0/amendment_gate.py",
+      "repo": "trustless-ai/recompute-kit",
+      "sha256": "1ea58b0e847b41244d925aae541cca7a113814eb62888d67eef6a2a4dc0c80f7",
+      "url": "https://github.com/trustless-ai/recompute-kit/blob/15f7f59ac47b3358492bd5741143c418b5d657f5/conformance/profile-amendment-v0/amendment_gate.py"
+    },
+    {
+      "branch": "main",
+      "canonical_blob_reverified": true,
+      "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+      "evidence_class": "reference implementation",
+      "evidence_id": "S066",
+      "path": "conformance/profile-amendment-v0/profile-amendment-v0.reference.mjs",
+      "repo": "trustless-ai/recompute-kit",
+      "sha256": "915343ece23fb7b2a84906bfe1b6700be4d53bec61cecb04a2f09ee3f57d3ad7",
+      "url": "https://github.com/trustless-ai/recompute-kit/blob/15f7f59ac47b3358492bd5741143c418b5d657f5/conformance/profile-amendment-v0/profile-amendment-v0.reference.mjs"
+    },
+    {
+      "branch": "main",
+      "canonical_blob_reverified": true,
+      "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+      "evidence_class": "vector",
+      "evidence_id": "S067",
+      "path": "conformance/profile-amendment-v0/profile-amendment-v0.vectors.json",
+      "repo": "trustless-ai/recompute-kit",
+      "sha256": "79cd891adcb9019da5f4b3c81e01e8c083ba036d4ae25577f53873b17a105f74",
+      "url": "https://github.com/trustless-ai/recompute-kit/blob/15f7f59ac47b3358492bd5741143c418b5d657f5/conformance/profile-amendment-v0/profile-amendment-v0.vectors.json"
+    },
+    {
+      "branch": "main",
+      "canonical_blob_reverified": true,
+      "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+      "evidence_class": "normative conformance spec",
+      "evidence_id": "S068",
+      "path": "conformance/verdict-profile-binding-v0/verdict-profile-binding-v0.spec.md",
+      "repo": "trustless-ai/recompute-kit",
+      "sha256": "a58aa6f4e88043b10c385f75368fd8f7429234d947a3f7c1122d67a19f41c309",
+      "url": "https://github.com/trustless-ai/recompute-kit/blob/15f7f59ac47b3358492bd5741143c418b5d657f5/conformance/verdict-profile-binding-v0/verdict-profile-binding-v0.spec.md"
+    },
+    {
+      "branch": "main",
+      "canonical_blob_reverified": true,
+      "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+      "evidence_class": "reference implementation",
+      "evidence_id": "S069",
+      "path": "conformance/verdict-profile-binding-v0/verdict_binding_gate.py",
+      "repo": "trustless-ai/recompute-kit",
+      "sha256": "4cdad8693974dbdcbf8ffc7a48850ec8ea6bf767f10dc0fbd3435754d37deefa",
+      "url": "https://github.com/trustless-ai/recompute-kit/blob/15f7f59ac47b3358492bd5741143c418b5d657f5/conformance/verdict-profile-binding-v0/verdict_binding_gate.py"
+    },
+    {
+      "branch": "main",
+      "canonical_blob_reverified": true,
+      "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+      "evidence_class": "reference implementation",
+      "evidence_id": "S070",
+      "path": "conformance/verdict-profile-binding-v0/verdict-profile-binding-v0.reference.mjs",
+      "repo": "trustless-ai/recompute-kit",
+      "sha256": "20e86353e6a97f5c38d0883920a117fd6e8684a0cb23bc6b5bd1ead03d03957f",
+      "url": "https://github.com/trustless-ai/recompute-kit/blob/15f7f59ac47b3358492bd5741143c418b5d657f5/conformance/verdict-profile-binding-v0/verdict-profile-binding-v0.reference.mjs"
+    },
+    {
+      "branch": "main",
+      "canonical_blob_reverified": true,
+      "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+      "evidence_class": "vector",
+      "evidence_id": "S071",
+      "path": "conformance/verdict-profile-binding-v0/verdict-profile-binding-v0.vectors.json",
+      "repo": "trustless-ai/recompute-kit",
+      "sha256": "4a50b2fb74de7974ca197b1c627413bfc39f41363ed786ae79465ab9ee751f0a",
+      "url": "https://github.com/trustless-ai/recompute-kit/blob/15f7f59ac47b3358492bd5741143c418b5d657f5/conformance/verdict-profile-binding-v0/verdict-profile-binding-v0.vectors.json"
+    },
+    {
+      "branch": "main",
+      "canonical_blob_reverified": true,
+      "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+      "evidence_class": "normative spec",
+      "evidence_id": "S072",
+      "path": "conformance/pq-key-binding-v0/pq-key-binding-v0.spec.md",
+      "repo": "trustless-ai/recompute-kit",
+      "sha256": "877499e8dae1d20e6e3f056cc48337f08755af63fef0c66d58ca44e628928af0",
+      "url": "https://github.com/trustless-ai/recompute-kit/blob/15f7f59ac47b3358492bd5741143c418b5d657f5/conformance/pq-key-binding-v0/pq-key-binding-v0.spec.md"
+    },
+    {
+      "branch": "main",
+      "canonical_blob_reverified": true,
+      "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+      "evidence_class": "signed-object artifact",
+      "evidence_id": "S073",
+      "path": "conformance/pq-key-binding-v0/pq-key-binding-v0.rotation.json",
+      "repo": "trustless-ai/recompute-kit",
+      "sha256": "150817aef5862ef601f487ef2f038917bfe78fa302bdf546607a40a7215adee6",
+      "url": "https://github.com/trustless-ai/recompute-kit/blob/15f7f59ac47b3358492bd5741143c418b5d657f5/conformance/pq-key-binding-v0/pq-key-binding-v0.rotation.json"
+    },
+    {
+      "branch": "main",
+      "canonical_blob_reverified": true,
+      "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+      "evidence_class": "vector",
+      "evidence_id": "S074",
+      "path": "conformance/pq-key-binding-v0/pq-key-binding-v0.rotation-vectors.json",
+      "repo": "trustless-ai/recompute-kit",
+      "sha256": "2c046fdaaebe1a8e71b99b191cbd8efa48abe7b6449e5f4b32cc30f1750d6b1a",
+      "url": "https://github.com/trustless-ai/recompute-kit/blob/15f7f59ac47b3358492bd5741143c418b5d657f5/conformance/pq-key-binding-v0/pq-key-binding-v0.rotation-vectors.json"
+    },
+    {
+      "branch": "main",
+      "canonical_blob_reverified": true,
+      "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+      "evidence_class": "signed-object artifact",
+      "evidence_id": "S075",
+      "path": "conformance/pq-key-binding-v0/pq-key-binding-v0.revocation.json",
+      "repo": "trustless-ai/recompute-kit",
+      "sha256": "b97752168fd1071a7a00c72cd584f2e14f24a7314719bdbabc0b089e630151bc",
+      "url": "https://github.com/trustless-ai/recompute-kit/blob/15f7f59ac47b3358492bd5741143c418b5d657f5/conformance/pq-key-binding-v0/pq-key-binding-v0.revocation.json"
+    },
+    {
+      "branch": "main",
+      "canonical_blob_reverified": true,
+      "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+      "evidence_class": "vector",
+      "evidence_id": "S076",
+      "path": "conformance/pq-key-binding-v0/pq-key-binding-v0.revocation-vectors.json",
+      "repo": "trustless-ai/recompute-kit",
+      "sha256": "3481360d3ffa5e785ca640a06994a9724ab6e7cee1a2e033102e70b91f31cac0",
+      "url": "https://github.com/trustless-ai/recompute-kit/blob/15f7f59ac47b3358492bd5741143c418b5d657f5/conformance/pq-key-binding-v0/pq-key-binding-v0.revocation-vectors.json"
+    },
+    {
+      "branch": "main",
+      "canonical_blob_reverified": true,
+      "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+      "evidence_class": "vector",
+      "evidence_id": "S077",
+      "path": "conformance/pq-key-binding-v0/pq-key-binding-v0.cutoff-vectors.json",
+      "repo": "trustless-ai/recompute-kit",
+      "sha256": "7cfd7e8906b0afbfa1d000e99177ab797b2f757dc2d71364ff79cc48fbc506f7",
+      "url": "https://github.com/trustless-ai/recompute-kit/blob/15f7f59ac47b3358492bd5741143c418b5d657f5/conformance/pq-key-binding-v0/pq-key-binding-v0.cutoff-vectors.json"
+    },
+    {
+      "branch": "main",
+      "canonical_blob_reverified": true,
+      "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+      "evidence_class": "vector",
+      "evidence_id": "S078",
+      "path": "conformance/pq-key-binding-v0/pq-key-binding-v0.vectors.json",
+      "repo": "trustless-ai/recompute-kit",
+      "sha256": "9ee62960f0fade98ee107ee600feac3bca9b6b1157c273568ee060efec235823",
+      "url": "https://github.com/trustless-ai/recompute-kit/blob/15f7f59ac47b3358492bd5741143c418b5d657f5/conformance/pq-key-binding-v0/pq-key-binding-v0.vectors.json"
+    },
+    {
+      "branch": "main",
+      "canonical_blob_reverified": true,
+      "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+      "evidence_class": "reference implementation",
+      "evidence_id": "S079",
+      "path": "conformance/pq-key-binding-v0/deep_recompute.py",
+      "repo": "trustless-ai/recompute-kit",
+      "sha256": "8b43d22524a2f9c18ee90e302afd84a604b5b5cb949d4325203a86479187ba46",
+      "url": "https://github.com/trustless-ai/recompute-kit/blob/15f7f59ac47b3358492bd5741143c418b5d657f5/conformance/pq-key-binding-v0/deep_recompute.py"
+    },
+    {
+      "branch": "main",
+      "canonical_blob_reverified": true,
+      "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+      "evidence_class": "reference implementation",
+      "evidence_id": "S080",
+      "path": "conformance/pq-key-binding-v0/cutoff_enforce.py",
+      "repo": "trustless-ai/recompute-kit",
+      "sha256": "a11d528b97bd88b7850a679122e1bbaec162bf98f6164587c23e47f9174df528",
+      "url": "https://github.com/trustless-ai/recompute-kit/blob/15f7f59ac47b3358492bd5741143c418b5d657f5/conformance/pq-key-binding-v0/cutoff_enforce.py"
+    },
+    {
+      "branch": "main",
+      "canonical_blob_reverified": true,
+      "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+      "evidence_class": "reference implementation",
+      "evidence_id": "S081",
+      "path": "conformance/pq-key-binding-v0/gate.py",
+      "repo": "trustless-ai/recompute-kit",
+      "sha256": "36347585715c22d8862aae34e6d5ab84b5e9283e08fa8366382fba9935e66d43",
+      "url": "https://github.com/trustless-ai/recompute-kit/blob/15f7f59ac47b3358492bd5741143c418b5d657f5/conformance/pq-key-binding-v0/gate.py"
+    },
+    {
+      "branch": "main",
+      "canonical_blob_reverified": true,
+      "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+      "evidence_class": "manifest",
+      "evidence_id": "S082",
+      "path": "conformance/pq-key-binding-v0/suite.json",
+      "repo": "trustless-ai/recompute-kit",
+      "sha256": "bcd7a1eeeb9e9b392cb917d900313636051c5b4eac18bf12a0d8ded02a9df6dc",
+      "url": "https://github.com/trustless-ai/recompute-kit/blob/15f7f59ac47b3358492bd5741143c418b5d657f5/conformance/pq-key-binding-v0/suite.json"
+    }
+  ],
+  "source_inconsistencies": [
+    {
+      "effect": "Do not infer text preimage availability from event alone. No contract fix made.",
+      "issue": "SDK settlement comment says resultText emitted; inspected contract emits resultHash/commitmentHash, not text."
+    },
+    {
+      "effect": "Treat as architecture/upstream claims, not verified assurance.",
+      "issue": "Organization README production/audited/whole-chain wording exceeds file-level evidence reviewed."
+    },
+    {
+      "effect": "No whole latest-companion compliance claim.",
+      "issue": "Companion draft v0.3.9 and consumer SPEC_VERSION 0.3.3 are distinct; relevant consumer file unchanged across HEAD advance."
+    },
+    {
+      "effect": "Authentication remains unsupported for RSI RVR lane, not a blanket assertion about all RVR code.",
+      "issue": "RVR signed-verdict BIP-340 profile exists at canonical RVR pin, but is distinct from admitted recompute-kit amendment digest lane."
+    },
+    {
+      "effect": "Do not backfill v1 semantics onto Phase 2D.",
+      "issue": "PQ v1 section 10 supersedes earlier R1-R3 in its own design; v0 policy and v1 captured-admission are separate."
+    }
+  ],
+  "transport_review": [
+    {
+      "evidence": [
+        "rsi/codec.py"
+      ],
+      "finding": "ASCII strings/keys, null/bool, safe integers +/- (2^53-1), nested arrays/objects supported. Floats, non-ASCII, raw binary and duplicate keys rejected. Nested structure itself is not a gap.",
+      "surface": "Generic RSI"
+    },
+    {
+      "evidence": [
+        "evidence/crystal-receipt/SPEC.md"
+      ],
+      "finding": "Admitted flat ASCII snapshots fit. Upstream Unicode/UTF-8/Uint8Array cases outside fixture subset; no universal serializer claim.",
+      "surface": "Crystal"
+    },
+    {
+      "evidence": [
+        "S010"
+      ],
+      "finding": "Digest fixtures fit; general UTF-8 judgment and signed-verdict v1 text can exceed ASCII. Exact bytes cannot be silently normalized.",
+      "surface": "RVR"
+    },
+    {
+      "evidence": [
+        "evidence/tsei/recompute-kit-encode-json-utf8-lf-v0.spec.md"
+      ],
+      "finding": "Admitted probes fit. Upstream encoder qualification covers richer JS numbers/UTF-16 ordering. Qualification does not expand RSI fixture transport.",
+      "surface": "TSEI"
+    },
+    {
+      "evidence": [
+        "evidence/pq/source-pin.v0.json"
+      ],
+      "finding": "Timestamps and hex fit. Signature/anchor binary may require explicit exact-byte carriers; carrying bytes is not verification.",
+      "surface": "PQ"
+    },
+    {
+      "evidence": [
+        "S024",
+        "S059"
+      ],
+      "finding": "uint256 can exceed safe integer; UTF-8 resultText/Solidity source and ABI bytes require explicit lossless profile carriers. No silent coercion.",
+      "surface": "SDK / agent-ercs / TAS"
+    },
+    {
+      "evidence": [
+        "S063"
+      ],
+      "finding": "MPT/RLP bytes and BigInt may use exact hex/decimal-string carriers under future explicit validation; independent decoding required.",
+      "surface": "verify-layer"
+    },
+    {
+      "evidence": [
+        "S042"
+      ],
+      "finding": "Prospective integer bps fits; historical float-4dp vectors do not. Never relabel/round historical artifacts into new convention.",
+      "surface": "Reputation"
+    },
+    {
+      "evidence": [
+        "S031"
+      ],
+      "finding": "UTF-8 scope/receipt inputs can exceed ASCII. Digest references preserve byte identity but do not establish semantic authority.",
+      "surface": "Semantic ABI / CCIP"
+    }
+  ],
+  "unsupported_capabilities": [
+    {
+      "capability_id": "U01",
+      "edges": [
+        "E02"
+      ],
+      "evidence": [
+        "evidence/rvr/source-pin.v0.json",
+        "adapters/rvr/model.py"
+      ],
+      "reason": "No independently verified signature operands/checker for the admitted bilateral signed_digest fixtures",
+      "scope": "RVR amendment/digest RSI lane",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "capability_id": "U02",
+      "edges": [
+        "E03",
+        "E05"
+      ],
+      "evidence": [
+        "S008"
+      ],
+      "reason": "Public v2 receipt reports PROVEN / VALID_PROVENANCE but Object A/B, oracle, nonce and attribution operands required for independent recomputation are unavailable",
+      "scope": "TSEI provenance authority",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "capability_id": "U03",
+      "edges": [
+        "E04",
+        "E09"
+      ],
+      "evidence": [
+        "evidence/pq/source-pin.v0.json",
+        "adapters/pq/model.py"
+      ],
+      "reason": "Policy flags/history and predecessor/signature presence do not verify signatures or deployed anchors; rotation anchor is intended",
+      "scope": "PQ authenticated transition and anchor proof",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "capability_id": "U04",
+      "edges": [
+        "E04"
+      ],
+      "evidence": [
+        "evidence/pq/deep_recompute.py",
+        "evidence/pq/pq-key-binding-v0.rotation.json"
+      ],
+      "reason": "Artifact says SLH-DSA-SHA2-192s; offline deferred checks say ML-DSA. No algorithm-specific verification in RSI",
+      "scope": "PQ algorithm-specific claim",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "capability_id": "U05",
+      "edges": [
+        "E18"
+      ],
+      "evidence": [
+        "S063"
+      ],
+      "reason": "LightClientHeaderSource is not wired; MPT proof is conditional on supplied stateRoot",
+      "scope": "verify-layer consensus header authority",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "capability_id": "U06",
+      "edges": [],
+      "evidence": [
+        "S040"
+      ],
+      "reason": "communication_chain gate hashes ENS MCP-produced calldata; transaction submission/inclusion/action occurrence is not established by that operation",
+      "scope": "communication effect/action occurrence",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "capability_id": "U07",
+      "edges": [
+        "E13",
+        "E14"
+      ],
+      "evidence": [
+        "S053",
+        "S057"
+      ],
+      "reason": "Local Anvil scope, no default concrete proof provider, live chat and full deterministic E2E deferred; returned handle is not completion",
+      "scope": "TAS production/full execution chain",
+      "status": "NOT RSI VALIDATED"
+    },
+    {
+      "capability_id": "U08",
+      "edges": [
+        "E17",
+        "E18"
+      ],
+      "evidence": [
+        "S036"
+      ],
+      "reason": "HTTP/repo/recipe existence and two-RPC code presence do not prove contract behavior or consensus; provider independence unproven",
+      "scope": "primitives semantic/deployment authority",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "capability_id": "U09",
+      "edges": [],
+      "evidence": [
+        "S045"
+      ],
+      "reason": "Pinned provenance-anchor spec identifies real pre-existence examples but origination positives as model/pending real; no minted real positive established in this pass",
+      "scope": "origination versus pre-existence",
+      "status": "NOT RSI VALIDATED"
+    },
+    {
+      "capability_id": "U10",
+      "edges": [
+        "E10",
+        "E11",
+        "E12",
+        "E16"
+      ],
+      "evidence": [
+        "S013",
+        "S022"
+      ],
+      "reason": "No RSI end-to-end dispatched action, occurrence, settled event completeness or reputation attribution lane",
+      "scope": "whole-stack action/settlement/reputation",
+      "status": "NOT RSI VALIDATED"
+    }
+  ],
+  "validated_relation_families": [
+    {
+      "checks": 4,
+      "domain": "Crystal Receipt",
+      "killed": 3,
+      "limits": "Not general provenance, admission, Lane K or whole ReceiptOS.",
+      "profile": "crystal-receipt.v0",
+      "scope": "accepted semantic-snapshot equivalence; audit_timestamp mirror; protected substitution"
+    },
+    {
+      "checks": 10,
+      "domain": "RVR digest",
+      "killed": 6,
+      "limits": "No signature authenticity for these amendment/verdict vectors; not whole RVR.",
+      "profile": "rvr.digest-binding.v0",
+      "scope": "amendment/verdict digest binding, effective continuity, layer-specific unresolved and crypto non-promotion"
+    },
+    {
+      "checks": 7,
+      "domain": "TSEI serializer/adoption",
+      "killed": 6,
+      "limits": "No provenance-authority recomputation; exact historical snapshots, not arbitrary ancestry.",
+      "profile": "tsei.serializer-adoption.v0",
+      "scope": "serializer identity, mechanism/adoption/record introduction, finite-snapshot non-retroactivity"
+    },
+    {
+      "checks": 7,
+      "domain": "PQ policy/as-of",
+      "killed": 7,
+      "limits": "Supplied history and anchor/signature flags; no independent anchors or authenticated chain; not PQ v1.",
+      "profile": "pq.policy-asof.v0",
+      "scope": "conditional cutoff/governing history, historical/current distinction, stale snapshot, claim non-promotion"
+    }
+  ]
+}
