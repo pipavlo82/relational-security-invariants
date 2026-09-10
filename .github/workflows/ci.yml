@@ -36,3 +36,6 @@ jobs:
       - run: python tools/run_crystal_receipt.py --output artifacts/crystal-receipt.json
       - run: python tools/prove_crystal_can_fail.py --output artifacts/crystal-mutations.json
       - run: python tools/check_crystal_receipt.py --mutations artifacts/crystal-mutations.json --output artifacts/crystal-validation.json
+      - run: python tools/run_rvr_digest_binding.py --include-previous --output artifacts/rvr-combined.json
+      - run: python tools/prove_rvr_can_fail.py --output artifacts/rvr-mutations.json
+      - run: python tools/check_rvr_digest_binding.py --output artifacts/rvr-digest-validation.json
