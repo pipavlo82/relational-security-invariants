@@ -1,0 +1,87 @@
+{
+  "profile": "pq_key_binding.v0",
+  "checks": [
+    {
+      "name": "grade",
+      "vectors": {
+        "path": "pq-key-binding-v0.vectors.json",
+        "sha256": "9ee62960f0fade98ee107ee600feac3bca9b6b1157c273568ee060efec235823"
+      },
+      "adapter": {
+        "kind": "stdio",
+        "cmd": "python3 gate.py --grade"
+      }
+    },
+    {
+      "name": "cutoff",
+      "vectors": {
+        "path": "pq-key-binding-v0.cutoff-vectors.json",
+        "sha256": "7cfd7e8906b0afbfa1d000e99177ab797b2f757dc2d71364ff79cc48fbc506f7"
+      },
+      "adapter": {
+        "kind": "stdio",
+        "cmd": "python3 cutoff_enforce.py pq-key-binding-v0.cutoff-vectors.json"
+      }
+    },
+    {
+      "name": "rotation",
+      "vectors": {
+        "path": "pq-key-binding-v0.rotation-vectors.json",
+        "sha256": "2c046fdaaebe1a8e71b99b191cbd8efa48abe7b6449e5f4b32cc30f1750d6b1a"
+      },
+      "adapter": {
+        "kind": "stdio",
+        "cmd": "python3 cutoff_enforce.py pq-key-binding-v0.rotation-vectors.json"
+      }
+    },
+    {
+      "name": "revocation",
+      "vectors": {
+        "path": "pq-key-binding-v0.revocation-vectors.json",
+        "sha256": "3481360d3ffa5e785ca640a06994a9724ab6e7cee1a2e033102e70b91f31cac0"
+      },
+      "adapter": {
+        "kind": "stdio",
+        "cmd": "python3 cutoff_enforce.py pq-key-binding-v0.revocation-vectors.json"
+      }
+    },
+    {
+      "name": "per-agent-anchor-recompute",
+      "vectors": {
+        "path": "pq-key-binding-v0.per-agent-anchor.json",
+        "sha256": "4b15f56105fe5cb04b1d43c47cc78bf7346f402ab04df2aa82250f404d05803a"
+      },
+      "adapter": {
+        "kind": "stdio",
+        "cmd": "python3 deep_recompute.py pq-key-binding-v0.per-agent-anchor.json"
+      }
+    },
+    {
+      "name": "rotation-deep-recompute",
+      "vectors": {
+        "path": "pq-key-binding-v0.rotation.json",
+        "sha256": "150817aef5862ef601f487ef2f038917bfe78fa302bdf546607a40a7215adee6"
+      },
+      "adapter": {
+        "kind": "stdio",
+        "cmd": "python3 deep_recompute.py pq-key-binding-v0.rotation.json"
+      }
+    },
+    {
+      "name": "revocation-deep-recompute",
+      "vectors": {
+        "path": "pq-key-binding-v0.revocation.json",
+        "sha256": "b97752168fd1071a7a00c72cd584f2e14f24a7314719bdbabc0b089e630151bc"
+      },
+      "adapter": {
+        "kind": "stdio",
+        "cmd": "python3 deep_recompute.py pq-key-binding-v0.revocation.json"
+      }
+    }
+  ],
+  "laneHint": "recomputable",
+  "spec": {
+    "path": "pq-key-binding-v0.spec.md",
+    "sha256": "877499e8dae1d20e6e3f056cc48337f08755af63fef0c66d58ca44e628928af0"
+  }
+}
