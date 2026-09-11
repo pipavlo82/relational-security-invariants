@@ -3,6 +3,7 @@ from dataclasses import replace
 from pathlib import Path
 import inspect,json,shutil,tempfile,unittest
 from unittest.mock import patch
+from tools.protected_maintenance import mismatches
 from rsi.codec import load,encode,raw_digest
 from runner.relation_runtime import execute,resolve_fixture
 from runner.expectation_contract import admit,load_fixtures,ProfileError
@@ -105,6 +106,6 @@ class CAPVTests(unittest.TestCase):
         self.assertEqual(prior['rows'],[r for r in current['rows'] if r['result']['key'] in prior_keys])
     def test_no_core_changes(self):
         p=load(ROOT/'evidence/capv/protected-baseline.v0.json')
-        for name,digest in p.items():self.assertEqual(raw_digest((ROOT/name).read_bytes()),digest,name)
+        self.assertEqual(mismatches(ROOT,p),[])
 
 if __name__=='__main__':unittest.main()

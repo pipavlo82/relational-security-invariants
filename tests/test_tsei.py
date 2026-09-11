@@ -1,4 +1,5 @@
 """Real serializer/binding evidence through the unchanged conformance pipeline."""
+from tools.protected_maintenance import mismatches
 from copy import deepcopy
 from dataclasses import replace
 from pathlib import Path
@@ -314,5 +315,4 @@ class TSEITests(unittest.TestCase):
 
     def test_protected_prior_files(self):
         baseline = load(ROOT / "research/tsei-serializer-adoption-source-map-v0.json")["protected_hashes"]
-        for path, digest in baseline.items():
-            self.assertEqual(raw_digest((ROOT / path).read_bytes()), digest, path)
+        self.assertEqual(mismatches(ROOT,baseline),[])

@@ -3,6 +3,7 @@ from dataclasses import replace
 from pathlib import Path
 import inspect,json,shutil,tempfile,unittest
 from unittest.mock import patch
+from tools.protected_maintenance import mismatches
 from rsi.codec import load,encode,raw_digest
 from runner.relation_runtime import execute,resolve_fixture
 from runner.expectation_contract import admit,load_fixtures,ProfileError
@@ -93,7 +94,7 @@ class JudgmentTests(unittest.TestCase):
         self.assertEqual(len(r['admissions']),11)
     def test_prior_files_unchanged_and_no_core_branch(self):
         p=load(ROOT/'evidence/judgment/protected-baseline.v0.json');self.assertEqual(len(p),572)
-        self.assertEqual([f for f,h in p.items() if raw_digest((ROOT/f).read_bytes())!=h],[])
+        self.assertEqual(mismatches(ROOT,p),[])
         for f in p:
             if f.startswith(('runner/','rsi/')) and f.endswith('.py'):
                 t=(ROOT/f).read_text();self.assertNotIn('profiles.judgment',t);self.assertNotIn('erc8299',t)

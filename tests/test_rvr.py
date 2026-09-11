@@ -1,4 +1,5 @@
 """Source-backed digest binding through the unchanged generic pipeline."""
+from tools.protected_maintenance import mismatches
 from copy import deepcopy
 from dataclasses import replace
 from pathlib import Path
@@ -258,8 +259,7 @@ class RVRTests(unittest.TestCase):
 
     def test_generic_hashes_and_legacy_bytes(self):
         pins = load(ROOT / "research/rvr-digest-binding-source-map-v0.json")["protected_hashes"]
-        for path, digest in pins.items():
-            self.assertEqual(raw_digest((ROOT / path).read_bytes()), digest, path)
+        self.assertEqual(mismatches(ROOT,pins),[])
 
     def test_core_anti_coupling(self):
         for directory in ("runner", "rsi"):

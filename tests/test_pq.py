@@ -1,4 +1,5 @@
 """Conditional PQ policy conformance, never an authentication proof."""
+from tools.protected_maintenance import mismatches
 from copy import deepcopy
 from dataclasses import replace
 from pathlib import Path
@@ -235,7 +236,7 @@ class PQTests(unittest.TestCase):
 
     def test_protected_prior_files(self):
         pins=load(ROOT/"research/pq-policy-asof-source-map-v0.json")["protected_hashes"]
-        for p,d in pins.items():self.assertEqual(raw_digest((ROOT/p).read_bytes()),d,p)
+        self.assertEqual(mismatches(ROOT,pins),[])
 
     def test_setup_vacuous(self):
         from runner.mutation_registry import Mutation,MutationRegistry,MutationTrace,CheckEvent

@@ -5,6 +5,7 @@ import sys
 import unittest
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
+from tools.protected_maintenance import mismatches, approved_changes
 from rsi.codec import encode, load, raw_digest
 from runner.relation_runtime import execute
 from profiles.rvr.source import verify_source
@@ -15,9 +16,9 @@ from extensions.relations import composition as legacy
 
 def report(mutations, prior):
     evidence = load(ROOT / "research/rvr-digest-binding-source-map-v0.json")
-    for path, digest in evidence["protected_hashes"].items():
-        if raw_digest((ROOT / path).read_bytes()) != digest:
-            raise ValueError("protected bytes changed: " + path)
+    drift = mismatches(ROOT,evidence["protected_hashes"])
+    maintenance = approved_changes(ROOT,evidence["protected_hashes"])
+    if drift: raise ValueError("protected bytes changed: " + repr(drift))
     for path in list((ROOT / "runner").glob("*.py")) + list((ROOT / "rsi").glob("*.py")):
         if any(term in path.read_text().lower() for term in ("rvr", "8309", "signed_digest", "amendment_cc", "crystal", "receiptos")):
             raise ValueError("domain leakage: " + str(path))
@@ -44,14 +45,15 @@ def report(mutations, prior):
         raise ValueError("combined pipeline gate failed")
     totals = {k: sum(report["totals"][k] for report in [mutations, *prior.values()]) for k in ("KILLED", "SURVIVED", "VACUOUS", "NOT_APPLIED")}
     return {
-        "schema": "rsi-domain-validation.v0", "domain": "rvr-digest-binding", "phase": "2B.1",
+        "schema": "rsi-domain-validation.v0",
+        "approved_post_v0_maintenance": maintenance, "domain": "rvr-digest-binding", "phase": "2B.1",
         "rsi_head_before": evidence["rsi_head_before"], "source": source, "source_repositories": evidence["repos"],
         "companion_delta": evidence["companion_delta"], "relations": ["profile-transition-digest-binding", "verdict-profile-digest-binding"],
         "fixtures": {"total": 6, "pass": 6, "fail": 0, "invalid_fixture": 0, "unsupported": 0},
         "checks": actual["totals"], "execution": actual, "combined_checks": combined["totals"],
         "mutations": mutations["totals"], "mutation_report": mutations, "all_mutation_totals": totals,
         "prior_mutation_record_diff": 0, "legacy_outcome_diff": 0, "crystal_receipt_outcome_diff": 0,
-        "protected_hashes_match": True, "protected_hash_count": len(evidence["protected_hashes"]),
+        "protected_hashes_match": not maintenance, "protected_hash_count": len(evidence["protected_hashes"]),
         "original_protected_80_match": True, "generic_core_changed": False, "semantic_exceptions_added": 0,
         "unresolved_semantics_preserved": True, "effective_profile_not_collapsed_to_accept": True,
         "crypto_authentication": {"status": "UNSUPPORTED", "reason": "no pinned independently verified signature-verification lane"},

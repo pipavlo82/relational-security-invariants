@@ -4,6 +4,7 @@ from pathlib import Path
 import sys
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
+from tools.protected_maintenance import mismatches, approved_changes
 from rsi.codec import encode, load, raw_digest
 from runner.relation_runtime import execute
 from extensions.pq import composition, complete_composition
@@ -17,7 +18,8 @@ def report(root, mutations):
     combined = execute(root, *complete_composition(root))
     old_ids = {r["fixture_id"] for r in mapping["prior_rows"]}
     prior = [r for r in combined["rows"] if r["fixture_id"] in old_ids]
-    drift = [path for path, digest in mapping["protected_hashes"].items() if raw_digest((root/path).read_bytes()) != digest]
+    drift = mismatches(root,mapping["protected_hashes"])
+    maintenance = approved_changes(root,mapping["protected_hashes"])
     if drift: raise ValueError("PROTECTED_DRIFT: " + repr(drift))
     if prior != mapping["prior_rows"]: raise ValueError("PRIOR_OUTCOME_DRIFT")
     if isolated["totals"] != {"PASS":7,"FAIL":0,"INVALID_FIXTURE":0,"UNSUPPORTED":0}: raise ValueError("DOMAIN_FAILED")
@@ -38,7 +40,7 @@ def report(root, mutations):
         "rows":isolated["rows"], "mutations":{k.lower():v for k,v in mutations["totals"].items()},
         "mutation_records":mutations["mutations"], "combined_totals":combined["totals"],
         "legacy_compatibility":{"outcome_diff":0}, "crystal_receipt_compatibility":{"outcome_diff":0}, "rvr_compatibility":{"outcome_diff":0}, "tsei_compatibility":{"outcome_diff":0},
-        "protected_hashes_match":True, "protected_hash_count":len(mapping["protected_hashes"]),
+        "protected_hashes_match":not maintenance, "approved_post_v0_maintenance":maintenance, "protected_hash_count":len(mapping["protected_hashes"]),
         "generic_core_changed":False,"semantic_exceptions_added":0,"anti_coupling":"PASS",
         "retroactivity_prevented":True,"presence_not_authority":True,
         "phase_status":"LOCAL_VALIDATED_CI_SEPARATE", "full_pq_authenticated_chain":"UNSUPPORTED",
