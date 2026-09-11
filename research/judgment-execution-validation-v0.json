@@ -1,0 +1,1243 @@
+{
+  "all_mutation_totals": {
+    "KILLED": 84,
+    "NOT_APPLIED": 0,
+    "SURVIVED": 0,
+    "VACUOUS": 0
+  },
+  "anti_coupling": {
+    "domain_branches": [],
+    "generic_files": 17,
+    "status": "PASS"
+  },
+  "closure_gate": "Exact pushed commit CI required before Phase 3G CLOSED",
+  "conformance": {
+    "FAIL": 0,
+    "INVALID_FIXTURE": 0,
+    "PASS": 123,
+    "UNSUPPORTED": 0
+  },
+  "conformance_sha256": "1de8da422831243f9e79eccdda3691dc3fe8c4dc61a72d83dac165b59e732321",
+  "deterministic_rerun": true,
+  "domain": "erc8299-judgment-execution",
+  "fixtures": [
+    {
+      "errors": [],
+      "expected": {
+        "outputs": {
+          "action_authorization": "UNSUPPORTED",
+          "admission_bound": true,
+          "anchor_authority": "UNSUPPORTED",
+          "binding_established": true,
+          "chain_bound": true,
+          "envelope_hash": "faa282ce02c8b7759a66ada63abd4b6c9ae38035f21f288cc898dd6e5067d5b3",
+          "execution_occurrence": "UNSUPPORTED",
+          "judgment_soundness": "UNSUPPORTED",
+          "ordering_established_under_declared_anchor": true,
+          "raw_to_canonical_derivation": "UNSUPPORTED",
+          "signature_valid": true,
+          "source_checks": {
+            "admission_invariant": {
+              "code": null,
+              "pass": true
+            },
+            "anchoring_existence": {
+              "code": null,
+              "pass": true
+            },
+            "anchoring_precedence": {
+              "code": null,
+              "pass": true
+            },
+            "canonical_envelope": {
+              "code": null,
+              "pass": true
+            },
+            "chain_invariant": {
+              "code": null,
+              "pass": true
+            }
+          },
+          "source_failure": null,
+          "source_overall": true,
+          "verdict_decision": "reject"
+        },
+        "relation_id": "signed-verdict-terminal-record-binding",
+        "relation_state": "records_observed"
+      },
+      "input_digest": "970551b2b730b5f722c818e6700368fca494a33fc4b4c60f05c2f8c69b4caaca",
+      "key": "JEX-RSI-001/bound_signed_record",
+      "local_validity": true,
+      "observed": {
+        "outputs": {
+          "action_authorization": "UNSUPPORTED",
+          "admission_bound": true,
+          "anchor_authority": "UNSUPPORTED",
+          "binding_established": true,
+          "chain_bound": true,
+          "envelope_hash": "faa282ce02c8b7759a66ada63abd4b6c9ae38035f21f288cc898dd6e5067d5b3",
+          "execution_occurrence": "UNSUPPORTED",
+          "judgment_soundness": "UNSUPPORTED",
+          "ordering_established_under_declared_anchor": true,
+          "raw_to_canonical_derivation": "UNSUPPORTED",
+          "signature_valid": true,
+          "source_checks": {
+            "admission_invariant": {
+              "code": null,
+              "pass": true
+            },
+            "anchoring_existence": {
+              "code": null,
+              "pass": true
+            },
+            "anchoring_precedence": {
+              "code": null,
+              "pass": true
+            },
+            "canonical_envelope": {
+              "code": null,
+              "pass": true
+            },
+            "chain_invariant": {
+              "code": null,
+              "pass": true
+            }
+          },
+          "source_failure": null,
+          "source_overall": true,
+          "verdict_decision": "reject"
+        },
+        "relation_id": "signed-verdict-terminal-record-binding",
+        "relation_state": "records_observed"
+      },
+      "status": "PASS"
+    },
+    {
+      "errors": [],
+      "expected": {
+        "outputs": {
+          "action_authorization": "UNSUPPORTED",
+          "admission_bound": true,
+          "anchor_authority": "UNSUPPORTED",
+          "binding_established": false,
+          "chain_bound": false,
+          "envelope_hash": "faa282ce02c8b7759a66ada63abd4b6c9ae38035f21f288cc898dd6e5067d5b3",
+          "execution_occurrence": "UNSUPPORTED",
+          "judgment_soundness": "UNSUPPORTED",
+          "ordering_established_under_declared_anchor": true,
+          "raw_to_canonical_derivation": "UNSUPPORTED",
+          "signature_valid": true,
+          "source_checks": {
+            "admission_invariant": {
+              "code": null,
+              "pass": true
+            },
+            "anchoring_existence": {
+              "code": null,
+              "pass": true
+            },
+            "anchoring_precedence": {
+              "code": null,
+              "pass": true
+            },
+            "canonical_envelope": {
+              "code": null,
+              "pass": true
+            },
+            "chain_invariant": {
+              "code": "chain_join_failed",
+              "pass": false
+            }
+          },
+          "source_failure": "chain_join_failed",
+          "source_overall": false,
+          "verdict_decision": "reject"
+        },
+        "relation_id": "signed-verdict-terminal-record-binding",
+        "relation_state": "records_observed"
+      },
+      "input_digest": "fe3f0a1289922eba60b6592b0deff74c4e1e55cd33977aeb917dc9caa9648b24",
+      "key": "JEX-RSI-002/terminal_hash_substitution",
+      "local_validity": true,
+      "observed": {
+        "outputs": {
+          "action_authorization": "UNSUPPORTED",
+          "admission_bound": true,
+          "anchor_authority": "UNSUPPORTED",
+          "binding_established": false,
+          "chain_bound": false,
+          "envelope_hash": "faa282ce02c8b7759a66ada63abd4b6c9ae38035f21f288cc898dd6e5067d5b3",
+          "execution_occurrence": "UNSUPPORTED",
+          "judgment_soundness": "UNSUPPORTED",
+          "ordering_established_under_declared_anchor": true,
+          "raw_to_canonical_derivation": "UNSUPPORTED",
+          "signature_valid": true,
+          "source_checks": {
+            "admission_invariant": {
+              "code": null,
+              "pass": true
+            },
+            "anchoring_existence": {
+              "code": null,
+              "pass": true
+            },
+            "anchoring_precedence": {
+              "code": null,
+              "pass": true
+            },
+            "canonical_envelope": {
+              "code": null,
+              "pass": true
+            },
+            "chain_invariant": {
+              "code": "chain_join_failed",
+              "pass": false
+            }
+          },
+          "source_failure": "chain_join_failed",
+          "source_overall": false,
+          "verdict_decision": "reject"
+        },
+        "relation_id": "signed-verdict-terminal-record-binding",
+        "relation_state": "records_observed"
+      },
+      "status": "PASS"
+    },
+    {
+      "errors": [],
+      "expected": {
+        "outputs": {
+          "action_authorization": "UNSUPPORTED",
+          "admission_bound": true,
+          "anchor_authority": "UNSUPPORTED",
+          "binding_established": false,
+          "chain_bound": false,
+          "envelope_hash": "faa282ce02c8b7759a66ada63abd4b6c9ae38035f21f288cc898dd6e5067d5b3",
+          "execution_occurrence": "UNSUPPORTED",
+          "judgment_soundness": "UNSUPPORTED",
+          "ordering_established_under_declared_anchor": true,
+          "raw_to_canonical_derivation": "UNSUPPORTED",
+          "signature_valid": true,
+          "source_checks": {
+            "admission_invariant": {
+              "code": null,
+              "pass": true
+            },
+            "anchoring_existence": {
+              "code": null,
+              "pass": true
+            },
+            "anchoring_precedence": {
+              "code": null,
+              "pass": true
+            },
+            "canonical_envelope": {
+              "code": null,
+              "pass": true
+            },
+            "chain_invariant": {
+              "code": "chain_join_failed",
+              "pass": false
+            }
+          },
+          "source_failure": "chain_join_failed",
+          "source_overall": false,
+          "verdict_decision": "reject"
+        },
+        "relation_id": "signed-verdict-terminal-record-binding",
+        "relation_state": "records_observed"
+      },
+      "input_digest": "cccfdac6af11c73bc83ed541c20e995a5905a042d499e8b45bf04b94af0c38db",
+      "key": "JEX-RSI-003/action_ref_substitution",
+      "local_validity": true,
+      "observed": {
+        "outputs": {
+          "action_authorization": "UNSUPPORTED",
+          "admission_bound": true,
+          "anchor_authority": "UNSUPPORTED",
+          "binding_established": false,
+          "chain_bound": false,
+          "envelope_hash": "faa282ce02c8b7759a66ada63abd4b6c9ae38035f21f288cc898dd6e5067d5b3",
+          "execution_occurrence": "UNSUPPORTED",
+          "judgment_soundness": "UNSUPPORTED",
+          "ordering_established_under_declared_anchor": true,
+          "raw_to_canonical_derivation": "UNSUPPORTED",
+          "signature_valid": true,
+          "source_checks": {
+            "admission_invariant": {
+              "code": null,
+              "pass": true
+            },
+            "anchoring_existence": {
+              "code": null,
+              "pass": true
+            },
+            "anchoring_precedence": {
+              "code": null,
+              "pass": true
+            },
+            "canonical_envelope": {
+              "code": null,
+              "pass": true
+            },
+            "chain_invariant": {
+              "code": "chain_join_failed",
+              "pass": false
+            }
+          },
+          "source_failure": "chain_join_failed",
+          "source_overall": false,
+          "verdict_decision": "reject"
+        },
+        "relation_id": "signed-verdict-terminal-record-binding",
+        "relation_state": "records_observed"
+      },
+      "status": "PASS"
+    },
+    {
+      "errors": [],
+      "expected": {
+        "outputs": {
+          "action_authorization": "UNSUPPORTED",
+          "admission_bound": false,
+          "anchor_authority": "UNSUPPORTED",
+          "binding_established": false,
+          "chain_bound": true,
+          "envelope_hash": "faa282ce02c8b7759a66ada63abd4b6c9ae38035f21f288cc898dd6e5067d5b3",
+          "execution_occurrence": "UNSUPPORTED",
+          "judgment_soundness": "UNSUPPORTED",
+          "ordering_established_under_declared_anchor": true,
+          "raw_to_canonical_derivation": "UNSUPPORTED",
+          "signature_valid": true,
+          "source_checks": {
+            "admission_invariant": {
+              "code": "verdict_binding_failed",
+              "pass": false
+            },
+            "anchoring_existence": {
+              "code": null,
+              "pass": true
+            },
+            "anchoring_precedence": {
+              "code": null,
+              "pass": true
+            },
+            "canonical_envelope": {
+              "code": null,
+              "pass": true
+            },
+            "chain_invariant": {
+              "code": null,
+              "pass": true
+            }
+          },
+          "source_failure": "verdict_binding_failed",
+          "source_overall": false,
+          "verdict_decision": "reject"
+        },
+        "relation_id": "signed-verdict-terminal-record-binding",
+        "relation_state": "records_observed"
+      },
+      "input_digest": "327d86294c2f30d06bb42055e31e6137b6106820e874ffaa952d2ecbb69be58b",
+      "key": "JEX-RSI-004/other_signed_envelope",
+      "local_validity": true,
+      "observed": {
+        "outputs": {
+          "action_authorization": "UNSUPPORTED",
+          "admission_bound": false,
+          "anchor_authority": "UNSUPPORTED",
+          "binding_established": false,
+          "chain_bound": true,
+          "envelope_hash": "faa282ce02c8b7759a66ada63abd4b6c9ae38035f21f288cc898dd6e5067d5b3",
+          "execution_occurrence": "UNSUPPORTED",
+          "judgment_soundness": "UNSUPPORTED",
+          "ordering_established_under_declared_anchor": true,
+          "raw_to_canonical_derivation": "UNSUPPORTED",
+          "signature_valid": true,
+          "source_checks": {
+            "admission_invariant": {
+              "code": "verdict_binding_failed",
+              "pass": false
+            },
+            "anchoring_existence": {
+              "code": null,
+              "pass": true
+            },
+            "anchoring_precedence": {
+              "code": null,
+              "pass": true
+            },
+            "canonical_envelope": {
+              "code": null,
+              "pass": true
+            },
+            "chain_invariant": {
+              "code": null,
+              "pass": true
+            }
+          },
+          "source_failure": "verdict_binding_failed",
+          "source_overall": false,
+          "verdict_decision": "reject"
+        },
+        "relation_id": "signed-verdict-terminal-record-binding",
+        "relation_state": "records_observed"
+      },
+      "status": "PASS"
+    },
+    {
+      "errors": [],
+      "expected": {
+        "outputs": {
+          "action_authorization": "UNSUPPORTED",
+          "admission_bound": false,
+          "anchor_authority": "UNSUPPORTED",
+          "binding_established": false,
+          "chain_bound": true,
+          "envelope_hash": "faa282ce02c8b7759a66ada63abd4b6c9ae38035f21f288cc898dd6e5067d5b3",
+          "execution_occurrence": "UNSUPPORTED",
+          "judgment_soundness": "UNSUPPORTED",
+          "ordering_established_under_declared_anchor": true,
+          "raw_to_canonical_derivation": "UNSUPPORTED",
+          "signature_valid": true,
+          "source_checks": {
+            "admission_invariant": {
+              "code": "admission_not_independent",
+              "pass": false
+            },
+            "anchoring_existence": {
+              "code": null,
+              "pass": true
+            },
+            "anchoring_precedence": {
+              "code": null,
+              "pass": true
+            },
+            "canonical_envelope": {
+              "code": null,
+              "pass": true
+            },
+            "chain_invariant": {
+              "code": null,
+              "pass": true
+            }
+          },
+          "source_failure": "admission_not_independent",
+          "source_overall": false,
+          "verdict_decision": "reject"
+        },
+        "relation_id": "signed-verdict-terminal-record-binding",
+        "relation_state": "records_observed"
+      },
+      "input_digest": "3b1d43ce1d30113b7f1aeab3df3f7d48a68d788e192daedaa9dfba136fd4b0af",
+      "key": "JEX-RSI-005/actor_is_signer",
+      "local_validity": true,
+      "observed": {
+        "outputs": {
+          "action_authorization": "UNSUPPORTED",
+          "admission_bound": false,
+          "anchor_authority": "UNSUPPORTED",
+          "binding_established": false,
+          "chain_bound": true,
+          "envelope_hash": "faa282ce02c8b7759a66ada63abd4b6c9ae38035f21f288cc898dd6e5067d5b3",
+          "execution_occurrence": "UNSUPPORTED",
+          "judgment_soundness": "UNSUPPORTED",
+          "ordering_established_under_declared_anchor": true,
+          "raw_to_canonical_derivation": "UNSUPPORTED",
+          "signature_valid": true,
+          "source_checks": {
+            "admission_invariant": {
+              "code": "admission_not_independent",
+              "pass": false
+            },
+            "anchoring_existence": {
+              "code": null,
+              "pass": true
+            },
+            "anchoring_precedence": {
+              "code": null,
+              "pass": true
+            },
+            "canonical_envelope": {
+              "code": null,
+              "pass": true
+            },
+            "chain_invariant": {
+              "code": null,
+              "pass": true
+            }
+          },
+          "source_failure": "admission_not_independent",
+          "source_overall": false,
+          "verdict_decision": "reject"
+        },
+        "relation_id": "signed-verdict-terminal-record-binding",
+        "relation_state": "records_observed"
+      },
+      "status": "PASS"
+    },
+    {
+      "errors": [],
+      "expected": {
+        "outputs": {
+          "action_authorization": "UNSUPPORTED",
+          "admission_bound": false,
+          "anchor_authority": "UNSUPPORTED",
+          "binding_established": false,
+          "chain_bound": true,
+          "envelope_hash": "faa282ce02c8b7759a66ada63abd4b6c9ae38035f21f288cc898dd6e5067d5b3",
+          "execution_occurrence": "UNSUPPORTED",
+          "judgment_soundness": "UNSUPPORTED",
+          "ordering_established_under_declared_anchor": true,
+          "raw_to_canonical_derivation": "UNSUPPORTED",
+          "signature_valid": true,
+          "source_checks": {
+            "admission_invariant": {
+              "code": "key_different_but_identity_unproven",
+              "pass": false
+            },
+            "anchoring_existence": {
+              "code": null,
+              "pass": true
+            },
+            "anchoring_precedence": {
+              "code": null,
+              "pass": true
+            },
+            "canonical_envelope": {
+              "code": null,
+              "pass": true
+            },
+            "chain_invariant": {
+              "code": null,
+              "pass": true
+            }
+          },
+          "source_failure": "key_different_but_identity_unproven",
+          "source_overall": false,
+          "verdict_decision": "reject"
+        },
+        "relation_id": "signed-verdict-terminal-record-binding",
+        "relation_state": "records_observed"
+      },
+      "input_digest": "98afc7ab83d994a2feafbe84491fe806de75e37d72f62e1b53404a54075ec1c8",
+      "key": "JEX-RSI-006/unlisted_signer",
+      "local_validity": true,
+      "observed": {
+        "outputs": {
+          "action_authorization": "UNSUPPORTED",
+          "admission_bound": false,
+          "anchor_authority": "UNSUPPORTED",
+          "binding_established": false,
+          "chain_bound": true,
+          "envelope_hash": "faa282ce02c8b7759a66ada63abd4b6c9ae38035f21f288cc898dd6e5067d5b3",
+          "execution_occurrence": "UNSUPPORTED",
+          "judgment_soundness": "UNSUPPORTED",
+          "ordering_established_under_declared_anchor": true,
+          "raw_to_canonical_derivation": "UNSUPPORTED",
+          "signature_valid": true,
+          "source_checks": {
+            "admission_invariant": {
+              "code": "key_different_but_identity_unproven",
+              "pass": false
+            },
+            "anchoring_existence": {
+              "code": null,
+              "pass": true
+            },
+            "anchoring_precedence": {
+              "code": null,
+              "pass": true
+            },
+            "canonical_envelope": {
+              "code": null,
+              "pass": true
+            },
+            "chain_invariant": {
+              "code": null,
+              "pass": true
+            }
+          },
+          "source_failure": "key_different_but_identity_unproven",
+          "source_overall": false,
+          "verdict_decision": "reject"
+        },
+        "relation_id": "signed-verdict-terminal-record-binding",
+        "relation_state": "records_observed"
+      },
+      "status": "PASS"
+    },
+    {
+      "errors": [],
+      "expected": {
+        "outputs": {
+          "action_authorization": "UNSUPPORTED",
+          "admission_bound": true,
+          "anchor_authority": "UNSUPPORTED",
+          "binding_established": true,
+          "chain_bound": true,
+          "envelope_hash": "faa282ce02c8b7759a66ada63abd4b6c9ae38035f21f288cc898dd6e5067d5b3",
+          "execution_occurrence": "UNSUPPORTED",
+          "judgment_soundness": "UNSUPPORTED",
+          "ordering_established_under_declared_anchor": false,
+          "raw_to_canonical_derivation": "UNSUPPORTED",
+          "signature_valid": true,
+          "source_checks": {
+            "admission_invariant": {
+              "code": null,
+              "pass": true
+            },
+            "anchoring_existence": {
+              "code": null,
+              "pass": true
+            },
+            "anchoring_precedence": {
+              "code": "late_commitment",
+              "pass": false
+            },
+            "canonical_envelope": {
+              "code": null,
+              "pass": true
+            },
+            "chain_invariant": {
+              "code": null,
+              "pass": true
+            }
+          },
+          "source_failure": "late_commitment",
+          "source_overall": false,
+          "verdict_decision": "reject"
+        },
+        "relation_id": "signed-verdict-terminal-record-binding",
+        "relation_state": "records_observed"
+      },
+      "input_digest": "42f1838cb1159b930a84c117791e1cd85663b306595bcaf8a30008cca729135b",
+      "key": "JEX-RSI-007/late_declared_anchor",
+      "local_validity": true,
+      "observed": {
+        "outputs": {
+          "action_authorization": "UNSUPPORTED",
+          "admission_bound": true,
+          "anchor_authority": "UNSUPPORTED",
+          "binding_established": true,
+          "chain_bound": true,
+          "envelope_hash": "faa282ce02c8b7759a66ada63abd4b6c9ae38035f21f288cc898dd6e5067d5b3",
+          "execution_occurrence": "UNSUPPORTED",
+          "judgment_soundness": "UNSUPPORTED",
+          "ordering_established_under_declared_anchor": false,
+          "raw_to_canonical_derivation": "UNSUPPORTED",
+          "signature_valid": true,
+          "source_checks": {
+            "admission_invariant": {
+              "code": null,
+              "pass": true
+            },
+            "anchoring_existence": {
+              "code": null,
+              "pass": true
+            },
+            "anchoring_precedence": {
+              "code": "late_commitment",
+              "pass": false
+            },
+            "canonical_envelope": {
+              "code": null,
+              "pass": true
+            },
+            "chain_invariant": {
+              "code": null,
+              "pass": true
+            }
+          },
+          "source_failure": "late_commitment",
+          "source_overall": false,
+          "verdict_decision": "reject"
+        },
+        "relation_id": "signed-verdict-terminal-record-binding",
+        "relation_state": "records_observed"
+      },
+      "status": "PASS"
+    },
+    {
+      "errors": [],
+      "expected": {
+        "outputs": {
+          "action_authorization": "UNSUPPORTED",
+          "admission_bound": true,
+          "anchor_authority": "UNSUPPORTED",
+          "binding_established": true,
+          "chain_bound": true,
+          "envelope_hash": "faa282ce02c8b7759a66ada63abd4b6c9ae38035f21f288cc898dd6e5067d5b3",
+          "execution_occurrence": "UNSUPPORTED",
+          "judgment_soundness": "UNSUPPORTED",
+          "ordering_established_under_declared_anchor": null,
+          "raw_to_canonical_derivation": "UNSUPPORTED",
+          "signature_valid": true,
+          "source_checks": {
+            "admission_invariant": {
+              "code": null,
+              "pass": true
+            },
+            "anchoring_existence": {
+              "code": "ordering_unanchored",
+              "pass": false
+            },
+            "anchoring_precedence": {
+              "code": "not_assessable",
+              "pass": null
+            },
+            "canonical_envelope": {
+              "code": null,
+              "pass": true
+            },
+            "chain_invariant": {
+              "code": null,
+              "pass": true
+            }
+          },
+          "source_failure": "ordering_unanchored",
+          "source_overall": false,
+          "verdict_decision": "reject"
+        },
+        "relation_id": "signed-verdict-terminal-record-binding",
+        "relation_state": "records_observed"
+      },
+      "input_digest": "fae5f7f88e322a2f704c33994403c9bf9a128a43090559dd48ade7bace9b8078",
+      "key": "JEX-RSI-008/no_anchor",
+      "local_validity": true,
+      "observed": {
+        "outputs": {
+          "action_authorization": "UNSUPPORTED",
+          "admission_bound": true,
+          "anchor_authority": "UNSUPPORTED",
+          "binding_established": true,
+          "chain_bound": true,
+          "envelope_hash": "faa282ce02c8b7759a66ada63abd4b6c9ae38035f21f288cc898dd6e5067d5b3",
+          "execution_occurrence": "UNSUPPORTED",
+          "judgment_soundness": "UNSUPPORTED",
+          "ordering_established_under_declared_anchor": null,
+          "raw_to_canonical_derivation": "UNSUPPORTED",
+          "signature_valid": true,
+          "source_checks": {
+            "admission_invariant": {
+              "code": null,
+              "pass": true
+            },
+            "anchoring_existence": {
+              "code": "ordering_unanchored",
+              "pass": false
+            },
+            "anchoring_precedence": {
+              "code": "not_assessable",
+              "pass": null
+            },
+            "canonical_envelope": {
+              "code": null,
+              "pass": true
+            },
+            "chain_invariant": {
+              "code": null,
+              "pass": true
+            }
+          },
+          "source_failure": "ordering_unanchored",
+          "source_overall": false,
+          "verdict_decision": "reject"
+        },
+        "relation_id": "signed-verdict-terminal-record-binding",
+        "relation_state": "records_observed"
+      },
+      "status": "PASS"
+    },
+    {
+      "errors": [],
+      "expected": {
+        "outputs": {
+          "action_authorization": "UNSUPPORTED",
+          "admission_bound": true,
+          "anchor_authority": "UNSUPPORTED",
+          "binding_established": true,
+          "chain_bound": true,
+          "envelope_hash": "faa282ce02c8b7759a66ada63abd4b6c9ae38035f21f288cc898dd6e5067d5b3",
+          "execution_occurrence": "UNSUPPORTED",
+          "judgment_soundness": "UNSUPPORTED",
+          "ordering_established_under_declared_anchor": true,
+          "raw_to_canonical_derivation": "UNSUPPORTED",
+          "signature_valid": true,
+          "source_checks": {
+            "admission_invariant": {
+              "code": null,
+              "pass": true
+            },
+            "anchoring_existence": {
+              "code": null,
+              "pass": true
+            },
+            "anchoring_precedence": {
+              "code": null,
+              "pass": true
+            },
+            "canonical_envelope": {
+              "code": null,
+              "pass": true
+            },
+            "chain_invariant": {
+              "code": null,
+              "pass": true
+            }
+          },
+          "source_failure": null,
+          "source_overall": true,
+          "verdict_decision": "reject"
+        },
+        "relation_id": "signed-verdict-terminal-record-binding",
+        "relation_state": "records_observed"
+      },
+      "input_digest": "2781ea04401ff186909cd6f3ce8d8cffce51f96949c19032fdab2dca3369d51d",
+      "key": "JEX-RSI-009/anchor_note_mirror",
+      "local_validity": true,
+      "observed": {
+        "outputs": {
+          "action_authorization": "UNSUPPORTED",
+          "admission_bound": true,
+          "anchor_authority": "UNSUPPORTED",
+          "binding_established": true,
+          "chain_bound": true,
+          "envelope_hash": "faa282ce02c8b7759a66ada63abd4b6c9ae38035f21f288cc898dd6e5067d5b3",
+          "execution_occurrence": "UNSUPPORTED",
+          "judgment_soundness": "UNSUPPORTED",
+          "ordering_established_under_declared_anchor": true,
+          "raw_to_canonical_derivation": "UNSUPPORTED",
+          "signature_valid": true,
+          "source_checks": {
+            "admission_invariant": {
+              "code": null,
+              "pass": true
+            },
+            "anchoring_existence": {
+              "code": null,
+              "pass": true
+            },
+            "anchoring_precedence": {
+              "code": null,
+              "pass": true
+            },
+            "canonical_envelope": {
+              "code": null,
+              "pass": true
+            },
+            "chain_invariant": {
+              "code": null,
+              "pass": true
+            }
+          },
+          "source_failure": null,
+          "source_overall": true,
+          "verdict_decision": "reject"
+        },
+        "relation_id": "signed-verdict-terminal-record-binding",
+        "relation_state": "records_observed"
+      },
+      "status": "PASS"
+    },
+    {
+      "errors": [],
+      "expected": {
+        "outputs": {
+          "action_authorization": "UNSUPPORTED",
+          "admission_bound": true,
+          "anchor_authority": "UNSUPPORTED",
+          "binding_established": false,
+          "chain_bound": true,
+          "envelope_hash": "faa282ce02c8b7759a66ada63abd4b6c9ae38035f21f288cc898dd6e5067d5b3",
+          "execution_occurrence": "UNSUPPORTED",
+          "judgment_soundness": "UNSUPPORTED",
+          "ordering_established_under_declared_anchor": true,
+          "raw_to_canonical_derivation": "UNSUPPORTED",
+          "signature_valid": true,
+          "source_checks": {
+            "admission_invariant": {
+              "code": null,
+              "pass": true
+            },
+            "anchoring_existence": {
+              "code": null,
+              "pass": true
+            },
+            "anchoring_precedence": {
+              "code": null,
+              "pass": true
+            },
+            "canonical_envelope": {
+              "code": "envelope_hash_mismatch",
+              "pass": false
+            },
+            "chain_invariant": {
+              "code": null,
+              "pass": true
+            }
+          },
+          "source_failure": "envelope_hash_mismatch",
+          "source_overall": false,
+          "verdict_decision": "reject"
+        },
+        "relation_id": "signed-verdict-terminal-record-binding",
+        "relation_state": "records_observed"
+      },
+      "input_digest": "c8a48312c7c43f269fb54faee8579d2b16579236c1eb899ff07161ffbfad0007",
+      "key": "JEX-RSI-010/declared_hash_substitution",
+      "local_validity": true,
+      "observed": {
+        "outputs": {
+          "action_authorization": "UNSUPPORTED",
+          "admission_bound": true,
+          "anchor_authority": "UNSUPPORTED",
+          "binding_established": false,
+          "chain_bound": true,
+          "envelope_hash": "faa282ce02c8b7759a66ada63abd4b6c9ae38035f21f288cc898dd6e5067d5b3",
+          "execution_occurrence": "UNSUPPORTED",
+          "judgment_soundness": "UNSUPPORTED",
+          "ordering_established_under_declared_anchor": true,
+          "raw_to_canonical_derivation": "UNSUPPORTED",
+          "signature_valid": true,
+          "source_checks": {
+            "admission_invariant": {
+              "code": null,
+              "pass": true
+            },
+            "anchoring_existence": {
+              "code": null,
+              "pass": true
+            },
+            "anchoring_precedence": {
+              "code": null,
+              "pass": true
+            },
+            "canonical_envelope": {
+              "code": "envelope_hash_mismatch",
+              "pass": false
+            },
+            "chain_invariant": {
+              "code": null,
+              "pass": true
+            }
+          },
+          "source_failure": "envelope_hash_mismatch",
+          "source_overall": false,
+          "verdict_decision": "reject"
+        },
+        "relation_id": "signed-verdict-terminal-record-binding",
+        "relation_state": "records_observed"
+      },
+      "status": "PASS"
+    },
+    {
+      "errors": [],
+      "expected": {
+        "outputs": {
+          "action_authorization": "UNSUPPORTED",
+          "admission_bound": true,
+          "anchor_authority": "UNSUPPORTED",
+          "binding_established": true,
+          "chain_bound": true,
+          "envelope_hash": "faa282ce02c8b7759a66ada63abd4b6c9ae38035f21f288cc898dd6e5067d5b3",
+          "execution_occurrence": "UNSUPPORTED",
+          "judgment_soundness": "UNSUPPORTED",
+          "ordering_established_under_declared_anchor": false,
+          "raw_to_canonical_derivation": "UNSUPPORTED",
+          "signature_valid": true,
+          "source_checks": {
+            "admission_invariant": {
+              "code": null,
+              "pass": true
+            },
+            "anchoring_existence": {
+              "code": null,
+              "pass": true
+            },
+            "anchoring_precedence": {
+              "code": "existence_only_anchor",
+              "pass": false
+            },
+            "canonical_envelope": {
+              "code": null,
+              "pass": true
+            },
+            "chain_invariant": {
+              "code": null,
+              "pass": true
+            }
+          },
+          "source_failure": "existence_only_anchor",
+          "source_overall": false,
+          "verdict_decision": "reject"
+        },
+        "relation_id": "signed-verdict-terminal-record-binding",
+        "relation_state": "records_observed"
+      },
+      "input_digest": "0ed8e77a87213f864e79f5e332eb2a994d0778d0db6c2986544e4dcef178e42b",
+      "key": "JEX-RSI-011/existence_without_precedence",
+      "local_validity": true,
+      "observed": {
+        "outputs": {
+          "action_authorization": "UNSUPPORTED",
+          "admission_bound": true,
+          "anchor_authority": "UNSUPPORTED",
+          "binding_established": true,
+          "chain_bound": true,
+          "envelope_hash": "faa282ce02c8b7759a66ada63abd4b6c9ae38035f21f288cc898dd6e5067d5b3",
+          "execution_occurrence": "UNSUPPORTED",
+          "judgment_soundness": "UNSUPPORTED",
+          "ordering_established_under_declared_anchor": false,
+          "raw_to_canonical_derivation": "UNSUPPORTED",
+          "signature_valid": true,
+          "source_checks": {
+            "admission_invariant": {
+              "code": null,
+              "pass": true
+            },
+            "anchoring_existence": {
+              "code": null,
+              "pass": true
+            },
+            "anchoring_precedence": {
+              "code": "existence_only_anchor",
+              "pass": false
+            },
+            "canonical_envelope": {
+              "code": null,
+              "pass": true
+            },
+            "chain_invariant": {
+              "code": null,
+              "pass": true
+            }
+          },
+          "source_failure": "existence_only_anchor",
+          "source_overall": false,
+          "verdict_decision": "reject"
+        },
+        "relation_id": "signed-verdict-terminal-record-binding",
+        "relation_state": "records_observed"
+      },
+      "status": "PASS"
+    },
+    {
+      "errors": [],
+      "expected": {
+        "outputs": {
+          "action_authorization": "UNSUPPORTED",
+          "admission_bound": true,
+          "anchor_authority": "UNSUPPORTED",
+          "binding_established": true,
+          "chain_bound": true,
+          "envelope_hash": "faa282ce02c8b7759a66ada63abd4b6c9ae38035f21f288cc898dd6e5067d5b3",
+          "execution_occurrence": "UNSUPPORTED",
+          "judgment_soundness": "UNSUPPORTED",
+          "ordering_established_under_declared_anchor": true,
+          "raw_to_canonical_derivation": "UNSUPPORTED",
+          "signature_valid": true,
+          "source_checks": {
+            "admission_invariant": {
+              "code": null,
+              "pass": true
+            },
+            "anchoring_existence": {
+              "code": null,
+              "pass": true
+            },
+            "anchoring_precedence": {
+              "code": null,
+              "pass": true
+            },
+            "canonical_envelope": {
+              "code": null,
+              "pass": true
+            },
+            "chain_invariant": {
+              "code": null,
+              "pass": true
+            }
+          },
+          "source_failure": null,
+          "source_overall": true,
+          "verdict_decision": "reject"
+        },
+        "relation_id": "signed-verdict-terminal-record-binding",
+        "relation_state": "records_observed"
+      },
+      "input_digest": "79db87c375f406a609cfdbf43aed20876c8a32524afee695c046aa9a19f70c4e",
+      "key": "JEX-RSI-012/reported_execution_absent",
+      "local_validity": true,
+      "observed": {
+        "outputs": {
+          "action_authorization": "UNSUPPORTED",
+          "admission_bound": true,
+          "anchor_authority": "UNSUPPORTED",
+          "binding_established": true,
+          "chain_bound": true,
+          "envelope_hash": "faa282ce02c8b7759a66ada63abd4b6c9ae38035f21f288cc898dd6e5067d5b3",
+          "execution_occurrence": "UNSUPPORTED",
+          "judgment_soundness": "UNSUPPORTED",
+          "ordering_established_under_declared_anchor": true,
+          "raw_to_canonical_derivation": "UNSUPPORTED",
+          "signature_valid": true,
+          "source_checks": {
+            "admission_invariant": {
+              "code": null,
+              "pass": true
+            },
+            "anchoring_existence": {
+              "code": null,
+              "pass": true
+            },
+            "anchoring_precedence": {
+              "code": null,
+              "pass": true
+            },
+            "canonical_envelope": {
+              "code": null,
+              "pass": true
+            },
+            "chain_invariant": {
+              "code": null,
+              "pass": true
+            }
+          },
+          "source_failure": null,
+          "source_overall": true,
+          "verdict_decision": "reject"
+        },
+        "relation_id": "signed-verdict-terminal-record-binding",
+        "relation_state": "records_observed"
+      },
+      "status": "PASS"
+    }
+  ],
+  "generic_core_changed": false,
+  "limitations": [
+    "Source overall_pass can be true for signed reject and reported not_executed; it is not action approval.",
+    "Anchor proof not resolved; source compares declared anchor time with its supplied terminal time and does not reconcile that with chain terminal time.",
+    "Same-language separately implemented Python predictor; shared definitions/std primitives/codec and author independence UNKNOWN. No third leg.",
+    "ASCII records; exact signed content opaque; uint256 amounts decimal strings. Non-ASCII display note omitted explicitly in case 11.",
+    "No live transaction, external API, private producer, conditional action executor or paid service invoked."
+  ],
+  "local_gate": "PASS",
+  "mutations": {
+    "mutations": [
+      {
+        "collateral": [],
+        "errors": [],
+        "expected_failure_phase": "test",
+        "mapped_check": "tests.test_judgment.JudgmentTests.test_terminal_substitution",
+        "mutation_id": "JEX-M1",
+        "status": "KILLED",
+        "target_id": "erc8299.judgment-record-binding.v0"
+      },
+      {
+        "collateral": [],
+        "errors": [],
+        "expected_failure_phase": "test",
+        "mapped_check": "tests.test_judgment.JudgmentTests.test_action_ref",
+        "mutation_id": "JEX-M2",
+        "status": "KILLED",
+        "target_id": "erc8299.judgment-record-binding.v0"
+      },
+      {
+        "collateral": [],
+        "errors": [],
+        "expected_failure_phase": "test",
+        "mapped_check": "tests.test_judgment.JudgmentTests.test_other_signed_envelope",
+        "mutation_id": "JEX-M3",
+        "status": "KILLED",
+        "target_id": "erc8299.judgment-record-binding.v0"
+      },
+      {
+        "collateral": [],
+        "errors": [],
+        "expected_failure_phase": "test",
+        "mapped_check": "tests.test_judgment.JudgmentTests.test_late_anchor",
+        "mutation_id": "JEX-M4",
+        "status": "KILLED",
+        "target_id": "erc8299.judgment-record-binding.v0"
+      },
+      {
+        "collateral": [],
+        "errors": [],
+        "expected_failure_phase": "test",
+        "mapped_check": "tests.test_judgment.JudgmentTests.test_execution_unsupported",
+        "mutation_id": "JEX-M5",
+        "status": "KILLED",
+        "target_id": "erc8299.judgment-record-binding.v0"
+      },
+      {
+        "collateral": [],
+        "errors": [],
+        "expected_failure_phase": "test",
+        "mapped_check": "tests.test_judgment.JudgmentTests.test_authorization_not_inherited",
+        "mutation_id": "JEX-M6",
+        "status": "KILLED",
+        "target_id": "erc8299.judgment-record-binding.v0"
+      },
+      {
+        "collateral": [],
+        "errors": [],
+        "expected_failure_phase": "test",
+        "mapped_check": "tests.test_judgment.JudgmentTests.test_anchor_not_authority",
+        "mutation_id": "JEX-M7",
+        "status": "KILLED",
+        "target_id": "erc8299.judgment-record-binding.v0"
+      },
+      {
+        "collateral": [],
+        "errors": [],
+        "expected_failure_phase": "test",
+        "mapped_check": "tests.test_judgment.JudgmentTests.test_mirror",
+        "mutation_id": "JEX-M8",
+        "status": "KILLED",
+        "target_id": "erc8299.judgment-record-binding.v0"
+      }
+    ],
+    "schema": "rsi-registered-mutations.v0",
+    "totals": {
+      "KILLED": 8,
+      "NOT_APPLIED": 0,
+      "SURVIVED": 0,
+      "VACUOUS": 0
+    }
+  },
+  "new_conformance": 12,
+  "offline_reproduction": {
+    "conformance_sha256": "1de8da422831243f9e79eccdda3691dc3fe8c4dc61a72d83dac165b59e732321",
+    "h2_status": "PASS",
+    "status": "PASS"
+  },
+  "prior_mutation_record_diff": 0,
+  "prior_outcome_diff": 0,
+  "protected_hashes": {
+    "count": 572,
+    "diff": []
+  },
+  "recommended_claim": "RSI validates binding between a signed judgment, the supplied canonical proposal envelope and the supplied terminal record under the pinned ERC-8299 reference application. A valid signature does not transfer to a different envelope/action reference, establish approval, prove anchor authority or prove that an action occurred.",
+  "rsi_before": "5ec20dd971a9a1c0b50f3641b545bb74efbfd2d4",
+  "schema": "rsi-domain-validation.v0",
+  "scope": "signed-verdict-to-supplied-terminal-record",
+  "semantic_exceptions_added": 0,
+  "source_files": 20,
+  "source_pin_sha256": "015c1bd9f03e5b41d8611fcb849cfd41f0600e282a4bcee6871ed3fb7eb1e207",
+  "tests": {
+    "after-optimized": 539,
+    "after-tests": 539,
+    "before-optimized": 509,
+    "before-tests": 509
+  },
+  "unsupported": [
+    "action authorization",
+    "execution occurrence",
+    "anchor/consensus authority",
+    "judgment soundness",
+    "raw-to-canonical derivation",
+    "conditional approval action transform",
+    "production EIP712 judgment gateway"
+  ]
+}

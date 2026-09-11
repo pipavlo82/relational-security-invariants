@@ -1,0 +1,327 @@
+{
+  "canonical_erc": {
+    "branch": "master",
+    "commit": "84b46e7d69d08dbd8876503e435fd299211c26b8",
+    "erc8299_file_present": false,
+    "pr": 1810,
+    "pr_state": "open",
+    "repo": "ethereum/ERCs"
+  },
+  "domain": "erc8299",
+  "files": [
+    {
+      "branch": "erc-wyriwe",
+      "commit": "c0e13d17940a6eabe4d842e623fd0f871550ef7b",
+      "evidence_class": "normative-draft",
+      "git_blob": "ead95e012a445a200682cc2dcd7f7583d73fda53",
+      "local_path": "evidence/judgment/draft.md",
+      "path": "ERCS/erc-8299.md",
+      "repo": "TMerlini/ERCs",
+      "sha256": "5ea02730bdc94bd45983b3e5d22bafabf7e3aa6ca4dc1095d483b6776b7eccd3"
+    },
+    {
+      "branch": "main",
+      "commit": "a375af0a91e6cc724851eee2ab6916ba9fe10854",
+      "evidence_class": "historical-draft",
+      "git_blob": "ae2d92bd392bf44a67157a5b4fd1395e5e4d14ce",
+      "local_path": "evidence/judgment/older-draft.md",
+      "path": "ERC-draft.md",
+      "repo": "TMerlini/wyriwe",
+      "sha256": "ffab502599a80a773c0922190366425fce55c1c11ba775dd0030ebaa70c6370d"
+    },
+    {
+      "branch": "main",
+      "commit": "e41b117893fb56bc869922de378daf91aad63def",
+      "evidence_class": "consumer",
+      "git_blob": "1d8597045a4b9d7876042beae343f250e98568db",
+      "local_path": "evidence/judgment/sdk/recomputeL4.ts",
+      "path": "typescript/src/verify/ERC8299/recomputeL4.ts",
+      "repo": "trustless-ai/agent-sdk",
+      "sha256": "ebe3db999a718623fa6d9aeec702cee17e0b97bb72758b4789458c4f5dc27d13"
+    },
+    {
+      "branch": "main",
+      "commit": "e41b117893fb56bc869922de378daf91aad63def",
+      "evidence_class": "consumer",
+      "git_blob": "677fe318959f1b665cff1af8ca6d39e24fc06759",
+      "local_path": "evidence/judgment/sdk/judgmentExecutionClient.ts",
+      "path": "typescript/src/verify/ERC8299/judgmentExecutionClient.ts",
+      "repo": "trustless-ai/agent-sdk",
+      "sha256": "5eaeff104991c6f286f1c10a430f6fa66d8c4ce12af199832a7d4f3f7de8c7bc"
+    },
+    {
+      "branch": "main",
+      "commit": "e41b117893fb56bc869922de378daf91aad63def",
+      "evidence_class": "consumer",
+      "git_blob": "a6af04c7b6353eb3f78609e02e79961f286777ea",
+      "local_path": "evidence/judgment/sdk/README.md",
+      "path": "typescript/src/verify/ERC8299/README.md",
+      "repo": "trustless-ai/agent-sdk",
+      "sha256": "b9b3adb8fb7395b4a866f9da4cd226787ba6a26019e76c085f3bd1f87a0eb343"
+    },
+    {
+      "branch": "main",
+      "commit": "e41b117893fb56bc869922de378daf91aad63def",
+      "evidence_class": "test-only-mock",
+      "git_blob": "8e0216341af98ea56cfd78c978aa1fe47639f40d",
+      "local_path": "evidence/judgment/sdk/MockJudgmentExecutionAttestation.sol",
+      "path": "testkit/contracts/mocks/verify/ERC8299/MockJudgmentExecutionAttestation.sol",
+      "repo": "trustless-ai/agent-sdk",
+      "sha256": "9827ecca025a157c0744a78800e4d9887990d9b6ff679a4e0a899ac827eec005"
+    },
+    {
+      "branch": "main",
+      "commit": "01283ca57305f915afb560d23359a27fd748eb5a",
+      "evidence_class": "interface",
+      "git_blob": "425e458d3bcbe75dc63d85c7f794a6a00d8f50d7",
+      "local_path": "evidence/judgment/IJudgmentExecutionAttestation.sol",
+      "path": "contracts/verify/ERC8299/IJudgmentExecutionAttestation.sol",
+      "repo": "trustless-ai/agent-ercs",
+      "sha256": "ef689f54c87e41137b3b5ea6616e2ceb2738a40061123ea840c0d93e030d00c4"
+    },
+    {
+      "branch": "main",
+      "commit": "76d19dc394b208d01ba368382b3e5f4f2c18f0ee",
+      "evidence_class": "semantic-contract",
+      "git_blob": "995ed6e14a79cd1dc53712792ce04da158838539",
+      "local_path": "evidence/judgment/reference/README.md",
+      "path": "integrations/conformance/README.md",
+      "repo": "babyblueviper1/invinoveritas",
+      "sha256": "98a2971ef1bcd64b4d4218ff4fc570692fc1475ab29c19d63c677a83251d46e3"
+    },
+    {
+      "branch": "main",
+      "commit": "76d19dc394b208d01ba368382b3e5f4f2c18f0ee",
+      "evidence_class": "implementation",
+      "git_blob": "656796a63822d95b6a93269ec3b7e0d42038e0d5",
+      "local_path": "evidence/judgment/reference/verifier.py",
+      "path": "integrations/conformance/verifier.py",
+      "repo": "babyblueviper1/invinoveritas",
+      "sha256": "3d6c4633efb3ac782572faa1d9de81df66ed35e34cc42396a48f5a49dc832c29"
+    },
+    {
+      "branch": "main",
+      "commit": "76d19dc394b208d01ba368382b3e5f4f2c18f0ee",
+      "evidence_class": "implementation",
+      "git_blob": "105ab3024914d8ff4cb5b0d195d0be6f6dbe508a",
+      "local_path": "evidence/judgment/reference/_bip340_nostr.py",
+      "path": "integrations/conformance/_bip340_nostr.py",
+      "repo": "babyblueviper1/invinoveritas",
+      "sha256": "1bd072b7989f2aa755b1e9f2d46b64969ad6d342f7d48bf556225fa65c330a0d"
+    },
+    {
+      "branch": "main",
+      "commit": "76d19dc394b208d01ba368382b3e5f4f2c18f0ee",
+      "evidence_class": "implementation",
+      "git_blob": "b22087090e5f529908d50da8ea9529b4717f1ec0",
+      "local_path": "evidence/judgment/reference/test_conformance.py",
+      "path": "integrations/conformance/test_conformance.py",
+      "repo": "babyblueviper1/invinoveritas",
+      "sha256": "3aedc2957f4505c1819aa73773c87d54545eb901ee43c5fd3df53ae889c85464"
+    },
+    {
+      "branch": "main",
+      "commit": "76d19dc394b208d01ba368382b3e5f4f2c18f0ee",
+      "evidence_class": "test-vector",
+      "git_blob": "2c4551f27d47d6773ff405ff889ed4901d9e2e4e",
+      "local_path": "evidence/judgment/reference/fixtures/positive.json",
+      "path": "integrations/conformance/fixtures/positive.json",
+      "repo": "babyblueviper1/invinoveritas",
+      "sha256": "4aff1f4d0cb0ecba209db73cb650b6a7b29fb3d591400b51a5b61eb75c0faee6"
+    },
+    {
+      "branch": "main",
+      "commit": "76d19dc394b208d01ba368382b3e5f4f2c18f0ee",
+      "evidence_class": "test-vector",
+      "git_blob": "0e574dabac5037c2e1fcf5ce0fd4a54bdf9383ad",
+      "local_path": "evidence/judgment/reference/fixtures/negative_chain_action_ref_split.json",
+      "path": "integrations/conformance/fixtures/negative_chain_action_ref_split.json",
+      "repo": "babyblueviper1/invinoveritas",
+      "sha256": "bec9d26d9279b7523ad53dbcd2fb4e3ba5370d74016eb8fdc846ee9a02517ee5"
+    },
+    {
+      "branch": "main",
+      "commit": "76d19dc394b208d01ba368382b3e5f4f2c18f0ee",
+      "evidence_class": "test-vector",
+      "git_blob": "eee4a12f1ee7fe4f5fbbe0b0db24dbc95c4a5ed7",
+      "local_path": "evidence/judgment/reference/fixtures/negative_verdict_binding_failed.json",
+      "path": "integrations/conformance/fixtures/negative_verdict_binding_failed.json",
+      "repo": "babyblueviper1/invinoveritas",
+      "sha256": "3d82d4ef1e8204ad0aef651d2cd284b5161c0071c1405ab6a80e5480f14e58f4"
+    },
+    {
+      "branch": "main",
+      "commit": "76d19dc394b208d01ba368382b3e5f4f2c18f0ee",
+      "evidence_class": "test-vector",
+      "git_blob": "c1f1a9be52cb0863e54f033f0b4054f4f9b76a0e",
+      "local_path": "evidence/judgment/reference/fixtures/negative_admission_not_independent.json",
+      "path": "integrations/conformance/fixtures/negative_admission_not_independent.json",
+      "repo": "babyblueviper1/invinoveritas",
+      "sha256": "be3f4a3acdfb706f5e46957908f5482a70b6d5c3e9f1bd1971eb7d4ab0695a69"
+    },
+    {
+      "branch": "main",
+      "commit": "76d19dc394b208d01ba368382b3e5f4f2c18f0ee",
+      "evidence_class": "test-vector",
+      "git_blob": "944fb0ddd7b5d3f2de46d37152e6e99eff1155d5",
+      "local_path": "evidence/judgment/reference/fixtures/negative_key_different_but_identity_unproven.json",
+      "path": "integrations/conformance/fixtures/negative_key_different_but_identity_unproven.json",
+      "repo": "babyblueviper1/invinoveritas",
+      "sha256": "86d8aabdd0a0c3277c9b2b4909eecb9654531f44e853bd9be71e6ea085b56e9a"
+    },
+    {
+      "branch": "main",
+      "commit": "76d19dc394b208d01ba368382b3e5f4f2c18f0ee",
+      "evidence_class": "test-vector",
+      "git_blob": "7fd5474aa0ec36104168f78b56d60d14b60f6e43",
+      "local_path": "evidence/judgment/reference/fixtures/negative_late_commitment.json",
+      "path": "integrations/conformance/fixtures/negative_late_commitment.json",
+      "repo": "babyblueviper1/invinoveritas",
+      "sha256": "365cd060f2446246917c625b7d0208ff15d0c9cd93b8ccc2a8b9ae4d2a4a2f6e"
+    },
+    {
+      "branch": "main",
+      "commit": "76d19dc394b208d01ba368382b3e5f4f2c18f0ee",
+      "evidence_class": "test-vector",
+      "git_blob": "2dd9f5f5645197087e67931099643a022da1a2c6",
+      "local_path": "evidence/judgment/reference/fixtures/negative_ordering_unanchored.json",
+      "path": "integrations/conformance/fixtures/negative_ordering_unanchored.json",
+      "repo": "babyblueviper1/invinoveritas",
+      "sha256": "c3e81e7c4ee5b367fd5c97c20550bd5c4d05acea74a06ab2c7f1013476b5dfea"
+    },
+    {
+      "branch": "main",
+      "commit": "76d19dc394b208d01ba368382b3e5f4f2c18f0ee",
+      "evidence_class": "test-vector",
+      "git_blob": "fa3c8fe52b14f62d6fd47e7fe782e4a8868cde59",
+      "local_path": "evidence/judgment/reference/fixtures/negative_existence_only_anchor.json",
+      "path": "integrations/conformance/fixtures/negative_existence_only_anchor.json",
+      "repo": "babyblueviper1/invinoveritas",
+      "sha256": "3100ff8719a8c5ed6bd6e4d1102ce54cb441a1f2dfa7354169436362bcfc1f4c"
+    },
+    {
+      "branch": "main",
+      "commit": "76d19dc394b208d01ba368382b3e5f4f2c18f0ee",
+      "evidence_class": "test-vector",
+      "git_blob": "2f618744eac6165b2529de02fbcb8d26405001dd",
+      "local_path": "evidence/judgment/reference/fixtures/negative_canonical_envelope_mismatch.json",
+      "path": "integrations/conformance/fixtures/negative_canonical_envelope_mismatch.json",
+      "repo": "babyblueviper1/invinoveritas",
+      "sha256": "4354e9d35380230de4d7cacf8c01fd5a37f60d34370226ea6bbfbdd0e606f4df"
+    }
+  ],
+  "fixture_mapping": [
+    {
+      "case": "bound_signed_record",
+      "definition": "README joined invariants; exact canonical SHA256, signed artifact_hash, identity policy, chain hash/action_ref, declared anchor precedence. Source expected annotations discarded.",
+      "definition_failure": null,
+      "fixture": "JEX-RSI-001",
+      "input_sha256": "50a636908a86bfd709bb7ca5c2ab881b1e42a8fa6aff23ded110a4dec5e5ce8b",
+      "signature_valid": true,
+      "source_fixture": "positive"
+    },
+    {
+      "case": "terminal_hash_substitution",
+      "definition": "README joined invariants; exact canonical SHA256, signed artifact_hash, identity policy, chain hash/action_ref, declared anchor precedence. Source expected annotations discarded.",
+      "definition_failure": "chain_join_failed",
+      "fixture": "JEX-RSI-002",
+      "input_sha256": "17a15ee84579556fcadfc8ef1136e9a0ed989d56e23749c272b20eeaf666308e",
+      "signature_valid": true,
+      "source_fixture": "positive"
+    },
+    {
+      "case": "action_ref_substitution",
+      "definition": "README joined invariants; exact canonical SHA256, signed artifact_hash, identity policy, chain hash/action_ref, declared anchor precedence. Source expected annotations discarded.",
+      "definition_failure": "chain_join_failed",
+      "fixture": "JEX-RSI-003",
+      "input_sha256": "7e738ede543abe92429895d09dfeafbafe3c6d5dc04bea46afc24aa23cdf4dda",
+      "signature_valid": true,
+      "source_fixture": "negative_chain_action_ref_split"
+    },
+    {
+      "case": "other_signed_envelope",
+      "definition": "README joined invariants; exact canonical SHA256, signed artifact_hash, identity policy, chain hash/action_ref, declared anchor precedence. Source expected annotations discarded.",
+      "definition_failure": "verdict_binding_failed",
+      "fixture": "JEX-RSI-004",
+      "input_sha256": "395f2c6ee389a65dd4a00caeb79632c58ca2e6debd26abecd4ce8e5dcec83a41",
+      "signature_valid": true,
+      "source_fixture": "negative_verdict_binding_failed"
+    },
+    {
+      "case": "actor_is_signer",
+      "definition": "README joined invariants; exact canonical SHA256, signed artifact_hash, identity policy, chain hash/action_ref, declared anchor precedence. Source expected annotations discarded.",
+      "definition_failure": "admission_not_independent",
+      "fixture": "JEX-RSI-005",
+      "input_sha256": "cb0d06106371859657b55649307d522b57a7d955e9bf5f7dd1f77defb0f3cb62",
+      "signature_valid": true,
+      "source_fixture": "negative_admission_not_independent"
+    },
+    {
+      "case": "unlisted_signer",
+      "definition": "README joined invariants; exact canonical SHA256, signed artifact_hash, identity policy, chain hash/action_ref, declared anchor precedence. Source expected annotations discarded.",
+      "definition_failure": "key_different_but_identity_unproven",
+      "fixture": "JEX-RSI-006",
+      "input_sha256": "8bc1e96a83bcdc6bea76d8e5126d4d8ae90980f599355e3ee704642d84e45867",
+      "signature_valid": true,
+      "source_fixture": "negative_key_different_but_identity_unproven"
+    },
+    {
+      "case": "late_declared_anchor",
+      "definition": "README joined invariants; exact canonical SHA256, signed artifact_hash, identity policy, chain hash/action_ref, declared anchor precedence. Source expected annotations discarded.",
+      "definition_failure": "late_commitment",
+      "fixture": "JEX-RSI-007",
+      "input_sha256": "051e04cc32b013a787ff47fc75381fa9519421270e55172b0ec1717e5f84d7f9",
+      "signature_valid": true,
+      "source_fixture": "negative_late_commitment"
+    },
+    {
+      "case": "no_anchor",
+      "definition": "README joined invariants; exact canonical SHA256, signed artifact_hash, identity policy, chain hash/action_ref, declared anchor precedence. Source expected annotations discarded.",
+      "definition_failure": "ordering_unanchored",
+      "fixture": "JEX-RSI-008",
+      "input_sha256": "1ea8557e05815edf4d9825cf74bf95495d8147b70561eda0fc1d99ff943d4ee5",
+      "signature_valid": true,
+      "source_fixture": "negative_ordering_unanchored"
+    },
+    {
+      "case": "anchor_note_mirror",
+      "definition": "README joined invariants; exact canonical SHA256, signed artifact_hash, identity policy, chain hash/action_ref, declared anchor precedence. Source expected annotations discarded.",
+      "definition_failure": null,
+      "fixture": "JEX-RSI-009",
+      "input_sha256": "3fcefaabfcde265646235aa45cc14e1c891f7c744d5062337da4b6be679eb0c1",
+      "signature_valid": true,
+      "source_fixture": "positive"
+    },
+    {
+      "case": "declared_hash_substitution",
+      "definition": "README joined invariants; exact canonical SHA256, signed artifact_hash, identity policy, chain hash/action_ref, declared anchor precedence. Source expected annotations discarded.",
+      "definition_failure": "envelope_hash_mismatch",
+      "fixture": "JEX-RSI-010",
+      "input_sha256": "71536eb8d3752a1a660367e21d7fc44d657c900957c9010e1c8d102a62228970",
+      "signature_valid": true,
+      "source_fixture": "negative_canonical_envelope_mismatch"
+    },
+    {
+      "case": "existence_without_precedence",
+      "definition": "README joined invariants; exact canonical SHA256, signed artifact_hash, identity policy, chain hash/action_ref, declared anchor precedence. Source expected annotations discarded.",
+      "definition_failure": "existence_only_anchor",
+      "fixture": "JEX-RSI-011",
+      "input_sha256": "c9a2ca049631d1e6622478cbee844c9ede68f5669fde006f7cdd44fdeabe7bdd",
+      "signature_valid": true,
+      "source_fixture": "negative_existence_only_anchor"
+    },
+    {
+      "case": "reported_execution_absent",
+      "definition": "README joined invariants; exact canonical SHA256, signed artifact_hash, identity policy, chain hash/action_ref, declared anchor precedence. Source expected annotations discarded.",
+      "definition_failure": null,
+      "fixture": "JEX-RSI-012",
+      "input_sha256": "3bf6902dbef47260d5fed6b9b1dc8acc02b550bb483f59b05feca45e7e9edf7e",
+      "signature_valid": true,
+      "source_fixture": "positive"
+    }
+  ],
+  "rsi_before": "5ec20dd971a9a1c0b50f3641b545bb74efbfd2d4",
+  "schema": "rsi-domain-source-map.v0",
+  "scope": "signed-verdict-to-supplied-terminal-record",
+  "source_generation_distinction": "Current PR explicitly permits SHA256 off-chain; older wyriwe repo draft uses Keccak. Neither silently overrides the other."
+}
