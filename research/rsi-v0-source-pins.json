@@ -1,0 +1,1723 @@
+{
+  "audited_code_head": "e61a7f9116e51e5942274ea1cdaf043334c339f8",
+  "domains": [
+    {
+      "closure": {
+        "commit": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+        "files": [
+          {
+            "git_blob": "8287dc7dcaf88f582ebf32104d8494c8f1341f56",
+            "kind": "normative_spec",
+            "local_path": "evidence/crystal-receipt/SPEC.md",
+            "path": "conformance/counterfactual-audit-boundary-v0/SPEC.md",
+            "sha256": "9c17bd826c4a789464dab80c78a136153f3d9ce2f253198d0cf386bdef3a6d0b"
+          },
+          {
+            "git_blob": "501e3cf3971e2fe0aae0a789c84b7907c50a85b1",
+            "kind": "frozen_vector",
+            "local_path": "evidence/crystal-receipt/V-SEM-MANIFEST-INVARIANT.json",
+            "path": "conformance/counterfactual-audit-boundary-v0/vectors/V-SEM-MANIFEST-INVARIANT.json",
+            "sha256": "9330a797b15b74d8c3372b866e9bc9f9e842e142de9a6f6b47581bbf92004749"
+          },
+          {
+            "git_blob": "3dfde347ab90321930566f4a6594fa177b0d7654",
+            "kind": "frozen_vector",
+            "local_path": "evidence/crystal-receipt/V-SEM-MUTATION-DIFFERS.json",
+            "path": "conformance/counterfactual-audit-boundary-v0/vectors/V-SEM-MUTATION-DIFFERS.json",
+            "sha256": "c92915e29cda954db6c0aaa44bbcb958c741e51a86fd7bca7bd9f767434c433d"
+          },
+          {
+            "git_blob": "107488920972bfd1ade93b04607451af19cbc475",
+            "kind": "implementation",
+            "local_path": "evidence/crystal-receipt/counterfactual-audit-boundary.ts",
+            "path": "src/receiptos/challenge/counterfactual-audit-boundary.ts",
+            "sha256": "26456dd576c26cb646414c2d63617e110bb06131131a5d46d7ea3f022a58bc3c"
+          },
+          {
+            "git_blob": "fb4a037a6dedad4c8d1555db649bb9fce529e01e",
+            "kind": "implementation",
+            "local_path": "evidence/crystal-receipt/canonicalize.ts",
+            "path": "src/receiptos/canon/canonicalize.ts",
+            "sha256": "fca18d1642e6fe47d26ae2eb9f4bf15cf305653d6a7a08a5a0a09e2d6a716c81"
+          }
+        ],
+        "repo": "https://github.com/pipavlo82/crystal-receipt",
+        "schema": "crystal-receipt-source-pin.v0"
+      },
+      "domain": "crystal_receipt",
+      "source_module": "profiles/crystal_receipt/source.py",
+      "source_module_sha256": "4267f3977886951d0b47ae2400759de97dde46f941309d6dee3ef215cc1088bf",
+      "verification": "PASS"
+    },
+    {
+      "closure": {
+        "branch": "main",
+        "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+        "files": [
+          {
+            "evidence_class": "normative conformance spec",
+            "local_path": "evidence/rvr/profile-amendment-v0.spec.md",
+            "path": "conformance/profile-amendment-v0/profile-amendment-v0.spec.md",
+            "sha256": "6088753df1f0c428f14ccb954179ff5441af1684d2f289761e872a7a3a17c50b"
+          },
+          {
+            "evidence_class": "reference implementation",
+            "local_path": "evidence/rvr/amendment_gate.py",
+            "path": "conformance/profile-amendment-v0/amendment_gate.py",
+            "sha256": "1ea58b0e847b41244d925aae541cca7a113814eb62888d67eef6a2a4dc0c80f7"
+          },
+          {
+            "evidence_class": "reference implementation",
+            "local_path": "evidence/rvr/profile-amendment-v0.reference.mjs",
+            "path": "conformance/profile-amendment-v0/profile-amendment-v0.reference.mjs",
+            "sha256": "915343ece23fb7b2a84906bfe1b6700be4d53bec61cecb04a2f09ee3f57d3ad7"
+          },
+          {
+            "evidence_class": "vector",
+            "local_path": "evidence/rvr/profile-amendment-v0.vectors.json",
+            "path": "conformance/profile-amendment-v0/profile-amendment-v0.vectors.json",
+            "sha256": "79cd891adcb9019da5f4b3c81e01e8c083ba036d4ae25577f53873b17a105f74"
+          },
+          {
+            "evidence_class": "normative conformance spec",
+            "local_path": "evidence/rvr/verdict-profile-binding-v0.spec.md",
+            "path": "conformance/verdict-profile-binding-v0/verdict-profile-binding-v0.spec.md",
+            "sha256": "a58aa6f4e88043b10c385f75368fd8f7429234d947a3f7c1122d67a19f41c309"
+          },
+          {
+            "evidence_class": "reference implementation",
+            "local_path": "evidence/rvr/verdict_binding_gate.py",
+            "path": "conformance/verdict-profile-binding-v0/verdict_binding_gate.py",
+            "sha256": "4cdad8693974dbdcbf8ffc7a48850ec8ea6bf767f10dc0fbd3435754d37deefa"
+          },
+          {
+            "evidence_class": "reference implementation",
+            "local_path": "evidence/rvr/verdict-profile-binding-v0.reference.mjs",
+            "path": "conformance/verdict-profile-binding-v0/verdict-profile-binding-v0.reference.mjs",
+            "sha256": "20e86353e6a97f5c38d0883920a117fd6e8684a0cb23bc6b5bd1ead03d03957f"
+          },
+          {
+            "evidence_class": "vector",
+            "local_path": "evidence/rvr/verdict-profile-binding-v0.vectors.json",
+            "path": "conformance/verdict-profile-binding-v0/verdict-profile-binding-v0.vectors.json",
+            "sha256": "4a50b2fb74de7974ca197b1c627413bfc39f41363ed786ae79465ab9ee751f0a"
+          }
+        ],
+        "repo": "trustless-ai/recompute-kit",
+        "schema": "rsi-rvr-source-pin.v0"
+      },
+      "domain": "rvr",
+      "source_module": "profiles/rvr/source.py",
+      "source_module_sha256": "34095869aec9462aa6918c9fefb581484c0520c4eb176db54c9052cee45477df",
+      "verification": "PASS"
+    },
+    {
+      "closure": {
+        "chronology": {
+          "1dfc527d8f9b3561d32ca510f8fefd8d290391f6..15f7f59ac47b3358492bd5741143c418b5d657f5": {
+            "merge_base": "1dfc527d8f9b3561d32ca510f8fefd8d290391f6",
+            "status": "ahead"
+          },
+          "d641510dff95541d8cd73d5bc2bf593fe024f79c..1dfc527d8f9b3561d32ca510f8fefd8d290391f6": {
+            "merge_base": "d641510dff95541d8cd73d5bc2bf593fe024f79c",
+            "status": "ahead"
+          },
+          "historical_artifact": {
+            "at_adoption_commit": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+            "before_adoption_commit": "5c3f285495b41c357fab045b04b44d5714ced9a9",
+            "classification": "public synthetic preflight fixture, not real authority oracle",
+            "path": "conformance/tsei-invariant-discrimination-v0/fixtures/authority-object-b-valid-v1.json",
+            "repo": "pipavlo82/crystal-receipt",
+            "same_sha256": "0ef9ee8f579b091d7287f05955661b04c386726e1b38c2009fa46005a09e0107"
+          },
+          "mechanism": {
+            "commit": "d641510dff95541d8cd73d5bc2bf593fe024f79c",
+            "parents": [
+              "73ca2843e283d55687b1a231e4c525a831298596",
+              "3dd562448ffef8e77473b6b2b6c7c9782ab437fe"
+            ],
+            "record_tree_entries": [],
+            "repo": "trustless-ai/recompute-kit"
+          },
+          "producer_adoption": {
+            "commit": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+            "parents": [
+              "5c3f285495b41c357fab045b04b44d5714ced9a9",
+              "933a8061fb750df453facf261a2623a30e5075cc"
+            ],
+            "record_tree_entries": [],
+            "repo": "pipavlo82/crystal-receipt"
+          },
+          "record_introduction": {
+            "commit": "1dfc527d8f9b3561d32ca510f8fefd8d290391f6",
+            "parents": [
+              "79cb2da9c7943bd45fb64f099c3a18eab1922299"
+            ],
+            "record_sha256": "f45e3e99f3e31dc4884d92e8b1622b6c8497ecf295424442698db9d9aeb14ec6",
+            "record_tree_entries": [
+              {
+                "mode": "100644",
+                "path": "conformance/serializer-bindings/records/tsei.frozen-artifact.json",
+                "sha": "61b3560e7676e71862d1f8082788efa6ccc7aadf",
+                "size": 1842,
+                "type": "blob",
+                "url": "https://api.github.com/repos/trustless-ai/recompute-kit/git/blobs/61b3560e7676e71862d1f8082788efa6ccc7aadf"
+              }
+            ],
+            "repo": "trustless-ai/recompute-kit"
+          },
+          "serializer_reference_ancestry": {
+            "base": "f1d75a530761c983e8b6900f036935ac7758538c",
+            "head": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+            "merge_base": "f1d75a530761c983e8b6900f036935ac7758538c",
+            "status": "ahead"
+          }
+        },
+        "files": [
+          {
+            "branch": "main",
+            "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+            "local_path": "evidence/tsei/recompute-kit-README.md",
+            "path": "conformance/serializer-bindings/README.md",
+            "repo": "trustless-ai/recompute-kit",
+            "sha256": "4b0e9b4b80fdd08c5eccde02f1d7986072ab812a59076bb5dfb2db9154f69ccc"
+          },
+          {
+            "branch": "main",
+            "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+            "local_path": "evidence/tsei/recompute-kit-tsei.frozen-artifact.json",
+            "path": "conformance/serializer-bindings/records/tsei.frozen-artifact.json",
+            "repo": "trustless-ai/recompute-kit",
+            "sha256": "f45e3e99f3e31dc4884d92e8b1622b6c8497ecf295424442698db9d9aeb14ec6"
+          },
+          {
+            "branch": "main",
+            "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+            "local_path": "evidence/tsei/recompute-kit-validate_binding_record.py",
+            "path": "conformance/serializer-bindings/validate_binding_record.py",
+            "repo": "trustless-ai/recompute-kit",
+            "sha256": "6d079d05548534985db46c79faacbdb66736da8bb59b8f6a90abf34c13c100c0"
+          },
+          {
+            "branch": "main",
+            "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+            "local_path": "evidence/tsei/recompute-kit-binding-record.schema.json",
+            "path": "conformance/serializer-bindings/binding-record.schema.json",
+            "repo": "trustless-ai/recompute-kit",
+            "sha256": "87ea63d6cc98dfea8f9f88fe27b27cfd87f9cf4b0039e304ccd0e97d32644d9e"
+          },
+          {
+            "branch": "main",
+            "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+            "local_path": "evidence/tsei/recompute-kit-binding-record.vectors.json",
+            "path": "conformance/serializer-bindings/binding-record.vectors.json",
+            "repo": "trustless-ai/recompute-kit",
+            "sha256": "7beaabc7166816ae984eb1c5fffc55dc457ca4f86743f1f14e8795841626485e"
+          },
+          {
+            "branch": "main",
+            "commit": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+            "local_path": "evidence/tsei/crystal-receipt-README.md",
+            "path": "conformance/tsei-invariant-discrimination-v0/README.md",
+            "repo": "pipavlo82/crystal-receipt",
+            "sha256": "b2dc0105767b26d2f53dcf4b6ef4c3ba37f4b5eb7798ce8fb5a370f2fa91d549"
+          },
+          {
+            "branch": "main",
+            "commit": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+            "local_path": "evidence/tsei/crystal-receipt-encode-json-utf8-lf-v0.ts",
+            "path": "conformance/tsei-invariant-discrimination-v0/encode-json-utf8-lf-v0.ts",
+            "repo": "pipavlo82/crystal-receipt",
+            "sha256": "a82587be42aa3d2e382f02e3ae633efe67b94b5831cb043131b3bc174e4fe3f9"
+          },
+          {
+            "branch": "main",
+            "commit": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+            "local_path": "evidence/tsei/tsei-encode-json-utf8-lf-v0.test.ts",
+            "path": "tests/receiptos/tsei-encode-json-utf8-lf-v0.test.ts",
+            "repo": "pipavlo82/crystal-receipt",
+            "sha256": "104f6da26d763bc419cefc813efc39134b04877cfa4e9f270fc6558bad727ab0"
+          },
+          {
+            "branch": "pinned ancestor of main",
+            "commit": "f1d75a530761c983e8b6900f036935ac7758538c",
+            "local_path": "evidence/tsei/recompute-kit-encode-json-utf8-lf-v0.vectors.json",
+            "path": "conformance/encode-json-utf8-lf-v0/encode-json-utf8-lf-v0.vectors.json",
+            "repo": "trustless-ai/recompute-kit",
+            "sha256": "8d53ab1d3dfb2de1ba9db23ed06d6864b08b516451938a4b1f6db6bcdcf1950f"
+          },
+          {
+            "branch": "pinned ancestor of main",
+            "commit": "f1d75a530761c983e8b6900f036935ac7758538c",
+            "local_path": "evidence/tsei/recompute-kit-encode-json-utf8-lf-v0.spec.md",
+            "path": "conformance/encode-json-utf8-lf-v0/encode-json-utf8-lf-v0.spec.md",
+            "repo": "trustless-ai/recompute-kit",
+            "sha256": "22207f8c4047044414da98b5497a2c9683aea14a7a498fc1819a9094c920a1f9"
+          },
+          {
+            "branch": "pinned ancestor of main",
+            "commit": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+            "local_path": "evidence/tsei/crystal-receipt-authority-object-b-valid-v1.json",
+            "path": "conformance/tsei-invariant-discrimination-v0/fixtures/authority-object-b-valid-v1.json",
+            "repo": "pipavlo82/crystal-receipt",
+            "sha256": "0ef9ee8f579b091d7287f05955661b04c386726e1b38c2009fa46005a09e0107"
+          },
+          {
+            "branch": "main",
+            "commit": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+            "local_path": "evidence/tsei/tsei-ia-real-v2-20260824-02.production-grounding.json",
+            "path": "conformance/tsei-invariant-discrimination-v0/public-receipts/tsei-ia-real-v2-20260824-02.production-grounding.json",
+            "repo": "pipavlo82/crystal-receipt",
+            "sha256": "09349e8257da2b94227f7af7f8e4dcdcca9e715dc460e1f419e53a14a22e5a07"
+          }
+        ],
+        "live_git_checks": {
+          "mechanism": {
+            "commit": "d641510dff95541d8cd73d5bc2bf593fe024f79c",
+            "parents": [
+              "73ca2843e283d55687b1a231e4c525a831298596",
+              "3dd562448ffef8e77473b6b2b6c7c9782ab437fe"
+            ],
+            "tree": "1ce6904f21484c0dcca25d446c30ca1fe8f9948c"
+          },
+          "producer_adoption": {
+            "commit": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+            "parents": [
+              "5c3f285495b41c357fab045b04b44d5714ced9a9",
+              "933a8061fb750df453facf261a2623a30e5075cc"
+            ],
+            "tree": "e8ca80f5bcc623c702d94a86a64b645fe152d819"
+          },
+          "record_introduction": {
+            "commit": "1dfc527d8f9b3561d32ca510f8fefd8d290391f6",
+            "parents": [
+              "79cb2da9c7943bd45fb64f099c3a18eab1922299"
+            ],
+            "tree": "c90b1d7445b9a9ae9e4b66a015a4154c1a218548"
+          }
+        },
+        "repositories": {
+          "pipavlo82/crystal-receipt": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+          "trustless-ai/recompute-kit": "15f7f59ac47b3358492bd5741143c418b5d657f5"
+        },
+        "schema": "rsi-tsei-source-pin.v0"
+      },
+      "domain": "tsei",
+      "source_module": "profiles/tsei/source.py",
+      "source_module_sha256": "566e0fb89110d87c1066465aba67808e35136855a25369ac142173582f7d4faf",
+      "verification": "PASS"
+    },
+    {
+      "closure": {
+        "branch": "main",
+        "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+        "files": [
+          {
+            "branch": "main",
+            "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+            "local_path": "evidence/pq/pq-key-binding-v0.spec.md",
+            "path": "conformance/pq-key-binding-v0/pq-key-binding-v0.spec.md",
+            "repository": "trustless-ai/recompute-kit",
+            "sha256": "877499e8dae1d20e6e3f056cc48337f08755af63fef0c66d58ca44e628928af0",
+            "source_class": "normative spec"
+          },
+          {
+            "branch": "main",
+            "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+            "local_path": "evidence/pq/pq-key-binding-v0.rotation.json",
+            "path": "conformance/pq-key-binding-v0/pq-key-binding-v0.rotation.json",
+            "repository": "trustless-ai/recompute-kit",
+            "sha256": "150817aef5862ef601f487ef2f038917bfe78fa302bdf546607a40a7215adee6",
+            "source_class": "signed-object artifact"
+          },
+          {
+            "branch": "main",
+            "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+            "local_path": "evidence/pq/pq-key-binding-v0.rotation-vectors.json",
+            "path": "conformance/pq-key-binding-v0/pq-key-binding-v0.rotation-vectors.json",
+            "repository": "trustless-ai/recompute-kit",
+            "sha256": "2c046fdaaebe1a8e71b99b191cbd8efa48abe7b6449e5f4b32cc30f1750d6b1a",
+            "source_class": "vector"
+          },
+          {
+            "branch": "main",
+            "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+            "local_path": "evidence/pq/pq-key-binding-v0.revocation.json",
+            "path": "conformance/pq-key-binding-v0/pq-key-binding-v0.revocation.json",
+            "repository": "trustless-ai/recompute-kit",
+            "sha256": "b97752168fd1071a7a00c72cd584f2e14f24a7314719bdbabc0b089e630151bc",
+            "source_class": "signed-object artifact"
+          },
+          {
+            "branch": "main",
+            "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+            "local_path": "evidence/pq/pq-key-binding-v0.revocation-vectors.json",
+            "path": "conformance/pq-key-binding-v0/pq-key-binding-v0.revocation-vectors.json",
+            "repository": "trustless-ai/recompute-kit",
+            "sha256": "3481360d3ffa5e785ca640a06994a9724ab6e7cee1a2e033102e70b91f31cac0",
+            "source_class": "vector"
+          },
+          {
+            "branch": "main",
+            "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+            "local_path": "evidence/pq/pq-key-binding-v0.cutoff-vectors.json",
+            "path": "conformance/pq-key-binding-v0/pq-key-binding-v0.cutoff-vectors.json",
+            "repository": "trustless-ai/recompute-kit",
+            "sha256": "7cfd7e8906b0afbfa1d000e99177ab797b2f757dc2d71364ff79cc48fbc506f7",
+            "source_class": "vector"
+          },
+          {
+            "branch": "main",
+            "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+            "local_path": "evidence/pq/pq-key-binding-v0.vectors.json",
+            "path": "conformance/pq-key-binding-v0/pq-key-binding-v0.vectors.json",
+            "repository": "trustless-ai/recompute-kit",
+            "sha256": "9ee62960f0fade98ee107ee600feac3bca9b6b1157c273568ee060efec235823",
+            "source_class": "vector"
+          },
+          {
+            "branch": "main",
+            "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+            "local_path": "evidence/pq/deep_recompute.py",
+            "path": "conformance/pq-key-binding-v0/deep_recompute.py",
+            "repository": "trustless-ai/recompute-kit",
+            "sha256": "8b43d22524a2f9c18ee90e302afd84a604b5b5cb949d4325203a86479187ba46",
+            "source_class": "reference implementation"
+          },
+          {
+            "branch": "main",
+            "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+            "local_path": "evidence/pq/cutoff_enforce.py",
+            "path": "conformance/pq-key-binding-v0/cutoff_enforce.py",
+            "repository": "trustless-ai/recompute-kit",
+            "sha256": "a11d528b97bd88b7850a679122e1bbaec162bf98f6164587c23e47f9174df528",
+            "source_class": "reference implementation"
+          },
+          {
+            "branch": "main",
+            "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+            "local_path": "evidence/pq/gate.py",
+            "path": "conformance/pq-key-binding-v0/gate.py",
+            "repository": "trustless-ai/recompute-kit",
+            "sha256": "36347585715c22d8862aae34e6d5ab84b5e9283e08fa8366382fba9935e66d43",
+            "source_class": "reference implementation"
+          },
+          {
+            "branch": "main",
+            "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+            "local_path": "evidence/pq/suite.json",
+            "path": "conformance/pq-key-binding-v0/suite.json",
+            "repository": "trustless-ai/recompute-kit",
+            "sha256": "bcd7a1eeeb9e9b392cb917d900313636051c5b4eac18bf12a0d8ded02a9df6dc",
+            "source_class": "manifest"
+          }
+        ],
+        "repository": "trustless-ai/recompute-kit",
+        "schema": "rsi-pq-source-pin.v0"
+      },
+      "domain": "pq",
+      "source_module": "profiles/pq/source.py",
+      "source_module_sha256": "ae514cf05ebd9b263f52e4253213180f7786c9d7df1e22386894a80ac2750c1c",
+      "verification": "PASS"
+    },
+    {
+      "closure": {
+        "branch": "feature/tas-poc",
+        "commit": "a344ef80f7c52c03b9183814d1874b8054639c3e",
+        "files": [
+          {
+            "branch": "feature/tas-poc",
+            "commit": "a344ef80f7c52c03b9183814d1874b8054639c3e",
+            "evidence_class": "implementation",
+            "local_path": "evidence/tas/source/src/core/workflow/sourceGate.ts",
+            "path": "src/core/workflow/sourceGate.ts",
+            "repo": "trustless-ai/trustless-agent-substrate",
+            "sha256": "b25f179911fb28f5877185055a6d016e92722545c838a64ebdcc621aad4286c3"
+          },
+          {
+            "branch": "feature/tas-poc",
+            "commit": "a344ef80f7c52c03b9183814d1874b8054639c3e",
+            "evidence_class": "implementation",
+            "local_path": "evidence/tas/source/src/core/workflow/operationService.ts",
+            "path": "src/core/workflow/operationService.ts",
+            "repo": "trustless-ai/trustless-agent-substrate",
+            "sha256": "a8771c4514a3481667cf4c3dafa7adacc626797be8aa5bad7e3d0975869f31f5"
+          },
+          {
+            "branch": "feature/tas-poc",
+            "commit": "a344ef80f7c52c03b9183814d1874b8054639c3e",
+            "evidence_class": "implementation",
+            "local_path": "evidence/tas/source/src/core/workflow/types.ts",
+            "path": "src/core/workflow/types.ts",
+            "repo": "trustless-ai/trustless-agent-substrate",
+            "sha256": "fab715c64def51afd2f10e4740c01873d273fef68a7ce0a59e8f1848910fd8ae"
+          },
+          {
+            "branch": "feature/tas-poc",
+            "commit": "a344ef80f7c52c03b9183814d1874b8054639c3e",
+            "evidence_class": "implementation",
+            "local_path": "evidence/tas/source/src/core/errors.ts",
+            "path": "src/core/errors.ts",
+            "repo": "trustless-ai/trustless-agent-substrate",
+            "sha256": "6abe38f0627db80cfd3470832576fbeab77a6a2194ce797416cf45c8b8df78cb"
+          },
+          {
+            "branch": "feature/tas-poc",
+            "commit": "a344ef80f7c52c03b9183814d1874b8054639c3e",
+            "evidence_class": "implementation",
+            "local_path": "evidence/tas/source/src/clients/chain/jsonCodec.ts",
+            "path": "src/clients/chain/jsonCodec.ts",
+            "repo": "trustless-ai/trustless-agent-substrate",
+            "sha256": "3b03e94cf91ba1ed8e9f68e4b512b30162ff032c79c359490bee0ba22bc85857"
+          },
+          {
+            "branch": "feature/tas-poc",
+            "commit": "a344ef80f7c52c03b9183814d1874b8054639c3e",
+            "evidence_class": "test",
+            "local_path": "evidence/tas/source/test/unit/workflow/operationService.test.ts",
+            "path": "test/unit/workflow/operationService.test.ts",
+            "repo": "trustless-ai/trustless-agent-substrate",
+            "sha256": "76e5000a2ea2186c0f9e5fb3dc1d462f0ad5a2f5e3f80c970011bbcc60695918"
+          },
+          {
+            "branch": "feature/tas-poc",
+            "commit": "a344ef80f7c52c03b9183814d1874b8054639c3e",
+            "evidence_class": "test",
+            "local_path": "evidence/tas/source/test/unit/workflow/sourceGate.test.ts",
+            "path": "test/unit/workflow/sourceGate.test.ts",
+            "repo": "trustless-ai/trustless-agent-substrate",
+            "sha256": "7709401c4d88836903cc4ae9a385bf722fe98efcf3497b8dd7e952b1f7d23077"
+          },
+          {
+            "branch": "feature/tas-poc",
+            "commit": "a344ef80f7c52c03b9183814d1874b8054639c3e",
+            "evidence_class": "implementation",
+            "local_path": "evidence/tas/source/src/core/workflow/contractAddressResolver.ts",
+            "path": "src/core/workflow/contractAddressResolver.ts",
+            "repo": "trustless-ai/trustless-agent-substrate",
+            "sha256": "5aed1b91a265c4ec4294ef33dae2890ac2518f6623c0470e5f1671d806a5b398"
+          },
+          {
+            "branch": "feature/tas-poc",
+            "commit": "a344ef80f7c52c03b9183814d1874b8054639c3e",
+            "evidence_class": "implementation",
+            "local_path": "evidence/tas/source/package.json",
+            "path": "package.json",
+            "repo": "trustless-ai/trustless-agent-substrate",
+            "sha256": "5cfdd015d2deff2bdbdfd5202e5f91a467092db6015e4634f4384720a2864ba1"
+          },
+          {
+            "branch": "feature/tas-poc",
+            "commit": "a344ef80f7c52c03b9183814d1874b8054639c3e",
+            "evidence_class": "implementation",
+            "local_path": "evidence/tas/source/src/clients/workflow/agentSdkClient.ts",
+            "path": "src/clients/workflow/agentSdkClient.ts",
+            "repo": "trustless-ai/trustless-agent-substrate",
+            "sha256": "817d87bc4f71425e089448e946a661acfdebaf7cd154515ad1a4b08431cbe251"
+          },
+          {
+            "evidence_class": "derived runtime/build provenance",
+            "local_path": "evidence/tas/source-runtime.mjs",
+            "path": "source-runtime.mjs",
+            "sha256": "83c810975fd07773f5a8ba5cf045bb615495282c3c86c60bec52dcabc8b00db7"
+          },
+          {
+            "evidence_class": "derived runtime/build provenance",
+            "local_path": "evidence/tas/build.cjs",
+            "path": "build.cjs",
+            "sha256": "38a6f8f1b7d4055116ccd553b15c56040b5db1987e98a39a0289d6370d540bb8"
+          },
+          {
+            "evidence_class": "derived runtime/build provenance",
+            "local_path": "evidence/tas/package-lock.json",
+            "path": "package-lock.json",
+            "sha256": "215f228100175bfaa7eab8ea2224caa2e84b0486fee97e18050014812fc7d763"
+          },
+          {
+            "evidence_class": "dependency license",
+            "local_path": "evidence/tas/viem-LICENSE",
+            "path": "viem-LICENSE",
+            "sha256": "091d17ae5f625ffeb381e7109daaf6c492dd32502d612d8ecd24e2ddf6d16b74"
+          },
+          {
+            "evidence_class": "dependency license",
+            "local_path": "evidence/tas/noble-hashes-LICENSE",
+            "path": "noble-hashes-LICENSE",
+            "sha256": "4f221aee6e072336700c408c68ab3b96a3fc09f6aebe6f48f1bd99e5ef13faec"
+          },
+          {
+            "branch": "feature/tas-poc",
+            "commit": "a344ef80f7c52c03b9183814d1874b8054639c3e",
+            "evidence_class": "registry manifest",
+            "local_path": "evidence/tas/agent-sdk.v1.json",
+            "path": "manifests/agent-sdk.v1.json",
+            "repo": "trustless-ai/trustless-agent-substrate",
+            "sha256": "a5d756d16fc25f030da07a6cac2849942bd5be06bcfaa4cbda74c424350c6d6b"
+          },
+          {
+            "evidence_class": "reproducible build input",
+            "local_path": "evidence/tas/build-entry.ts",
+            "path": "build-entry.ts",
+            "sha256": "e922e8486ea15f424b42b3c086165e81f0c745deb20cb00b7ae38f6aacb89aa4"
+          },
+          {
+            "evidence_class": "reproducible build input",
+            "local_path": "evidence/tas/package.json",
+            "path": "package.json",
+            "sha256": "9144f28f7b16030aaacde131860321bb7c3f2d5ed944534bd95a41592ef5a826"
+          }
+        ],
+        "repo": "trustless-ai/trustless-agent-substrate"
+      },
+      "domain": "tas",
+      "source_module": "profiles/tas/source.py",
+      "source_module_sha256": "03441df8baeadacb8fcacb2d20c9ab86752046d4012832afdab9b8c28fc290ec",
+      "verification": "PASS"
+    },
+    {
+      "closure": {
+        "branch": "main",
+        "commit": "01283ca57305f915afb560d23359a27fd748eb5a",
+        "files": [
+          {
+            "branch": "main",
+            "commit": "01283ca57305f915afb560d23359a27fd748eb5a",
+            "evidence_class": "contract",
+            "local_path": "evidence/consult-escrow/ConsultEscrow.sol",
+            "path": "contracts/settlement/ConsultEscrow/ConsultEscrow.sol",
+            "repo": "trustless-ai/agent-ercs",
+            "sha256": "373e1f6feab886d1115eceef391cebce97a16b51d4bdfdfb1e5bd4bdb3bd07f5"
+          },
+          {
+            "branch": "main",
+            "commit": "01283ca57305f915afb560d23359a27fd748eb5a",
+            "evidence_class": "contract",
+            "local_path": "evidence/consult-escrow/IConsultEscrow.sol",
+            "path": "contracts/settlement/ConsultEscrow/IConsultEscrow.sol",
+            "repo": "trustless-ai/agent-ercs",
+            "sha256": "5ed94f6db2460548ea0dd52d7339288ca1f8f974e23567a60f98d09eb7000584"
+          },
+          {
+            "branch": "main",
+            "commit": "01283ca57305f915afb560d23359a27fd748eb5a",
+            "evidence_class": "test",
+            "local_path": "evidence/consult-escrow/ConsultEscrow.t.sol",
+            "path": "test/settlement/ConsultEscrow/ConsultEscrow.t.sol",
+            "repo": "trustless-ai/agent-ercs",
+            "sha256": "6514b07c495618755a03d5206eff67804bd62fc70189e97316e26e5f455f78cc"
+          },
+          {
+            "branch": "main",
+            "commit": "01283ca57305f915afb560d23359a27fd748eb5a",
+            "evidence_class": "documentation/configuration",
+            "local_path": "evidence/consult-escrow/foundry.toml",
+            "path": "foundry.toml",
+            "repo": "trustless-ai/agent-ercs",
+            "sha256": "a1e37ff8d0e0cc50d0682ae3bed1875b75783f46ae0635b84dd8cc556b6c19ea"
+          },
+          {
+            "branch": "main",
+            "commit": "01283ca57305f915afb560d23359a27fd748eb5a",
+            "evidence_class": "documentation/configuration",
+            "local_path": "evidence/consult-escrow/README.source.md",
+            "path": "contracts/settlement/ConsultEscrow/README.md",
+            "repo": "trustless-ai/agent-ercs",
+            "sha256": "0ff2d3ef4bdc71d7f76b4eac13214bcf69c3cf68149d31348ea1dbc26375fef0"
+          },
+          {
+            "branch": "main",
+            "commit": "e41b117893fb56bc869922de378daf91aad63def",
+            "evidence_class": "implementation",
+            "local_path": "evidence/consult-escrow/sdk-recompute.py",
+            "path": "python/src/agent_sdk/settlement/erc8203/recompute.py",
+            "repo": "trustless-ai/agent-sdk",
+            "sha256": "6960e4dd22a8dd62cc0171ceefc1b014bfe8f28b2a0cd8df14214cc803f4c980"
+          },
+          {
+            "evidence_class": "local reproducibility artifact",
+            "local_path": "evidence/consult-escrow/build-entry.mjs",
+            "path": "build-entry.mjs",
+            "sha256": "290495171c7b1b02e87912a4c482dd9db1fa19bd3822472b1545b3d6795d62a2"
+          },
+          {
+            "evidence_class": "local reproducibility artifact",
+            "local_path": "evidence/consult-escrow/build.cjs",
+            "path": "build.cjs",
+            "sha256": "0e837f7df1625bd09c57f4ecc0d133da5927859088678576e1255e712fb6487d"
+          },
+          {
+            "evidence_class": "local reproducibility artifact",
+            "local_path": "evidence/consult-escrow/canonical.json",
+            "path": "canonical.json",
+            "sha256": "8220ba24aed3c18ca85eaeddfd5848dca2c283fdf11ee8c234092288be1e4ee5"
+          },
+          {
+            "evidence_class": "local reproducibility artifact",
+            "local_path": "evidence/consult-escrow/compile.cjs",
+            "path": "compile.cjs",
+            "sha256": "c1483348e9f4f796886f45453689a874a838ad1933719f45306002bcf12776ce"
+          },
+          {
+            "evidence_class": "local reproducibility artifact",
+            "local_path": "evidence/consult-escrow/evm-runtime.mjs",
+            "path": "evm-runtime.mjs",
+            "sha256": "592a2e4f3d36e5deaf7872ae610976a881898ce8116ec099acef58617f3de554"
+          },
+          {
+            "evidence_class": "local reproducibility artifact",
+            "local_path": "evidence/consult-escrow/job.json",
+            "path": "job.json",
+            "sha256": "35024bb756c6b5746e89ca2513ea7f2aa457f12461a15bdd122184069a9452e7"
+          },
+          {
+            "evidence_class": "local reproducibility artifact",
+            "local_path": "evidence/consult-escrow/package-lock.json",
+            "path": "package-lock.json",
+            "sha256": "22364b9414ba637aa40559bb4741f11cee1b8d87f9984ab4c4beafe6d7536daa"
+          },
+          {
+            "evidence_class": "local reproducibility artifact",
+            "local_path": "evidence/consult-escrow/package.json",
+            "path": "package.json",
+            "sha256": "3476fdfe4f55ed09ed5dac3e82e05fcca8dcbcf9557c7fa7a712f973df6241b0"
+          },
+          {
+            "evidence_class": "local reproducibility artifact",
+            "local_path": "evidence/consult-escrow/replay.json",
+            "path": "replay.json",
+            "sha256": "714af8e3f782f1de547703c5589806b6a715705d11b91e37c859c257a0ce8a87"
+          },
+          {
+            "evidence_class": "local reproducibility artifact",
+            "local_path": "evidence/consult-escrow/signature.json",
+            "path": "signature.json",
+            "sha256": "26b04a595d0d4d6c6a767ad78594f454f8e38fb5bdeff1d38c4f9ba14bd7fec5"
+          },
+          {
+            "evidence_class": "local reproducibility artifact",
+            "local_path": "evidence/consult-escrow/THIRD_PARTY_LICENSES.txt",
+            "path": "THIRD_PARTY_LICENSES.txt",
+            "sha256": "ed7f847d70903b8935f5f0b574d7cb97a424cc1ad07d797ff1e7e725ec6249da"
+          }
+        ],
+        "repo": "trustless-ai/agent-ercs",
+        "schema": "rsi-source-pin.v0"
+      },
+      "domain": "consult_escrow",
+      "source_module": "profiles/consult_escrow/source.py",
+      "source_module_sha256": "031269242847197482a623737473ccdc7a23f64541e7d3bd9f306b1b0c3bb4ee",
+      "verification": "PASS"
+    },
+    {
+      "closure": {
+        "branch": "main",
+        "commit": "84afc4b738dc37269089c858404eed8086435f5d",
+        "files": [
+          {
+            "local_path": "evidence/verify-layer/alternate-rpc-header.json",
+            "path": "alternate-rpc-header.json",
+            "sha256": "96ca7a04da533ab51a5075d21da74928b31d222469382faee65d60fe656723c4"
+          },
+          {
+            "local_path": "evidence/verify-layer/build-entry.mjs",
+            "path": "build-entry.mjs",
+            "sha256": "d36b8a903e459f9e4481d9cb37d6a40ab55df77f0fe3bbbdc0aec56ccc711831"
+          },
+          {
+            "local_path": "evidence/verify-layer/build.cjs",
+            "path": "build.cjs",
+            "sha256": "c1914014576000b8de2b3716dd5b2de9ab0d1a86b06c651a9928a120895117d9"
+          },
+          {
+            "local_path": "evidence/verify-layer/dependency-licenses/@ethereumjs/rlp/LICENSE",
+            "path": "dependency-licenses/@ethereumjs/rlp/LICENSE",
+            "sha256": "fab3dd6bdab226f1c08630b1dd917e11fcb4ec5e1e020e2c16f83a0a13863e85"
+          },
+          {
+            "local_path": "evidence/verify-layer/dependency-licenses/@ethereumjs/util/LICENSE",
+            "path": "dependency-licenses/@ethereumjs/util/LICENSE",
+            "sha256": "1f256ecad192880510e84ad60474eab7589218784b9a50bc7ceee34c2b91f1d5"
+          },
+          {
+            "local_path": "evidence/verify-layer/dependency-licenses/@noble/curves/LICENSE",
+            "path": "dependency-licenses/@noble/curves/LICENSE",
+            "sha256": "4f221aee6e072336700c408c68ab3b96a3fc09f6aebe6f48f1bd99e5ef13faec"
+          },
+          {
+            "local_path": "evidence/verify-layer/dependency-licenses/@noble/hashes/LICENSE",
+            "path": "dependency-licenses/@noble/hashes/LICENSE",
+            "sha256": "4f221aee6e072336700c408c68ab3b96a3fc09f6aebe6f48f1bd99e5ef13faec"
+          },
+          {
+            "local_path": "evidence/verify-layer/dependency-licenses/debug/LICENSE",
+            "path": "dependency-licenses/debug/LICENSE",
+            "sha256": "3a61c6c96caf5c1d9b623fb9b04c822b783dfcb78aa7e49c76a3f643e6ed7f95"
+          },
+          {
+            "local_path": "evidence/verify-layer/dependency-licenses/esbuild/LICENSE.md",
+            "path": "dependency-licenses/esbuild/LICENSE.md",
+            "sha256": "b40ec5baec7bb34fa5b1c09521fa3cd52d5fad7adafed74932a2010d3612a681"
+          },
+          {
+            "local_path": "evidence/verify-layer/dependency-licenses/lru-cache/LICENSE",
+            "path": "dependency-licenses/lru-cache/LICENSE",
+            "sha256": "451ec07eeb9c4e1b86de9abdaa426462a8be48f887ec7421cf0bbb9c769555ab"
+          },
+          {
+            "local_path": "evidence/verify-layer/dependency-licenses/ms/license.md",
+            "path": "dependency-licenses/ms/license.md",
+            "sha256": "1662fae9b5314d11cf51284e2dcd1f006a354f7343f08712a730fcff9a359801"
+          },
+          {
+            "local_path": "evidence/verify-layer/LICENSE",
+            "path": "LICENSE",
+            "sha256": "fe7270383bffc9e5d99b0fa8539cf91ebbbec5b209ee521032da622f14ccfc46"
+          },
+          {
+            "local_path": "evidence/verify-layer/package-lock.json",
+            "path": "package-lock.json",
+            "sha256": "091b2f38ba2db151b7e04bbcfefab4f0bbc9d2d45a291132ead760c44af186e3"
+          },
+          {
+            "local_path": "evidence/verify-layer/package.json",
+            "path": "package.json",
+            "sha256": "6b95ca9ccc4c19275f4ed4a17e4f3e33a20aefeec864efc623a80c640ff09661"
+          },
+          {
+            "local_path": "evidence/verify-layer/primitives-check.py",
+            "path": "primitives-check.py",
+            "sha256": "1a5bd8fbc8c332943dd4123573425f3f2667bae511e2bbd4540acda52343699c"
+          },
+          {
+            "local_path": "evidence/verify-layer/primitives-primitives.json",
+            "path": "primitives-primitives.json",
+            "sha256": "5709f7ea1c9923077ac6f4e9443f87c48c45fa2ac0509f678c1bf445f353641f"
+          },
+          {
+            "local_path": "evidence/verify-layer/proof-runtime.mjs",
+            "path": "proof-runtime.mjs",
+            "sha256": "16e4bf14c830c4a802585265d677eb6ae3b96a57ec4d47382bc0aeac4c606a5a"
+          },
+          {
+            "local_path": "evidence/verify-layer/README.md",
+            "path": "README.md",
+            "sha256": "9bb10a5646701d5c516b7b818bd58f327f530c50f0b60a8455ec36a2b0c883d9"
+          },
+          {
+            "local_path": "evidence/verify-layer/rpc-header.json",
+            "path": "rpc-header.json",
+            "sha256": "ad0ebda94932b4782f5b78fe9a13e396cbfa6ccad877b24ae9ef29c3b6f290ed"
+          },
+          {
+            "local_path": "evidence/verify-layer/rpc-proof.json",
+            "path": "rpc-proof.json",
+            "sha256": "1283e8ca3aec128b04d9b2bae2d744c8519f13c7d5077375d3de635234f757a9"
+          },
+          {
+            "local_path": "evidence/verify-layer/verify.mjs",
+            "path": "verify.mjs",
+            "sha256": "ece05db266d1eb86ff71f47aa5a0666ada611dfd496ef0982e570406a28fb2d2"
+          }
+        ],
+        "repo": "trustless-ai/verify-layer",
+        "schema": "rsi-source-pin.v0"
+      },
+      "domain": "verify_layer",
+      "source_module": "profiles/verify_layer/source.py",
+      "source_module_sha256": "2debbfb11a41f61bd2bf648695b960325ad4e85e6db31ab5bf8c2122ebe337bb",
+      "verification": "PASS"
+    },
+    {
+      "closure": {
+        "files": [
+          {
+            "blob_oid": "06a775c52abd794674b8d224d2daf5c59b8a36a3",
+            "commit": "e41b117893fb56bc869922de378daf91aad63def",
+            "evidence_class": "executable",
+            "local_path": "evidence/capv/sdk/HonkVerifier.sol",
+            "path": "testkit/contracts/mocks/verify/ERC8354/HonkVerifier.sol",
+            "repo": "trustless-ai/agent-sdk",
+            "sha256": "04895a6bc51477739fbbb9801aee23e239aa885ed1048e75af9da76feabf8406",
+            "size": 346914
+          },
+          {
+            "blob_oid": "2ab64ef6c26e5146b0f0157671870a43b62806ae",
+            "commit": "e41b117893fb56bc869922de378daf91aad63def",
+            "evidence_class": "executable",
+            "local_path": "evidence/capv/sdk/HonkVerifierAdapter.sol",
+            "path": "testkit/contracts/mocks/verify/ERC8354/HonkVerifierAdapter.sol",
+            "repo": "trustless-ai/agent-sdk",
+            "sha256": "ba317c3fe5fea7e9cbf86a0966ca141d1000e6140126d1ceee2e4bb001f6f55c",
+            "size": 5056
+          },
+          {
+            "blob_oid": "67d5b478a29b2dca4024e92e79f7d7f7c06fa667",
+            "commit": "e41b117893fb56bc869922de378daf91aad63def",
+            "evidence_class": "executable",
+            "local_path": "evidence/capv/sdk/IVerifier.sol",
+            "path": "testkit/contracts/mocks/verify/ERC8354/IVerifier.sol",
+            "repo": "trustless-ai/agent-sdk",
+            "sha256": "701a50cb761eb56f9600518a2cc8b7ae0ec48e326d306eaacfe76da61f6c1579",
+            "size": 296
+          },
+          {
+            "blob_oid": "243e59358a7e8d032166b9dec83c728286e7d2b7",
+            "commit": "e41b117893fb56bc869922de378daf91aad63def",
+            "evidence_class": "executable",
+            "local_path": "evidence/capv/sdk/IConfidentialPolicyVerdict.sol",
+            "path": "testkit/contracts/mocks/verify/ERC8354/IConfidentialPolicyVerdict.sol",
+            "repo": "trustless-ai/agent-sdk",
+            "sha256": "dd5313a336515ea2eafd2356e8fc083b897a26e96aeafd89ea737e09c1e465bc",
+            "size": 2876
+          },
+          {
+            "blob_oid": "0e670a977d8e1a25f5160c9c688411c02990cf18",
+            "commit": "e41b117893fb56bc869922de378daf91aad63def",
+            "evidence_class": "executable",
+            "local_path": "evidence/capv/sdk/ConfidentialPolicyVerdict.sol",
+            "path": "testkit/contracts/mocks/verify/ERC8354/ConfidentialPolicyVerdict.sol",
+            "repo": "trustless-ai/agent-sdk",
+            "sha256": "4b17a45b8820bd9fd29ccd13e6881a35cec68d071a7c2dbeff04dbef8807630c",
+            "size": 7361
+          },
+          {
+            "blob_oid": "11cf23003be284ae564607640521ec7938a60941",
+            "commit": "e41b117893fb56bc869922de378daf91aad63def",
+            "evidence_class": "provenance",
+            "local_path": "evidence/capv/sdk/PROVENANCE.md",
+            "path": "testkit/contracts/mocks/verify/ERC8354/PROVENANCE.md",
+            "repo": "trustless-ai/agent-sdk",
+            "sha256": "6903e5e4782058c0d5725f38f89e68683d6f272e6e44728949db2dabb07ff0a6",
+            "size": 7785
+          },
+          {
+            "blob_oid": "87282c272771ea686bd816126cd8ec4671df7832",
+            "commit": "e41b117893fb56bc869922de378daf91aad63def",
+            "evidence_class": "executable",
+            "local_path": "evidence/capv/sdk/fixtures/allowlist.proof",
+            "path": "testkit/contracts/mocks/verify/ERC8354/fixtures/allowlist.proof",
+            "repo": "trustless-ai/agent-sdk",
+            "sha256": "2f24e925c8aff9c7c30625f1a13b6c6834de5e88ce807c7af8ad04cec9ae4dce",
+            "size": 9152
+          },
+          {
+            "blob_oid": "67a97eae02e42912828c001d8c18fc63ce300fb1",
+            "commit": "e41b117893fb56bc869922de378daf91aad63def",
+            "evidence_class": "executable",
+            "local_path": "evidence/capv/sdk/fixtures/allowlist.public_inputs",
+            "path": "testkit/contracts/mocks/verify/ERC8354/fixtures/allowlist.public_inputs",
+            "repo": "trustless-ai/agent-sdk",
+            "sha256": "0dd630c7c529613882e19f22e88b28b1e838baf018a96a2c21f664f4ae5f0b75",
+            "size": 1248
+          },
+          {
+            "blob_oid": "d118beaa67261b3369a4dcdfc8446f67c4ddad1d",
+            "commit": "e41b117893fb56bc869922de378daf91aad63def",
+            "evidence_class": "test",
+            "local_path": "evidence/capv/sdk/ConsumeRealRepro.t.sol",
+            "path": "testkit/test/verify/ERC8354/ConsumeRealRepro.t.sol",
+            "repo": "trustless-ai/agent-sdk",
+            "sha256": "012e64402ea19c6ce8412c0147c4d570069715890d5b234c2563ad41b138a2e4",
+            "size": 12655
+          },
+          {
+            "blob_oid": "06a775c52abd794674b8d224d2daf5c59b8a36a3",
+            "commit": "948e090c09dd5ec1d4593013303bc5260ef7c466",
+            "evidence_class": "executable",
+            "local_path": "evidence/capv/old/src/verifier/HonkVerifier.sol",
+            "path": "src/verifier/HonkVerifier.sol",
+            "repo": "zexoverz/confidential-agent-policy-verdicts",
+            "sha256": "04895a6bc51477739fbbb9801aee23e239aa885ed1048e75af9da76feabf8406",
+            "size": 346914
+          },
+          {
+            "blob_oid": "6319c063e65342b3fb36974185255d0c08d3d51f",
+            "commit": "948e090c09dd5ec1d4593013303bc5260ef7c466",
+            "evidence_class": "executable",
+            "local_path": "evidence/capv/old/src/HonkVerifierAdapter.sol",
+            "path": "src/HonkVerifierAdapter.sol",
+            "repo": "zexoverz/confidential-agent-policy-verdicts",
+            "sha256": "085439d42da1087f397e5a2067788afd90735f6d7e2c6548fe54e7c52540feb4",
+            "size": 2472
+          },
+          {
+            "blob_oid": "171a6207dbeadc03bc0526716e85f8402c03527d",
+            "commit": "948e090c09dd5ec1d4593013303bc5260ef7c466",
+            "evidence_class": "executable",
+            "local_path": "evidence/capv/old/src/IVerifier.sol",
+            "path": "src/IVerifier.sol",
+            "repo": "zexoverz/confidential-agent-policy-verdicts",
+            "sha256": "383c5e2ea6ca4e24c4b68c5e601826c6079f322a2c8e2408f7d806c833531407",
+            "size": 467
+          },
+          {
+            "blob_oid": "128fec2a3df43e1b4e1101527a6229cb045a6d34",
+            "commit": "948e090c09dd5ec1d4593013303bc5260ef7c466",
+            "evidence_class": "executable",
+            "local_path": "evidence/capv/old/src/IConfidentialPolicyVerdict.sol",
+            "path": "src/IConfidentialPolicyVerdict.sol",
+            "repo": "zexoverz/confidential-agent-policy-verdicts",
+            "sha256": "d7af189b67290dc32ccdeb5e3bd37b6407fb23225714bced70d1c7e30ceddf46",
+            "size": 4764
+          },
+          {
+            "blob_oid": "960a73f1881a18776e4a3b508b6d00dd7a6d7375",
+            "commit": "948e090c09dd5ec1d4593013303bc5260ef7c466",
+            "evidence_class": "proving-implementation",
+            "local_path": "evidence/capv/old/noir/src/main.nr",
+            "path": "noir/src/main.nr",
+            "repo": "zexoverz/confidential-agent-policy-verdicts",
+            "sha256": "d266fee0a1b73e6f095668088cbe548ca26f639658db004a0ab48c44d328f742",
+            "size": 9697
+          },
+          {
+            "blob_oid": "87282c272771ea686bd816126cd8ec4671df7832",
+            "commit": "948e090c09dd5ec1d4593013303bc5260ef7c466",
+            "evidence_class": "executable",
+            "local_path": "evidence/capv/old/test/fixtures/allowlist.proof",
+            "path": "test/fixtures/allowlist.proof",
+            "repo": "zexoverz/confidential-agent-policy-verdicts",
+            "sha256": "2f24e925c8aff9c7c30625f1a13b6c6834de5e88ce807c7af8ad04cec9ae4dce",
+            "size": 9152
+          },
+          {
+            "blob_oid": "67a97eae02e42912828c001d8c18fc63ce300fb1",
+            "commit": "948e090c09dd5ec1d4593013303bc5260ef7c466",
+            "evidence_class": "executable",
+            "local_path": "evidence/capv/old/test/fixtures/allowlist.public_inputs",
+            "path": "test/fixtures/allowlist.public_inputs",
+            "repo": "zexoverz/confidential-agent-policy-verdicts",
+            "sha256": "0dd630c7c529613882e19f22e88b28b1e838baf018a96a2c21f664f4ae5f0b75",
+            "size": 1248
+          },
+          {
+            "blob_oid": "e31a001bd42708b94deea4a5c4dde2e63b5eec53",
+            "commit": "d950ac1422cf79bafff11fcfb62c3e8b4ce3d782",
+            "evidence_class": "executable",
+            "local_path": "evidence/capv/fixed/src/verifier/HonkVerifier.sol",
+            "path": "src/verifier/HonkVerifier.sol",
+            "repo": "zexoverz/confidential-agent-policy-verdicts",
+            "sha256": "8d4c7ae25d42af3da8654e77a90026e4be4e080d455bf0366396421dcfc20bb8",
+            "size": 346914
+          },
+          {
+            "blob_oid": "6420a70e51c0ab76a51aeeb9a5aaf5c5747b06aa",
+            "commit": "d950ac1422cf79bafff11fcfb62c3e8b4ce3d782",
+            "evidence_class": "executable",
+            "local_path": "evidence/capv/fixed/src/HonkVerifierAdapter.sol",
+            "path": "src/HonkVerifierAdapter.sol",
+            "repo": "zexoverz/confidential-agent-policy-verdicts",
+            "sha256": "917ec557a9b38a2d96f61e78978d53ffa95dffd82968765ae7dc4b32657424b9",
+            "size": 3862
+          },
+          {
+            "blob_oid": "171a6207dbeadc03bc0526716e85f8402c03527d",
+            "commit": "d950ac1422cf79bafff11fcfb62c3e8b4ce3d782",
+            "evidence_class": "executable",
+            "local_path": "evidence/capv/fixed/src/IVerifier.sol",
+            "path": "src/IVerifier.sol",
+            "repo": "zexoverz/confidential-agent-policy-verdicts",
+            "sha256": "383c5e2ea6ca4e24c4b68c5e601826c6079f322a2c8e2408f7d806c833531407",
+            "size": 467
+          },
+          {
+            "blob_oid": "128fec2a3df43e1b4e1101527a6229cb045a6d34",
+            "commit": "d950ac1422cf79bafff11fcfb62c3e8b4ce3d782",
+            "evidence_class": "executable",
+            "local_path": "evidence/capv/fixed/src/IConfidentialPolicyVerdict.sol",
+            "path": "src/IConfidentialPolicyVerdict.sol",
+            "repo": "zexoverz/confidential-agent-policy-verdicts",
+            "sha256": "d7af189b67290dc32ccdeb5e3bd37b6407fb23225714bced70d1c7e30ceddf46",
+            "size": 4764
+          },
+          {
+            "blob_oid": "6c18040c41ac4b40afedb68b6ea1d41c77345ffe",
+            "commit": "d950ac1422cf79bafff11fcfb62c3e8b4ce3d782",
+            "evidence_class": "proving-implementation",
+            "local_path": "evidence/capv/fixed/noir/src/main.nr",
+            "path": "noir/src/main.nr",
+            "repo": "zexoverz/confidential-agent-policy-verdicts",
+            "sha256": "099e9d787f79f5d6c41a114da0256ec446e07c9f0e36a6dca9c8b9679a5d68d1",
+            "size": 10579
+          },
+          {
+            "blob_oid": "ae5c15f2ba0576d68a35a7e686ec15e2fec7b692",
+            "commit": "d950ac1422cf79bafff11fcfb62c3e8b4ce3d782",
+            "evidence_class": "executable",
+            "local_path": "evidence/capv/fixed/test/fixtures/allowlist.proof",
+            "path": "test/fixtures/allowlist.proof",
+            "repo": "zexoverz/confidential-agent-policy-verdicts",
+            "sha256": "c02f4649ea6f43a11c37adfe7623065a5d5e17e06fe9cb0ce881c29a00d07843",
+            "size": 9152
+          },
+          {
+            "blob_oid": "bdf2cd155f73abf0d8df548d108868236c406f0c",
+            "commit": "d950ac1422cf79bafff11fcfb62c3e8b4ce3d782",
+            "evidence_class": "executable",
+            "local_path": "evidence/capv/fixed/test/fixtures/allowlist.public_inputs",
+            "path": "test/fixtures/allowlist.public_inputs",
+            "repo": "zexoverz/confidential-agent-policy-verdicts",
+            "sha256": "3e81a3d6db2873b81528422d6c8522e1003fd1afe9d028db1d921019e3067d59",
+            "size": 1280
+          },
+          {
+            "blob_oid": "8757be316852f2a17b404a023df31954f30e56a2",
+            "commit": "d950ac1422cf79bafff11fcfb62c3e8b4ce3d782",
+            "evidence_class": "test",
+            "local_path": "evidence/capv/fixed/test/ExpiryBinding.t.sol",
+            "path": "test/ExpiryBinding.t.sol",
+            "repo": "zexoverz/confidential-agent-policy-verdicts",
+            "sha256": "986f7ffd61105eed0d53f507df8ec66b9628a60314ad688373cd3df6b08bc5d3",
+            "size": 3251
+          },
+          {
+            "blob_oid": "2b7d227c2758f21551991631b42563145c9f9465",
+            "commit": "6da56d5a1ee1b09e832f030442515ebd24db1ff5",
+            "evidence_class": "executable",
+            "local_path": "evidence/capv/program-key-fix/HonkVerifierAdapter.sol",
+            "path": "src/HonkVerifierAdapter.sol",
+            "repo": "zexoverz/confidential-agent-policy-verdicts",
+            "sha256": "5ba2febadac0e07babbb46f543f2b200ca1c24dfbbed4a2c5752716a3c063934",
+            "size": 3233
+          },
+          {
+            "blob_oid": "8710805a31063e67c7beeb95aa15e9d272d9bbac",
+            "commit": "7da0d69435190f1462e295c61fc0514a4754818d",
+            "evidence_class": "deployment-script-not-deployment-proof",
+            "local_path": "evidence/capv/current/DeployGeneration3.s.sol",
+            "path": "script/DeployGeneration3.s.sol",
+            "repo": "zexoverz/confidential-agent-policy-verdicts",
+            "sha256": "25c2f6e47dab4a60fc2a2c1eb32ace7dd905ed89148a393b82f604adefcdae29",
+            "size": 10758
+          },
+          {
+            "blob_oid": "d86e8646c393e2bcb46cc88e08c56610f1b19490",
+            "commit": "84b46e7d69d08dbd8876503e435fd299211c26b8",
+            "evidence_class": "normative",
+            "local_path": "evidence/capv/canonical/erc-8354.md",
+            "path": "ERCS/erc-8354.md",
+            "repo": "ethereum/ERCs",
+            "sha256": "d8c547499dfbe8eaa5c3f9eaf0edb5f473420f2ccaacb05abc105ee363605b74",
+            "size": 56565
+          },
+          {
+            "blob_oid": "960a73f1881a18776e4a3b508b6d00dd7a6d7375",
+            "commit": "84b46e7d69d08dbd8876503e435fd299211c26b8",
+            "evidence_class": "proving-implementation",
+            "local_path": "evidence/capv/canonical/main.nr",
+            "path": "assets/erc-8354/circuits/src/main.nr",
+            "repo": "ethereum/ERCs",
+            "sha256": "d266fee0a1b73e6f095668088cbe548ca26f639658db004a0ab48c44d328f742",
+            "size": 9697
+          },
+          {
+            "blob_oid": "02471e94e1d8207cb9d8b938f65fa3358d8d06b8",
+            "commit": "01283ca57305f915afb560d23359a27fd748eb5a",
+            "evidence_class": "interface-spec-composition",
+            "local_path": "evidence/capv/agent-ercs/README.md",
+            "path": "contracts/verify/ERC8354/README.md",
+            "repo": "trustless-ai/agent-ercs",
+            "sha256": "00d135cdb70f64e6073f5d01684228ccbec78d02b7ade4eba2d2445aecdec8c2",
+            "size": 4281
+          },
+          {
+            "blob_oid": "128fec2a3df43e1b4e1101527a6229cb045a6d34",
+            "commit": "01283ca57305f915afb560d23359a27fd748eb5a",
+            "evidence_class": "interface-spec-composition",
+            "local_path": "evidence/capv/agent-ercs/IConfidentialPolicyVerdict.sol",
+            "path": "contracts/verify/ERC8354/IConfidentialPolicyVerdict.sol",
+            "repo": "trustless-ai/agent-ercs",
+            "sha256": "d7af189b67290dc32ccdeb5e3bd37b6407fb23225714bced70d1c7e30ceddf46",
+            "size": 4764
+          },
+          {
+            "evidence_class": "local-build-or-dependency",
+            "local_path": "evidence/capv/build.cjs",
+            "path": "evidence/capv/build.cjs",
+            "sha256": "01b428cb6fc650f0e67428ff767915e0f715fc08553b84b4c03df66ef9177fe8"
+          },
+          {
+            "evidence_class": "local-build-or-dependency",
+            "local_path": "evidence/capv/compile.cjs",
+            "path": "evidence/capv/compile.cjs",
+            "sha256": "ae99b14d137feabcc263f228a47435abd61cb0469d35bdd12bf605211e7eb5cf"
+          },
+          {
+            "evidence_class": "local-build-or-dependency",
+            "local_path": "evidence/capv/evm-runtime.mjs",
+            "path": "evidence/capv/evm-runtime.mjs",
+            "sha256": "572651b48b3143ecfa1d48fc0af0990a58a7facb724b799371ba95a24cad1b6b"
+          },
+          {
+            "evidence_class": "local-build-or-dependency",
+            "local_path": "evidence/capv/fixed-drop.json",
+            "path": "evidence/capv/fixed-drop.json",
+            "sha256": "346eefc5632be1d0db07a73950dafcdc56954ebc3989a829127fe41ddd4044e4"
+          },
+          {
+            "evidence_class": "local-build-or-dependency",
+            "local_path": "evidence/capv/fixed.json",
+            "path": "evidence/capv/fixed.json",
+            "sha256": "10574eb00e0c0f29cd6ff47ccfb645d5d68c3f4239ff3857c76d90c3eacf7c71"
+          },
+          {
+            "evidence_class": "local-build-or-dependency",
+            "local_path": "evidence/capv/IERC165.sol",
+            "path": "evidence/capv/IERC165.sol",
+            "sha256": "07ae1ac964ab74dedada999e2dfc642031a6495469cffc0bf715daa4f1e4f904"
+          },
+          {
+            "evidence_class": "local-build-or-dependency",
+            "local_path": "evidence/capv/package-lock.json",
+            "path": "evidence/capv/package-lock.json",
+            "sha256": "17b7a00912d14b586540367e5b43d9b1c4fb3697dbe3708ce7536d7a8b777ee1"
+          },
+          {
+            "evidence_class": "local-build-or-dependency",
+            "local_path": "evidence/capv/package.json",
+            "path": "evidence/capv/package.json",
+            "sha256": "c6a5e857acf8e203180b92163aa195887aa3bfbb045bddb78f6443e404cf8ca3"
+          },
+          {
+            "evidence_class": "local-build-or-dependency",
+            "local_path": "evidence/capv/runtime-entry.mjs",
+            "path": "evidence/capv/runtime-entry.mjs",
+            "sha256": "8762acedf4a7fbc2354f4c75955b58b76271bb48175f73499a8b6fe14b621819"
+          },
+          {
+            "evidence_class": "local-build-or-dependency",
+            "local_path": "evidence/capv/sdk-key.json",
+            "path": "evidence/capv/sdk-key.json",
+            "sha256": "7b976152b480fda86352ced35f416d059c8224a237297a1cad175e2aaa03af32"
+          },
+          {
+            "evidence_class": "local-build-or-dependency",
+            "local_path": "evidence/capv/sdk.json",
+            "path": "evidence/capv/sdk.json",
+            "sha256": "4e976aed5e4782ceda560ad582884096101eaefcf888a5554ea76a01ee4d3f53"
+          }
+        ],
+        "generations": {
+          "fixed": "d950ac1422cf79bafff11fcfb62c3e8b4ce3d782",
+          "sdk": "948e090c09dd5ec1d4593013303bc5260ef7c466"
+        },
+        "schema": "rsi-capv-source-pin.v0",
+        "sdk_commit": "e41b117893fb56bc869922de378daf91aad63def"
+      },
+      "domain": "capv",
+      "source_module": "profiles/capv/source.py",
+      "source_module_sha256": "3703696e7a4194e7def03680418bbff530f18de76e6f4472f2959d25b565694e",
+      "verification": "PASS"
+    },
+    {
+      "closure": {
+        "draft_commit": "d94cacf89287a295823ce43e560a575c0cc25e21",
+        "files": [
+          {
+            "blob_oid": "196a4ec353010289f348a7253f0fd5e749482b37",
+            "commit": "728310aa69f5b22152b32f1ef31394b85f3eb8bb",
+            "evidence_class": "profile/documentation",
+            "local_path": "evidence/aggregate/reference/README.md",
+            "path": "README.md",
+            "repo": "ERC8312/bounded-agent-actions",
+            "sha256": "04d698f336a5d6adc004d68698c37774f00a73b9921513bff10a988e24a29e31",
+            "size": 3530
+          },
+          {
+            "blob_oid": "a42219ba94f7dca0e3f981e9f64580d64cdaba12",
+            "commit": "728310aa69f5b22152b32f1ef31394b85f3eb8bb",
+            "evidence_class": "profile/documentation",
+            "local_path": "evidence/aggregate/reference/AGGREGATE-BUDGET-PROFILE.md",
+            "path": "AGGREGATE-BUDGET-PROFILE.md",
+            "repo": "ERC8312/bounded-agent-actions",
+            "sha256": "f8ec0d4bdcc89f23984208ab51d5a0a69f5806151e75e8f6f9fe32b7ef269e15",
+            "size": 7099
+          },
+          {
+            "blob_oid": "31048ce515d0ae8e4d8f68df8d85c6b1f0fd7f96",
+            "commit": "728310aa69f5b22152b32f1ef31394b85f3eb8bb",
+            "evidence_class": "implementation",
+            "local_path": "evidence/aggregate/reference/src/AggregateBudgetCursor.sol",
+            "path": "src/AggregateBudgetCursor.sol",
+            "repo": "ERC8312/bounded-agent-actions",
+            "sha256": "f9c7666a21472895cb35216fc553fce1914d4643ea12ff95f9a4b2424493226b",
+            "size": 15284
+          },
+          {
+            "blob_oid": "b6f12271a6d186b5f2b3055aed1567c285830a2e",
+            "commit": "728310aa69f5b22152b32f1ef31394b85f3eb8bb",
+            "evidence_class": "implementation",
+            "local_path": "evidence/aggregate/reference/src/IAggregateBudget.sol",
+            "path": "src/IAggregateBudget.sol",
+            "repo": "ERC8312/bounded-agent-actions",
+            "sha256": "aee93c252c0784707386ece6ec1981726ca28e018af6234eeded43d445df0f5e",
+            "size": 8613
+          },
+          {
+            "blob_oid": "c869f1dc131ef48cb3369acc85a98b2e674afdd7",
+            "commit": "728310aa69f5b22152b32f1ef31394b85f3eb8bb",
+            "evidence_class": "implementation",
+            "local_path": "evidence/aggregate/reference/src/IERC165.sol",
+            "path": "src/IERC165.sol",
+            "repo": "ERC8312/bounded-agent-actions",
+            "sha256": "45cf4bc565bd7f6531eb60dc469f05e94ff7adcc3de4e1ae3720b949bdeda1b2",
+            "size": 245
+          },
+          {
+            "blob_oid": "ac66ba6f99a46185e3b92e58c835b929deb03c29",
+            "commit": "728310aa69f5b22152b32f1ef31394b85f3eb8bb",
+            "evidence_class": "test/vector",
+            "local_path": "evidence/aggregate/reference/test/AggregateBudgetCursor.t.sol",
+            "path": "test/AggregateBudgetCursor.t.sol",
+            "repo": "ERC8312/bounded-agent-actions",
+            "sha256": "9f49c71720493a03d59fd2066c72b17f65ada33080152a9cd7ccff0b49342a77",
+            "size": 18966
+          },
+          {
+            "blob_oid": "98292d86f7a6c5367874c5332c8f7bac42f2882e",
+            "commit": "728310aa69f5b22152b32f1ef31394b85f3eb8bb",
+            "evidence_class": "test/vector",
+            "local_path": "evidence/aggregate/reference/test/AggregateBudgetConformance.t.sol",
+            "path": "test/AggregateBudgetConformance.t.sol",
+            "repo": "ERC8312/bounded-agent-actions",
+            "sha256": "6f739b1c74885a809272762550ea5f2f2e0a2b6072af748311244987779f81e1",
+            "size": 8227
+          },
+          {
+            "blob_oid": "b126bef7d20bed3d095f67efab5bfe46114fdf46",
+            "commit": "728310aa69f5b22152b32f1ef31394b85f3eb8bb",
+            "evidence_class": "test/vector",
+            "local_path": "evidence/aggregate/reference/test/AggregateBudgetCursor.invariant.t.sol",
+            "path": "test/AggregateBudgetCursor.invariant.t.sol",
+            "repo": "ERC8312/bounded-agent-actions",
+            "sha256": "0a40f09fbdd9c3e8afa1743f264dec6902e44cda7b0dd51f12d781ceba1d24a6",
+            "size": 6836
+          },
+          {
+            "blob_oid": "43f514d7882468a96a3911fc9f0bffe9c00fe294",
+            "commit": "728310aa69f5b22152b32f1ef31394b85f3eb8bb",
+            "evidence_class": "test/vector",
+            "local_path": "evidence/aggregate/reference/test/AggregateBudgetVectors.t.sol",
+            "path": "test/AggregateBudgetVectors.t.sol",
+            "repo": "ERC8312/bounded-agent-actions",
+            "sha256": "feb48bff2e2ca22aa201e159afd622b28f3eb052eb445d44374652f720af8fe3",
+            "size": 5817
+          },
+          {
+            "blob_oid": "e12e16e9dbe41d9f0d7fd65f64bd5c518320b848",
+            "commit": "728310aa69f5b22152b32f1ef31394b85f3eb8bb",
+            "evidence_class": "profile/documentation",
+            "local_path": "evidence/aggregate/reference/foundry.toml",
+            "path": "foundry.toml",
+            "repo": "ERC8312/bounded-agent-actions",
+            "sha256": "dcc4a46f86d531d5d457c676b996dc38b889cafb1dce02b5c8d1ef7c899cfb6b",
+            "size": 190
+          },
+          {
+            "blob_oid": "2973c0c5bcbe674d056bd82872f4ddd7245b741c",
+            "commit": "728310aa69f5b22152b32f1ef31394b85f3eb8bb",
+            "evidence_class": "profile/documentation",
+            "local_path": "evidence/aggregate/reference/LICENSE",
+            "path": "LICENSE",
+            "repo": "ERC8312/bounded-agent-actions",
+            "sha256": "2f976aeae6ab25f75a68b01189b58e9be68baac37f1bad7ca34621a82084d835",
+            "size": 7048
+          },
+          {
+            "blob_oid": "a90074d240db47fbe16d279664a62a97fa6b60aa",
+            "commit": "d94cacf89287a295823ce43e560a575c0cc25e21",
+            "evidence_class": "normative-draft-PR1833-not-merged",
+            "local_path": "evidence/aggregate/draft/erc-8312.md",
+            "path": "ERCS/erc-8312.md",
+            "repo": "0x2kNJ/ERCs",
+            "sha256": "671ca795571bdc6854008e5f2ffadc0b085eb3ad933a522c4ca33cedebd59f76",
+            "size": 66306
+          },
+          {
+            "blob_oid": "8d8577a6b4c151a48e744776a3b8262385a058a4",
+            "commit": "01283ca57305f915afb560d23359a27fd748eb5a",
+            "evidence_class": "interface/spec-composition",
+            "local_path": "evidence/aggregate/agent-ercs/README.md",
+            "path": "contracts/metering/ERC8312/README.md",
+            "repo": "trustless-ai/agent-ercs",
+            "sha256": "a0922dc7d2a9fdafe15999db20422b214610f38d91384a64c96056e7c1ebdfc8",
+            "size": 5466
+          },
+          {
+            "blob_oid": "bb49578309c8e25bccb2ec06d5c72bcaa85fd065",
+            "commit": "01283ca57305f915afb560d23359a27fd748eb5a",
+            "evidence_class": "interface/spec-composition",
+            "local_path": "evidence/aggregate/agent-ercs/IAggregateBudget.sol",
+            "path": "contracts/metering/ERC8312/IAggregateBudget.sol",
+            "repo": "trustless-ai/agent-ercs",
+            "sha256": "16534440066872af4e26f75291dd8c16e13716dbea54ddacae609c4b0392961e",
+            "size": 8178
+          },
+          {
+            "blob_oid": "2d40e1d7326d6d367faf95b791a39cb91250e4ee",
+            "commit": "e41b117893fb56bc869922de378daf91aad63def",
+            "evidence_class": "base-profile-only-not-aggregate",
+            "local_path": "evidence/aggregate/sdk/typescript/src/metering/ERC8312/README.md",
+            "path": "typescript/src/metering/ERC8312/README.md",
+            "repo": "trustless-ai/agent-sdk",
+            "sha256": "bb2fa6bae25d4b2df7e81899e10e48744f40c543fdb6638aeb8d956b3e57609f",
+            "size": 2631
+          },
+          {
+            "blob_oid": "0b887553b0ee45c957c44072d5c64a8adc6602b0",
+            "commit": "e41b117893fb56bc869922de378daf91aad63def",
+            "evidence_class": "base-profile-only-not-aggregate",
+            "local_path": "evidence/aggregate/sdk/typescript/src/metering/ERC8312/recompute.ts",
+            "path": "typescript/src/metering/ERC8312/recompute.ts",
+            "repo": "trustless-ai/agent-sdk",
+            "sha256": "3c7bf7897ba3464f830d12fb6d76ea3ca6bc7a54f6913883d585790082b63460",
+            "size": 2063
+          },
+          {
+            "blob_oid": "0762cd4d05c88b2137e48b43d07142dd2325ee2f",
+            "commit": "e41b117893fb56bc869922de378daf91aad63def",
+            "evidence_class": "base-profile-only-not-aggregate",
+            "local_path": "evidence/aggregate/sdk/typescript/src/metering/ERC8312/budgetSubstrateClient.ts",
+            "path": "typescript/src/metering/ERC8312/budgetSubstrateClient.ts",
+            "repo": "trustless-ai/agent-sdk",
+            "sha256": "e06b732a62b08271a478988d4c5a9ad6aef944fa42133028629683cc90a021c1",
+            "size": 1314
+          },
+          {
+            "blob_oid": "f4e5f3bfbc888f2c32430284296ac15a27d47528",
+            "commit": "e41b117893fb56bc869922de378daf91aad63def",
+            "evidence_class": "base-profile-only-not-aggregate",
+            "local_path": "evidence/aggregate/sdk/testkit/contracts/mocks/metering/ERC8312/MockBudgetSubstrate.sol",
+            "path": "testkit/contracts/mocks/metering/ERC8312/MockBudgetSubstrate.sol",
+            "repo": "trustless-ai/agent-sdk",
+            "sha256": "02c3661579a17853bc78e84b060d86bf9898143c873ce4521b79a58d1226c014",
+            "size": 6680
+          },
+          {
+            "blob_oid": "0116b95efb2939ab423eeb37cb4eaa6f648c5a87",
+            "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+            "evidence_class": "definition/vector/reference",
+            "local_path": "evidence/aggregate/recompute-kit/aggregate-budget-v0.spec.md",
+            "path": "conformance/aggregate-budget-v0/aggregate-budget-v0.spec.md",
+            "repo": "trustless-ai/recompute-kit",
+            "sha256": "874e92ab93541ae3d9893f1603945b5e86ac568cd1fe14ad31047b2cdf8f699c",
+            "size": 5093
+          },
+          {
+            "blob_oid": "380619d0661868b6bd95c4844dd46277fa171ea3",
+            "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+            "evidence_class": "definition/vector/reference",
+            "local_path": "evidence/aggregate/recompute-kit/aggregate-budget-v0.vectors.json",
+            "path": "conformance/aggregate-budget-v0/aggregate-budget-v0.vectors.json",
+            "repo": "trustless-ai/recompute-kit",
+            "sha256": "ac6f6efd485e887a7f82140ac5be234643af17efb24506d9cd40e87ecd2bcb85",
+            "size": 7165
+          },
+          {
+            "blob_oid": "c60f9815c51de6bd9f560962dea4b7895ad09d93",
+            "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+            "evidence_class": "definition/vector/reference",
+            "local_path": "evidence/aggregate/recompute-kit/gate.ts",
+            "path": "conformance/aggregate-budget-v0/gate.ts",
+            "repo": "trustless-ai/recompute-kit",
+            "sha256": "c448464ef3b3e3fffebdcec676a3c7d6e2f576df70fe0522d0ac976222935126",
+            "size": 3305
+          },
+          {
+            "blob_oid": "75573bc61530342c0cf003aa58061b4a0cbe74e4",
+            "commit": "15f7f59ac47b3358492bd5741143c418b5d657f5",
+            "evidence_class": "definition/vector/reference",
+            "local_path": "evidence/aggregate/recompute-kit/suite.json",
+            "path": "conformance/aggregate-budget-v0/suite.json",
+            "repo": "trustless-ai/recompute-kit",
+            "sha256": "b451e4b00c9355af513d0c8ed0534673338da885c8eba3f763728367da969c0d",
+            "size": 433
+          },
+          {
+            "evidence_class": "local-build/dependency-or-baseline",
+            "local_path": "evidence/aggregate/build.cjs",
+            "sha256": "6c58f16daadec97b2f35141819158a5e85107e2eefaa57c55129b4b5766f5a41"
+          },
+          {
+            "evidence_class": "local-build/dependency-or-baseline",
+            "local_path": "evidence/aggregate/compile.cjs",
+            "sha256": "be0a60278fcb6ceba0569f990eb15ec5781c9d81a73061db21b525c2c40ddf99"
+          },
+          {
+            "evidence_class": "local-build/dependency-or-baseline",
+            "local_path": "evidence/aggregate/cursor.json",
+            "sha256": "e808ffc2e05a571113116bbc882f867f9d170918bc6ba97789c6a1ab65335fe8"
+          },
+          {
+            "evidence_class": "local-build/dependency-or-baseline",
+            "local_path": "evidence/aggregate/delegate.json",
+            "sha256": "b2eb7b662bee59b5a68f0991e46c180c6319e2e1e348e6f0bed9295320ebeb97"
+          },
+          {
+            "evidence_class": "local-build/dependency-or-baseline",
+            "local_path": "evidence/aggregate/edge.json",
+            "sha256": "41e613ab024ec99e516a86039df7f834acd9f36f7fa85b11a6d30078a451b1df"
+          },
+          {
+            "evidence_class": "local-build/dependency-or-baseline",
+            "local_path": "evidence/aggregate/evm-runtime.mjs",
+            "sha256": "9ce9daabda898a733b6ba6a8e4b8d159f62dbcbc3a91e23142ebaf270285ec7b"
+          },
+          {
+            "evidence_class": "local-build/dependency-or-baseline",
+            "local_path": "evidence/aggregate/gate.mjs",
+            "sha256": "6b011401d23b8d5f35331303e0b8377f3911f2dedf4f4c2b315e787454d1ce81"
+          },
+          {
+            "evidence_class": "local-build/dependency-or-baseline",
+            "local_path": "evidence/aggregate/nodecap.json",
+            "sha256": "3b7d37d9436e98040de3bac34f887cd0da547e10e8b44c8c8492a38fb1f0640f"
+          },
+          {
+            "evidence_class": "local-build/dependency-or-baseline",
+            "local_path": "evidence/aggregate/package-lock.json",
+            "sha256": "1e0f0a3ae390a427d26f74ea2b142347e451b6e5f6efa2788bf687dcc815a75f"
+          },
+          {
+            "evidence_class": "local-build/dependency-or-baseline",
+            "local_path": "evidence/aggregate/package.json",
+            "sha256": "851de0afbe97361fd06e2144ac74bf3e35ea2bd23a55362f082f4935ee64623f"
+          },
+          {
+            "evidence_class": "local-build/dependency-or-baseline",
+            "local_path": "evidence/aggregate/period.json",
+            "sha256": "28e6b1ade62490cab981eb63ff42a690a89403d54ba5251460411f50c6747cbe"
+          },
+          {
+            "evidence_class": "local-build/dependency-or-baseline",
+            "local_path": "evidence/aggregate/protected-baseline.v0.json",
+            "sha256": "f2165dd100359d5f62c51eaf7e554623dc247732b396004e46c77d6a8742556d"
+          },
+          {
+            "evidence_class": "local-build/dependency-or-baseline",
+            "local_path": "evidence/aggregate/refund.json",
+            "sha256": "bd22cbaadd5b65a8942021b05556d7563891408af188f2256aba841c1ce37187"
+          },
+          {
+            "evidence_class": "local-build/dependency-or-baseline",
+            "local_path": "evidence/aggregate/revoked.json",
+            "sha256": "27f3d292e62eb643d9cccb28c1820b36ec19379138682c2c9bc9f51c7dc314b4"
+          },
+          {
+            "evidence_class": "local-build/dependency-or-baseline",
+            "local_path": "evidence/aggregate/root.json",
+            "sha256": "f4aadde3353796b6893362714ac577e515abb62839d26c30583f3b5ee441005e"
+          },
+          {
+            "evidence_class": "local-build/dependency-or-baseline",
+            "local_path": "evidence/aggregate/runtime-entry.mjs",
+            "sha256": "74c1f0135edda0759ffbe159409ffad92fdc2444c495ae9126babe9f8b90df03"
+          },
+          {
+            "evidence_class": "local-build/dependency-or-baseline",
+            "local_path": "evidence/aggregate/THIRD_PARTY_LICENSES.txt",
+            "sha256": "f32db47b87330cfa8a34a13b19dc47c083f11b58bca3d0ae1c8a2bfef01e8ae6"
+          }
+        ],
+        "reference_commit": "728310aa69f5b22152b32f1ef31394b85f3eb8bb",
+        "schema": "rsi-aggregate-source-pin.v0"
+      },
+      "domain": "aggregate",
+      "source_module": "profiles/aggregate/source.py",
+      "source_module_sha256": "db6c9c1a0b0642a52413ed7b99f9de983c0f50590a09a979c5c4a0d3a2618268",
+      "verification": "PASS"
+    },
+    {
+      "closure": {
+        "files": [
+          {
+            "commit": "c0e13d17940a6eabe4d842e623fd0f871550ef7b",
+            "evidence_class": "normative-draft",
+            "git_blob": "ead95e012a445a200682cc2dcd7f7583d73fda53",
+            "local_path": "evidence/judgment/draft.md",
+            "path": "ERCS/erc-8299.md",
+            "repo": "TMerlini/ERCs",
+            "sha256": "5ea02730bdc94bd45983b3e5d22bafabf7e3aa6ca4dc1095d483b6776b7eccd3"
+          },
+          {
+            "commit": "a375af0a91e6cc724851eee2ab6916ba9fe10854",
+            "evidence_class": "historical-draft",
+            "git_blob": "ae2d92bd392bf44a67157a5b4fd1395e5e4d14ce",
+            "local_path": "evidence/judgment/older-draft.md",
+            "path": "ERC-draft.md",
+            "repo": "TMerlini/wyriwe",
+            "sha256": "ffab502599a80a773c0922190366425fce55c1c11ba775dd0030ebaa70c6370d"
+          },
+          {
+            "commit": "e41b117893fb56bc869922de378daf91aad63def",
+            "evidence_class": "consumer",
+            "git_blob": "1d8597045a4b9d7876042beae343f250e98568db",
+            "local_path": "evidence/judgment/sdk/recomputeL4.ts",
+            "path": "typescript/src/verify/ERC8299/recomputeL4.ts",
+            "repo": "trustless-ai/agent-sdk",
+            "sha256": "ebe3db999a718623fa6d9aeec702cee17e0b97bb72758b4789458c4f5dc27d13"
+          },
+          {
+            "commit": "e41b117893fb56bc869922de378daf91aad63def",
+            "evidence_class": "consumer",
+            "git_blob": "677fe318959f1b665cff1af8ca6d39e24fc06759",
+            "local_path": "evidence/judgment/sdk/judgmentExecutionClient.ts",
+            "path": "typescript/src/verify/ERC8299/judgmentExecutionClient.ts",
+            "repo": "trustless-ai/agent-sdk",
+            "sha256": "5eaeff104991c6f286f1c10a430f6fa66d8c4ce12af199832a7d4f3f7de8c7bc"
+          },
+          {
+            "commit": "e41b117893fb56bc869922de378daf91aad63def",
+            "evidence_class": "consumer",
+            "git_blob": "a6af04c7b6353eb3f78609e02e79961f286777ea",
+            "local_path": "evidence/judgment/sdk/README.md",
+            "path": "typescript/src/verify/ERC8299/README.md",
+            "repo": "trustless-ai/agent-sdk",
+            "sha256": "b9b3adb8fb7395b4a866f9da4cd226787ba6a26019e76c085f3bd1f87a0eb343"
+          },
+          {
+            "commit": "e41b117893fb56bc869922de378daf91aad63def",
+            "evidence_class": "test-only-mock",
+            "git_blob": "8e0216341af98ea56cfd78c978aa1fe47639f40d",
+            "local_path": "evidence/judgment/sdk/MockJudgmentExecutionAttestation.sol",
+            "path": "testkit/contracts/mocks/verify/ERC8299/MockJudgmentExecutionAttestation.sol",
+            "repo": "trustless-ai/agent-sdk",
+            "sha256": "9827ecca025a157c0744a78800e4d9887990d9b6ff679a4e0a899ac827eec005"
+          },
+          {
+            "commit": "01283ca57305f915afb560d23359a27fd748eb5a",
+            "evidence_class": "interface",
+            "git_blob": "425e458d3bcbe75dc63d85c7f794a6a00d8f50d7",
+            "local_path": "evidence/judgment/IJudgmentExecutionAttestation.sol",
+            "path": "contracts/verify/ERC8299/IJudgmentExecutionAttestation.sol",
+            "repo": "trustless-ai/agent-ercs",
+            "sha256": "ef689f54c87e41137b3b5ea6616e2ceb2738a40061123ea840c0d93e030d00c4"
+          },
+          {
+            "commit": "76d19dc394b208d01ba368382b3e5f4f2c18f0ee",
+            "evidence_class": "semantic-contract",
+            "git_blob": "995ed6e14a79cd1dc53712792ce04da158838539",
+            "local_path": "evidence/judgment/reference/README.md",
+            "path": "integrations/conformance/README.md",
+            "repo": "babyblueviper1/invinoveritas",
+            "sha256": "98a2971ef1bcd64b4d4218ff4fc570692fc1475ab29c19d63c677a83251d46e3"
+          },
+          {
+            "commit": "76d19dc394b208d01ba368382b3e5f4f2c18f0ee",
+            "evidence_class": "implementation",
+            "git_blob": "656796a63822d95b6a93269ec3b7e0d42038e0d5",
+            "local_path": "evidence/judgment/reference/verifier.py",
+            "path": "integrations/conformance/verifier.py",
+            "repo": "babyblueviper1/invinoveritas",
+            "sha256": "3d6c4633efb3ac782572faa1d9de81df66ed35e34cc42396a48f5a49dc832c29"
+          },
+          {
+            "commit": "76d19dc394b208d01ba368382b3e5f4f2c18f0ee",
+            "evidence_class": "implementation",
+            "git_blob": "105ab3024914d8ff4cb5b0d195d0be6f6dbe508a",
+            "local_path": "evidence/judgment/reference/_bip340_nostr.py",
+            "path": "integrations/conformance/_bip340_nostr.py",
+            "repo": "babyblueviper1/invinoveritas",
+            "sha256": "1bd072b7989f2aa755b1e9f2d46b64969ad6d342f7d48bf556225fa65c330a0d"
+          },
+          {
+            "commit": "76d19dc394b208d01ba368382b3e5f4f2c18f0ee",
+            "evidence_class": "implementation",
+            "git_blob": "b22087090e5f529908d50da8ea9529b4717f1ec0",
+            "local_path": "evidence/judgment/reference/test_conformance.py",
+            "path": "integrations/conformance/test_conformance.py",
+            "repo": "babyblueviper1/invinoveritas",
+            "sha256": "3aedc2957f4505c1819aa73773c87d54545eb901ee43c5fd3df53ae889c85464"
+          },
+          {
+            "commit": "76d19dc394b208d01ba368382b3e5f4f2c18f0ee",
+            "evidence_class": "test-vector",
+            "git_blob": "2c4551f27d47d6773ff405ff889ed4901d9e2e4e",
+            "local_path": "evidence/judgment/reference/fixtures/positive.json",
+            "path": "integrations/conformance/fixtures/positive.json",
+            "repo": "babyblueviper1/invinoveritas",
+            "sha256": "4aff1f4d0cb0ecba209db73cb650b6a7b29fb3d591400b51a5b61eb75c0faee6"
+          },
+          {
+            "commit": "76d19dc394b208d01ba368382b3e5f4f2c18f0ee",
+            "evidence_class": "test-vector",
+            "git_blob": "0e574dabac5037c2e1fcf5ce0fd4a54bdf9383ad",
+            "local_path": "evidence/judgment/reference/fixtures/negative_chain_action_ref_split.json",
+            "path": "integrations/conformance/fixtures/negative_chain_action_ref_split.json",
+            "repo": "babyblueviper1/invinoveritas",
+            "sha256": "bec9d26d9279b7523ad53dbcd2fb4e3ba5370d74016eb8fdc846ee9a02517ee5"
+          },
+          {
+            "commit": "76d19dc394b208d01ba368382b3e5f4f2c18f0ee",
+            "evidence_class": "test-vector",
+            "git_blob": "eee4a12f1ee7fe4f5fbbe0b0db24dbc95c4a5ed7",
+            "local_path": "evidence/judgment/reference/fixtures/negative_verdict_binding_failed.json",
+            "path": "integrations/conformance/fixtures/negative_verdict_binding_failed.json",
+            "repo": "babyblueviper1/invinoveritas",
+            "sha256": "3d82d4ef1e8204ad0aef651d2cd284b5161c0071c1405ab6a80e5480f14e58f4"
+          },
+          {
+            "commit": "76d19dc394b208d01ba368382b3e5f4f2c18f0ee",
+            "evidence_class": "test-vector",
+            "git_blob": "c1f1a9be52cb0863e54f033f0b4054f4f9b76a0e",
+            "local_path": "evidence/judgment/reference/fixtures/negative_admission_not_independent.json",
+            "path": "integrations/conformance/fixtures/negative_admission_not_independent.json",
+            "repo": "babyblueviper1/invinoveritas",
+            "sha256": "be3f4a3acdfb706f5e46957908f5482a70b6d5c3e9f1bd1971eb7d4ab0695a69"
+          },
+          {
+            "commit": "76d19dc394b208d01ba368382b3e5f4f2c18f0ee",
+            "evidence_class": "test-vector",
+            "git_blob": "944fb0ddd7b5d3f2de46d37152e6e99eff1155d5",
+            "local_path": "evidence/judgment/reference/fixtures/negative_key_different_but_identity_unproven.json",
+            "path": "integrations/conformance/fixtures/negative_key_different_but_identity_unproven.json",
+            "repo": "babyblueviper1/invinoveritas",
+            "sha256": "86d8aabdd0a0c3277c9b2b4909eecb9654531f44e853bd9be71e6ea085b56e9a"
+          },
+          {
+            "commit": "76d19dc394b208d01ba368382b3e5f4f2c18f0ee",
+            "evidence_class": "test-vector",
+            "git_blob": "7fd5474aa0ec36104168f78b56d60d14b60f6e43",
+            "local_path": "evidence/judgment/reference/fixtures/negative_late_commitment.json",
+            "path": "integrations/conformance/fixtures/negative_late_commitment.json",
+            "repo": "babyblueviper1/invinoveritas",
+            "sha256": "365cd060f2446246917c625b7d0208ff15d0c9cd93b8ccc2a8b9ae4d2a4a2f6e"
+          },
+          {
+            "commit": "76d19dc394b208d01ba368382b3e5f4f2c18f0ee",
+            "evidence_class": "test-vector",
+            "git_blob": "2dd9f5f5645197087e67931099643a022da1a2c6",
+            "local_path": "evidence/judgment/reference/fixtures/negative_ordering_unanchored.json",
+            "path": "integrations/conformance/fixtures/negative_ordering_unanchored.json",
+            "repo": "babyblueviper1/invinoveritas",
+            "sha256": "c3e81e7c4ee5b367fd5c97c20550bd5c4d05acea74a06ab2c7f1013476b5dfea"
+          },
+          {
+            "commit": "76d19dc394b208d01ba368382b3e5f4f2c18f0ee",
+            "evidence_class": "test-vector",
+            "git_blob": "fa3c8fe52b14f62d6fd47e7fe782e4a8868cde59",
+            "local_path": "evidence/judgment/reference/fixtures/negative_existence_only_anchor.json",
+            "path": "integrations/conformance/fixtures/negative_existence_only_anchor.json",
+            "repo": "babyblueviper1/invinoveritas",
+            "sha256": "3100ff8719a8c5ed6bd6e4d1102ce54cb441a1f2dfa7354169436362bcfc1f4c"
+          },
+          {
+            "commit": "76d19dc394b208d01ba368382b3e5f4f2c18f0ee",
+            "evidence_class": "test-vector",
+            "git_blob": "2f618744eac6165b2529de02fbcb8d26405001dd",
+            "local_path": "evidence/judgment/reference/fixtures/negative_canonical_envelope_mismatch.json",
+            "path": "integrations/conformance/fixtures/negative_canonical_envelope_mismatch.json",
+            "repo": "babyblueviper1/invinoveritas",
+            "sha256": "4354e9d35380230de4d7cacf8c01fd5a37f60d34370226ea6bbfbdd0e606f4df"
+          }
+        ],
+        "schema": "rsi-source-pin.v0"
+      },
+      "domain": "judgment",
+      "source_module": "profiles/judgment/source.py",
+      "source_module_sha256": "0d8b8afaa8461c82cb4dee788c1f3328de40432bd03dc56d37446b286f9af5ea",
+      "verification": "PASS"
+    }
+  ],
+  "schema": "rsi-source-closure-audit.v0"
+}

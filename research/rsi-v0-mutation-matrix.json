@@ -1,0 +1,1039 @@
+{
+  "audited_code_head": "e61a7f9116e51e5942274ea1cdaf043334c339f8",
+  "mutations": [
+    {
+      "collateral": [],
+      "errors": [],
+      "expected_failure_phase": "admission",
+      "mapped_check": "PREDICTION_MISMATCH",
+      "mutation_id": "EXP-M1",
+      "status": "KILLED",
+      "suite": "run_registered_mutations",
+      "target_id": "expectation-admission"
+    },
+    {
+      "collateral": [],
+      "errors": [],
+      "expected_failure_phase": "admission",
+      "mapped_check": "FIXTURE_SET_DIGEST",
+      "mutation_id": "EXP-M2",
+      "status": "KILLED",
+      "suite": "run_registered_mutations",
+      "target_id": "expectation-admission"
+    },
+    {
+      "collateral": [
+        "tests.test_expectations.ExpectationTests.test_atomic_admission",
+        "tests.test_expectations.ExpectationTests.test_profile_failure_prevents_all_adapter_execution"
+      ],
+      "errors": [],
+      "expected_failure_phase": "test",
+      "mapped_check": "tests.test_expectations.ExpectationTests.test_modified_value_rejected",
+      "mutation_id": "EXP-M3",
+      "status": "KILLED",
+      "suite": "run_registered_mutations",
+      "target_id": "expectation-admission"
+    },
+    {
+      "collateral": [
+        "tests.test_expectations.ExpectationTests.test_modified_value_rejected",
+        "tests.test_expectations.ExpectationTests.test_profile_failure_prevents_all_adapter_execution"
+      ],
+      "errors": [],
+      "expected_failure_phase": "test",
+      "mapped_check": "tests.test_expectations.ExpectationTests.test_atomic_admission",
+      "mutation_id": "EXP-M4",
+      "status": "KILLED",
+      "suite": "run_registered_mutations",
+      "target_id": "expectation-admission"
+    },
+    {
+      "collateral": [],
+      "errors": [],
+      "expected_failure_phase": "decision",
+      "mapped_check": "RSI-001/mutation/generic",
+      "mutation_id": "RSI-001/generic",
+      "status": "KILLED",
+      "suite": "run_registered_mutations",
+      "target_id": "generic"
+    },
+    {
+      "collateral": [],
+      "errors": [],
+      "expected_failure_phase": "decision",
+      "mapped_check": "RSI-001/mutation/messaging",
+      "mutation_id": "RSI-001/messaging",
+      "status": "KILLED",
+      "suite": "run_registered_mutations",
+      "target_id": "messaging"
+    },
+    {
+      "collateral": [],
+      "errors": [],
+      "expected_failure_phase": "decision",
+      "mapped_check": "RSI-003/mutation/generic",
+      "mutation_id": "RSI-003/generic",
+      "status": "KILLED",
+      "suite": "run_registered_mutations",
+      "target_id": "generic"
+    },
+    {
+      "collateral": [],
+      "errors": [],
+      "expected_failure_phase": "decision",
+      "mapped_check": "RSI-003/mutation/messaging",
+      "mutation_id": "RSI-003/messaging",
+      "status": "KILLED",
+      "suite": "run_registered_mutations",
+      "target_id": "messaging"
+    },
+    {
+      "collateral": [],
+      "errors": [],
+      "expected_failure_phase": "decision",
+      "mapped_check": "RSI-004/mutation/generic",
+      "mutation_id": "RSI-004/generic",
+      "status": "KILLED",
+      "suite": "run_registered_mutations",
+      "target_id": "generic"
+    },
+    {
+      "collateral": [],
+      "errors": [],
+      "expected_failure_phase": "decision",
+      "mapped_check": "RSI-004/mutation/messaging",
+      "mutation_id": "RSI-004/messaging",
+      "status": "KILLED",
+      "suite": "run_registered_mutations",
+      "target_id": "messaging"
+    },
+    {
+      "collateral": [],
+      "errors": [],
+      "expected_failure_phase": "decision",
+      "mapped_check": "RSI-006/mutation/generic",
+      "mutation_id": "RSI-006/generic",
+      "status": "KILLED",
+      "suite": "run_registered_mutations",
+      "target_id": "generic"
+    },
+    {
+      "collateral": [],
+      "errors": [],
+      "expected_failure_phase": "decision",
+      "mapped_check": "RSI-006/mutation/messaging",
+      "mutation_id": "RSI-006/messaging",
+      "status": "KILLED",
+      "suite": "run_registered_mutations",
+      "target_id": "messaging"
+    },
+    {
+      "collateral": [],
+      "errors": [],
+      "expected_failure_phase": "decision",
+      "mapped_check": "RSI-008/mutation/generic",
+      "mutation_id": "RSI-008/generic",
+      "status": "KILLED",
+      "suite": "run_registered_mutations",
+      "target_id": "generic"
+    },
+    {
+      "collateral": [],
+      "errors": [],
+      "expected_failure_phase": "decision",
+      "mapped_check": "RSI-008/mutation/messaging",
+      "mutation_id": "RSI-008/messaging",
+      "status": "KILLED",
+      "suite": "run_registered_mutations",
+      "target_id": "messaging"
+    },
+    {
+      "collateral": [],
+      "errors": [],
+      "expected_failure_phase": "decision",
+      "mapped_check": "RSI-009/mutation/generic",
+      "mutation_id": "RSI-009/generic",
+      "status": "KILLED",
+      "suite": "run_registered_mutations",
+      "target_id": "generic"
+    },
+    {
+      "collateral": [],
+      "errors": [],
+      "expected_failure_phase": "decision",
+      "mapped_check": "RSI-009/mutation/messaging",
+      "mutation_id": "RSI-009/messaging",
+      "status": "KILLED",
+      "suite": "run_registered_mutations",
+      "target_id": "messaging"
+    },
+    {
+      "collateral": [
+        "tests.test_relation_profiles.RelationTests.test_profile_order_outcomes"
+      ],
+      "errors": [],
+      "expected_failure_phase": "test",
+      "mapped_check": "tests.test_relation_profiles.RelationTests.test_unknown_profile",
+      "mutation_id": "RP-M1",
+      "status": "KILLED",
+      "suite": "prove_relations_can_fail",
+      "target_id": "relation-contract"
+    },
+    {
+      "collateral": [
+        "tests.test_relation_profiles.RelationTests.test_no_latest_with_available_versions"
+      ],
+      "errors": [],
+      "expected_failure_phase": "test",
+      "mapped_check": "tests.test_relation_profiles.RelationTests.test_version",
+      "mutation_id": "RP-M2",
+      "status": "KILLED",
+      "suite": "prove_relations_can_fail",
+      "target_id": "relation-contract"
+    },
+    {
+      "collateral": [
+        "tests.test_relation_profiles.RelationTests.test_relation_id_opaque"
+      ],
+      "errors": [],
+      "expected_failure_phase": "test",
+      "mapped_check": "tests.test_relation_profiles.RelationTests.test_static_opacity",
+      "mutation_id": "RP-M3",
+      "status": "KILLED",
+      "suite": "prove_relations_can_fail",
+      "target_id": "relation-contract"
+    },
+    {
+      "collateral": [
+        "tests.test_relation_profiles.RelationTests.test_alias_namespaces_independent_profiles",
+        "tests.test_relation_profiles.RelationTests.test_case_id_opaque",
+        "tests.test_relation_profiles.RelationTests.test_descriptor_exact_match",
+        "tests.test_relation_profiles.RelationTests.test_historical",
+        "tests.test_relation_profiles.RelationTests.test_mirror",
+        "tests.test_relation_profiles.RelationTests.test_no_universal_slots",
+        "tests.test_relation_profiles.RelationTests.test_opaque_fixture_id",
+        "tests.test_relation_profiles.RelationTests.test_profile_id_opaque",
+        "tests.test_relation_profiles.RelationTests.test_relation_id_opaque",
+        "tests.test_relation_profiles.RelationTests.test_substitution",
+        "tests.test_relation_profiles.RelationTests.test_valid"
+      ],
+      "errors": [],
+      "expected_failure_phase": "test",
+      "mapped_check": "tests.test_relation_profiles.RelationTests.test_rich",
+      "mutation_id": "RP-M4",
+      "status": "KILLED",
+      "suite": "prove_relations_can_fail",
+      "target_id": "relation-contract"
+    },
+    {
+      "collateral": [],
+      "errors": [],
+      "expected_failure_phase": "test",
+      "mapped_check": "tests.test_relation_profiles.RelationTests.test_mirror",
+      "mutation_id": "RP-M5",
+      "status": "KILLED",
+      "suite": "prove_relations_can_fail",
+      "target_id": "relation-contract"
+    },
+    {
+      "collateral": [],
+      "errors": [],
+      "expected_failure_phase": "test",
+      "mapped_check": "tests.test_relation_profiles.RelationTests.test_historical",
+      "mutation_id": "RP-M6",
+      "status": "KILLED",
+      "suite": "prove_relations_can_fail",
+      "target_id": "relation-contract"
+    },
+    {
+      "collateral": [
+        "tests.test_relation_profiles.RelationTests.test_atomic_cases",
+        "tests.test_relation_profiles.RelationTests.test_protected_legacy_hashes"
+      ],
+      "errors": [],
+      "expected_failure_phase": "test",
+      "mapped_check": "tests.test_relation_profiles.RelationTests.test_tamper",
+      "mutation_id": "RP-M7",
+      "status": "KILLED",
+      "suite": "prove_relations_can_fail",
+      "target_id": "relation-contract"
+    },
+    {
+      "collateral": [
+        "tests.test_crystal_receipt.CrystalTests.test_combined_registration",
+        "tests.test_crystal_receipt.CrystalTests.test_pipeline"
+      ],
+      "errors": [],
+      "expected_failure_phase": "test",
+      "mapped_check": "tests.test_crystal_receipt.CrystalTests.test_negative",
+      "mutation_id": "CR-M1",
+      "status": "KILLED",
+      "suite": "prove_crystal_can_fail",
+      "target_id": "crystal-receipt.v0"
+    },
+    {
+      "collateral": [
+        "tests.test_crystal_receipt.CrystalTests.test_combined_registration",
+        "tests.test_crystal_receipt.CrystalTests.test_pipeline"
+      ],
+      "errors": [],
+      "expected_failure_phase": "test",
+      "mapped_check": "tests.test_crystal_receipt.CrystalTests.test_mirror",
+      "mutation_id": "CR-M2",
+      "status": "KILLED",
+      "suite": "prove_crystal_can_fail",
+      "target_id": "crystal-receipt.v0"
+    },
+    {
+      "collateral": [
+        "tests.test_crystal_receipt.CrystalTests.test_combined_registration",
+        "tests.test_crystal_receipt.CrystalTests.test_pipeline"
+      ],
+      "errors": [],
+      "expected_failure_phase": "test",
+      "mapped_check": "tests.test_crystal_receipt.CrystalTests.test_negative",
+      "mutation_id": "CR-M3",
+      "status": "KILLED",
+      "suite": "prove_crystal_can_fail",
+      "target_id": "crystal-receipt.v0"
+    },
+    {
+      "collateral": [
+        "tests.test_rvr.RVRTests.test_layer_separation",
+        "tests.test_rvr.RVRTests.test_no_amendment",
+        "tests.test_rvr.RVRTests.test_pipeline",
+        "tests.test_rvr.RVRTests.test_same_generic_pipeline_two_domains"
+      ],
+      "errors": [],
+      "expected_failure_phase": "test",
+      "mapped_check": "tests.test_rvr.RVRTests.test_unbound_substitution",
+      "mutation_id": "RVR-M1",
+      "status": "KILLED",
+      "suite": "prove_rvr_can_fail",
+      "target_id": "rvr.digest-binding.v0"
+    },
+    {
+      "collateral": [
+        "tests.test_rvr.RVRTests.test_layer_separation",
+        "tests.test_rvr.RVRTests.test_pipeline",
+        "tests.test_rvr.RVRTests.test_same_generic_pipeline_two_domains",
+        "tests.test_rvr.RVRTests.test_unbound_substitution"
+      ],
+      "errors": [],
+      "expected_failure_phase": "test",
+      "mapped_check": "tests.test_rvr.RVRTests.test_no_amendment",
+      "mutation_id": "RVR-M2",
+      "status": "KILLED",
+      "suite": "prove_rvr_can_fail",
+      "target_id": "rvr.digest-binding.v0"
+    },
+    {
+      "collateral": [
+        "tests.test_rvr.RVRTests.test_pipeline",
+        "tests.test_rvr.RVRTests.test_same_generic_pipeline_two_domains"
+      ],
+      "errors": [],
+      "expected_failure_phase": "test",
+      "mapped_check": "tests.test_rvr.RVRTests.test_wrong_verdict",
+      "mutation_id": "RVR-M3",
+      "status": "KILLED",
+      "suite": "prove_rvr_can_fail",
+      "target_id": "rvr.digest-binding.v0"
+    },
+    {
+      "collateral": [
+        "tests.test_rvr.RVRTests.test_pipeline",
+        "tests.test_rvr.RVRTests.test_same_generic_pipeline_two_domains"
+      ],
+      "errors": [],
+      "expected_failure_phase": "test",
+      "mapped_check": "tests.test_rvr.RVRTests.test_layer_separation",
+      "mutation_id": "RVR-M4",
+      "status": "KILLED",
+      "suite": "prove_rvr_can_fail",
+      "target_id": "rvr.digest-binding.v0"
+    },
+    {
+      "collateral": [
+        "tests.test_rvr.RVRTests.test_bilateral_binding",
+        "tests.test_rvr.RVRTests.test_correct_verdict",
+        "tests.test_rvr.RVRTests.test_pipeline",
+        "tests.test_rvr.RVRTests.test_same_generic_pipeline_two_domains",
+        "tests.test_rvr.RVRTests.test_signed_digest_not_authentication",
+        "tests.test_rvr.RVRTests.test_wrong_verdict"
+      ],
+      "errors": [],
+      "expected_failure_phase": "test",
+      "mapped_check": "tests.test_rvr.RVRTests.test_no_crypto_promotion",
+      "mutation_id": "RVR-M5",
+      "status": "KILLED",
+      "suite": "prove_rvr_can_fail",
+      "target_id": "rvr.digest-binding.v0"
+    },
+    {
+      "collateral": [
+        "tests.test_rvr.RVRTests.test_no_crypto_promotion",
+        "tests.test_rvr.RVRTests.test_pipeline",
+        "tests.test_rvr.RVRTests.test_same_generic_pipeline_two_domains"
+      ],
+      "errors": [],
+      "expected_failure_phase": "test",
+      "mapped_check": "tests.test_rvr.RVRTests.test_pubkeys_not_authentication",
+      "mutation_id": "RVR-M6",
+      "status": "KILLED",
+      "suite": "prove_rvr_can_fail",
+      "target_id": "rvr.digest-binding.v0"
+    },
+    {
+      "collateral": [
+        "tests.test_tsei.TSEITests.test_pipeline",
+        "tests.test_tsei.TSEITests.test_same_pipeline_three_domains",
+        "tests.test_tsei.TSEITests.test_schema_valid_record_is_not_pinned_binding"
+      ],
+      "errors": [],
+      "expected_failure_phase": "test",
+      "mapped_check": "tests.test_tsei.TSEITests.test_wrong_serializer",
+      "mutation_id": "TSEI-M1",
+      "status": "KILLED",
+      "suite": "prove_tsei_can_fail",
+      "target_id": "tsei.serializer-adoption.v0"
+    },
+    {
+      "collateral": [
+        "tests.test_tsei.TSEITests.test_pipeline",
+        "tests.test_tsei.TSEITests.test_same_pipeline_three_domains"
+      ],
+      "errors": [],
+      "expected_failure_phase": "test",
+      "mapped_check": "tests.test_tsei.TSEITests.test_mechanism_not_adoption",
+      "mutation_id": "TSEI-M2",
+      "status": "KILLED",
+      "suite": "prove_tsei_can_fail",
+      "target_id": "tsei.serializer-adoption.v0"
+    },
+    {
+      "collateral": [
+        "tests.test_tsei.TSEITests.test_pipeline",
+        "tests.test_tsei.TSEITests.test_same_pipeline_three_domains"
+      ],
+      "errors": [],
+      "expected_failure_phase": "test",
+      "mapped_check": "tests.test_tsei.TSEITests.test_adoption_not_record",
+      "mutation_id": "TSEI-M3",
+      "status": "KILLED",
+      "suite": "prove_tsei_can_fail",
+      "target_id": "tsei.serializer-adoption.v0"
+    },
+    {
+      "collateral": [
+        "tests.test_tsei.TSEITests.test_pipeline",
+        "tests.test_tsei.TSEITests.test_same_pipeline_three_domains"
+      ],
+      "errors": [],
+      "expected_failure_phase": "test",
+      "mapped_check": "tests.test_tsei.TSEITests.test_nonretroactivity",
+      "mutation_id": "TSEI-M4",
+      "status": "KILLED",
+      "suite": "prove_tsei_can_fail",
+      "target_id": "tsei.serializer-adoption.v0"
+    },
+    {
+      "collateral": [
+        "tests.test_tsei.TSEITests.test_pipeline",
+        "tests.test_tsei.TSEITests.test_record_introduction",
+        "tests.test_tsei.TSEITests.test_reported_labels_not_authority",
+        "tests.test_tsei.TSEITests.test_same_pipeline_three_domains",
+        "tests.test_tsei.TSEITests.test_serializer_control"
+      ],
+      "errors": [],
+      "expected_failure_phase": "test",
+      "mapped_check": "tests.test_tsei.TSEITests.test_no_authority_promotion",
+      "mutation_id": "TSEI-M5",
+      "status": "KILLED",
+      "suite": "prove_tsei_can_fail",
+      "target_id": "tsei.serializer-adoption.v0"
+    },
+    {
+      "collateral": [
+        "tests.test_tsei.TSEITests.test_label_changes_have_no_authority_effect",
+        "tests.test_tsei.TSEITests.test_no_authority_promotion",
+        "tests.test_tsei.TSEITests.test_pipeline",
+        "tests.test_tsei.TSEITests.test_same_pipeline_three_domains"
+      ],
+      "errors": [],
+      "expected_failure_phase": "test",
+      "mapped_check": "tests.test_tsei.TSEITests.test_reported_labels_not_authority",
+      "mutation_id": "TSEI-M6",
+      "status": "KILLED",
+      "suite": "prove_tsei_can_fail",
+      "target_id": "tsei.serializer-adoption.v0"
+    },
+    {
+      "collateral": [
+        "tests.test_pq.PQTests.test_pipeline",
+        "tests.test_pq.PQTests.test_same_pipeline_four_domains"
+      ],
+      "errors": [],
+      "expected_failure_phase": "test",
+      "mapped_check": "tests.test_pq.PQTests.test_old_key_after_cutoff",
+      "mutation_id": "PQ-M1",
+      "status": "KILLED",
+      "suite": "prove_pq_can_fail",
+      "target_id": "pq.policy-asof.v0"
+    },
+    {
+      "collateral": [
+        "tests.test_pq.PQTests.test_anchor_evidence_not_verified",
+        "tests.test_pq.PQTests.test_pipeline",
+        "tests.test_pq.PQTests.test_same_pipeline_four_domains",
+        "tests.test_pq.PQTests.test_signing_not_anchor"
+      ],
+      "errors": [],
+      "expected_failure_phase": "test",
+      "mapped_check": "tests.test_pq.PQTests.test_historical_anchor",
+      "mutation_id": "PQ-M2",
+      "status": "KILLED",
+      "suite": "prove_pq_can_fail",
+      "target_id": "pq.policy-asof.v0"
+    },
+    {
+      "collateral": [
+        "tests.test_pq.PQTests.test_pipeline",
+        "tests.test_pq.PQTests.test_same_pipeline_four_domains"
+      ],
+      "errors": [],
+      "expected_failure_phase": "test",
+      "mapped_check": "tests.test_pq.PQTests.test_signing_not_anchor",
+      "mutation_id": "PQ-M3",
+      "status": "KILLED",
+      "suite": "prove_pq_can_fail",
+      "target_id": "pq.policy-asof.v0"
+    },
+    {
+      "collateral": [
+        "tests.test_pq.PQTests.test_pipeline",
+        "tests.test_pq.PQTests.test_same_pipeline_four_domains"
+      ],
+      "errors": [],
+      "expected_failure_phase": "test",
+      "mapped_check": "tests.test_pq.PQTests.test_stale_snapshot",
+      "mutation_id": "PQ-M4",
+      "status": "KILLED",
+      "suite": "prove_pq_can_fail",
+      "target_id": "pq.policy-asof.v0"
+    },
+    {
+      "collateral": [
+        "tests.test_pq.PQTests.test_algorithm_label",
+        "tests.test_pq.PQTests.test_before_cutoff",
+        "tests.test_pq.PQTests.test_historical_anchor",
+        "tests.test_pq.PQTests.test_metadata_not_authentication",
+        "tests.test_pq.PQTests.test_new_key_after_cutoff",
+        "tests.test_pq.PQTests.test_pipeline",
+        "tests.test_pq.PQTests.test_same_pipeline_four_domains",
+        "tests.test_pq.PQTests.test_stale_snapshot"
+      ],
+      "errors": [],
+      "expected_failure_phase": "test",
+      "mapped_check": "tests.test_pq.PQTests.test_no_crypto_promotion",
+      "mutation_id": "PQ-M5",
+      "status": "KILLED",
+      "suite": "prove_pq_can_fail",
+      "target_id": "pq.policy-asof.v0"
+    },
+    {
+      "collateral": [
+        "tests.test_pq.PQTests.test_algorithm_label",
+        "tests.test_pq.PQTests.test_no_crypto_promotion",
+        "tests.test_pq.PQTests.test_pipeline",
+        "tests.test_pq.PQTests.test_same_pipeline_four_domains"
+      ],
+      "errors": [],
+      "expected_failure_phase": "test",
+      "mapped_check": "tests.test_pq.PQTests.test_metadata_not_authentication",
+      "mutation_id": "PQ-M6",
+      "status": "KILLED",
+      "suite": "prove_pq_can_fail",
+      "target_id": "pq.policy-asof.v0"
+    },
+    {
+      "collateral": [
+        "tests.test_pq.PQTests.test_before_cutoff",
+        "tests.test_pq.PQTests.test_historical_anchor",
+        "tests.test_pq.PQTests.test_metadata_not_authentication",
+        "tests.test_pq.PQTests.test_new_key_after_cutoff",
+        "tests.test_pq.PQTests.test_no_crypto_promotion",
+        "tests.test_pq.PQTests.test_old_key_after_cutoff",
+        "tests.test_pq.PQTests.test_pipeline",
+        "tests.test_pq.PQTests.test_same_pipeline_four_domains",
+        "tests.test_pq.PQTests.test_signing_not_anchor",
+        "tests.test_pq.PQTests.test_stale_snapshot"
+      ],
+      "errors": [],
+      "expected_failure_phase": "test",
+      "mapped_check": "tests.test_pq.PQTests.test_algorithm_label",
+      "mutation_id": "PQ-M7",
+      "status": "KILLED",
+      "suite": "prove_pq_can_fail",
+      "target_id": "pq.policy-asof.v0"
+    },
+    {
+      "collateral": [
+        "tests.test_tas.TASTests.test_five_family_pipeline",
+        "tests.test_tas.TASTests.test_pipeline"
+      ],
+      "errors": [],
+      "expected_failure_phase": "test",
+      "mapped_check": "tests.test_tas.TASTests.test_target_substitution",
+      "mutation_id": "TAS-M1",
+      "status": "KILLED",
+      "suite": "prove_tas_can_fail",
+      "target_id": "tas.context-invocation.v0"
+    },
+    {
+      "collateral": [
+        "tests.test_tas.TASTests.test_five_family_pipeline",
+        "tests.test_tas.TASTests.test_pipeline"
+      ],
+      "errors": [],
+      "expected_failure_phase": "test",
+      "mapped_check": "tests.test_tas.TASTests.test_member_substitution",
+      "mutation_id": "TAS-M3",
+      "status": "KILLED",
+      "suite": "prove_tas_can_fail",
+      "target_id": "tas.context-invocation.v0"
+    },
+    {
+      "collateral": [
+        "tests.test_tas.TASTests.test_five_family_pipeline",
+        "tests.test_tas.TASTests.test_pipeline"
+      ],
+      "errors": [],
+      "expected_failure_phase": "test",
+      "mapped_check": "tests.test_tas.TASTests.test_no_accepted_context",
+      "mutation_id": "TAS-M4",
+      "status": "KILLED",
+      "suite": "prove_tas_can_fail",
+      "target_id": "tas.context-invocation.v0"
+    },
+    {
+      "collateral": [
+        "tests.test_tas.TASTests.test_control",
+        "tests.test_tas.TASTests.test_five_family_pipeline",
+        "tests.test_tas.TASTests.test_mirror",
+        "tests.test_tas.TASTests.test_pipeline"
+      ],
+      "errors": [],
+      "expected_failure_phase": "test",
+      "mapped_check": "tests.test_tas.TASTests.test_no_execution_promotion",
+      "mutation_id": "TAS-M5",
+      "status": "KILLED",
+      "suite": "prove_tas_can_fail",
+      "target_id": "tas.context-invocation.v0"
+    },
+    {
+      "collateral": [
+        "tests.test_tas.TASTests.test_five_family_pipeline",
+        "tests.test_tas.TASTests.test_pipeline"
+      ],
+      "errors": [],
+      "expected_failure_phase": "test",
+      "mapped_check": "tests.test_tas.TASTests.test_mirror",
+      "mutation_id": "TAS-M6",
+      "status": "KILLED",
+      "suite": "prove_tas_can_fail",
+      "target_id": "tas.context-invocation.v0"
+    },
+    {
+      "collateral": [
+        "tests.test_consult_escrow.ConsultEscrowTests.test_pipeline",
+        "tests.test_consult_escrow.ConsultEscrowTests.test_six_family_pipeline"
+      ],
+      "errors": [],
+      "expected_failure_phase": "test",
+      "mapped_check": "tests.test_consult_escrow.ConsultEscrowTests.test_wrong_job",
+      "mutation_id": "CE-M1",
+      "status": "KILLED",
+      "suite": "prove_consult_escrow_can_fail",
+      "target_id": "consult-escrow.release-binding.v0"
+    },
+    {
+      "collateral": [
+        "tests.test_consult_escrow.ConsultEscrowTests.test_pipeline",
+        "tests.test_consult_escrow.ConsultEscrowTests.test_recovery_v_matters",
+        "tests.test_consult_escrow.ConsultEscrowTests.test_six_family_pipeline",
+        "tests.test_consult_escrow.ConsultEscrowTests.test_wrong_job",
+        "tests.test_consult_escrow.ConsultEscrowTests.test_wrong_result"
+      ],
+      "errors": [],
+      "expected_failure_phase": "test",
+      "mapped_check": "tests.test_consult_escrow.ConsultEscrowTests.test_wrong_attestor",
+      "mutation_id": "CE-M5",
+      "status": "KILLED",
+      "suite": "prove_consult_escrow_can_fail",
+      "target_id": "consult-escrow.release-binding.v0"
+    },
+    {
+      "collateral": [
+        "tests.test_consult_escrow.ConsultEscrowTests.test_pipeline",
+        "tests.test_consult_escrow.ConsultEscrowTests.test_six_family_pipeline"
+      ],
+      "errors": [],
+      "expected_failure_phase": "test",
+      "mapped_check": "tests.test_consult_escrow.ConsultEscrowTests.test_no_execution_promotion",
+      "mutation_id": "CE-M6",
+      "status": "KILLED",
+      "suite": "prove_consult_escrow_can_fail",
+      "target_id": "consult-escrow.release-binding.v0"
+    },
+    {
+      "collateral": [
+        "tests.test_consult_escrow.ConsultEscrowTests.test_pipeline",
+        "tests.test_consult_escrow.ConsultEscrowTests.test_six_family_pipeline"
+      ],
+      "errors": [],
+      "expected_failure_phase": "test",
+      "mapped_check": "tests.test_consult_escrow.ConsultEscrowTests.test_mirror",
+      "mutation_id": "CE-M7",
+      "status": "KILLED",
+      "suite": "prove_consult_escrow_can_fail",
+      "target_id": "consult-escrow.release-binding.v0"
+    },
+    {
+      "collateral": [
+        "tests.test_consult_escrow.ConsultEscrowTests.test_pipeline",
+        "tests.test_consult_escrow.ConsultEscrowTests.test_six_family_pipeline"
+      ],
+      "errors": [],
+      "expected_failure_phase": "test",
+      "mapped_check": "tests.test_consult_escrow.ConsultEscrowTests.test_replay",
+      "mutation_id": "CE-M8",
+      "status": "KILLED",
+      "suite": "prove_consult_escrow_can_fail",
+      "target_id": "consult-escrow.release-binding.v0"
+    },
+    {
+      "collateral": [
+        "tests.test_verify_layer.VerifyLayerTests.test_pipeline",
+        "tests.test_verify_layer.VerifyLayerTests.test_seven_family_pipeline",
+        "tests.test_verify_layer.VerifyLayerTests.test_wrong_account"
+      ],
+      "errors": [],
+      "expected_failure_phase": "test",
+      "mapped_check": "tests.test_verify_layer.VerifyLayerTests.test_wrong_root",
+      "mutation_id": "VL-M1",
+      "status": "KILLED",
+      "suite": "prove_verify_layer_can_fail",
+      "target_id": "verify-layer.proof-context.v0"
+    },
+    {
+      "collateral": [
+        "tests.test_verify_layer.VerifyLayerTests.test_control",
+        "tests.test_verify_layer.VerifyLayerTests.test_mirror",
+        "tests.test_verify_layer.VerifyLayerTests.test_no_downstream_promotion",
+        "tests.test_verify_layer.VerifyLayerTests.test_pipeline",
+        "tests.test_verify_layer.VerifyLayerTests.test_seven_family_pipeline"
+      ],
+      "errors": [],
+      "expected_failure_phase": "test",
+      "mapped_check": "tests.test_verify_layer.VerifyLayerTests.test_no_header_promotion",
+      "mutation_id": "VL-M2",
+      "status": "KILLED",
+      "suite": "prove_verify_layer_can_fail",
+      "target_id": "verify-layer.proof-context.v0"
+    },
+    {
+      "collateral": [
+        "tests.test_verify_layer.VerifyLayerTests.test_pipeline",
+        "tests.test_verify_layer.VerifyLayerTests.test_seven_family_pipeline"
+      ],
+      "errors": [],
+      "expected_failure_phase": "test",
+      "mapped_check": "tests.test_verify_layer.VerifyLayerTests.test_wrong_account",
+      "mutation_id": "VL-M5",
+      "status": "KILLED",
+      "suite": "prove_verify_layer_can_fail",
+      "target_id": "verify-layer.proof-context.v0"
+    },
+    {
+      "collateral": [
+        "tests.test_verify_layer.VerifyLayerTests.test_control",
+        "tests.test_verify_layer.VerifyLayerTests.test_mirror",
+        "tests.test_verify_layer.VerifyLayerTests.test_no_header_promotion",
+        "tests.test_verify_layer.VerifyLayerTests.test_pipeline",
+        "tests.test_verify_layer.VerifyLayerTests.test_seven_family_pipeline"
+      ],
+      "errors": [],
+      "expected_failure_phase": "test",
+      "mapped_check": "tests.test_verify_layer.VerifyLayerTests.test_no_downstream_promotion",
+      "mutation_id": "VL-M6",
+      "status": "KILLED",
+      "suite": "prove_verify_layer_can_fail",
+      "target_id": "verify-layer.proof-context.v0"
+    },
+    {
+      "collateral": [
+        "tests.test_verify_layer.VerifyLayerTests.test_pipeline",
+        "tests.test_verify_layer.VerifyLayerTests.test_seven_family_pipeline"
+      ],
+      "errors": [],
+      "expected_failure_phase": "test",
+      "mapped_check": "tests.test_verify_layer.VerifyLayerTests.test_mirror",
+      "mutation_id": "VL-M7",
+      "status": "KILLED",
+      "suite": "prove_verify_layer_can_fail",
+      "target_id": "verify-layer.proof-context.v0"
+    },
+    {
+      "collateral": [
+        "tests.test_verify_layer.VerifyLayerTests.test_pipeline",
+        "tests.test_verify_layer.VerifyLayerTests.test_seven_family_pipeline",
+        "tests.test_verify_layer.VerifyLayerTests.test_wrong_account"
+      ],
+      "errors": [],
+      "expected_failure_phase": "test",
+      "mapped_check": "tests.test_verify_layer.VerifyLayerTests.test_wrong_claim",
+      "mutation_id": "VL-M9",
+      "status": "KILLED",
+      "suite": "prove_verify_layer_can_fail",
+      "target_id": "verify-layer.proof-context.v0"
+    },
+    {
+      "collateral": [],
+      "errors": [],
+      "expected_failure_phase": "test",
+      "mapped_check": "tests.test_capv.CAPVTests.test_fresh_not_bound",
+      "mutation_id": "CAPV-M1",
+      "status": "KILLED",
+      "suite": "prove_capv_can_fail",
+      "target_id": "capv.expiry-generation.v0"
+    },
+    {
+      "collateral": [],
+      "errors": [],
+      "expected_failure_phase": "test",
+      "mapped_check": "tests.test_capv.CAPVTests.test_fixed_control",
+      "mutation_id": "CAPV-M2",
+      "status": "KILLED",
+      "suite": "prove_capv_can_fail",
+      "target_id": "capv.expiry-generation.v0"
+    },
+    {
+      "collateral": [],
+      "errors": [],
+      "expected_failure_phase": "test",
+      "mapped_check": "tests.test_capv.CAPVTests.test_generation",
+      "mutation_id": "CAPV-M3",
+      "status": "KILLED",
+      "suite": "prove_capv_can_fail",
+      "target_id": "capv.expiry-generation.v0"
+    },
+    {
+      "collateral": [],
+      "errors": [],
+      "expected_failure_phase": "test",
+      "mapped_check": "tests.test_capv.CAPVTests.test_nonretroactivity",
+      "mutation_id": "CAPV-M4",
+      "status": "KILLED",
+      "suite": "prove_capv_can_fail",
+      "target_id": "capv.expiry-generation.v0"
+    },
+    {
+      "collateral": [],
+      "errors": [],
+      "expected_failure_phase": "test",
+      "mapped_check": "tests.test_capv.CAPVTests.test_program_key",
+      "mutation_id": "CAPV-M5",
+      "status": "KILLED",
+      "suite": "prove_capv_can_fail",
+      "target_id": "capv.expiry-generation.v0"
+    },
+    {
+      "collateral": [],
+      "errors": [],
+      "expected_failure_phase": "test",
+      "mapped_check": "tests.test_capv.CAPVTests.test_mirror",
+      "mutation_id": "CAPV-M6",
+      "status": "KILLED",
+      "suite": "prove_capv_can_fail",
+      "target_id": "capv.expiry-generation.v0"
+    },
+    {
+      "collateral": [],
+      "errors": [],
+      "expected_failure_phase": "test",
+      "mapped_check": "tests.test_aggregate.AggregateTests.test_edge_amplification",
+      "mutation_id": "AGG-M1",
+      "status": "KILLED",
+      "suite": "prove_aggregate_can_fail",
+      "target_id": "erc8312.aggregate-budget.v0"
+    },
+    {
+      "collateral": [],
+      "errors": [],
+      "expected_failure_phase": "test",
+      "mapped_check": "tests.test_aggregate.AggregateTests.test_shared_root",
+      "mutation_id": "AGG-M2",
+      "status": "KILLED",
+      "suite": "prove_aggregate_can_fail",
+      "target_id": "erc8312.aggregate-budget.v0"
+    },
+    {
+      "collateral": [],
+      "errors": [],
+      "expected_failure_phase": "test",
+      "mapped_check": "tests.test_aggregate.AggregateTests.test_revoke_no_refund",
+      "mutation_id": "AGG-M3",
+      "status": "KILLED",
+      "suite": "prove_aggregate_can_fail",
+      "target_id": "erc8312.aggregate-budget.v0"
+    },
+    {
+      "collateral": [],
+      "errors": [],
+      "expected_failure_phase": "test",
+      "mapped_check": "tests.test_aggregate.AggregateTests.test_period_history",
+      "mutation_id": "AGG-M4",
+      "status": "KILLED",
+      "suite": "prove_aggregate_can_fail",
+      "target_id": "erc8312.aggregate-budget.v0"
+    },
+    {
+      "collateral": [],
+      "errors": [],
+      "expected_failure_phase": "test",
+      "mapped_check": "tests.test_aggregate.AggregateTests.test_capped_leaf",
+      "mutation_id": "AGG-M5",
+      "status": "KILLED",
+      "suite": "prove_aggregate_can_fail",
+      "target_id": "erc8312.aggregate-budget.v0"
+    },
+    {
+      "collateral": [],
+      "errors": [],
+      "expected_failure_phase": "test",
+      "mapped_check": "tests.test_aggregate.AggregateTests.test_ancestor_revoked",
+      "mutation_id": "AGG-M6",
+      "status": "KILLED",
+      "suite": "prove_aggregate_can_fail",
+      "target_id": "erc8312.aggregate-budget.v0"
+    },
+    {
+      "collateral": [],
+      "errors": [],
+      "expected_failure_phase": "test",
+      "mapped_check": "tests.test_aggregate.AggregateTests.test_node_cap",
+      "mutation_id": "AGG-M7",
+      "status": "KILLED",
+      "suite": "prove_aggregate_can_fail",
+      "target_id": "erc8312.aggregate-budget.v0"
+    },
+    {
+      "collateral": [],
+      "errors": [],
+      "expected_failure_phase": "test",
+      "mapped_check": "tests.test_aggregate.AggregateTests.test_unsupported_claims",
+      "mutation_id": "AGG-M8",
+      "status": "KILLED",
+      "suite": "prove_aggregate_can_fail",
+      "target_id": "erc8312.aggregate-budget.v0"
+    },
+    {
+      "collateral": [],
+      "errors": [],
+      "expected_failure_phase": "test",
+      "mapped_check": "tests.test_aggregate.AggregateTests.test_mirror",
+      "mutation_id": "AGG-M9",
+      "status": "KILLED",
+      "suite": "prove_aggregate_can_fail",
+      "target_id": "erc8312.aggregate-budget.v0"
+    },
+    {
+      "collateral": [],
+      "errors": [],
+      "expected_failure_phase": "test",
+      "mapped_check": "tests.test_judgment.JudgmentTests.test_terminal_substitution",
+      "mutation_id": "JEX-M1",
+      "status": "KILLED",
+      "suite": "mutations",
+      "target_id": "erc8299.judgment-record-binding.v0"
+    },
+    {
+      "collateral": [],
+      "errors": [],
+      "expected_failure_phase": "test",
+      "mapped_check": "tests.test_judgment.JudgmentTests.test_action_ref",
+      "mutation_id": "JEX-M2",
+      "status": "KILLED",
+      "suite": "mutations",
+      "target_id": "erc8299.judgment-record-binding.v0"
+    },
+    {
+      "collateral": [],
+      "errors": [],
+      "expected_failure_phase": "test",
+      "mapped_check": "tests.test_judgment.JudgmentTests.test_other_signed_envelope",
+      "mutation_id": "JEX-M3",
+      "status": "KILLED",
+      "suite": "mutations",
+      "target_id": "erc8299.judgment-record-binding.v0"
+    },
+    {
+      "collateral": [],
+      "errors": [],
+      "expected_failure_phase": "test",
+      "mapped_check": "tests.test_judgment.JudgmentTests.test_late_anchor",
+      "mutation_id": "JEX-M4",
+      "status": "KILLED",
+      "suite": "mutations",
+      "target_id": "erc8299.judgment-record-binding.v0"
+    },
+    {
+      "collateral": [],
+      "errors": [],
+      "expected_failure_phase": "test",
+      "mapped_check": "tests.test_judgment.JudgmentTests.test_execution_unsupported",
+      "mutation_id": "JEX-M5",
+      "status": "KILLED",
+      "suite": "mutations",
+      "target_id": "erc8299.judgment-record-binding.v0"
+    },
+    {
+      "collateral": [],
+      "errors": [],
+      "expected_failure_phase": "test",
+      "mapped_check": "tests.test_judgment.JudgmentTests.test_authorization_not_inherited",
+      "mutation_id": "JEX-M6",
+      "status": "KILLED",
+      "suite": "mutations",
+      "target_id": "erc8299.judgment-record-binding.v0"
+    },
+    {
+      "collateral": [],
+      "errors": [],
+      "expected_failure_phase": "test",
+      "mapped_check": "tests.test_judgment.JudgmentTests.test_anchor_not_authority",
+      "mutation_id": "JEX-M7",
+      "status": "KILLED",
+      "suite": "mutations",
+      "target_id": "erc8299.judgment-record-binding.v0"
+    },
+    {
+      "collateral": [],
+      "errors": [],
+      "expected_failure_phase": "test",
+      "mapped_check": "tests.test_judgment.JudgmentTests.test_mirror",
+      "mutation_id": "JEX-M8",
+      "status": "KILLED",
+      "suite": "mutations",
+      "target_id": "erc8299.judgment-record-binding.v0"
+    }
+  ],
+  "schema": "rsi-v0-mutation-audit.v0",
+  "totals": {
+    "KILLED": 84,
+    "NOT_APPLIED": 0,
+    "SURVIVED": 0,
+    "VACUOUS": 0
+  }
+}
