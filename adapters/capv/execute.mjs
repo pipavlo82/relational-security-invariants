@@ -1,0 +1,11 @@
+import fs from 'node:fs';
+import {run} from '../../evidence/capv/evm-runtime.mjs';
+const input=JSON.parse(fs.readFileSync(0,'utf8'));
+const allowed=new Set(['sdk','fixed','fixed-drop','sdk-key']);
+if(!allowed.has(input.variant))throw Error('variant');
+const base=new URL('../../evidence/capv/',import.meta.url);
+const artifact=JSON.parse(fs.readFileSync(new URL(input.variant+'.json',base),'utf8'));
+const proofPaths={sdk:'sdk/fixtures/allowlist.proof',fixed:'fixed/test/fixtures/allowlist.proof'};
+if(!Object.hasOwn(proofPaths,input.proof_generation))throw Error('proof generation');
+const proof='0x'+fs.readFileSync(new URL(proofPaths[input.proof_generation],base)).toString('hex');
+process.stdout.write(JSON.stringify(await run(input.verdict,input.program_key,proof,artifact,input.variant.startsWith('sdk')?'sdk':'fixed'))+'\n');

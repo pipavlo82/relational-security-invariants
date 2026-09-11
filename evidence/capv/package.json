@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "@ethereumjs/common": "4.4.0",
+    "@ethereumjs/evm": "3.1.1",
+    "@ethereumjs/util": "9.1.0",
+    "@openzeppelin/contracts": "5.0.2",
+    "esbuild": "0.25.0",
+    "ethers": "6.13.5",
+    "solc": "0.8.27"
+  }
+}
