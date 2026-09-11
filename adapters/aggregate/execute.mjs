@@ -1,0 +1,10 @@
+import fs from 'node:fs';
+import {executeTrace} from '../../evidence/aggregate/evm-runtime.mjs';
+import {valueFor} from '../../evidence/aggregate/gate.mjs';
+const q=JSON.parse(fs.readFileSync(0,'utf8'));
+if(!['cursor','edge','root','refund','period','delegate','revoked','nodecap'].includes(q.variant))throw Error('variant');
+const artifact=JSON.parse(fs.readFileSync(new URL('../../evidence/aggregate/'+q.variant+'.json',import.meta.url)));
+const r=await executeTrace(q.inputs,artifact);
+const log=r.log.map(e=>({rootId:String(e.root),periodIndex:e.period,edge:e.edge,amount:e.amount,admitted:e.admitted}));
+const meters=r.meters.map(m=>{const g=valueFor({rootId:String(m.root),periodIndex:m.period,cap:m.cap,log},q.gate_tamper);return {...m,admitted_sum:g.admittedSum,conserves:g.conserves,meter_matches:m.spent_root==='UNSUPPORTED'?'UNSUPPORTED':m.spent_root===g.admittedSum};});
+console.log(JSON.stringify({steps:r.steps,meters,log_origin:r.log_origin,realized:r.realized??r.log.reduce((a,e)=>a+BigInt(e.amount),0n).toString(),conserved:meters.every(m=>m.conserves)}));
