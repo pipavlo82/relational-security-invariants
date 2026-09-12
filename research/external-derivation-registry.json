@@ -300,6 +300,70 @@
           "recorded_at_utc": "2026-09-11T15:37:17.588818+00:00",
           "sequence": 1,
           "status": "AWAITING_STRICT_BLIND_REVIEWER"
+        },
+        {
+          "affiliations": {
+            "reported_financial_ties": "No payment, equity or financial affiliation.",
+            "reported_role_in_rsi_crystal_receiptos": "None.",
+            "reported_technical_collaboration": [
+              "Trustless AI circle/build group on Semantic ABI; horizon-shield adapter PR reportedly deferred until post-ETHOnline.",
+              "Coauthors reproducibility papers with Baby Blue Viper."
+            ],
+            "verification": "Disclosures relayed by owner; external project activity not independently audited in this action."
+          },
+          "claim_limits": [
+            "No strict unaffiliated evidence.",
+            "No completed blind derivation or comparison yet.",
+            "No retrospective change to v0 author independence UNKNOWN.",
+            "No framework-wide independence claim."
+          ],
+          "comparison_commit": null,
+          "derivation_commit_or_digest": null,
+          "event_id": "CR-EXT-DERIVATION-001-DA-001-ROLE",
+          "event_type": "DISCLOSED_AFFILIATION_ROLE_ACCEPTED",
+          "exposure_statement": {
+            "check_method": "Answered from memory; did not open or clone RSI to check.",
+            "independently_verified_absence": false,
+            "reported_prior_exposure": "None to best recollection; never cloned/accessed RSI or seen its Crystal/ReceiptOS predictor, expectations, H2 material, screenshots, excerpts, summaries or conclusions."
+          },
+          "external_source_commit": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+          "outcome": null,
+          "owner_authorization": {
+            "date": "2026-09-12",
+            "scope": "Record role and invite to frozen clean-room pack only; user instruction in this task."
+          },
+          "pack_commit": "c3f293d8b76d9b1646fbdbed6eddbece52c0a269",
+          "pack_file_sha256": {
+            "HASHES.sha256": "7043e00225a908cbccf8b5ea01f3b205a5983a1a562977d2118174c58b7533b3",
+            "PACK_MANIFEST.json": "fd1b54c809e87d19bde82d86bbc4e9aec56055021a95322898b5b81052cfb220"
+          },
+          "pack_repo": "pipavlo82/crystal-receipt-semantic-snapshot-cleanroom",
+          "planned_pack_permission": "Standard collaborator read/write on personal private GitHub repository; not read-only.",
+          "previous_event_sha256": "ce4a6a0469a65e02b5b6899c9bc9a12dfca3a53d2ddedd57f9ae061584106336",
+          "protocol_addendum": "research/v1-disclosed-affiliation-blind-derivation.md",
+          "protocol_addendum_version": "1.0",
+          "recorded_at_utc": "2026-09-12T13:18:18.887464+00:00",
+          "remaining_gates": [
+            "Reviewer-authored exposure/affiliation and fresh environment/tool statement with submission.",
+            "Exact pack commit and both file hashes bound to derivation.",
+            "Commit and SHA-256 freeze plus witnessed receipt before any reveal."
+          ],
+          "reveal_commit": null,
+          "reviewer_identity": {
+            "id": 245396182,
+            "login": "ogasurfproject-jpg",
+            "name": "\u5927\u8cc0 \u4fca\u52dd (Toshikatsu Oga)",
+            "type": "User"
+          },
+          "reviewer_role": "BLIND_DERIVER_WITH_DISCLOSED_AFFILIATION",
+          "role_record_base_commit": "fedaf59c7a4eacce2816c5c3d40b9064dd2399c7",
+          "round_id": "CR-EXT-DERIVATION-001-DA-001",
+          "rsi_access_authorized": false,
+          "rsi_v0_commit": "8d8e31291ecf96284212a353efb66f606cff2953",
+          "sequence": 2,
+          "statement_provenance": "Owner supplied a message attributed to Baby Blue Viper, relaying Toshikatsu verbatim. No direct signed statement inspected.",
+          "status": "ELIGIBLE_AWAITING_PACK_INVITATION",
+          "strict_blind_deriver_eligible": false
         }
       ],
       "exercise_id": "CR-EXT-DERIVATION-001",
