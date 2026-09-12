@@ -364,6 +364,46 @@
           "statement_provenance": "Owner supplied a message attributed to Baby Blue Viper, relaying Toshikatsu verbatim. No direct signed statement inspected.",
           "status": "ELIGIBLE_AWAITING_PACK_INVITATION",
           "strict_blind_deriver_eligible": false
+        },
+        {
+          "accepted_permission_observed": "none",
+          "comparison_commit": null,
+          "derivation_commit_or_digest": null,
+          "event_id": "CR-EXT-DERIVATION-001-DA-001-INVITATION",
+          "event_type": "PACK_ACCESS_STATUS_OBSERVED",
+          "evidence_source": "Authenticated GitHub REST API: main refs, repository invitations, collaborator permission. No existing RSI answers disclosed.",
+          "external_source_commit": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+          "invitations": [
+            {
+              "created_at": "2026-09-12T13:46:36Z",
+              "id": 332793593,
+              "invitee": "ogasurfproject-jpg",
+              "invitee_id": 245396182,
+              "permissions": "write"
+            }
+          ],
+          "outcome": null,
+          "pack_commit": "c3f293d8b76d9b1646fbdbed6eddbece52c0a269",
+          "pack_file_sha256": {
+            "HASHES.sha256": "7043e00225a908cbccf8b5ea01f3b205a5983a1a562977d2118174c58b7533b3",
+            "PACK_MANIFEST.json": "fd1b54c809e87d19bde82d86bbc4e9aec56055021a95322898b5b81052cfb220"
+          },
+          "pack_repo": "pipavlo82/crystal-receipt-semantic-snapshot-cleanroom",
+          "permission_note": "Personal private repository standard collaborator read/write. Not a read-only invitation.",
+          "previous_event_sha256": "0006420ac0bf3d6930f35ce7a5ceeeb043f0a4b5064626989c35a38c42257154",
+          "recorded_at_utc": "2026-09-12T13:51:21.288864+00:00",
+          "reveal_commit": null,
+          "reviewer_identity": {
+            "github_id": 245396182,
+            "login": "ogasurfproject-jpg"
+          },
+          "reviewer_role": "BLIND_DERIVER_WITH_DISCLOSED_AFFILIATION",
+          "role_published_before_invitation": true,
+          "role_record_remote_commit": "8897cae4ab02ad84ba02f31dcb5e28ccdeea6a30",
+          "round_id": "CR-EXT-DERIVATION-001-DA-001",
+          "rsi_permission_observed": "none",
+          "sequence": 3,
+          "status": "INVITATION_PENDING"
         }
       ],
       "exercise_id": "CR-EXT-DERIVATION-001",
