@@ -1,0 +1,14 @@
+{
+  "base_commit": "7390f20f1c11f815db47bc8244efd72b4754b45c",
+  "ci_receipt_sha256": "63f279c092ff8f9afbe5c9e5738a5c55375a7c8f577f2e881e01066318f82a43",
+  "evidence_commit": "2c4f4e3222729a055d4c66375e755797925297d9",
+  "evidence_manifest_sha256_at_commit": "36c5c95a11b1ac7de1782216dc117c3aaf3347e1070575160ae38e8102351f46",
+  "exact_commit_ci_matrix_jobs_success": 20,
+  "exact_commit_ci_workflows_success": 10,
+  "external_verifier_comparison": "NOT_PERFORMED",
+  "recorded_at_utc": "2026-09-13T15:39:40.342907+00:00",
+  "repository": "pipavlo82/relational-security-invariants",
+  "repository_visibility": "private",
+  "schema": "rsi-post-v0-publication-receipt.v1",
+  "source_v0_unchanged": true
+}

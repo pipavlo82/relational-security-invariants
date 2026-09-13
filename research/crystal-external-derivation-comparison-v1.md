@@ -72,3 +72,11 @@ All 546 unit tests pass normally and all 546 pass under python -O. The 123 confo
 The first full run failed one classifier control because its unchanged child runner exceeded the 30-second limit. Diagnostic logs preserve that failure and the successful retry. No timeout, test or semantic implementation was changed. The later complete gate used a direct Remote Desktop Commander driver. The underlying Windows/runtime delay is not conclusively diagnosed.
 
 The publication-validation directory records commands, normal/optimized logs, conformance, all mutation reports, byte comparisons and the failed-run history. Captured evidence bytes are marked -text to prevent Git line-ending normalization; newly authored technical text uses LF. A prepared disclosure body is frozen in this evidence commit; preparation is not delivery. Actual publication, CI and recipient disclosure are appended only after they occur.
+
+## Publication and post-freeze disclosure
+
+The comparison and exact prepared disclosure were published in private RSI commit 2c4f4e3222729a055d4c66375e755797925297d9. All 10 workflows and 20 Python 3.12/3.13 matrix jobs succeeded on that exact commit before disclosure. The first-commit CI receipt is retained under disclosure/.
+
+The frozen four-case disclosure was posted to the private external freeze-v2 commit at 2026-09-13T15:38:38Z: https://github.com/ogasurfproject-jpg/crystal-receipt-derivation/commit/1fa7700ecac0690edf6116dabb4938bc3712f7c9#commitcomment-200229378. The GitHub-returned comment body matches SHA-256 d6af897672df1b7c023242ec4c42c31cd27c4434af6ee9e3d6fc4c7bd79c3ece. Posting is independently observed through the API; recipient reading or acknowledgment is not yet observed. No broader RSI access was granted, and no pack or external source file/tag was changed. Original submissions remain frozen.
+
+A separate external POST_COMMIT_VERIFIER comparison is still NOT PERFORMED. This coordinator result and disclosure do not establish that stage, strict unaffiliated derivation, or framework-wide author independence. Baby Blue Viper remains a candidate with the previously disclosed coauthorship limitation. v0 author independence remains UNKNOWN.

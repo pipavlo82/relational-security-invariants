@@ -1,0 +1,243 @@
+{
+  "all_required_workflows_green": true,
+  "commit": "2c4f4e3222729a055d4c66375e755797925297d9",
+  "jobs": [
+    {
+      "conclusion": "success",
+      "html_url": "https://github.com/pipavlo82/relational-security-invariants/actions/runs/34765680270/job/103746100389",
+      "name": "hardening (3.13)",
+      "run_id": 34765680270,
+      "status": "completed"
+    },
+    {
+      "conclusion": "success",
+      "html_url": "https://github.com/pipavlo82/relational-security-invariants/actions/runs/34765680270/job/103746100417",
+      "name": "hardening (3.12)",
+      "run_id": 34765680270,
+      "status": "completed"
+    },
+    {
+      "conclusion": "success",
+      "html_url": "https://github.com/pipavlo82/relational-security-invariants/actions/runs/34765680267/job/103746100386",
+      "name": "conformance (3.12)",
+      "run_id": 34765680267,
+      "status": "completed"
+    },
+    {
+      "conclusion": "success",
+      "html_url": "https://github.com/pipavlo82/relational-security-invariants/actions/runs/34765680267/job/103746100475",
+      "name": "conformance (3.13)",
+      "run_id": 34765680267,
+      "status": "completed"
+    },
+    {
+      "conclusion": "success",
+      "html_url": "https://github.com/pipavlo82/relational-security-invariants/actions/runs/34765680255/job/103746100192",
+      "name": "conformance (3.13)",
+      "run_id": 34765680255,
+      "status": "completed"
+    },
+    {
+      "conclusion": "success",
+      "html_url": "https://github.com/pipavlo82/relational-security-invariants/actions/runs/34765680255/job/103746100313",
+      "name": "conformance (3.12)",
+      "run_id": 34765680255,
+      "status": "completed"
+    },
+    {
+      "conclusion": "success",
+      "html_url": "https://github.com/pipavlo82/relational-security-invariants/actions/runs/34765680262/job/103746100368",
+      "name": "conformance (3.12)",
+      "run_id": 34765680262,
+      "status": "completed"
+    },
+    {
+      "conclusion": "success",
+      "html_url": "https://github.com/pipavlo82/relational-security-invariants/actions/runs/34765680262/job/103746100472",
+      "name": "conformance (3.13)",
+      "run_id": 34765680262,
+      "status": "completed"
+    },
+    {
+      "conclusion": "success",
+      "html_url": "https://github.com/pipavlo82/relational-security-invariants/actions/runs/34765680284/job/103746100343",
+      "name": "conformance (3.12)",
+      "run_id": 34765680284,
+      "status": "completed"
+    },
+    {
+      "conclusion": "success",
+      "html_url": "https://github.com/pipavlo82/relational-security-invariants/actions/runs/34765680284/job/103746100690",
+      "name": "conformance (3.13)",
+      "run_id": 34765680284,
+      "status": "completed"
+    },
+    {
+      "conclusion": "success",
+      "html_url": "https://github.com/pipavlo82/relational-security-invariants/actions/runs/34765680256/job/103746100436",
+      "name": "conformance (3.12)",
+      "run_id": 34765680256,
+      "status": "completed"
+    },
+    {
+      "conclusion": "success",
+      "html_url": "https://github.com/pipavlo82/relational-security-invariants/actions/runs/34765680256/job/103746100526",
+      "name": "conformance (3.13)",
+      "run_id": 34765680256,
+      "status": "completed"
+    },
+    {
+      "conclusion": "success",
+      "html_url": "https://github.com/pipavlo82/relational-security-invariants/actions/runs/34765680264/job/103746100419",
+      "name": "conformance (3.13)",
+      "run_id": 34765680264,
+      "status": "completed"
+    },
+    {
+      "conclusion": "success",
+      "html_url": "https://github.com/pipavlo82/relational-security-invariants/actions/runs/34765680264/job/103746100510",
+      "name": "conformance (3.12)",
+      "run_id": 34765680264,
+      "status": "completed"
+    },
+    {
+      "conclusion": "success",
+      "html_url": "https://github.com/pipavlo82/relational-security-invariants/actions/runs/34765680277/job/103746100378",
+      "name": "conformance (3.12)",
+      "run_id": 34765680277,
+      "status": "completed"
+    },
+    {
+      "conclusion": "success",
+      "html_url": "https://github.com/pipavlo82/relational-security-invariants/actions/runs/34765680277/job/103746100493",
+      "name": "conformance (3.13)",
+      "run_id": 34765680277,
+      "status": "completed"
+    },
+    {
+      "conclusion": "success",
+      "html_url": "https://github.com/pipavlo82/relational-security-invariants/actions/runs/34765680289/job/103746100380",
+      "name": "conformance (3.13)",
+      "run_id": 34765680289,
+      "status": "completed"
+    },
+    {
+      "conclusion": "success",
+      "html_url": "https://github.com/pipavlo82/relational-security-invariants/actions/runs/34765680289/job/103746100517",
+      "name": "conformance (3.12)",
+      "run_id": 34765680289,
+      "status": "completed"
+    },
+    {
+      "conclusion": "success",
+      "html_url": "https://github.com/pipavlo82/relational-security-invariants/actions/runs/34765680285/job/103746100426",
+      "name": "conformance (3.13)",
+      "run_id": 34765680285,
+      "status": "completed"
+    },
+    {
+      "conclusion": "success",
+      "html_url": "https://github.com/pipavlo82/relational-security-invariants/actions/runs/34765680285/job/103746100518",
+      "name": "conformance (3.12)",
+      "run_id": 34765680285,
+      "status": "completed"
+    }
+  ],
+  "observed_at_utc": "2026-09-13T15:37:35.168014+00:00",
+  "repository": "pipavlo82/relational-security-invariants",
+  "required_workflow_count": 10,
+  "runs": [
+    {
+      "conclusion": "success",
+      "head_sha": "2c4f4e3222729a055d4c66375e755797925297d9",
+      "html_url": "https://github.com/pipavlo82/relational-security-invariants/actions/runs/34765680270",
+      "id": 34765680270,
+      "name": "Crystal clean-room third leg",
+      "run_attempt": 1,
+      "status": "completed"
+    },
+    {
+      "conclusion": "success",
+      "head_sha": "2c4f4e3222729a055d4c66375e755797925297d9",
+      "html_url": "https://github.com/pipavlo82/relational-security-invariants/actions/runs/34765680267",
+      "id": 34765680267,
+      "name": "PQ policy as-of conformance",
+      "run_attempt": 1,
+      "status": "completed"
+    },
+    {
+      "conclusion": "success",
+      "head_sha": "2c4f4e3222729a055d4c66375e755797925297d9",
+      "html_url": "https://github.com/pipavlo82/relational-security-invariants/actions/runs/34765680255",
+      "id": 34765680255,
+      "name": "TSEI serializer adoption conformance",
+      "run_attempt": 1,
+      "status": "completed"
+    },
+    {
+      "conclusion": "success",
+      "head_sha": "2c4f4e3222729a055d4c66375e755797925297d9",
+      "html_url": "https://github.com/pipavlo82/relational-security-invariants/actions/runs/34765680262",
+      "id": 34765680262,
+      "name": "TAS verified context invocation conformance",
+      "run_attempt": 1,
+      "status": "completed"
+    },
+    {
+      "conclusion": "success",
+      "head_sha": "2c4f4e3222729a055d4c66375e755797925297d9",
+      "html_url": "https://github.com/pipavlo82/relational-security-invariants/actions/runs/34765680284",
+      "id": 34765680284,
+      "name": "ERC8299 signed judgment record conformance",
+      "run_attempt": 1,
+      "status": "completed"
+    },
+    {
+      "conclusion": "success",
+      "head_sha": "2c4f4e3222729a055d4c66375e755797925297d9",
+      "html_url": "https://github.com/pipavlo82/relational-security-invariants/actions/runs/34765680256",
+      "id": 34765680256,
+      "name": "verify-layer proof context conformance",
+      "run_attempt": 1,
+      "status": "completed"
+    },
+    {
+      "conclusion": "success",
+      "head_sha": "2c4f4e3222729a055d4c66375e755797925297d9",
+      "html_url": "https://github.com/pipavlo82/relational-security-invariants/actions/runs/34765680264",
+      "id": 34765680264,
+      "name": "ERC8312 aggregate budget conformance",
+      "run_attempt": 1,
+      "status": "completed"
+    },
+    {
+      "conclusion": "success",
+      "head_sha": "2c4f4e3222729a055d4c66375e755797925297d9",
+      "html_url": "https://github.com/pipavlo82/relational-security-invariants/actions/runs/34765680277",
+      "id": 34765680277,
+      "name": "CAPV expiry generation conformance",
+      "run_attempt": 1,
+      "status": "completed"
+    },
+    {
+      "conclusion": "success",
+      "head_sha": "2c4f4e3222729a055d4c66375e755797925297d9",
+      "html_url": "https://github.com/pipavlo82/relational-security-invariants/actions/runs/34765680289",
+      "id": 34765680289,
+      "name": "ConsultEscrow job-bound release conformance",
+      "run_attempt": 1,
+      "status": "completed"
+    },
+    {
+      "conclusion": "success",
+      "head_sha": "2c4f4e3222729a055d4c66375e755797925297d9",
+      "html_url": "https://github.com/pipavlo82/relational-security-invariants/actions/runs/34765680285",
+      "id": 34765680285,
+      "name": "RSI v0 conformance",
+      "run_attempt": 1,
+      "status": "completed"
+    }
+  ],
+  "schema": "rsi-exact-head-ci-receipt.v1",
+  "successful_matrix_jobs": 20
+}
