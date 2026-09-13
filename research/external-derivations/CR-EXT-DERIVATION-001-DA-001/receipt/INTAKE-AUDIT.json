@@ -1,0 +1,30 @@
+{
+  "ai_assistance": "Self-reported; model names, memory isolation, lack of network and lack of answer exposure not independently verified.",
+  "cases_unchanged": true,
+  "changed_top_level_fields": [
+    "exposure_statement"
+  ],
+  "comparison_status": "NOT_PERFORMED",
+  "declared_hashes_file_matches": true,
+  "derivation_sha256": "c05b65cbca87433bceb1cd0d3a50600cbb71bbbbb673d576715700100d508ec1",
+  "execution_status": "derive.mjs inspected; not executed. Hard-coded /mnt/user-data/uploads input root noted.",
+  "frozen_derivation_commit": "1fa7700ecac0690edf6116dabb4938bc3712f7c9",
+  "limitations": [
+    "Copied supplied source serializer is declared; no independent serializer implementation claim.",
+    "Receipt preserves both versions, but does not independently prove all pre-receipt communication chronology.",
+    "Explicit PACK_MANIFEST.json digest acknowledgment still absent from captured DERIVATION.json."
+  ],
+  "manifest_digest_present_in_derivation": false,
+  "method_unchanged": true,
+  "ots_status": "PRESENT_NOT_VERIFIED",
+  "pack_commit_matches": true,
+  "pack_hashes": {
+    "HASHES.sha256": "7043e00225a908cbccf8b5ea01f3b205a5983a1a562977d2118174c58b7533b3",
+    "PACK_MANIFEST.json": "fd1b54c809e87d19bde82d86bbc4e9aec56055021a95322898b5b81052cfb220"
+  },
+  "receipt_sha256": "9ec97120e93db9cd34ecef0aca9fc4a054ffef65cc00e27de6adde74f0f42fbe",
+  "remote_head": "c8847f83c0001ae9d2042cbdce2a6ac5ad24b0be",
+  "reveal_status": "NOT_PERFORMED",
+  "role": "BLIND_DERIVER_WITH_DISCLOSED_AFFILIATION",
+  "schema": "rsi-external-submission-intake-audit.v1"
+}

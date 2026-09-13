@@ -1,0 +1,33 @@
+========================================================================
+case-001  =>  PRESERVED
+  semantic snapshots equal? true   both accepted? true
+  left .semantic snapshot : {"challenge_id":"observed_not_validated","expected_conformance_observation":"preserve semantic non-elevation","profile_id":"counterfactual-review-v0"}
+  right.semantic snapshot : {"challenge_id":"observed_not_validated","expected_conformance_observation":"preserve semantic non-elevation","profile_id":"counterfactual-review-v0"}
+  left  manifest canon    : {"audit_timestamp":"2026-07-27T12:00:00Z"}  (audit=true:2026-07-27T12:00:00Z)
+  right manifest canon    : {}  (audit=false:null)
+  reserved-inside-sa hits : left=[] right=[]
+========================================================================
+case-002  =>  VIOLATED
+  semantic snapshots equal? false   both accepted? true
+  left .semantic snapshot : {"challenge_id":"observed_not_validated","expected_conformance_observation":"preserve semantic non-elevation","profile_id":"counterfactual-review-v0"}
+  right.semantic snapshot : {"challenge_id":"observed_not_validated","expected_conformance_observation":"incorrectly promote observation","profile_id":"counterfactual-review-v0"}
+  left  manifest canon    : {}  (audit=false:null)
+  right manifest canon    : {}  (audit=false:null)
+  reserved-inside-sa hits : left=[] right=[]
+========================================================================
+case-003  =>  PRESERVED
+  semantic snapshots equal? true   both accepted? true
+  left .semantic snapshot : {"challenge_id":"observed_not_validated","expected_conformance_observation":"preserve semantic non-elevation","profile_id":"counterfactual-review-v0"}
+  right.semantic snapshot : {"challenge_id":"observed_not_validated","expected_conformance_observation":"preserve semantic non-elevation","profile_id":"counterfactual-review-v0"}
+  left  manifest canon    : {}  (audit=false:null)
+  right manifest canon    : {}  (audit=false:null)
+  reserved-inside-sa hits : left=[] right=[]
+========================================================================
+case-004  =>  PRESERVED
+  semantic snapshots equal? true   both accepted? true
+  left .semantic snapshot : {"challenge_id":"observed_not_validated","expected_conformance_observation":"preserve semantic non-elevation","profile_id":"counterfactual-review-v0"}
+  right.semantic snapshot : {"challenge_id":"observed_not_validated","expected_conformance_observation":"preserve semantic non-elevation","profile_id":"counterfactual-review-v0"}
+  left  manifest canon    : {"audit_timestamp":"2026-07-27T12:00:00Z"}  (audit=true:2026-07-27T12:00:00Z)
+  right manifest canon    : {"audit_timestamp":"2026-08-05T12:00:00Z"}  (audit=true:2026-08-05T12:00:00Z)
+  reserved-inside-sa hits : left=[] right=[]
+========================================================================

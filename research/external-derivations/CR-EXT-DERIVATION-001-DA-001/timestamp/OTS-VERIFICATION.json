@@ -1,0 +1,34 @@
+{
+  "answer_reveal": "NOT_PERFORMED",
+  "checks": [
+    {
+      "block_hash": "000000000000000000002b2ca751f082a076447fab73540d61d1dd045669be80",
+      "header_time_utc": "2026-09-13T03:14:34+00:00",
+      "height": 966764,
+      "merkle_path_matches": true,
+      "provider": "https://blockstream.info/api",
+      "provider_reports_best_chain": true
+    },
+    {
+      "block_hash": "000000000000000000002b2ca751f082a076447fab73540d61d1dd045669be80",
+      "header_time_utc": "2026-09-13T03:14:34+00:00",
+      "height": 966764,
+      "merkle_path_matches": true,
+      "provider": "https://mempool.space/api",
+      "provider_reports_best_chain": true
+    }
+  ],
+  "derivation_sha256": "c05b65cbca87433bceb1cd0d3a50600cbb71bbbbb673d576715700100d508ec1",
+  "derived_upgraded_ots_sha256": "f2b5aaf5f76e6070a12a696a02fb6a05d62fd590bd4f67bd646b773a54bab108",
+  "limits": [
+    "Headers and best-chain membership supplied by public providers; no local full-chain validation.",
+    "Timestamp evidence does not prove author identity, no prior exposure, or semantic correctness.",
+    "Header time is not an exact wall-clock creation or submission time."
+  ],
+  "local_full_node_consensus_validation": false,
+  "observed_at_utc": "2026-09-13T12:45:17.698470+00:00",
+  "opentimestamps_version": "0.4.5",
+  "original_ots_sha256": "43493b430c3e5aa30163aafe5f40748e67dc141ae359a39b4f491eea10bc42fa",
+  "semantic_comparison": "NOT_PERFORMED",
+  "status": "MERKLE_PATH_VERIFIED_PROVIDER_ASSISTED"
+}

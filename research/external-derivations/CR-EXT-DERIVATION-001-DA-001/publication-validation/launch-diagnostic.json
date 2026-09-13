@@ -1,0 +1,25 @@
+{
+  "extra_diagnostic_limit": "A retained deep diagnostic copy exceeded Windows path length for two files; this is distinct from the classifier timeout and did not modify source.",
+  "initial_full_run": {
+    "expected": "SURVIVED",
+    "failed": 1,
+    "log_sha256": "11874119dac10f7a942d1fbc9aab6b36f39589ad33c83702eaf841a7d3337caa",
+    "observed": "RUNNER_ERROR",
+    "test": "test_rsi.ClassifierTests.test_classifier_negative_controls",
+    "tests": 546
+  },
+  "isolated_diagnosis": "Unchanged child runner exceeded its existing 30-second timeout in nested background execution. Diagnostic retry under synchronous execution completed all four classifier controls in 7.271276 seconds. Direct Remote Desktop Commander driver completed the subsequent unchanged full suite.",
+  "prior_partial_remaining_gate_run": {
+    "all_green": false,
+    "completed": 2,
+    "planned": 13
+  },
+  "retry": {
+    "code_changed": false,
+    "normal_tests": 546,
+    "optimized_tests": 546,
+    "same_test_timeout": 30
+  },
+  "root_cause_limit": "Process-launch/execution delay observed; underlying Windows/runtime cause not conclusively established. No timeout, core or test modification.",
+  "superseded_runs_not_counted_as_pass": true
+}

@@ -1,0 +1,50 @@
+test_actual_cannot_read_expectations (tests.test_crystal_receipt.CrystalTests.test_actual_cannot_read_expectations) ... ok
+test_actual_timestamp_change (tests.test_crystal_receipt.CrystalTests.test_actual_timestamp_change) ... ok
+test_adapter_fault_does_not_change_admitted_expected (tests.test_crystal_receipt.CrystalTests.test_adapter_fault_does_not_change_admitted_expected) ... ok
+test_combined_registration (tests.test_crystal_receipt.CrystalTests.test_combined_registration) ... ok
+test_fixture_id_no_truth (tests.test_crystal_receipt.CrystalTests.test_fixture_id_no_truth) ... ok
+test_frozen_mirror_derivation (tests.test_crystal_receipt.CrystalTests.test_frozen_mirror_derivation) ... ok
+test_frozen_negative_inputs (tests.test_crystal_receipt.CrystalTests.test_frozen_negative_inputs) ... ok
+test_generic_modules_unchanged (tests.test_crystal_receipt.CrystalTests.test_generic_modules_unchanged) ... ok
+test_mirror (tests.test_crystal_receipt.CrystalTests.test_mirror) ... ok
+test_missing_source (tests.test_crystal_receipt.CrystalTests.test_missing_source) ... ok
+test_negative (tests.test_crystal_receipt.CrystalTests.test_negative) ... ok
+test_no_core_domain_terms (tests.test_crystal_receipt.CrystalTests.test_no_core_domain_terms) ... ok
+test_no_fake_fields (tests.test_crystal_receipt.CrystalTests.test_no_fake_fields) ... ok
+test_one_semantic_value_substituted (tests.test_crystal_receipt.CrystalTests.test_one_semantic_value_substituted) ... ok
+test_output_determinism (tests.test_crystal_receipt.CrystalTests.test_output_determinism) ... ok
+test_pinned_bytes_are_executed (tests.test_crystal_receipt.CrystalTests.test_pinned_bytes_are_executed) ... ok
+test_pipeline (tests.test_crystal_receipt.CrystalTests.test_pipeline) ... ok
+test_predictor_independent (tests.test_crystal_receipt.CrystalTests.test_predictor_independent) ... ok
+test_profile_resolution (tests.test_crystal_receipt.CrystalTests.test_profile_resolution) ... ok
+test_required_slots (tests.test_crystal_receipt.CrystalTests.test_required_slots) ... ok
+test_reserved_metadata_not_stripped (tests.test_crystal_receipt.CrystalTests.test_reserved_metadata_not_stripped) ... ok
+test_source_commit (tests.test_crystal_receipt.CrystalTests.test_source_commit) ... ok
+test_source_digest_mismatch (tests.test_crystal_receipt.CrystalTests.test_source_digest_mismatch) ... ok
+test_source_failure_cannot_be_mutation_kill (tests.test_crystal_receipt.CrystalTests.test_source_failure_cannot_be_mutation_kill) ... ok
+test_source_pin (tests.test_crystal_receipt.CrystalTests.test_source_pin) ... ok
+test_static_independence (tests.test_crystal_receipt.CrystalTests.test_static_independence) ... ok
+test_tampered_expectation_atomic (tests.test_crystal_receipt.CrystalTests.test_tampered_expectation_atomic) ... ok
+test_unknown_version (tests.test_crystal_receipt.CrystalTests.test_unknown_version) ... ok
+test_unsupported_transport (tests.test_crystal_receipt.CrystalTests.test_unsupported_transport) ... ok
+test_ascii_escaping_and_key_order (tests.test_crystal_cleanroom.CrystalCleanroomTests.test_ascii_escaping_and_key_order) ... ok
+test_control (tests.test_crystal_cleanroom.CrystalCleanroomTests.test_control) ... ok
+test_existing_crystal_conformance_unchanged (tests.test_crystal_cleanroom.CrystalCleanroomTests.test_existing_crystal_conformance_unchanged) ... ok
+test_frozen_tamper_still_blocks_atomic_admission (tests.test_crystal_cleanroom.CrystalCleanroomTests.test_frozen_tamper_still_blocks_atomic_admission) ... ok
+test_golden_digest_tamper (tests.test_crystal_cleanroom.CrystalCleanroomTests.test_golden_digest_tamper) ... ok
+test_goldens_and_report_deterministic (tests.test_crystal_cleanroom.CrystalCleanroomTests.test_goldens_and_report_deterministic) ... ok
+test_h2_m1_common_mode_caught (tests.test_crystal_cleanroom.CrystalCleanroomTests.test_h2_m1_common_mode_caught) ... ok
+test_h2_m2_common_mode_caught (tests.test_crystal_cleanroom.CrystalCleanroomTests.test_h2_m2_common_mode_caught) ... ok
+test_no_unsafe_or_silent_transport_coercion (tests.test_crystal_cleanroom.CrystalCleanroomTests.test_no_unsafe_or_silent_transport_coercion) ... ok
+test_semantic_substitution (tests.test_crystal_cleanroom.CrystalCleanroomTests.test_semantic_substitution) ... ok
+test_source_pin_drift (tests.test_crystal_cleanroom.CrystalCleanroomTests.test_source_pin_drift) ... ok
+test_standalone_without_other_legs_or_rows (tests.test_crystal_cleanroom.CrystalCleanroomTests.test_standalone_without_other_legs_or_rows) ... ok
+test_static_dependency_separation (tests.test_crystal_cleanroom.CrystalCleanroomTests.test_static_dependency_separation) ... ok
+test_third_leg_finishes_before_other_semantic_paths (tests.test_crystal_cleanroom.CrystalCleanroomTests.test_third_leg_finishes_before_other_semantic_paths) ... ok
+test_timestamp_changed (tests.test_crystal_cleanroom.CrystalCleanroomTests.test_timestamp_changed) ... ok
+test_timestamp_removed (tests.test_crystal_cleanroom.CrystalCleanroomTests.test_timestamp_removed) ... ok
+
+----------------------------------------------------------------------
+Ran 45 tests in 15.130s
+
+OK

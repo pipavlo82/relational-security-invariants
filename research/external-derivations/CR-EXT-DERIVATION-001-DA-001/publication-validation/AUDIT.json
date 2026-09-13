@@ -1,0 +1,172 @@
+{
+  "gate_records": [
+    {
+      "gate": "run_judgment",
+      "previous_bytes_identical": true,
+      "sha256": "1de8da422831243f9e79eccdda3691dc3fe8c4dc61a72d83dac165b59e732321",
+      "totals": {
+        "FAIL": 0,
+        "INVALID_FIXTURE": 0,
+        "PASS": 123,
+        "UNSUPPORTED": 0
+      }
+    },
+    {
+      "gate": "run_registered_mutations",
+      "previous_bytes_identical": true,
+      "sha256": "4b648bcd26cebeabc22ac5c7cc5503d8d79c3a0b190b8dc5ef872f79fb1383b5",
+      "totals": {
+        "KILLED": 16,
+        "NOT_APPLIED": 0,
+        "SURVIVED": 0,
+        "VACUOUS": 0
+      }
+    },
+    {
+      "gate": "prove_relations_can_fail",
+      "previous_bytes_identical": true,
+      "sha256": "e2e299e41aa450e6a392cf867e97cfce4a36c7fab21c78d660b502169a27dd79",
+      "totals": {
+        "KILLED": 7,
+        "NOT_APPLIED": 0,
+        "SURVIVED": 0,
+        "VACUOUS": 0
+      }
+    },
+    {
+      "gate": "prove_crystal_can_fail",
+      "previous_bytes_identical": true,
+      "sha256": "e947d9bdc8b8a68d238840d8e43a2991bdc472a70ddff60549b35284f8fbca17",
+      "totals": {
+        "KILLED": 3,
+        "NOT_APPLIED": 0,
+        "SURVIVED": 0,
+        "VACUOUS": 0
+      }
+    },
+    {
+      "gate": "prove_rvr_can_fail",
+      "previous_bytes_identical": true,
+      "sha256": "3e875fe403f950c1374adf3125713019efb8ff7d7d82f067c606b5a7c0440d82",
+      "totals": {
+        "KILLED": 6,
+        "NOT_APPLIED": 0,
+        "SURVIVED": 0,
+        "VACUOUS": 0
+      }
+    },
+    {
+      "gate": "prove_tsei_can_fail",
+      "previous_bytes_identical": true,
+      "sha256": "500e00dd6c498cd6d966fd7e4679f28b3e967f0cfc6ca9e5766233d85b179512",
+      "totals": {
+        "KILLED": 6,
+        "NOT_APPLIED": 0,
+        "SURVIVED": 0,
+        "VACUOUS": 0
+      }
+    },
+    {
+      "gate": "prove_pq_can_fail",
+      "previous_bytes_identical": true,
+      "sha256": "a72c5338c9fb158cac6e090613a7a1aa0f05bbf2efe339ecdfccbd0931cdfce9",
+      "totals": {
+        "KILLED": 7,
+        "NOT_APPLIED": 0,
+        "SURVIVED": 0,
+        "VACUOUS": 0
+      }
+    },
+    {
+      "gate": "prove_tas_can_fail",
+      "previous_bytes_identical": true,
+      "sha256": "9c3578640f87d5e8704ade0ac8ab7de9e0992117b6c99379f9fa2c4311fd8865",
+      "totals": {
+        "KILLED": 5,
+        "NOT_APPLIED": 0,
+        "SURVIVED": 0,
+        "VACUOUS": 0
+      }
+    },
+    {
+      "gate": "prove_consult_escrow_can_fail",
+      "previous_bytes_identical": true,
+      "sha256": "7788d82e21d9bb8bf6f5254d6f29a36f569c2443d8062953ee7235c5b808e0b5",
+      "totals": {
+        "KILLED": 5,
+        "NOT_APPLIED": 0,
+        "SURVIVED": 0,
+        "VACUOUS": 0
+      }
+    },
+    {
+      "gate": "prove_verify_layer_can_fail",
+      "previous_bytes_identical": true,
+      "sha256": "3398dd435eb905ca2bcde83241ba2b8c016a125080eb4999c2d7a84a3ebb0664",
+      "totals": {
+        "KILLED": 6,
+        "NOT_APPLIED": 0,
+        "SURVIVED": 0,
+        "VACUOUS": 0
+      }
+    },
+    {
+      "gate": "prove_capv_can_fail",
+      "previous_bytes_identical": true,
+      "sha256": "689ec1990729d6491980c1816911e27a81d7d392b4f106bd3dcb3f6069aa7eb5",
+      "totals": {
+        "KILLED": 6,
+        "NOT_APPLIED": 0,
+        "SURVIVED": 0,
+        "VACUOUS": 0
+      }
+    },
+    {
+      "gate": "prove_aggregate_can_fail",
+      "previous_bytes_identical": true,
+      "sha256": "35d0467ad69a2c5787414f7b29ec1bef288a1475d54e13f55011a25a3b610086",
+      "totals": {
+        "KILLED": 9,
+        "NOT_APPLIED": 0,
+        "SURVIVED": 0,
+        "VACUOUS": 0
+      }
+    },
+    {
+      "gate": "prove_judgment_can_fail",
+      "previous_bytes_identical": true,
+      "sha256": "95f9a4aa0eeb9a05fda165539f628eabaaeb87f453f7513a2d2445fa0b9a30a2",
+      "totals": {
+        "KILLED": 8,
+        "NOT_APPLIED": 0,
+        "SURVIVED": 0,
+        "VACUOUS": 0
+      }
+    }
+  ],
+  "generic_core_changed": false,
+  "historical_events_unchanged": true,
+  "mutation_totals": {
+    "KILLED": 84,
+    "NOT_APPLIED": 0,
+    "SURVIVED": 0,
+    "VACUOUS": 0
+  },
+  "only_previous_file_changed": "research/external-derivation-registry.json",
+  "prior_outcome_and_mutation_records_byte_identical": true,
+  "protected_previous_files_unchanged": 641,
+  "schema": "rsi-post-v0-publication-gates.v1",
+  "semantic_exceptions_added": 0,
+  "tests": {
+    "tests-normal": {
+      "count": 546,
+      "seconds": 323.984,
+      "sha256": "ff02b5631f2e7db42d1a9aa33b67324e97ae8f79613082e389252ef1fbdc6c72"
+    },
+    "tests-optimized": {
+      "count": 546,
+      "seconds": 325.425,
+      "sha256": "a5d26fd643b5aa4de52d8771b5a262c23038715115f64fee338ad0ad24878257"
+    }
+  }
+}

@@ -1,0 +1,166 @@
+{
+  "cases": [
+    {
+      "assumptions": [
+        "Inputs are treated as flat printable ASCII string objects per README scope; no accessor/getter, symbol-keyed, non-enumerable, inherited-enumerable, sparse-array, extra-array-string, non-JSON-container, or cyclic properties are present or assumed (confirmed: JSON.parse yields only plain objects whose leaf values are strings).",
+        "The accepted semantic snapshot's serialization is taken to be the supplied source-material/canonicalize.ts (declared 'source serialization implementation'); the full snapshotCounterfactualSemanticJson routine is not in the pack, so acceptance/rejection is derived from semantic-domain.md plus README scope. Evidence limit: correctness rests on these two supplied sources being the stated derivation authority.",
+        "'manifest' is treated as the enclosing review/packaging manifest referenced by the Audit metadata domain, i.e. outside $semantic_artifact; audit_timestamp there is permitted and MUST NOT affect semantic identity.",
+        "String values (e.g. 'preserve semantic non-elevation', 'incorrectly promote observation') are opaque payload data compared byte-for-byte, not read as case classifications (per PACK-LEAKAGE-AUDIT).",
+        "Each state was derived independently from field/operation evidence; no target distribution across cases was assumed."
+      ],
+      "case_id": "case-001",
+      "derivation": "Both endpoints' semantic_artifact objects are the identical own-key set {challenge_id:'observed_not_validated', expected_conformance_observation:'preserve semantic non-elevation', profile_id:'counterfactual-review-v0'}. No own property named audit_timestamp occurs at any depth inside $semantic_artifact on either side (reserved-field scan returns empty), and every leaf is an accepted scalar (string), so neither artifact is rejected/malformed. canonicalize() over each yields the byte-identical snapshot {\"challenge_id\":\"observed_not_validated\",\"expected_conformance_observation\":\"preserve semantic non-elevation\",\"profile_id\":\"counterfactual-review-v0\"}. The sole endpoint difference is that left.manifest carries audit_timestamp=\"2026-07-27T12:00:00Z\" while right.manifest is empty. Per the Audit metadata domain, audit_timestamp is non-semantic metadata that MAY exist outside the semantic artifact (in an enclosing manifest) and MUST NOT affect semantic identity, so it is excluded from the snapshot. Therefore S(left) === S(right): the protected semantic-snapshot relation is PRESERVED. This case exercises exactly the non-elevation guarantee: a manifest-level audit_timestamp appearing on one side does not change semantic identity.",
+      "derived_state": "PRESERVED",
+      "source_refs": [
+        {
+          "commit": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+          "included_sha256": "8a5ce16126de197fbb30e18447d1ce1246e3c15f9ebcca86d0548638ac3669ce",
+          "role": "source definition (prose rules)",
+          "sections": [
+            "Semantic input domain",
+            "Audit metadata domain",
+            "Reserved field"
+          ],
+          "source_path": "source-material/semantic-domain.md",
+          "upstream_path": "conformance/counterfactual-audit-boundary-v0/SPEC.md",
+          "upstream_sha256": "9c17bd826c4a789464dab80c78a136153f3d9ce2f253198d0cf386bdef3a6d0b"
+        },
+        {
+          "commit": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+          "function": "canonicalize",
+          "included_sha256": "fca18d1642e6fe47d26ae2eb9f4bf15cf305653d6a7a08a5a0a09e2d6a716c81",
+          "role": "source serialization implementation",
+          "source_path": "source-material/canonicalize.ts",
+          "upstream_path": "src/receiptos/canon/canonicalize.ts"
+        }
+      ]
+    },
+    {
+      "assumptions": [
+        "Inputs are treated as flat printable ASCII string objects per README scope; no accessor/getter, symbol-keyed, non-enumerable, inherited-enumerable, sparse-array, extra-array-string, non-JSON-container, or cyclic properties are present or assumed (confirmed: JSON.parse yields only plain objects whose leaf values are strings).",
+        "The accepted semantic snapshot's serialization is taken to be the supplied source-material/canonicalize.ts (declared 'source serialization implementation'); the full snapshotCounterfactualSemanticJson routine is not in the pack, so acceptance/rejection is derived from semantic-domain.md plus README scope. Evidence limit: correctness rests on these two supplied sources being the stated derivation authority.",
+        "'manifest' is treated as the enclosing review/packaging manifest referenced by the Audit metadata domain, i.e. outside $semantic_artifact; audit_timestamp there is permitted and MUST NOT affect semantic identity.",
+        "String values (e.g. 'preserve semantic non-elevation', 'incorrectly promote observation') are opaque payload data compared byte-for-byte, not read as case classifications (per PACK-LEAKAGE-AUDIT).",
+        "Each state was derived independently from field/operation evidence; no target distribution across cases was assumed."
+      ],
+      "case_id": "case-002",
+      "derivation": "Both manifests are empty, so no audit metadata is in play. Both semantic_artifact objects are accepted (no audit_timestamp own-key at any depth inside $semantic_artifact; all leaves accepted strings). They differ at the own key expected_conformance_observation: left value 'preserve semantic non-elevation' vs right value 'incorrectly promote observation'. That key is inside $semantic_artifact and is not the reserved audit_timestamp, so it is a semantic data-property value captured exactly once by the snapshot. canonicalize() therefore produces distinct strings that differ only in that field's value. S(left) !== S(right): the semantic snapshot is not preserved, so the protected relation is VIOLATED. The verdict is content-agnostic: any differing accepted value at a semantic key would give the same result; the specific string is not interpreted as a label.",
+      "derived_state": "VIOLATED",
+      "source_refs": [
+        {
+          "commit": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+          "included_sha256": "8a5ce16126de197fbb30e18447d1ce1246e3c15f9ebcca86d0548638ac3669ce",
+          "role": "source definition (prose rules)",
+          "sections": [
+            "Semantic input domain",
+            "Audit metadata domain",
+            "Reserved field"
+          ],
+          "source_path": "source-material/semantic-domain.md",
+          "upstream_path": "conformance/counterfactual-audit-boundary-v0/SPEC.md",
+          "upstream_sha256": "9c17bd826c4a789464dab80c78a136153f3d9ce2f253198d0cf386bdef3a6d0b"
+        },
+        {
+          "commit": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+          "function": "canonicalize",
+          "included_sha256": "fca18d1642e6fe47d26ae2eb9f4bf15cf305653d6a7a08a5a0a09e2d6a716c81",
+          "role": "source serialization implementation",
+          "source_path": "source-material/canonicalize.ts",
+          "upstream_path": "src/receiptos/canon/canonicalize.ts"
+        }
+      ]
+    },
+    {
+      "assumptions": [
+        "Inputs are treated as flat printable ASCII string objects per README scope; no accessor/getter, symbol-keyed, non-enumerable, inherited-enumerable, sparse-array, extra-array-string, non-JSON-container, or cyclic properties are present or assumed (confirmed: JSON.parse yields only plain objects whose leaf values are strings).",
+        "The accepted semantic snapshot's serialization is taken to be the supplied source-material/canonicalize.ts (declared 'source serialization implementation'); the full snapshotCounterfactualSemanticJson routine is not in the pack, so acceptance/rejection is derived from semantic-domain.md plus README scope. Evidence limit: correctness rests on these two supplied sources being the stated derivation authority.",
+        "'manifest' is treated as the enclosing review/packaging manifest referenced by the Audit metadata domain, i.e. outside $semantic_artifact; audit_timestamp there is permitted and MUST NOT affect semantic identity.",
+        "String values (e.g. 'preserve semantic non-elevation', 'incorrectly promote observation') are opaque payload data compared byte-for-byte, not read as case classifications (per PACK-LEAKAGE-AUDIT).",
+        "Each state was derived independently from field/operation evidence; no target distribution across cases was assumed."
+      ],
+      "case_id": "case-003",
+      "derivation": "The left and right endpoints are byte-identical: identical manifest ({}) and identical semantic_artifact {challenge_id:'observed_not_validated', expected_conformance_observation:'preserve semantic non-elevation', profile_id:'counterfactual-review-v0'}. Both are accepted (no reserved key inside $semantic_artifact; accepted scalar domain). canonicalize() yields identical snapshots, so S(left) === S(right): the protected semantic-snapshot relation is PRESERVED (trivially, identical endpoints).",
+      "derived_state": "PRESERVED",
+      "source_refs": [
+        {
+          "commit": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+          "included_sha256": "8a5ce16126de197fbb30e18447d1ce1246e3c15f9ebcca86d0548638ac3669ce",
+          "role": "source definition (prose rules)",
+          "sections": [
+            "Semantic input domain",
+            "Audit metadata domain",
+            "Reserved field"
+          ],
+          "source_path": "source-material/semantic-domain.md",
+          "upstream_path": "conformance/counterfactual-audit-boundary-v0/SPEC.md",
+          "upstream_sha256": "9c17bd826c4a789464dab80c78a136153f3d9ce2f253198d0cf386bdef3a6d0b"
+        },
+        {
+          "commit": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+          "function": "canonicalize",
+          "included_sha256": "fca18d1642e6fe47d26ae2eb9f4bf15cf305653d6a7a08a5a0a09e2d6a716c81",
+          "role": "source serialization implementation",
+          "source_path": "source-material/canonicalize.ts",
+          "upstream_path": "src/receiptos/canon/canonicalize.ts"
+        }
+      ]
+    },
+    {
+      "assumptions": [
+        "Inputs are treated as flat printable ASCII string objects per README scope; no accessor/getter, symbol-keyed, non-enumerable, inherited-enumerable, sparse-array, extra-array-string, non-JSON-container, or cyclic properties are present or assumed (confirmed: JSON.parse yields only plain objects whose leaf values are strings).",
+        "The accepted semantic snapshot's serialization is taken to be the supplied source-material/canonicalize.ts (declared 'source serialization implementation'); the full snapshotCounterfactualSemanticJson routine is not in the pack, so acceptance/rejection is derived from semantic-domain.md plus README scope. Evidence limit: correctness rests on these two supplied sources being the stated derivation authority.",
+        "'manifest' is treated as the enclosing review/packaging manifest referenced by the Audit metadata domain, i.e. outside $semantic_artifact; audit_timestamp there is permitted and MUST NOT affect semantic identity.",
+        "String values (e.g. 'preserve semantic non-elevation', 'incorrectly promote observation') are opaque payload data compared byte-for-byte, not read as case classifications (per PACK-LEAKAGE-AUDIT).",
+        "Each state was derived independently from field/operation evidence; no target distribution across cases was assumed."
+      ],
+      "case_id": "case-004",
+      "derivation": "Both semantic_artifact objects are the identical accepted set (same as case-001/003); neither contains audit_timestamp at any depth inside $semantic_artifact, so both are accepted and canonicalize() yields the byte-identical semantic snapshot. The endpoints differ only in the manifest: left.manifest.audit_timestamp=\"2026-07-27T12:00:00Z\" vs right.manifest.audit_timestamp=\"2026-08-05T12:00:00Z\". Both are present but the value changes. This difference lies entirely within non-semantic audit metadata OUTSIDE the semantic artifact; per the Audit metadata domain it MUST NOT affect semantic identity, semantic mutation meaning, challenge semantics, or verifier-profile semantics, and it is excluded from the snapshot. Therefore S(left) === S(right): the protected semantic-snapshot relation is PRESERVED. A mutated manifest audit_timestamp is exactly the metadata that non-elevation protects against elevating into semantics.",
+      "derived_state": "PRESERVED",
+      "source_refs": [
+        {
+          "commit": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+          "included_sha256": "8a5ce16126de197fbb30e18447d1ce1246e3c15f9ebcca86d0548638ac3669ce",
+          "role": "source definition (prose rules)",
+          "sections": [
+            "Semantic input domain",
+            "Audit metadata domain",
+            "Reserved field"
+          ],
+          "source_path": "source-material/semantic-domain.md",
+          "upstream_path": "conformance/counterfactual-audit-boundary-v0/SPEC.md",
+          "upstream_sha256": "9c17bd826c4a789464dab80c78a136153f3d9ce2f253198d0cf386bdef3a6d0b"
+        },
+        {
+          "commit": "45b46bf7df3a60b32583291f577a36bf19d22f00",
+          "function": "canonicalize",
+          "included_sha256": "fca18d1642e6fe47d26ae2eb9f4bf15cf305653d6a7a08a5a0a09e2d6a716c81",
+          "role": "source serialization implementation",
+          "source_path": "source-material/canonicalize.ts",
+          "upstream_path": "src/receiptos/canon/canonicalize.ts"
+        }
+      ]
+    }
+  ],
+  "exposure_statement": "Prior source/project access: none. No local clone of pipavlo82/crystal-receipt; the repository, ReceiptOS code, and any excluded upstream files were not browsed before or during this derivation. Prior outputs: none seen; no prior solution, comparison report, predictor code, reproducer output, or result table was consulted. Discussions: This review was arranged through Federico Blanco S\u00e1nchez-Llanos, the coordinator and intermediary between the reviewer and the author (pipavlo82). Contact with the coordinator was by LinkedIn direct messages in the weeks before this submission, and concerned only the logistics of the blind review: that the exercise exists, receipt of the pinned source-only pack, and the submission and freeze procedure. No case classification, expected answer, prior solution, comparison report, predictor code, or reproducer output was discussed, requested, or received. The reviewer had no direct exchange with the author about the substance of these four cases. Affiliations/collaborators: The reviewer has a separate, ongoing technical collaboration with the coordinator (Federico Blanco S\u00e1nchez-Llanos) on unrelated verification-protocol work, which predates and is independent of this exercise. The reviewer has no co-authorship, shared project, employment, or financial relationship with the author (pipavlo82) or with the Crystal Receipt, ReceiptOS, or relational-security-invariants projects, and receives no payment for this review. Tools/model sessions: one Anthropic Claude (Cowork) session with the pack folder connected; the derivation and harness were produced under configured model claude-opus-4-8, and the submission was finalized under claude-fable-5-1. Separately, a guardian assistant session on the same Cowork account independently verified the pack SHA-256 hashes against the pinned commit and prepared a neutral, pack-only task prompt. That guardian session did not perform the derivation and held no answer-side material. The derivation session ran with the pack folder connected and with the account's standing assistant memory loaded (profile, preferences and a file index), none of which contained crystal-receipt case content; one memory note recording only the pack's commit, hashes and review logistics was read after the derivation had been completed and delivered. The AI session had no network access to the upstream repository and worked only from the pack bytes; its pretraining corpus cannot be audited for incidental inclusion of public crystal-receipt content, which is declared as an unverifiable exposure limit.",
+  "method": {
+    "code": {
+      "description": "Node ESM harness. canonicalize() is a byte-faithful port of source-material/canonicalize.ts (only TypeScript type-only syntax ': unknown', 'as Record<string, unknown>', and 'export ' removed; runtime logic identical). Adds a recursive reserved-key scan of $semantic_artifact for own-key 'audit_timestamp' at any depth and an accepted-scalar-domain check, then compares left/right semantic snapshots per case. commit_note: not yet committed to a separate repository; the reviewer assigns the freeze commit for DERIVATION.json and this harness at submission freeze.",
+      "file": "derive.mjs",
+      "sha256": "6975ae8047202127b862cb08768dc6023a493b286b277d9eb3fe4bdbe73365b3"
+    },
+    "derivation_route": "For each endpoint {manifest, semantic_artifact}, define the semantic snapshot S = canonicalize(semantic_artifact), computed by the supplied source serializer, and valid only if the artifact is accepted: (a) no own property named audit_timestamp at any object depth inside $semantic_artifact (reserved-field rule), and (b) every scalar is in {null, finite number, boolean, string} (accepted scalar domain). The manifest and any audit_timestamp in it are non-semantic (Audit metadata domain) and are excluded from S. Classification: PRESERVED iff both endpoints are accepted and S(left) === S(right); VIOLATED iff both are accepted and S(left) !== S(right); UNVERIFIABLE iff acceptance or the snapshot cannot be established from the supplied evidence (e.g. rejection asymmetry, or a decision requiring descriptor-level facts the flat inputs do not expose). Under the README scope (flat printable ASCII string objects, no custom descriptors) descriptor inspection reduces to the plain JSON structure, so the accepted snapshot equals canonicalize(semantic_artifact).",
+    "external_evidence_used": "None. Derivation used only the supplied pack files. The upstream repository pipavlo82/crystal-receipt was not browsed; no prior solution, report, predictor code, reproducer output, or external commentary was consulted. Input-origin selectors are withheld by the pack and were not needed to derive the semantic-snapshot relation from the supplied bytes.",
+    "integrity_checks": "Ran `sha256sum -c HASHES.sha256` from the pack root: all 13 listed files OK. The input JSON bytes and canonicalize.ts bytes used by the harness were independently re-hashed and matched their SOURCE_PINS.json / HASHES.sha256 digests before derivation. SHA-256 of the received HASHES.sha256 bytes = 7043e00225a908cbccf8b5ea01f3b205a5983a1a562977d2118174c58b7533b3. semantic-domain.md and canonicalize.ts reproduce their included_sha256 values. PACK-LEAKAGE-AUDIT.md and PACK_MANIFEST.json were read to confirm no case answer key is present.",
+    "pack_commit_note": "pack_commit is the received pack repository's HEAD, obtained with `git rev-parse HEAD` only (no history, branch, diff, or upstream-object inspection). It is distinct from the upstream source commit 45b46bf7df3a60b32583291f577a36bf19d22f00 recorded in SOURCE_PINS.json, which is the commit the source_refs point to.",
+    "runtime_versions": {
+      "hashing": "GNU coreutils sha256sum",
+      "node": "v22.22.2",
+      "platform": "Linux x86_64 (isolated cloud container)"
+    }
+  },
+  "pack_commit": "c3f293d8b76d9b1646fbdbed6eddbece52c0a269",
+  "pack_hashes_sha256": "7043e00225a908cbccf8b5ea01f3b205a5983a1a562977d2118174c58b7533b3",
+  "reviewer_identity": "TOshi (Toshikatsu Oga / \u5927\u8cc0\u4fca\u52dd), sole operator of The HORIZONs Co., Ltd. ORCID: https://orcid.org/0009-0000-9180-903X ; GitHub: https://github.com/ogasurfproject-jpg ; email: thehorizon.nnovation@icloud.com",
+  "schema": "semantic-snapshot-derivation.v1",
+  "submitted_at_utc": "2026-09-13T02:31:35Z"
+}

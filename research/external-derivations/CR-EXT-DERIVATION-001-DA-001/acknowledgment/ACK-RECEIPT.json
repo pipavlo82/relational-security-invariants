@@ -1,0 +1,53 @@
+{
+  "acknowledgment_commit": "b942ab118b4705a226e517b280a44e50b26c71cc",
+  "acknowledgment_file": "ACKNOWLEDGMENT.md",
+  "acknowledgment_original_equals_current": true,
+  "acknowledgment_sha256": "e256a75a8b6278d20debddfa8db72a0b12226ec5591c4e36c31dfbca32626bf9",
+  "answer_reveal": "NOT_PERFORMED",
+  "comment": {
+    "author": "ogasurfproject-jpg",
+    "body": "Acknowledged. I computed the SHA-256 of PACK_MANIFEST.json from the pack copy I used (commit c3f293d8b76d9b1646fbdbed6eddbece52c0a269):\r\nfd1b54c809e87d19bde82d86bbc4e9aec56055021a95322898b5b81052cfb220\r\nIt matches your stated value. Recorded in a separate acknowledgment commit in ogasurfproject-jpg/crystal-receipt-derivation:\r\nb942ab118b4705a226e517b280a44e50b26c71cc\r\nNo changes to DERIVATION.json or the freeze tags (submission stays at freeze-v2, commit 1fa7700ecac0690edf6116dabb4938bc3712f7c9, DERIVATION.json sha256 c05b65cbca87433bceb1cd0d3a50600cbb71bbbbb673d576715700100d508ec1). Ready for the comparison whenever the RSI is unsealed.",
+    "created_at": "2026-09-13T13:27:32Z",
+    "id": 200220933,
+    "url": "https://github.com/ogasurfproject-jpg/crystal-receipt-derivation/commit/1fa7700ecac0690edf6116dabb4938bc3712f7c9#commitcomment-200220933"
+  },
+  "declared_manifest_digest_matches": true,
+  "derivation_sha256_verified": "c05b65cbca87433bceb1cd0d3a50600cbb71bbbbb673d576715700100d508ec1",
+  "derivation_unchanged": true,
+  "exposure_note": "Reviewer explicitly reports not opening RSI reference material as of acknowledgment; self-report, not independently audited.",
+  "intervening_commits": [
+    {
+      "message": "docs: pack acknowledgment (PACK_MANIFEST.json sha256 matches author value)",
+      "sha": "b942ab118b4705a226e517b280a44e50b26c71cc"
+    },
+    {
+      "message": "revert: remove misplaced acknowledgment (belongs in crystal-receipt-derivation)",
+      "sha": "373b1299bd1ba5c93a06bfd627948af09916b311"
+    },
+    {
+      "message": "Revert \"revert: remove misplaced acknowledgment (belongs in crystal-receipt-derivation)\"\n\nThis reverts commit 373b1299bd1ba5c93a06bfd627948af09916b311.",
+      "sha": "39bcc3a01116767d54239a0aa26bf646f9d510ce"
+    }
+  ],
+  "observed_at_utc": "2026-09-13T13:33:31.627635+00:00",
+  "observed_main": "39bcc3a01116767d54239a0aa26bf646f9d510ce",
+  "pack_manifest_sha256_verified": "fd1b54c809e87d19bde82d86bbc4e9aec56055021a95322898b5b81052cfb220",
+  "pack_remote_main": "c3f293d8b76d9b1646fbdbed6eddbece52c0a269",
+  "repository": "ogasurfproject-jpg/crystal-receipt-derivation",
+  "role": "BLIND_DERIVER_WITH_DISCLOSED_AFFILIATION",
+  "schema": "rsi-external-acknowledgment-receipt.v1",
+  "semantic_comparison": "NOT_PERFORMED",
+  "status": "MANIFEST_ACKNOWLEDGMENT_PINNED",
+  "tags": [
+    {
+      "ref": "refs/tags/freeze-v1",
+      "sha": "e43e01a6e3505722d2e2fa449c68e8a6fd29036a",
+      "type": "tag"
+    },
+    {
+      "ref": "refs/tags/freeze-v2",
+      "sha": "1fa7700ecac0690edf6116dabb4938bc3712f7c9",
+      "type": "commit"
+    }
+  ]
+}

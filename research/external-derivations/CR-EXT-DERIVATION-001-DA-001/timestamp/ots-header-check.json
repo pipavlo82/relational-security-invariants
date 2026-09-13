@@ -1,0 +1,32 @@
+[
+  {
+    "provider": "https://blockstream.info/api",
+    "height": 966764,
+    "block_hash": "000000000000000000002b2ca751f082a076447fab73540d61d1dd045669be80",
+    "header_hex": "0080952a5808f424a363afb3dff6dba0ecf489e71a10b0be9bab00000000000000000000f571d4b644ecab475f391244ee8ceadb099b79f5221a4e9515f9a5821b33e9321a15a66a5e35021703b02542",
+    "header_hash_matches": true,
+    "merkle_root_internal_hex": "f571d4b644ecab475f391244ee8ceadb099b79f5221a4e9515f9a5821b33e932",
+    "ots_merkle_matches": true,
+    "header_time_utc": "2026-09-13T03:14:34+00:00",
+    "best_chain_status": {
+      "in_best_chain": true,
+      "height": 966764,
+      "next_best": "0000000000000000000120060049347694f7ac087e1abecef356c9f49843c278"
+    }
+  },
+  {
+    "provider": "https://mempool.space/api",
+    "height": 966764,
+    "block_hash": "000000000000000000002b2ca751f082a076447fab73540d61d1dd045669be80",
+    "header_hex": "0080952a5808f424a363afb3dff6dba0ecf489e71a10b0be9bab00000000000000000000f571d4b644ecab475f391244ee8ceadb099b79f5221a4e9515f9a5821b33e9321a15a66a5e35021703b02542",
+    "header_hash_matches": true,
+    "merkle_root_internal_hex": "f571d4b644ecab475f391244ee8ceadb099b79f5221a4e9515f9a5821b33e932",
+    "ots_merkle_matches": true,
+    "header_time_utc": "2026-09-13T03:14:34+00:00",
+    "best_chain_status": {
+      "in_best_chain": true,
+      "height": 966764,
+      "next_best": "0000000000000000000120060049347694f7ac087e1abecef356c9f49843c278"
+    }
+  }
+]

@@ -1,0 +1,106 @@
+{
+  "files": [
+    {
+      "commit": "9e0fc16830a613af0a18716291a5d5b64226b0ac",
+      "git_blob": "1a28f7323589c57d09bbe5896bfba9791718cec1",
+      "path": "DERIVATION.json",
+      "sha256": "9f6ad194c9119166c092a7f0309473067c075c08018290bb30875e18d2a63600",
+      "size": 20010
+    },
+    {
+      "commit": "9e0fc16830a613af0a18716291a5d5b64226b0ac",
+      "git_blob": "6cabccb20f72b05ae7639dd028d57a481f50d537",
+      "path": "derive.mjs",
+      "sha256": "6975ae8047202127b862cb08768dc6023a493b286b277d9eb3fe4bdbe73365b3",
+      "size": 4745
+    },
+    {
+      "commit": "1fa7700ecac0690edf6116dabb4938bc3712f7c9",
+      "git_blob": "3b6c4bd503f3905852ad00b1d58c6c4e35eab074",
+      "path": "DERIVATION.json",
+      "sha256": "c05b65cbca87433bceb1cd0d3a50600cbb71bbbbb673d576715700100d508ec1",
+      "size": 19964
+    },
+    {
+      "commit": "1fa7700ecac0690edf6116dabb4938bc3712f7c9",
+      "git_blob": "6cabccb20f72b05ae7639dd028d57a481f50d537",
+      "path": "derive.mjs",
+      "sha256": "6975ae8047202127b862cb08768dc6023a493b286b277d9eb3fe4bdbe73365b3",
+      "size": 4745
+    },
+    {
+      "commit": "c8847f83c0001ae9d2042cbdce2a6ac5ad24b0be",
+      "git_blob": "3b6c4bd503f3905852ad00b1d58c6c4e35eab074",
+      "path": "DERIVATION.json",
+      "sha256": "c05b65cbca87433bceb1cd0d3a50600cbb71bbbbb673d576715700100d508ec1",
+      "size": 19964
+    },
+    {
+      "commit": "c8847f83c0001ae9d2042cbdce2a6ac5ad24b0be",
+      "git_blob": "6cabccb20f72b05ae7639dd028d57a481f50d537",
+      "path": "derive.mjs",
+      "sha256": "6975ae8047202127b862cb08768dc6023a493b286b277d9eb3fe4bdbe73365b3",
+      "size": 4745
+    },
+    {
+      "commit": "c8847f83c0001ae9d2042cbdce2a6ac5ad24b0be",
+      "git_blob": "d03b95aa59380fd174062ce22c9539e66332ffc0",
+      "path": "DERIVATION.json.ots",
+      "sha256": "43493b430c3e5aa30163aafe5f40748e67dc141ae359a39b4f491eea10bc42fa",
+      "size": 702
+    }
+  ],
+  "freeze_v1_tag": {
+    "message": "Frozen first submission. DERIVATION.json sha256 9f6ad194c9119166c092a7f0309473067c075c08018290bb30875e18d2a63600\n",
+    "node_id": "TA_kwDOUYj1SNoAKGU0M2UwMWE2ZTM1MDU3MjJkMmUyZmE0NDljNjhlOGE2ZmQyOTAzNmE",
+    "object": {
+      "sha": "9e0fc16830a613af0a18716291a5d5b64226b0ac",
+      "type": "commit",
+      "url": "https://api.github.com/repos/ogasurfproject-jpg/crystal-receipt-derivation/git/commits/9e0fc16830a613af0a18716291a5d5b64226b0ac"
+    },
+    "sha": "e43e01a6e3505722d2e2fa449c68e8a6fd29036a",
+    "tag": "freeze-v1",
+    "tagger": {
+      "date": "2026-09-13T02:36:05Z",
+      "email": "horizon@example.com",
+      "name": "Horizon"
+    },
+    "url": "https://api.github.com/repos/ogasurfproject-jpg/crystal-receipt-derivation/git/tags/e43e01a6e3505722d2e2fa449c68e8a6fd29036a",
+    "verification": {
+      "payload": null,
+      "reason": "unsigned",
+      "signature": null,
+      "verified": false,
+      "verified_at": null
+    }
+  },
+  "head": "c8847f83c0001ae9d2042cbdce2a6ac5ad24b0be",
+  "observed_at_utc": "2026-09-13T12:19:30.432857+00:00",
+  "refs": [
+    {
+      "node_id": "REF_kwDOUYj1SLNyZWZzL3RhZ3MvZnJlZXplLXYx",
+      "object": {
+        "sha": "e43e01a6e3505722d2e2fa449c68e8a6fd29036a",
+        "type": "tag",
+        "url": "https://api.github.com/repos/ogasurfproject-jpg/crystal-receipt-derivation/git/tags/e43e01a6e3505722d2e2fa449c68e8a6fd29036a"
+      },
+      "ref": "refs/tags/freeze-v1",
+      "url": "https://api.github.com/repos/ogasurfproject-jpg/crystal-receipt-derivation/git/refs/tags/freeze-v1"
+    },
+    {
+      "node_id": "REF_kwDOUYj1SLNyZWZzL3RhZ3MvZnJlZXplLXYy",
+      "object": {
+        "sha": "1fa7700ecac0690edf6116dabb4938bc3712f7c9",
+        "type": "commit",
+        "url": "https://api.github.com/repos/ogasurfproject-jpg/crystal-receipt-derivation/git/commits/1fa7700ecac0690edf6116dabb4938bc3712f7c9"
+      },
+      "ref": "refs/tags/freeze-v2",
+      "url": "https://api.github.com/repos/ogasurfproject-jpg/crystal-receipt-derivation/git/refs/tags/freeze-v2"
+    }
+  ],
+  "remote_head_recheck": "c8847f83c0001ae9d2042cbdce2a6ac5ad24b0be",
+  "repository": "ogasurfproject-jpg/crystal-receipt-derivation",
+  "schema": "rsi-external-submission-receipt.v1",
+  "scope": "Read-only receipt and version/pin check; no semantic comparison or answer reveal.",
+  "timestamp_caveat": "Local observation time; self-authored Git dates and presence of an OTS file alone do not prove prior chronology."
+}

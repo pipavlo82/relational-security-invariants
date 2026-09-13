@@ -1,0 +1,33 @@
+Traceback (most recent call last):
+  File "C:\Users\msi\Documents\Codex\2026-09-09\files-pasted-by-the-user-create\outputs\crystal-external-comparison-2026-09-13\classifier-diagnostic.py", line 7, in traced
+    p,r=original(root)
+        ^^^^^^^^^^^^^^
+  File "C:\Users\msi\Documents\Codex\2026-09-09\files-pasted-by-the-user-create\outputs\relational-security-invariants\tools\prove_can_fail.py", line 27, in run_child
+    process = subprocess.run([sys.executable, "-B", "-m", "rsi.run", "--output", str(output)],
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\msi\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\subprocess.py", line 550, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\msi\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\subprocess.py", line 1209, in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\msi\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\subprocess.py", line 1630, in _communicate
+    raise TimeoutExpired(self.args, orig_timeout)
+subprocess.TimeoutExpired: Command '['C:\\Users\\msi\\Documents\\Codex\\2026-09-09\\files-pasted-by-the-user-create\\work\\rsi-review-venv\\Scripts\\python.exe', '-B', '-m', 'rsi.run', '--output', 'C:\\Users\\msi\\AppData\\Local\\Temp\\rsi-mutant-kmq1piuk\\repo\\artifacts\\run.json']' timed out after 30 seconds
+Traceback (most recent call last):
+  File "C:\Users\msi\Documents\Codex\2026-09-09\files-pasted-by-the-user-create\outputs\crystal-external-comparison-2026-09-13\classifier-diagnostic.py", line 7, in traced
+    p,r=original(root)
+        ^^^^^^^^^^^^^^
+  File "C:\Users\msi\Documents\Codex\2026-09-09\files-pasted-by-the-user-create\outputs\relational-security-invariants\tools\prove_can_fail.py", line 27, in run_child
+    process = subprocess.run([sys.executable, "-B", "-m", "rsi.run", "--output", str(output)],
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\msi\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\subprocess.py", line 550, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\msi\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\subprocess.py", line 1209, in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\msi\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\subprocess.py", line 1630, in _communicate
+    raise TimeoutExpired(self.args, orig_timeout)
+subprocess.TimeoutExpired: Command '['C:\\Users\\msi\\Documents\\Codex\\2026-09-09\\files-pasted-by-the-user-create\\work\\rsi-review-venv\\Scripts\\python.exe', '-B', '-m', 'rsi.run', '--output', 'C:\\Users\\msi\\AppData\\Local\\Temp\\rsi-mutant-3ylvt7yg\\repo\\artifacts\\run.json']' timed out after 30 seconds
+[{"expected": "VACUOUS", "id": "parse_failure", "observed": "VACUOUS", "ok": true}, {"expected": "RUNNER_ERROR", "id": "call_exception", "observed": "RUNNER_ERROR", "ok": true}, {"expected": "NOT_APPLIED", "id": "missing_patch", "observed": "NOT_APPLIED", "ok": true}, {"expected": "SURVIVED", "id": "equivalent_patch", "observed": "RUNNER_ERROR", "ok": false}]

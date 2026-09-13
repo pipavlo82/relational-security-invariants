@@ -1,0 +1,50 @@
+{
+  "base_commit": "7390f20f1c11f815db47bc8244efd72b4754b45c",
+  "changed_previous_files": [
+    "research/external-derivation-registry.json"
+  ],
+  "ci": "NOT_RUN_NO_COMMIT_OR_PUSH",
+  "comparison_sha256": "6a1ce37f0ce7bb173e069d4874212770c3f5eb76bf56870c89b33007a756b9f3",
+  "deterministic_normal_vs_optimized_comparison": true,
+  "full_framework_suite_rerun": false,
+  "full_mutation_suite_rerun": false,
+  "generic_core_changed": false,
+  "original_tracked_files": 642,
+  "previous_registry_events_unchanged": true,
+  "prior_domain_semantics_changed": false,
+  "prior_result_artifact_bytes_changed": false,
+  "regressions": [
+    {
+      "command": [
+        "C:\\Users\\msi\\Documents\\Codex\\2026-09-09\\files-pasted-by-the-user-create\\work\\rsi-review-venv\\Scripts\\python.exe",
+        "-m",
+        "unittest",
+        "tests.test_crystal_receipt",
+        "tests.test_crystal_cleanroom",
+        "-v"
+      ],
+      "exit": 0,
+      "mode": "normal",
+      "seconds": 14.262,
+      "tests": 45
+    },
+    {
+      "command": [
+        "C:\\Users\\msi\\Documents\\Codex\\2026-09-09\\files-pasted-by-the-user-create\\work\\rsi-review-venv\\Scripts\\python.exe",
+        "-O",
+        "-m",
+        "unittest",
+        "tests.test_crystal_receipt",
+        "tests.test_crystal_cleanroom",
+        "-v"
+      ],
+      "exit": 0,
+      "mode": "optimized",
+      "seconds": 15.13,
+      "tests": 45
+    }
+  ],
+  "schema": "rsi-external-comparison-validation.v1",
+  "unchanged_previous_files_excluding_append_only_registry": 641,
+  "v0_tag_commit": "8d8e31291ecf96284212a353efb66f606cff2953"
+}

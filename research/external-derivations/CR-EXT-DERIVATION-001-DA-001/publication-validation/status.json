@@ -1,0 +1,175 @@
+[
+  {
+    "command": [
+      "C:\\Users\\msi\\Documents\\Codex\\2026-09-09\\files-pasted-by-the-user-create\\work\\rsi-review-venv\\Scripts\\python.exe",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-v"
+    ],
+    "exit": 0,
+    "label": "tests-normal",
+    "seconds": 324.622
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\Documents\\Codex\\2026-09-09\\files-pasted-by-the-user-create\\work\\rsi-review-venv\\Scripts\\python.exe",
+      "-O",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-v"
+    ],
+    "exit": 0,
+    "label": "tests-optimized",
+    "seconds": 326.776
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\Documents\\Codex\\2026-09-09\\files-pasted-by-the-user-create\\work\\rsi-review-venv\\Scripts\\python.exe",
+      "tools/run_judgment.py",
+      "--include-previous",
+      "--output",
+      "C:\\Users\\msi\\Documents\\Codex\\2026-09-09\\files-pasted-by-the-user-create\\outputs\\crystal-external-comparison-2026-09-13\\publication-retry\\run_judgment.json"
+    ],
+    "exit": 0,
+    "label": "run_judgment",
+    "seconds": 30.843
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\Documents\\Codex\\2026-09-09\\files-pasted-by-the-user-create\\work\\rsi-review-venv\\Scripts\\python.exe",
+      "tools/run_registered_mutations.py",
+      "--output",
+      "C:\\Users\\msi\\Documents\\Codex\\2026-09-09\\files-pasted-by-the-user-create\\outputs\\crystal-external-comparison-2026-09-13\\publication-retry\\run_registered_mutations.json"
+    ],
+    "exit": 0,
+    "label": "run_registered_mutations",
+    "seconds": 52.896
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\Documents\\Codex\\2026-09-09\\files-pasted-by-the-user-create\\work\\rsi-review-venv\\Scripts\\python.exe",
+      "tools/prove_relations_can_fail.py",
+      "--output",
+      "C:\\Users\\msi\\Documents\\Codex\\2026-09-09\\files-pasted-by-the-user-create\\outputs\\crystal-external-comparison-2026-09-13\\publication-retry\\prove_relations_can_fail.json"
+    ],
+    "exit": 0,
+    "label": "prove_relations_can_fail",
+    "seconds": 19.792
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\Documents\\Codex\\2026-09-09\\files-pasted-by-the-user-create\\work\\rsi-review-venv\\Scripts\\python.exe",
+      "tools/prove_crystal_can_fail.py",
+      "--output",
+      "C:\\Users\\msi\\Documents\\Codex\\2026-09-09\\files-pasted-by-the-user-create\\outputs\\crystal-external-comparison-2026-09-13\\publication-retry\\prove_crystal_can_fail.json"
+    ],
+    "exit": 0,
+    "label": "prove_crystal_can_fail",
+    "seconds": 38.005
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\Documents\\Codex\\2026-09-09\\files-pasted-by-the-user-create\\work\\rsi-review-venv\\Scripts\\python.exe",
+      "tools/prove_rvr_can_fail.py",
+      "--output",
+      "C:\\Users\\msi\\Documents\\Codex\\2026-09-09\\files-pasted-by-the-user-create\\outputs\\crystal-external-comparison-2026-09-13\\publication-retry\\prove_rvr_can_fail.json"
+    ],
+    "exit": 0,
+    "label": "prove_rvr_can_fail",
+    "seconds": 65.603
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\Documents\\Codex\\2026-09-09\\files-pasted-by-the-user-create\\work\\rsi-review-venv\\Scripts\\python.exe",
+      "tools/prove_tsei_can_fail.py",
+      "--output",
+      "C:\\Users\\msi\\Documents\\Codex\\2026-09-09\\files-pasted-by-the-user-create\\outputs\\crystal-external-comparison-2026-09-13\\publication-retry\\prove_tsei_can_fail.json"
+    ],
+    "exit": 0,
+    "label": "prove_tsei_can_fail",
+    "seconds": 91.094
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\Documents\\Codex\\2026-09-09\\files-pasted-by-the-user-create\\work\\rsi-review-venv\\Scripts\\python.exe",
+      "tools/prove_pq_can_fail.py",
+      "--output",
+      "C:\\Users\\msi\\Documents\\Codex\\2026-09-09\\files-pasted-by-the-user-create\\outputs\\crystal-external-comparison-2026-09-13\\publication-retry\\prove_pq_can_fail.json"
+    ],
+    "exit": 0,
+    "label": "prove_pq_can_fail",
+    "seconds": 94.617
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\Documents\\Codex\\2026-09-09\\files-pasted-by-the-user-create\\work\\rsi-review-venv\\Scripts\\python.exe",
+      "tools/prove_tas_can_fail.py",
+      "--output",
+      "C:\\Users\\msi\\Documents\\Codex\\2026-09-09\\files-pasted-by-the-user-create\\outputs\\crystal-external-comparison-2026-09-13\\publication-retry\\prove_tas_can_fail.json"
+    ],
+    "exit": 0,
+    "label": "prove_tas_can_fail",
+    "seconds": 118.774
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\Documents\\Codex\\2026-09-09\\files-pasted-by-the-user-create\\work\\rsi-review-venv\\Scripts\\python.exe",
+      "tools/prove_consult_escrow_can_fail.py",
+      "--output",
+      "C:\\Users\\msi\\Documents\\Codex\\2026-09-09\\files-pasted-by-the-user-create\\outputs\\crystal-external-comparison-2026-09-13\\publication-retry\\prove_consult_escrow_can_fail.json"
+    ],
+    "exit": 0,
+    "label": "prove_consult_escrow_can_fail",
+    "seconds": 342.56
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\Documents\\Codex\\2026-09-09\\files-pasted-by-the-user-create\\work\\rsi-review-venv\\Scripts\\python.exe",
+      "tools/prove_verify_layer_can_fail.py",
+      "--output",
+      "C:\\Users\\msi\\Documents\\Codex\\2026-09-09\\files-pasted-by-the-user-create\\outputs\\crystal-external-comparison-2026-09-13\\publication-retry\\prove_verify_layer_can_fail.json"
+    ],
+    "exit": 0,
+    "label": "prove_verify_layer_can_fail",
+    "seconds": 188.499
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\Documents\\Codex\\2026-09-09\\files-pasted-by-the-user-create\\work\\rsi-review-venv\\Scripts\\python.exe",
+      "tools/prove_capv_can_fail.py",
+      "--output",
+      "C:\\Users\\msi\\Documents\\Codex\\2026-09-09\\files-pasted-by-the-user-create\\outputs\\crystal-external-comparison-2026-09-13\\publication-retry\\prove_capv_can_fail.json"
+    ],
+    "exit": 0,
+    "label": "prove_capv_can_fail",
+    "seconds": 113.691
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\Documents\\Codex\\2026-09-09\\files-pasted-by-the-user-create\\work\\rsi-review-venv\\Scripts\\python.exe",
+      "tools/prove_aggregate_can_fail.py",
+      "--output",
+      "C:\\Users\\msi\\Documents\\Codex\\2026-09-09\\files-pasted-by-the-user-create\\outputs\\crystal-external-comparison-2026-09-13\\publication-retry\\prove_aggregate_can_fail.json"
+    ],
+    "exit": 0,
+    "label": "prove_aggregate_can_fail",
+    "seconds": 129.313
+  },
+  {
+    "command": [
+      "C:\\Users\\msi\\Documents\\Codex\\2026-09-09\\files-pasted-by-the-user-create\\work\\rsi-review-venv\\Scripts\\python.exe",
+      "tools/prove_judgment_can_fail.py",
+      "--output",
+      "C:\\Users\\msi\\Documents\\Codex\\2026-09-09\\files-pasted-by-the-user-create\\outputs\\crystal-external-comparison-2026-09-13\\publication-retry\\prove_judgment_can_fail.json"
+    ],
+    "exit": 0,
+    "label": "prove_judgment_can_fail",
+    "seconds": 91.245
+  }
+]

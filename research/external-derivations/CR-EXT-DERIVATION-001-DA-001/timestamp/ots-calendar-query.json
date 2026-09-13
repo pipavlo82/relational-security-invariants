@@ -1,0 +1,20 @@
+[
+  {
+    "uri": "https://finney.calendar.eternitywall.com",
+    "error": "CommitmentNotFoundError: 'Pending confirmation in Bitcoin blockchain'"
+  },
+  {
+    "uri": "https://bob.btc.calendar.opentimestamps.org",
+    "commitment": "6aa60f8988de9362227eaa9351cfd3d2944b8468f39a4ee1ca1d902d630c1b0e715cfa43da1e5d677b4a6f01",
+    "fragment": "calendar-cd6a35f4f1.ots-fragment",
+    "sha256": "ebe6d7eab293233e54bf458b4b9192265578b8700a62a6f94b40f6c86c8cbecb",
+    "attestations": [
+      {
+        "message": "f571d4b644ecab475f391244ee8ceadb099b79f5221a4e9515f9a5821b33e932",
+        "type": "BitcoinBlockHeaderAttestation",
+        "height": 966764,
+        "repr": "BitcoinBlockHeaderAttestation(966764)"
+      }
+    ]
+  }
+]

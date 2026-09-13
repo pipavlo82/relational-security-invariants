@@ -1,0 +1,3 @@
+# Preserve captured evidence bytes, including original process-log line endings.
+* -text
+*.log whitespace=cr-at-eol,-blank-at-eof
