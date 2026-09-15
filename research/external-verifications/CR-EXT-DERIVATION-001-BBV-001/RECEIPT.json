@@ -1,0 +1,76 @@
+{
+  "addendum_sha256": "6e524f80ea79c805eb030dc2220e329719e5212879c38031e68db8b7d21ad2fa",
+  "base_commit": "d14d21c57b9582b62bb98c33dd442db37fdbcf15",
+  "case_input_hashes_rechecked": 4,
+  "coordinator_rechecks": [
+    {
+      "file": "input-origin-record.json",
+      "kind": "disclosure",
+      "match": true,
+      "sha256": "b130cd433276cdcee8cce6ecf2820d85acad1943e05bf316a31751429531546e"
+    },
+    {
+      "file": "expectations.v0.json",
+      "kind": "disclosure",
+      "match": true,
+      "sha256": "268b0e5dd6087cc60bf9c99ca5c20c0b135983d595ff632659c81b18634a4ba3"
+    },
+    {
+      "file": "h2-replay.json",
+      "kind": "disclosure",
+      "match": true,
+      "sha256": "6941f4f653342606baf787e881bb0f704c0fd741662452d4c86b0d4d048797ca"
+    },
+    {
+      "file": "coordinator-comparison.json",
+      "kind": "disclosure",
+      "match": true,
+      "sha256": "6a1ce37f0ce7bb173e069d4874212770c3f5eb76bf56870c89b33007a756b9f3"
+    },
+    {
+      "file": "PACK_MANIFEST.json",
+      "kind": "live_pack",
+      "match": true,
+      "sha256": "fd1b54c809e87d19bde82d86bbc4e9aec56055021a95322898b5b81052cfb220"
+    },
+    {
+      "file": "HASHES.sha256",
+      "kind": "live_pack",
+      "match": true,
+      "sha256": "7043e00225a908cbccf8b5ea01f3b205a5983a1a562977d2118174c58b7533b3"
+    },
+    {
+      "file": "conformance/counterfactual-audit-boundary-v0/vectors/V-SEM-MUTATION-DIFFERS.json",
+      "kind": "source_vector",
+      "match": true,
+      "sha256": "c92915e29cda954db6c0aaa44bbcb958c741e51a86fd7bca7bd9f767434c433d"
+    },
+    {
+      "file": "conformance/counterfactual-audit-boundary-v0/vectors/V-SEM-MANIFEST-INVARIANT.json",
+      "kind": "source_vector",
+      "match": true,
+      "sha256": "9330a797b15b74d8c3372b866e9bc9f9e842e142de9a6f6b47581bbf92004749"
+    }
+  ],
+  "external_execution_replay": "NOT_CLAIMED_BY_VERIFIER",
+  "limitations": [
+    "Mechanical disclosed-output consistency, not new blind semantic derivation.",
+    "No independent adapter/predictor/H2 execution is demonstrated by this report.",
+    "H2 check compares actual_double and predictor_double; does not independently rederive the third leg.",
+    "Original report does not separately enumerate comparison of frozen external DERIVATION case states; coordinator previously did that comparison.",
+    "Other pack file hashes were not independently recomputed by this verifier.",
+    "Deriver/verifier coauthorship and prior exposure remain disclosed limitations.",
+    "Original out-of-band inference from 404s is superseded by the addendum; original text preserved."
+  ],
+  "observed_at_utc": "2026-09-15T02:21:19.588482+00:00",
+  "pack_access_limitation": "RESOLVED_IN_ADDENDUM",
+  "report_sha256": "2b61bc23a1a8a084da9bd457a581ec472e9eeac8a858c1661c6909fcffa25c95",
+  "reported_case_agreements": 4,
+  "reported_disagreements": 0,
+  "reported_h2_pair_consistency_checks": 3,
+  "role": "POST_COMMIT_VERIFIER",
+  "schema": "rsi-external-verifier-intake.v1",
+  "status": "MECHANICAL_COMPARISON_RECORDED",
+  "v0_author_independence": "UNKNOWN",
+  "verifier": "babyblueviper1"
+}

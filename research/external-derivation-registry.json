@@ -590,6 +590,39 @@
           "target_commit": "1fa7700ecac0690edf6116dabb4938bc3712f7c9",
           "target_repository": "ogasurfproject-jpg/crystal-receipt-derivation",
           "v0_author_independence": "UNKNOWN"
+        },
+        {
+          "addendum_sha256": "6e524f80ea79c805eb030dc2220e329719e5212879c38031e68db8b7d21ad2fa",
+          "addendum_url": "https://github.com/ogasurfproject-jpg/crystal-receipt-derivation/commit/1fa7700ecac0690edf6116dabb4938bc3712f7c9#commitcomment-200424839",
+          "claim_limit": [
+            "Mechanical disclosed-output consistency, not new blind semantic derivation.",
+            "No independent adapter/predictor/H2 execution is demonstrated by this report.",
+            "H2 check compares actual_double and predictor_double; does not independently rederive the third leg.",
+            "Original report does not separately enumerate comparison of frozen external DERIVATION case states; coordinator previously did that comparison.",
+            "Other pack file hashes were not independently recomputed by this verifier.",
+            "Deriver/verifier coauthorship and prior exposure remain disclosed limitations.",
+            "Original out-of-band inference from 404s is superseded by the addendum; original text preserved."
+          ],
+          "event_id": "CR-EXT-DERIVATION-001-BBV-001-EXTERNAL_COMPARISON_RECEIVED",
+          "event_type": "EXTERNAL_POST_COMMIT_VERIFIER_COMPARISON_RECEIVED",
+          "evidence_directory": "research/external-verifications/CR-EXT-DERIVATION-001-BBV-001",
+          "manifest_sha256": "1a0116d7a27d2ffe3187ee676a0362b27ff511d2a9e3723be4532603abf84b38",
+          "pack_access_limitation": "RESOLVED_IN_ADDENDUM",
+          "previous_event_sha256": "7659a9e6a6204032c395fb1ca23874e17aef0f41dcaca321e44d894b16677dd2",
+          "recorded_at_utc": "2026-09-15T02:21:19.588482+00:00",
+          "report_sha256": "2b61bc23a1a8a084da9bd457a581ec472e9eeac8a858c1661c6909fcffa25c95",
+          "report_url": "https://github.com/ogasurfproject-jpg/crystal-receipt-derivation/commit/1fa7700ecac0690edf6116dabb4938bc3712f7c9#commitcomment-200424045",
+          "reported_case_agreements": 4,
+          "reported_disagreements": 0,
+          "reviewer_role": "POST_COMMIT_VERIFIER",
+          "round_id": "CR-EXT-DERIVATION-001-DA-001",
+          "sequence": 10,
+          "status": "EXTERNAL_MECHANICAL_COMPARISON_RECORDED",
+          "v0_author_independence": "UNKNOWN",
+          "verifier_identity": {
+            "github_id": 241826547,
+            "login": "babyblueviper1"
+          }
         }
       ],
       "exercise_id": "CR-EXT-DERIVATION-001",
