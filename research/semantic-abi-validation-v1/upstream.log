@@ -1,0 +1,40 @@
+TAP version 13
+# Subtest: same authority but wrong claim is TYPE_ERROR
+ok 1 - same authority but wrong claim is TYPE_ERROR
+  ---
+  duration_ms: 1.9696
+  type: 'test'
+  ...
+# Subtest: same claim and authority but incompatible scope is TYPE_ERROR
+ok 2 - same claim and authority but incompatible scope is TYPE_ERROR
+  ---
+  duration_ms: 0.1734
+  type: 'test'
+  ...
+# Subtest: valid claim plus authority plus scope edge passes
+ok 3 - valid claim plus authority plus scope edge passes
+  ---
+  duration_ms: 0.1841
+  type: 'test'
+  ...
+# Subtest: recomputation satisfies semantic verification only for its exact claim boundary
+ok 4 - recomputation satisfies semantic verification only for its exact claim boundary
+  ---
+  duration_ms: 0.2567
+  type: 'test'
+  ...
+# Subtest: temporal boundary mismatch is TYPE_ERROR
+ok 5 - temporal boundary mismatch is TYPE_ERROR
+  ---
+  duration_ms: 0.1705
+  type: 'test'
+  ...
+1..5
+# tests 5
+# suites 0
+# pass 5
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 89.9704

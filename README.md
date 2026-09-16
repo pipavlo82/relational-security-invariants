@@ -16,7 +16,8 @@ Start with the [v0 closure audit](research/rsi-v0-closure-audit.md),
 Earlier phase reports are historical evidence, not the current coverage summary.
 
 RSI demonstrates implementation-facing reuse of the same generic conformance
-architecture across **ten bounded real relation families**. It functions as a
+architecture across **eleven bounded real relation families** (ten in frozen v0, plus the
+post-v0 Semantic ABI declared-edge profile). It functions as a
 cross-repository conformance plane for these validated surfaces. This is not
 universal security, ecosystem-wide verification, a production security library,
 a complete audit of the source repositories, or a proof of novelty.
@@ -45,6 +46,28 @@ Internal unsupported capabilities remain explicit even when conformance PASSes.
 Mutation counts establish that selected decisions matter on this corpus; they
 are not a measure of complete security coverage or oracle independence.
 
+## Post-v0: Semantic ABI declared-edge validation
+
+The [Semantic ABI admission report](research/semantic-abi-validation-v1.md)
+adds one bounded family at upstream commit
+`d15c666dfccff17f7350fe97d2fc7b71cb2cbaee`: exact claim, authority, scope and
+temporal-key/value compatibility, including the directed local recomputation
+rule. Actual observations execute the pinned upstream JavaScript linker.
+Compatible declarations do not prove claim truth, freshness or action execution.
+
+Local validation: **586 unit tests**, **586 under `python -O`**, **139 conformance
+PASS** (123 previous + 16 new), and **10 new mapped mutations KILLED**.
+The 84 prior mutation records and their implementation files are unchanged;
+those gates were not rerun for this addition. The [machine-readable evidence](research/semantic-abi-validation-v1.json)
+records that distinction. The table above remains the immutable v0 snapshot.
+These are local gate results. CI runs separately for each published commit.
+
+```sh
+python -m unittest tests.test_semantic_abi -v
+python tools/run_semantic_abi.py --include-previous --output artifacts/semantic-abi.json
+python tools/prove_semantic_abi_can_fail.py --output artifacts/semantic-abi-mutations.json
+```
+
 ## Validated relation families
 
 Each link leads to the exact source-backed scope and its validation evidence.
@@ -61,6 +84,7 @@ Each link leads to the exact source-backed scope and its validation evidence.
 | [ERC-8354 CAPV](research/capv-expiry-generation-validation-v0.md) | Expiry proof binding versus freshness across exact old/fixed program generations | Full Guard acceptance, executor authorization or execution occurrence |
 | [ERC-8312 Aggregate Budget](research/aggregate-budget-validation-v0.md) | Root/period admitted-budget conservation versus local edge validity | Non-bypassability, asset movement, cross-chain budgets or authoritative chain state |
 | [ERC-8299 reference application](research/judgment-execution-validation-v0.md) | Signed verdict to supplied terminal-record binding | Action authorization/occurrence, anchor authority, judgment soundness or complete ERC-8299 semantics |
+| [Semantic ABI (post-v0)](research/semantic-abi-validation-v1.md) | Supplied typed claim-edge compatibility; bounded directed authority conversion | Claim truth, cryptographic validity, freshness, action execution or backend-wide conformance |
 
 CAPV preserves the distinction between the disclosed old consumer pin and the
 later upstream expiry-binding fix. The newer program does not retroactively

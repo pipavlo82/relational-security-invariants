@@ -1,0 +1,114 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://trustless-ai/semantic-abi/schema/manifest.schema.json",
+  "title": "semantic-abi manifest (v0-draft)",
+  "description": "Declares claim-level evidence requirements, authority, scope, and temporal identity. NOT YET FROZEN.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["component", "declarations"],
+  "properties": {
+    "component": {
+      "type": "string",
+      "minLength": 1,
+      "description": "System identifier."
+    },
+    "author": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Owner handle; adapters are authored independently."
+    },
+    "declarations": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/declaration" }
+    }
+  },
+  "$defs": {
+    "declaration": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["endpoint", "consumes", "establishes", "does_not_establish"],
+      "properties": {
+        "endpoint": { "type": "string", "minLength": 1 },
+        "consumes": {
+          "description": "Claim-level evidence requirements consumed by the endpoint.",
+          "type": "array",
+          "items": { "$ref": "#/$defs/evidenceClaim" }
+        },
+        "establishes": {
+          "description": "Claim-level evidence created by the endpoint. Claim type and authority class remain distinct.",
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/evidenceClaim" }
+        },
+        "does_not_establish": {
+          "description": "Explicit negative claim boundaries, not authority-class aliases.",
+          "type": "array",
+          "items": { "$ref": "#/$defs/negativeClaimBoundary" }
+        }
+      }
+    },
+    "evidenceClaim": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["claim_type", "authority_class", "scope"],
+      "properties": {
+        "claim_type": { "$ref": "#/$defs/claimType" },
+        "authority_class": { "$ref": "#/$defs/authorityClass" },
+        "scope": { "$ref": "#/$defs/scope" },
+        "issued_at": { "$ref": "#/$defs/temporalBoundary" },
+        "verification_time": { "$ref": "#/$defs/temporalBoundary" }
+      },
+      "oneOf": [
+        {
+          "required": ["issued_at"],
+          "not": { "required": ["verification_time"] }
+        },
+        {
+          "required": ["verification_time"],
+          "not": { "required": ["issued_at"] }
+        }
+      ]
+    },
+    "negativeClaimBoundary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["claim_type", "authority_class", "scope"],
+      "properties": {
+        "claim_type": { "$ref": "#/$defs/claimType" },
+        "authority_class": { "$ref": "#/$defs/authorityClass" },
+        "scope": { "$ref": "#/$defs/scope" },
+        "reason": { "type": "string", "minLength": 1 }
+      }
+    },
+    "claimType": {
+      "type": "string",
+      "minLength": 1,
+      "description": "The proposition established or required; this is not an authority class."
+    },
+    "authorityClass": {
+      "type": "string",
+      "description": "How the claim is established; claim names are not authority-class aliases.",
+      "enum": [
+        "INDEPENDENT_JUDGMENT",
+        "CRYPTOGRAPHIC_VERIFICATION",
+        "EX_POST_VALIDATION",
+        "INFRASTRUCTURE_ATTESTATION",
+        "ONCHAIN_COMMITMENT",
+        "INDEPENDENT_RECOMPUTATION",
+        "KEY_BINDING_AUTHORITY",
+        "SEMANTIC_VERIFICATION"
+      ]
+    },
+    "scope": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Exact declared boundary over which the claim holds."
+    },
+    "temporalBoundary": {
+      "type": "string",
+      "minLength": 1,
+      "description": "An exact timestamp or a manifest field reference that supplies it."
+    }
+  }
+}

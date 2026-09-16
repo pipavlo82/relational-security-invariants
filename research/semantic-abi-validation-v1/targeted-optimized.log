@@ -1,0 +1,45 @@
+test_core_anti_coupling (tests.test_semantic_abi.SemanticAbiArchitectureTests.test_core_anti_coupling) ... ok
+test_prior_composition_unchanged (tests.test_semantic_abi.SemanticAbiArchitectureTests.test_prior_composition_unchanged) ... ok
+test_upstream_tests (tests.test_semantic_abi.SemanticAbiArchitectureTests.test_upstream_tests) ... ok
+test_actual_does_not_call_predictor (tests.test_semantic_abi.SemanticAbiTests.test_actual_does_not_call_predictor) ... ok
+test_authority (tests.test_semantic_abi.SemanticAbiTests.test_authority) ... ok
+test_claim (tests.test_semantic_abi.SemanticAbiTests.test_claim) ... ok
+test_claim_order (tests.test_semantic_abi.SemanticAbiTests.test_claim_order) ... ok
+test_component_mirror (tests.test_semantic_abi.SemanticAbiTests.test_component_mirror) ... ok
+test_control (tests.test_semantic_abi.SemanticAbiTests.test_control) ... ok
+test_deterministic (tests.test_semantic_abi.SemanticAbiTests.test_deterministic) ... ok
+test_exact_version (tests.test_semantic_abi.SemanticAbiTests.test_exact_version) ... ok
+test_explicit_boundary (tests.test_semantic_abi.SemanticAbiTests.test_explicit_boundary) ... ok
+test_identity_opaque (tests.test_semantic_abi.SemanticAbiTests.test_identity_opaque) ... ok
+test_invalid_coordinates (tests.test_semantic_abi.SemanticAbiTests.test_invalid_coordinates) ... ok
+test_negative_cases_are_well_formed (tests.test_semantic_abi.SemanticAbiTests.test_negative_cases_are_well_formed) ... ok
+test_no_cross_claim_mixing (tests.test_semantic_abi.SemanticAbiTests.test_no_cross_claim_mixing) ... ok
+test_no_execution_promotion (tests.test_semantic_abi.SemanticAbiTests.test_no_execution_promotion) ... ok
+test_no_reverse_coercion (tests.test_semantic_abi.SemanticAbiTests.test_no_reverse_coercion) ... ok
+test_no_truth_promotion (tests.test_semantic_abi.SemanticAbiTests.test_no_truth_promotion) ... ok
+test_no_universal_recomputation (tests.test_semantic_abi.SemanticAbiTests.test_no_universal_recomputation) ... ok
+test_pipeline (tests.test_semantic_abi.SemanticAbiTests.test_pipeline) ... ok
+test_positive_precedence (tests.test_semantic_abi.SemanticAbiTests.test_positive_precedence) ... ok
+test_predictor_does_not_call_actual (tests.test_semantic_abi.SemanticAbiTests.test_predictor_does_not_call_actual) ... ok
+test_reason_mirror (tests.test_semantic_abi.SemanticAbiTests.test_reason_mirror) ... ok
+test_recomputation (tests.test_semantic_abi.SemanticAbiTests.test_recomputation) ... ok
+test_recomputation_scope (tests.test_semantic_abi.SemanticAbiTests.test_recomputation_scope) ... ok
+test_recomputation_time (tests.test_semantic_abi.SemanticAbiTests.test_recomputation_time) ... ok
+test_scope (tests.test_semantic_abi.SemanticAbiTests.test_scope) ... ok
+test_semantic_dependency_separation (tests.test_semantic_abi.SemanticAbiTests.test_semantic_dependency_separation) ... ok
+test_source_commit_drift (tests.test_semantic_abi.SemanticAbiTests.test_source_commit_drift) ... ok
+test_source_drift (tests.test_semantic_abi.SemanticAbiTests.test_source_drift) ... ok
+test_source_original_bytes (tests.test_semantic_abi.SemanticAbiTests.test_source_original_bytes) ... ok
+test_substitutions_hold_producer_constant (tests.test_semantic_abi.SemanticAbiTests.test_substitutions_hold_producer_constant) ... ok
+test_tamper_even_if_digest_repinned (tests.test_semantic_abi.SemanticAbiTests.test_tamper_even_if_digest_repinned) ... ok
+test_temporal_shape (tests.test_semantic_abi.SemanticAbiTests.test_temporal_shape) ... ok
+test_time_kind (tests.test_semantic_abi.SemanticAbiTests.test_time_kind) ... ok
+test_time_value (tests.test_semantic_abi.SemanticAbiTests.test_time_value) ... ok
+test_transport_unicode (tests.test_semantic_abi.SemanticAbiTests.test_transport_unicode) ... ok
+test_transport_unsafe_number (tests.test_semantic_abi.SemanticAbiTests.test_transport_unsafe_number) ... ok
+test_unknown_relation (tests.test_semantic_abi.SemanticAbiTests.test_unknown_relation) ... ok
+
+----------------------------------------------------------------------
+Ran 40 tests in 103.187s
+
+OK
