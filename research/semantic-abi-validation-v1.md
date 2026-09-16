@@ -169,3 +169,7 @@ claim/authority/scope/temporal compatibility from coordinate substitutions,
 global authority coercion and mixed-claim matching, while preserving selected
 display-only changes. Compatibility of supplied declarations does not establish
 their truth, cryptographic validity, freshness, or action execution.
+
+## Publication correction
+
+See [the publication correction](semantic-abi-publication-correction-v1.md) for the initial CI failure caused by the final README digest and its exact maintenance-record repair. The local full-suite receipt predates that final README edit.

@@ -2,7 +2,7 @@
   "base_commit": "8d8e31291ecf96284212a353efb66f606cff2953",
   "changes": {
     "README.md": {
-      "after_sha256": "01f6c35273af73040d0c7b137f2d6eb3b8711d6cce539e2f3512245bb7c2d807",
+      "after_sha256": "eedc3c53717164f369f1b57d99509f4f4f829344de7acaa8c6943a059ea749b4",
       "before_sha256": "8ef0d5dcdad74c37251b9425e7285c4accbc804bb4cded4a844eca556b93ab64"
     },
     "tests/test_aggregate.py": {
