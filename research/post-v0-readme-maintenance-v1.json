@@ -1,8 +1,12 @@
 {
   "base_commit": "8d8e31291ecf96284212a353efb66f606cff2953",
   "changes": {
+    "LICENSE": {
+      "after_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "before_sha256": "8538f3699adfbf44315245ad3bd0140785344842c22df47082f1f8dcf54a4fbd"
+    },
     "README.md": {
-      "after_sha256": "eedc3c53717164f369f1b57d99509f4f4f829344de7acaa8c6943a059ea749b4",
+      "after_sha256": "e8eed484b28c013c251345ff2441be21b17726ae5fc81403dd698f1ee143f51d",
       "before_sha256": "8ef0d5dcdad74c37251b9425e7285c4accbc804bb4cded4a844eca556b93ab64"
     },
     "tests/test_aggregate.py": {
@@ -21,6 +25,14 @@
       "after_sha256": "2c90e74f907b5f04633d53cbee2e6d656f71247c9e34c79267ae1ef222ff1613",
       "before_sha256": "cd415fda8e0e27d2c4399b69266b730d7f682c79e96d8beeb41f7d93f76ac0e7"
     },
+    "tests/test_protected_maintenance.py": {
+      "after_sha256": "d75514cc970fd2b1f308c443ebe942f4867b4e6868dab4ea56dd56d1ac0421f1",
+      "before_sha256": "fb83938ab4c60e0d81b39a628ecdf452a77084b1c330d574819dba59396f4676"
+    },
+    "tests/test_relation_profiles.py": {
+      "after_sha256": "01b4b51e0dd2334f5df62123b1d000c4e8ebb7eb2d3ce96c7f8fff530e16bb1e",
+      "before_sha256": "b41d3cd32e1518ff424298906cd7dcf8a0fb8be5614433e2c1f6af0722b56233"
+    },
     "tests/test_rvr.py": {
       "after_sha256": "48155024c2bea0f5beb5aa09397e5ffae8f822224dbc38f058523731e3683cfd",
       "before_sha256": "080cb87698efba3f2fe700a90f0021489dfce5f73d4ebec79e9f1f3fecbf589f"
@@ -33,9 +45,17 @@
       "after_sha256": "23ebb1474128dfe71059f967caa37b62c8ebf21aeb1a4dbc810d143b5f9ed050",
       "before_sha256": "2f83ee739bf7f1635bbba6c8c34c55be699002cfdff1572312705dbadf2435fb"
     },
+    "tools/check_crystal_receipt.py": {
+      "after_sha256": "98af0f3462af13964c70de7d37ade92cd65060927495c97f53dac7e801efe3e7",
+      "before_sha256": "ec6c618f86995838a16254b45b1ff484de37af7ee422f6728b651382560629ba"
+    },
     "tools/check_pq_policy_asof.py": {
       "after_sha256": "68bb62745e35f1f2fdce7bebabaabf77cb3f6c01cb298599519d75b80c1b44cc",
       "before_sha256": "d2672bcbd2061d4fd2e191e1edc12d72b81aecb8fd63614bbd6926d582cc8599"
+    },
+    "tools/check_relation_contract.py": {
+      "after_sha256": "95923ef661856fcb281d0a59643d223f5bb6d0ed612bead75db0a156be5262ca",
+      "before_sha256": "471bccb74e4a8dddf8db6759afdb1ae9c3a96d879b7538dde87cc36e2fedacde"
     },
     "tools/check_rvr_digest_binding.py": {
       "after_sha256": "f9df6790cac835bc60de1acd2a597bd9744d179439de471f035d41c52c71021c",

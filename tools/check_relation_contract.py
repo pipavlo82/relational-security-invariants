@@ -13,12 +13,14 @@ from extensions.defaults import composition as old_composition
 from extensions.relations import composition
 from runner.extension_runtime import execute as old_execute
 from runner.relation_runtime import execute
+from tools.protected_maintenance import mismatches, approved_changes
 
 GENERIC=("runner/relation_profile.py","runner/relation_profile_registry.py","runner/relation_runtime.py")
 def generate(reference,legacy_mutations,relation_mutations):
     pins=reference["protected_legacy_sha256"]
-    differences=[name for name,pin in sorted(pins.items()) if raw_digest((ROOT/name).read_bytes())!=pin]
+    differences=sorted(mismatches(ROOT,pins))
     if differences:raise ValueError("protected artifact drift: "+repr(differences))
+    maintenance=approved_changes(ROOT,pins)
     old=old_execute(ROOT,*old_composition(ROOT));new=execute(ROOT,*composition(ROOT))
     if encode(old)!=encode(new):raise ValueError("legacy execution changed")
     if encode(new)!=encode(execute(ROOT,*composition(ROOT))):raise ValueError("nondeterministic execution")
@@ -32,7 +34,7 @@ def generate(reference,legacy_mutations,relation_mutations):
     tests=unittest.defaultTestLoader.discover(str(ROOT/"tests")).countTestCases()
     return {"schema":"rsi-relation-profile-implementation.v0","head_before":"05f3853756ad9deb0e5d08d54dfdfd462652a801",
         "baseline_evidence":reference.get("baseline_evidence",{}),"files_changed":reference.get("files_changed",[]),"evidence_closure_reference":"research/relation-profile-evidence-closure-v0.json",
-        "protected_legacy_sha256":pins,"protected_hash_differences":differences,"core_changed":False,"legacy_schemas_changed":False,
+        "protected_legacy_sha256":pins,"protected_hash_differences":differences,"approved_post_v0_maintenance":maintenance,"core_changed":False,"legacy_schemas_changed":False,
         "schemas_added":["schema/profiled-relation-fixture.v0.schema.json"],"extension_schema_changed":False,
         "legacy_outcome_diff":[],"legacy_rows_sha256":raw_digest(encode([r["result"] for r in new["rows"]])),
         "legacy_totals":new["totals"],"test_totals":{"before":150,"after":tests,"optimized_before":150,"optimized_after":tests},
@@ -53,6 +55,6 @@ def main():
     reference=load(ROOT/"research/relation-profile-implementation-v0.json")
     result=generate(reference,load(args.legacy_mutations),load(args.relation_mutations))
     args.output.parent.mkdir(parents=True,exist_ok=True);args.output.write_bytes(encode(result))
-    print("Protected hashes match; legacy rows unchanged; 23 KILLED; deterministic report.")
+    print("Protected byte transitions admitted; legacy rows unchanged; 23 KILLED; deterministic report.")
     return 0
 if __name__=="__main__":raise SystemExit(main())

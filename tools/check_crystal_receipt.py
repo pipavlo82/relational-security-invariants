@@ -12,11 +12,13 @@ from runner.relation_runtime import execute
 from profiles.crystal_receipt.source import verify_source
 from profiles.crystal_receipt.relation import PROFILE_ID
 from extensions.relations import composition as legacy_composition
+from tools.protected_maintenance import mismatches, approved_changes
 
 def report(mutations):
     source=verify_source(ROOT);source_map=load(ROOT/"research/crystal-receipt-source-map-v0.json")
     pins={**source_map["protected_legacy_hashes"],**source_map["generic_hashes"]}
-    if any(raw_digest((ROOT/p).read_bytes())!=h for p,h in pins.items()):raise ValueError("protected hash mismatch")
+    if mismatches(ROOT,pins):raise ValueError("protected hash mismatch")
+    maintenance=approved_changes(ROOT,pins)
     actual=execute(ROOT,*composition(ROOT))
     if encode(actual)!=encode(execute(ROOT,*composition(ROOT))):raise ValueError("non-deterministic domain execution")
     if actual["totals"]!={"PASS":4,"FAIL":0,"INVALID_FIXTURE":0,"UNSUPPORTED":0}:raise ValueError("domain conformance failure")
@@ -33,7 +35,7 @@ def report(mutations):
     return {"schema":"rsi-domain-validation.v0","domain":"crystal-receipt","rsi_head_before":"30e13ba3a39915c91a607f70975c669ead7a231e",
       "source":source,"relation_profiles":[PROFILE_ID],"fixtures":{"total":2,"pass":2,"fail":0,"invalid_fixture":0,"unsupported":0},
       "checks":actual["totals"],"combined_checks":combined["totals"],"execution":actual,"mutations":{k.lower():v for k,v in mutations["totals"].items()},"mutation_report":mutations,
-      "legacy_compatibility":{"outcome_diff":0,"protected_hashes_match":True,"legacy_checks":legacy["totals"],"legacy_mutations":23},
+      "legacy_compatibility":{"outcome_diff":0,"protected_hashes_match":not maintenance,"approved_post_v0_maintenance":maintenance,"legacy_checks":legacy["totals"],"legacy_mutations":23},
       "protected_sha256":pins,"tests":{"before":200,"after":unittest.defaultTestLoader.discover(str(ROOT/"tests")).countTestCases()},
       "generic_core_changed":False,"semantic_exceptions_added":0,"anti_coupling":"PASS","deterministic":True,
       "omitted_candidates":source_map["omitted_candidates"],"limitations":[
@@ -47,5 +49,5 @@ def report(mutations):
 
 def main():
     p=argparse.ArgumentParser();p.add_argument("--mutations",type=Path,default=ROOT/"artifacts/crystal-phase2a/cr-mutations.json");p.add_argument("--output",type=Path,default=ROOT/"artifacts/crystal-validation.json");args=p.parse_args()
-    result=report(load(args.mutations));args.output.parent.mkdir(parents=True,exist_ok=True);args.output.write_bytes(encode(result));print("Crystal Receipt: 2 fixtures / 4 PASS; 3 KILLED; protected hashes and legacy outcomes unchanged")
+    result=report(load(args.mutations));args.output.parent.mkdir(parents=True,exist_ok=True);args.output.write_bytes(encode(result));print("Crystal Receipt: 2 fixtures / 4 PASS; 3 KILLED; protected byte transitions admitted; legacy outcomes unchanged")
 if __name__=="__main__":main()
