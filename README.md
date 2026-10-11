@@ -229,6 +229,7 @@ by RSI validation.
 The candidate contribution is adversarial cross-domain conformance packaging,
 not the invention of replay protection, identity binding or relational security
 reasoning. See [prior art](research/prior-art-v0.md), [LICENSE](LICENSE) and
-[SECURITY.md](SECURITY.md). **No open-source license or patent grant has been
-selected.** The bounded `v0` tag is an evidence snapshot, not an ERC standard,
+[SECURITY.md](SECURITY.md). Pavlo-authored repository material is licensed under Apache-2.0;
+[LICENSING.md](LICENSING.md) preserves imported, captured and separately licensed
+material and explains historical pending-license records. The bounded `v0` tag is an evidence snapshot, not an ERC standard,
 production-safety certification or GitHub Release.

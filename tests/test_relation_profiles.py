@@ -8,6 +8,7 @@ from rsi.codec import encode
 from tests.relation_support import fixture, model, run
 from runner.relation_runtime import validate_envelope, resolve_fixture
 from runner.relation_profile_registry import RelationProfileRegistry, UnavailableRelation
+from tools.protected_maintenance import mismatches
 
 ROOT=Path(__file__).resolve().parents[1]
 class RelationTests(unittest.TestCase):
@@ -205,7 +206,6 @@ class RelationTests(unittest.TestCase):
         first=p.evaluate_relation("pair",inputs,{"relation_id":"pair"});first["outputs"]["claim"]=False
         self.assertTrue(p.evaluate_relation("pair",inputs,{"relation_id":"pair"})["outputs"]["claim"])
     def test_protected_legacy_hashes(self):
-        import json,hashlib
+        import json
         report=json.loads((ROOT/"research/relation-profile-implementation-v0.json").read_text())
-        for path,pin in report["protected_legacy_sha256"].items():
-            self.assertEqual(hashlib.sha256((ROOT/path).read_bytes()).hexdigest(),pin,path)
+        self.assertEqual(mismatches(ROOT,report["protected_legacy_sha256"]),[])

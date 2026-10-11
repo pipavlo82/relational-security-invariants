@@ -19,19 +19,25 @@ class MaintenanceTests(unittest.TestCase):
         self.data = json.loads((ROOT / MANIFEST).read_bytes())
 
     def test_exact_document_transition(self):
-        (self.root / 'README.md').write_bytes((ROOT / 'README.md').read_bytes())
-        pins = {'README.md': self.data['changes']['README.md']['before_sha256']}
-        self.assertEqual(mismatches(self.root, pins), [])
-        self.assertEqual(approved_changes(self.root, pins), ['README.md'])
+        for name in ('README.md', 'LICENSE'):
+            with self.subTest(path=name):
+                (self.root / name).write_bytes((ROOT / name).read_bytes())
+                pins = {name: self.data['changes'][name]['before_sha256']}
+                self.assertEqual(mismatches(self.root, pins), [])
+                self.assertEqual(approved_changes(self.root, pins), [name])
 
     def test_third_document_digest_rejected(self):
-        (self.root / 'README.md').write_bytes(b'unreviewed documentation')
-        pins = {'README.md': self.data['changes']['README.md']['before_sha256']}
-        self.assertEqual(mismatches(self.root, pins), ['README.md'])
+        for name in ('README.md', 'LICENSE'):
+            with self.subTest(path=name):
+                (self.root / name).write_bytes(b'unreviewed legal/documentation bytes')
+                pins = {name: self.data['changes'][name]['before_sha256']}
+                self.assertEqual(mismatches(self.root, pins), [name])
 
     def test_wrong_historical_digest_rejected(self):
-        (self.root / 'README.md').write_bytes((ROOT / 'README.md').read_bytes())
-        self.assertEqual(mismatches(self.root, {'README.md': '0' * 64}), ['README.md'])
+        for name in ('README.md', 'LICENSE'):
+            with self.subTest(path=name):
+                (self.root / name).write_bytes((ROOT / name).read_bytes())
+                self.assertEqual(mismatches(self.root, {name: '0' * 64}), [name])
 
     def test_unrelated_semantic_drift_rejected(self):
         (self.root / 'rsi').mkdir()

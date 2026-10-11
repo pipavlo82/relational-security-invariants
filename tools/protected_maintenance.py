@@ -1,4 +1,4 @@
-"""Exact post-v0 documentation/checker transitions; never a semantic allowlist.
+"""Exact post-v0 legal/documentation/checker transitions; never a semantic allowlist.
 
 Frozen baseline manifests are not rewritten. Any third digest still fails.
 This helper belongs to maintenance checks, not conformance or expectation logic.
@@ -8,7 +8,9 @@ import json
 
 MANIFEST = 'research/post-v0-readme-maintenance-v1.json'
 ALLOWED = frozenset({
-    'README.md',
+    'README.md', 'LICENSE',
+    'tools/check_crystal_receipt.py', 'tools/check_relation_contract.py',
+    'tests/test_relation_profiles.py', 'tests/test_protected_maintenance.py',
     'tests/test_rvr.py', 'tests/test_tsei.py', 'tests/test_pq.py',
     'tools/check_rvr_digest_binding.py', 'tools/check_tsei_serializer_adoption.py',
     'tools/check_pq_policy_asof.py',
